@@ -20,3 +20,14 @@ Boolean	represents boolean value either false or true
 Undefined	represents undefined value
 Null	represents null i.e. no value at all
 */
+
+
+/*
+JavaScript non-primitive data types
+The non-primitive data types are as follows:
+
+Data Type	Description
+Object	represents instance through which we can access members
+Array	represents group of similar values
+RegExp	represents regular expression
+*/
