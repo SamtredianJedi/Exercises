@@ -7,9 +7,8 @@ The JavaScript switch statement is used to execute one code from multiple expres
 // 
 
 
-<
-script >
-    var grade = 'B';
+
+var grade = 'B';
 var result;
 switch (grade) {
     case 'A':
@@ -24,5 +23,25 @@ switch (grade) {
     default:
         result = "No Grade";
 }
-document.write(result); <
-/script>
+document.write(result);
+
+
+////////////////////////
+
+
+// The switch statement is fall-through i.e. all the cases will be evaluated if you don't use break statement.
+
+
+var grade = 'B';
+var result;
+switch (grade) {
+    case 'A':
+        result += " A Grade";
+    case 'B':
+        result += " B Grade";
+    case 'C':
+        result += " C Grade";
+    default:
+        result += " No Grade";
+}
+document.write(result);

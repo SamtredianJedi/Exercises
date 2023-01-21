@@ -49,3 +49,40 @@ function b() {
 a(); // calling Javascript function
 
 b();
+
+
+// example of a global variable
+
+var value = 50; // global variable
+function a() {
+    alert(value);
+}
+
+function b() {
+    alert(value)
+}
+
+
+// Declaring JavaScript global variable within function
+// To declare JavaScript global variables inside function, you need to use window object.
+
+function m() {
+    window.value = 100; //declaring global variable by windwo object
+}
+
+function n() {
+    alert(window.value); //accessing global variable from other function 
+}
+
+
+// Internals of global variable in JavaScript
+
+/* When you declare a variable outside the function,
+ it is added in the window object internally. You can access it 
+ through window object also */
+
+var value = 50;
+
+function a() {
+    alert(window.value); //accessing global variable   
+}
