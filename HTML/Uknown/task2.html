@@ -1,0 +1,57 @@
+<!-- Input two numbers and find their sum -->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <script>
+        function Calculate() {
+            var a = parseInt(document.getElementById("txta").value);
+            var b = parseInt(document.getElementById("txtb").value);
+            var c = a + b;
+            document.getElementById("txtc").value = "" + c;
+        }
+    </script>
+</head>
+
+<body>
+    <h2>The Sum Program</h2>
+    <hr />
+    <table>
+        <tr>
+            <td>
+                <label>Enter A:</label>
+            </td>
+            <td>
+                <input type="text" name="txta" id="txta" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Enter B:</label>
+            </td>
+            <td>
+                <input type="text" name="txtb" id="txtb" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                &nbsp;
+            </td>
+            <td>
+                <input type="button" value="Calculate" onclick="Calculate()" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Sum</label>
+            </td>
+            <td>
+                <input type="text" name="txtc" id="txtc" readonly />
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

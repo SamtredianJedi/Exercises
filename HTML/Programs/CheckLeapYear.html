@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+
+<head>
+    <script>
+        var yr, temp;
+
+        function fun() {
+            yr = parseInt(document.getElementById("year").value);
+            if (yr) {
+                temp = document.getElementById("resPara");
+                temp.style.display = "block";
+                if ((yr % 4 == 0) && (yr % 100 != 0))
+                    document.getElementById("res").innerHTML = "a Leap";
+                else if (yr % 400 == 0)
+                    document.getElementById("res").innerHTML = "a Leap";
+                else
+                    document.getElementById("res").innerHTML = "not a Leap";
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <p>Enter the Year: <input id="year"><button onclick="fun()">Check</button></p>
+    <p id="resPara" style="display:none;">It is <span id="res"></span> Year</p>
+
+</body>
+
+</html>
