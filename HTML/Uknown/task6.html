@@ -1,0 +1,108 @@
+<!-- Check if the value exists in Array in Javascript
+
+
+In a programming language like Javascript, to check if the value exists in an array, there are certain methods. To be precise, there are plenty of ways to check if the value we are looking for resides amongst the elements in an array given by the user or is predefined. Let's discuss these methods one by one using various examples.
+
+indexof() method
+The indexof() method in Javascript is one of the most convenient ways to find out whether a value exists in an array or not. The indexof() method works on the phenomenon of index numbers. This method returns the index of the array if found and returns -1 otherwise. Let's consider the below code:
+
+  <script>      
+    var army=["Marcos", "DeltaForce", "Seals", "SWAT", "HeadHunters"];  
+  
+if(army.indexOf("Marcos") !== -1)  
+{  
+        alert("Yes, the value exists!")  
+}   
+else  
+{  
+        alert("No, the value is absent.")  
+}  
+  
+</script>  
+Output
+
+Yes, the value exists! 
+The above code prints the given out because the value is already present in the array. It is quite easy to understand that the expected value is present at position 0. Thus, the indexof() method tells you that the value expected is present in the given array.
+
+includes() method
+The includes() method is one such method using which we can easily find out whether the expected value exists in the given array. There are various ways to use include() method. This method returns a Boolean value i.e. true if the value exists and false if it incorrect. The includes() method can be used in various ways to find out if the value exists. To name a few, take a look at the below examples to understand.
+
+varspecialForces=["BlackCats","Marcos", "Demolishers","HeadHunters"];  
+r name = specialForces.includes("HeadHunters");  
+In the above method, we have defined two variables as shown. The includes() methods return true because the value which we are looking for is already present in the given array. If the value was not present in the array, the includes() methods might have returned false.
+
+Another way of using the includes() method is by assigning the index value through which the element we are looking for is generated as output. See the below code for reference.
+
+var actors = ["Hrithik", "SRK", "Salman", "Vidyut"];  
+var names = actors.includes("Vidyut", 3);  
+In the above code snippet, we have defined the variable "actors" which the value. We have also defined a variable "names" which would return true or false, if the includes() method returns the shown result. The code above will return true since the value and the index number have been correctly assigned and would return the output.
+
+The above examples are some of the predefined methods that we have used to check whether an element exists in the array or not. We have another approach to find out an array element using loops. Let's discuss how can we check if the element exists in an array using loops as shown in the below code snippet.
+
+Using loops
+var example_array = ['Rahul','Rajesh','Sonu','Siddhi','Mark','George'];  
+  
+function checkArray(value,array)  
+{  
+  var status = 'Absent';  
+  
+  for(var i=0; i<array.length; i++)  
+{  
+    var name = array[i];  
+    if(name == value){  
+      status = 'Present';  
+      break;  
+    }  
+  }  
+  return status;  
+}  
+
+
+
+Summary
+Javascript is dynamic and flexible programming as well as a scripting language. It is a powerful developer-friendly natured language that lets you do single stuff in multiple ways so that our learning curve remains steep. In this article, we discussed how we can easily carve different ways through which we can easily find whether the given array consists of the desired value or not. We also came across certain methods and generic programming examples that are not just easy to understand but can be implemented with no absolute knowledge. We have used indexof() and includes() methods in this article since they are the most used methods whenever it is required to find out the value enshrined in an array. We also came across loops through which one can easily find out by the normal linear search traversal as we do in the generic programming paradigms.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-->

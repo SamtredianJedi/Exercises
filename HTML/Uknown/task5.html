@@ -1,0 +1,175 @@
+<!-- How to disable radio button using JavaScript -->
+
+
+
+Radio button is an input type that is used to get input from the user by selecting one value from multiple choices. You have seen the radio buttons to choose gender between male and female. We select only one entry, either male or female and leave the
+other entries are unselected. There might be some cases when we need to disable the other entries based on some conditions. You can enable and disable the radio button by using the disabled property of HTML DOM. Set this property to true (disable=true)
+to disable the radio button in JavaScript. Disable the radio button Sometimes, we need to disable the radio button for a specific condition. These are special conditions when we disable the radio button. When the radio buttons get disabled, their color
+changed to grey. In the below examples, we will learn how to disable the radio button: Disable radio button using dropdown Here, we will use a dropdown list having Yes and No as values to enable or disable the radio buttons. If you choose No, all the
+radio buttons will be disabled. On the other hand, all the radio buttons will be enabled if you select Yes. Note that you can use the checkbox as well instead of a dropdown list. Copy Code
+
+<html>
+<script>
+    function verifyAnswer() {
+        //get the selected value from the dropdown list  
+        var mylist = document.getElementById("myAns");
+        var result = mylist.options[mylist.selectedIndex].text;
+        if (result == 'No') {
+            //disable all the radio button   
+            document.getElementById("csharp").disabled = true;
+            document.getElementById("js").disabled = true;
+            document.getElementById("angular").disabled = true;
+        } else {
+            //enable all the radio button  
+            document.getElementById("csharp").disabled = false;
+            document.getElementById("js").disabled = false;
+            document.getElementById("angular").disabled = false;
+        }
+    }
+</script>
+
+<body>
+    <h2> Disable radio Button using dropdown </h2>
+    <form>
+        <!-- create a dropdown list -->
+        <h3> Are you a developer? </h3>
+        <select id="myAns" onchange="verifyAnswer()">  
+<option value="choose"> --choose -- </option>  
+<option value="yes"> Yes </option>  
+<option value="no"> No </option>  
+</select>
+    </form>
+
+    <p> <b> If Yes, Choose language your preferred programming Language</b> </p>
+    <!-- create a set of radio buttons -->
+    <label> <input type="radio" name="programming" id="csharp" value= "csharp"> C# </label>
+    <label> <input type="radio" name="programming" id="js" value= "js"> JavaScript </label>
+    <label> <input type="radio" name="programming" id="angular" value= "angular"> Angular </label>
+</body>
+
+</html>
+
+
+
+
+
+<!-- Disable radio button using checkbox
+Now we will use a checkbox to disable the radio button.
+
+Copy Code
+
+<html>  
+<script>  
+function verifyAnswer() {  
+    //disable all the radio button   
+    document.getElementById("csharp").disabled = true;  
+    document.getElementById("js").disabled = true;  
+    document.getElementById("angular").disabled = true;  
+      
+    //get the value if checkbox is checked  
+    var dev = document.getElementById("myCheck").checked;  
+    if (dev == true) {  
+    //enable all the radio button  
+      document.getElementById("csharp").disabled = false;  
+      document.getElementById("js").disabled = false;  
+      document.getElementById("angular").disabled = false;  
+   }  
+}  
+</script>  
+  
+<body>  
+<h2> Disable radio Button using checkbox </h2>  
+<form>  
+ create a dropdown list
+<h3> Are you a developer? </h3>  
+Yes:   
+<input type="checkbox" id="myCheck" onchange="verifyAnswer()" checked>  
+</form>  
+  
+<p> <b> If Yes, Choose language your preferred programming Language</b> </p>  
+ create a set of radio buttons 
+<label> <input type="radio" name="programming" id="csharp" value= "csharp"> C# </label>  
+<label> <input type="radio" name="programming" id="js" value= "js"> JavaScript </label>  
+<label> <input type="radio" name="programming" id="angular" value= "angular"> Angular </label>  
+</body>  
+</html>  
+
+
+A simple radio button example
+It is a simple example of radio button created. In this example, we will create set of radio button for gender and language selection. The input will be taken using the HTML form and calculated by JavaScript. See the code below:
+
+Copy Code
+
+<html>  
+<script>  
+function calValue() {  
+//fetch all gender radio button data  
+var male = document.getElementById('g1');  
+var female = document.getElementById('g2');  
+var otherg = document.getElementById('g3');  
+  
+//fetch all language radio button data  
+var hindi = document.getElementById('l1');  
+var english = document.getElementById('l2');  
+var otherl = document.getElementById('l3');  
+  
+var gender;  
+var language;  
+//check which gender is selected using radio button  
+if(male.checked == true) {  
+  gender = male;   
+} else if(female.checked == true) {  
+  gender = female;   
+} else if(otherg.checked == true) {  
+  gender = otherg   
+}  
+  
+//check which language is selected using radio button  
+if(hindi.checked == true) {  
+  language = hindi;   
+} else if(english.checked == true) {  
+  language = english;   
+} else if(otherl.checked == true) {  
+  language = otherl   
+}  
+//return data to HTML form  
+return document.getElementById("result").innerHTML = "Your selected gender is: " + gender.value + "</br> and </br> Selected language is: " + language.value;  
+}  
+</script>  
+  
+<body>  
+<h2> Simple radio Buttons Example </h2>  
+  <!-- create radio button for gender selection -->
+<p> <b> Select your gender: </b> </p>
+<input type="radio" id="g1" name="gender" value="male">
+<label for="male"> Male </label> <br>
+<input type="radio" id="g2" name="gender" value="female">
+<label for="female"> Female </label> <br>
+<input type="radio" id="g3" name="gender" value="other">
+<label for="other"> Other </label>
+
+<br>
+<!-- create radio button for language selection -->
+<p> <b> Select your language: </b> </p>
+<input type="radio" id="l1" name="language" value="hindi">
+<label for="male"> Hindi </label> <br>
+<input type="radio" id="l2" name="language" value="english">
+<label for="female"> English </label> <br>
+<input type="radio" id="l3" name="language" value="other">
+<label for="other"> Other </label> <br> <br>
+
+<input type="submit" value="Submit" onclick="calValue()">
+<h3 id="result" style="color:blue"> </h3>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+-->
