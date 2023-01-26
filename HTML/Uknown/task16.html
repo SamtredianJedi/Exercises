@@ -1,0 +1,101 @@
+<!-- JavaScript | Some of the examples of user-defined functions -->
+
+1) Design a function, print message and assign the function to a variable and print it like a function
+
+<html lang="en">
+
+<head>
+    <script>
+        function hello() {
+            document.write("Hello <Br />")
+        }
+
+        hello();
+        a = hello;
+        a();
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+2) Call a function and then define it
+
+<html lang="en">
+
+<head>
+    <script>
+        hello();
+
+        function hello() {
+            document.write("Hello <Br />")
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
+Output Hello 3) Define a function and call it in the body section
+
+<html lang="en">
+
+<head>
+    <script>
+        function hello() {
+            document.write("Hello <Br />")
+        }
+    </script>
+</head>
+
+<body>
+    <script>
+        hello();
+    </script>
+</body>
+
+</html>
+Output Hello 4) Call a function in head section and define it in the body section
+
+<html lang="en">
+
+<head>
+    <script>
+        hello();
+    </script>
+</head>
+
+<body>
+    <script>
+        function hello() {
+            document.write("Hello <Br />")
+        }
+    </script>
+</body>
+
+</html>
+Output None: Function will not call 5) Call a function and define it in the body section
+
+<html lang="en">
+
+<head>
+    <script>
+    </script>
+</head>
+
+<body>
+    <script>
+        hello();
+
+        function hello() {
+            document.write("Hello <Br />")
+        }
+    </script>
+</body>
+
+</html>

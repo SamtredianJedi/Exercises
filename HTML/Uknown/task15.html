@@ -1,0 +1,26 @@
+<!-- JavaScript | Demonstrate the example of call by value in function -->
+
+Here, we are designing a function named change() that has an argument and we are trying to change the value of the passed argument inside the function, but it will not effect to the main/actual argument that is passed as the argument while calling. Example:
+a =10 Value before function call: a = 10 //calling function change(a) //changing inside the function a = 67 Value inside the function: a = 67 //printing the value after the function call Value after the function call: a =10 Code:
+
+<html lang="en">
+
+<head>
+    <script>
+        function change(a) {
+            a = 67;
+            document.write("Inside Function: A = " + a + "<Br />");
+        }
+    </script>
+</head>
+
+<body>
+    <script>
+        var a = 10;
+        document.write("Before Calling : A = " + a + "<br />");
+        change(a);
+        document.write("After Calling : A = " + a + "<br />");
+    </script>
+</body>
+
+</html>

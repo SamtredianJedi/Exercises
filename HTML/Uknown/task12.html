@@ -1,1 +1,99 @@
-<!-- Image Recognition Game using JavaScript -->
+<!-- JavaScript | Code to input age and check person is eligible for voting or not -->
+
+Input age of the person and we have to write a function to validate whether person is eligible for voting or not in JavaScript? Code 1: Input age and print message in body section
+
+<html lang="en">
+
+<head>
+    <script>
+        function validate(age) {
+            var ans = "not eigible";
+            if (age >= 18) {
+                ans = "eligible";
+            }
+            return (ans);
+        }
+    </script>
+</head>
+
+<body>
+    <script>
+        var age = parseInt(prompt("Enter age"));
+        var status = validate(age);
+        document.write("You are <b>" + status + "</b> for Vote");
+    </script>
+</body>
+
+</html>
+Code 2: Input age in body section and print the message through function
+
+<head>
+    <script>
+        function validate(age) {
+            var ans = "not eigible";
+            if (age >= 18) {
+                ans = "eligible";
+            }
+            document.write("You are <b>" + ans + "</b> for Vote");
+        }
+    </script>
+</head>
+
+<body>
+    <script>
+        var age = parseInt(prompt("Enter age"));
+        validate(age);
+    </script>
+</body>
+
+</html>
+Code 3: Input age from the function and print the message in body section
+
+<html lang="en">
+
+<head>
+    <script>
+        function validate() {
+            var age = parseInt(prompt("Enter age"));
+            var ans = "not eigible";
+            if (age >= 18) {
+                ans = "eligible";
+            }
+            return (ans);
+        }
+    </script>
+</head>
+
+<body>
+    <script>
+        var status = validate();
+        document.write("You are <b>" + status + "</b> for Vote");
+    </script>
+</body>
+
+</html>
+Code 4: Input age from the function and printing the message from the function also
+
+<html lang="en">
+
+<head>
+    <script>
+        function validate() {
+            var age = parseInt(prompt("Enter age"));
+            var ans = "not eigible";
+            if (age >= 18) {
+                ans = "eligible";
+            }
+            document.write("You are <b>" + ans + "</b> for Vote");
+        }
+    </script>
+</head>
+
+<body>
+    <script>
+        validate();
+    </script>
+</body>
+
+</html>
+Output
