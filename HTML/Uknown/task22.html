@@ -1,0 +1,33 @@
+<!-- Print characters of a string in multiples of N in JavaScript -->
+
+JavaScript string manipulation is a skill that lays down the basis of various of JavaScript DOM string manipulations. In the browser, or on the server, using NodeJS, you might want to work with strings, so it is important that you should know how to work
+with strings in JavaScript? In this program, we will look at a function that will return the output string that has n number of skipped characters in the given string. This program tells you about the string manipulation in JavaScript and explores string
+manipulation basics in JavaScript for you.
+
+<!-- function stringSkipper(string, skip) {
+    var output = "";
+    if(string) {
+      for(var index=0; index<string.length; index++) {
+        if(index % skip === 0) {
+          output += stringText[index];
+        }
+      }
+      return output;
+    } else {
+      return false;
+    }
+  }
+  
+  var stringText = "This is a random string to check the program";
+  var skipValue = 3;
+  
+  var outputString = stringSkipper(stringText, skipValue);
+  console.log(outputString); -->
+
+
+First of all, we defined the function which will perform out string manipulation. In this function, we expect 2 parameters, string and skip. Inside this function, we have an output variable which is set to empty initially. Then we check in if the condition
+that we have a non-empty string parameter, an empty string is a false value. Then we loop through the length of the string and inside that loop, we check if the index is a multiple of skip parameter, by using the modulus operator. If it is true, we simply
+put this character into the output variable. At the end of the loop, we return the output. In the else part, it will return false, since we get an empty string in the parameter. Outside of this function, we take two variables, stringText and skipValue
+for our function parameters. Finally, we call our function and store it a variable since we need the output on the console. Finally, we console out the outputString and we can see the output. The output, if you notice, is every third character in the
+string. If you don't need the first character, start the loop from the first index, and that's it, you'll get the expected output. I hope this program gives you a brief idea about string manipulation in Javascript. if you like this article, please share
+your thoughts in the comments below.
