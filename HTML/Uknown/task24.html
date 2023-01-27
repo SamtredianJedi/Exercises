@@ -1,0 +1,47 @@
+<!-- How to break in nested loops in JavaScript?
+
+Break in nested loops in JavaScript - In this tutorial, we will learn how to use break statement with nested loops in JavaScript code?
+Submitted by Abhishek Pathak, on June 03, 2018
+JavaScript is an interpreted scripting language that initially worked inside browsers but later expanded itself to work at the backend and various other purposes. Many of the programming and scripting languages have taken their syntax roots from the C family and JavaScript is no different. The loop in JavaScript and many other languages are similar in syntax and functionality to C/C++.
+
+Working with loops is quite straightforward, just set the index, match the iteration condition and finally increment the index to make sure it is exhaustive at any iteration that occurs for which the match condition is false. Here's an example of a for loop.
+
+Code - JavaScript
+
+for(var index = 1; index <= 10; index++) {
+	console.log(index);
+}
+
+
+This will print 1 to 10 in the console.
+
+But sometimes there are conditions where we don't want the loop to execute further iterations. For example, we when are finding an element in an array and we get it at the first iteration... therefore making other iterations worthless. JavaScript has a break keyword for that. Whenever it encounters that break statement, it exits the loop. Here's an abstract of how you can use break.
+
+
+
+for(var index = 1; index <= 10; index++) {
+	if( index === 3 ) {
+		console.log("Element Found!");
+		break;
+	}
+}
+
+
+Now, this loop will execute only 3 times because, at the third time, it will encounter the break statement. But note that break statement stops the execution of all the loops. When this is inside the nested loops, it will exit all the loops and execute the statements below the outer most loop. But what if you want to break only in the inside loop? Well... JavaScript has labels for that, just like C has.
+
+
+
+index:
+for(var index = 1; index <= 3; index++) {
+	counter:
+	for(var counter = 1; counter <= 5; counter++)
+		if( counter % index === 0 && index % counter === 0) {
+			console.log("Double Multiple Found!");
+			break counter;
+		}
+}
+
+
+The index: and counter: are labels. It is like giving a name to a particular control flow. But unlike C family, JavaScript doesn't have goto statement so these labels aren't used only with break and continue. Here are we defining these labels before these two loops. Inside the nested loop, we check if any two numbers are multiples of each other, then we simply break the inner loop and iteration is continued from the next iteration of the outer loop.
+
+So, this is how you break inside nested loops. It can also be used to improve the efficiency of the program, by not letting the engine to execute the entire code when it's worthless. -->

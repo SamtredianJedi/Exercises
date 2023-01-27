@@ -1,0 +1,47 @@
+<!-- How to check whether a string contains a substring in JavaScript? -->
+
+Given a string, substring and we have to check whether a string contains a substring or not? Checking string contains substring or not There are two popular ways to check whether a substring exists in a string or not? Using JavaScript includes() method
+Using JavaScript indexOf() method 1) Using JavaScript includes() method includes() method is a string method in JavaScript, it returns true if the string contains a substring or not? Syntax: string.includes(substring); JavaScript Code to check whether
+a string contains a substring or not using includes() method:
+
+
+<script>
+    var str = "Hello world!";
+    var substr = "Hello";
+    if (str.includes(substr) == true) {
+        document.write(str + " contains " + substr + "<br>");
+    } else {
+        document.write(str + " does not contain " + substr + "<br>");
+    }
+
+    substr = "Okay";
+    if (str.includes(substr) == true) {
+        document.write(str + " contains " + substr + "<br>");
+    } else {
+        document.write(str + " does not contain " + substr + "<br>");
+    }
+</script>
+
+
+
+2) Using JavaScript indexOf() method indexOf() is a string method in JavaScript, if substring founds in the string - it returns the starting position of the substring if substring does not found in the string – it returns -1. Syntax: string.indexOf(substring);
+JavaScript Code to check whether a string contains a substring or not using indexOf() method:
+
+
+
+<script>
+    var str = "Hello world!";
+    var substr = "Hello";
+    if (str.indexOf(substr) != -1) {
+        document.write(str + " contains " + substr + "<br>");
+    } else {
+        document.write(str + " does not contain " + substr + "<br>");
+    }
+
+    substr = "Okay";
+    if (str.indexOf(substr) != -1) {
+        document.write(str + " contains " + substr + "<br>");
+    } else {
+        document.write(str + " does not contain " + substr + "<br>");
+    }
+</script>

@@ -1,0 +1,86 @@
+<!-- How to create accordions with JavaScript?
+
+In the modern web, people aren't satisfied just with the boring text on the screen. Images could help, but what if your content is only text? With modern JavaScript, you can spice up anything on your webpage. Enhance its looks, animate elements on the page or even keep mini games like effects on mouse movement. Those tricks for some other day, but today, we will look at how to create accordions with JavaScript?
+
+Accordions are elements that have a tab like structure, which hides the content under its header, sort of like category. When the user clicks on the header, the content element slides down and shows the content under that header.
+
+Starting out first with barebones HTML structure, we need two things, one heading and another is the content below it that will be shown when the user clicks on this header.
+
+
+
+<div class="container">
+    <p>accordion Example</p>
+    <div class="accordion-container">
+       <div class="accordion">
+          <h2 class="accordion-header">Tab 1</h2>
+          <div class="content">
+             <p>Welcome to Tab 1</p>
+          </div>
+       </div>
+       <div class="accordion">
+          <h2 class="accordion-header">Tab 2</h2>
+          <div class="content">
+             <p>Welcome to Tab 2</p>
+          </div>
+       </div>
+       <div class="accordion">
+          <h2 class="accordion-header">Tab 3</h2>
+          <div class="content">
+             <p>Welcome to Tab 3</p>
+          </div>
+       </div>
+    </div>
+ </div>
+
+ 
+ Here we have a parent .container for our code. Inside this, we have a simple text showing accordion example.
+
+Below it, we have div wrapper for accordion named .accordion-container that will hold all the .accordion elements. Inside each accordion element we have a h2 element, that is our header with the class .accordion-header and below it we have .content element that wraps our content.
+
+When user will click on the accordion header, then this content will be shown to the user. We have created three instances of this structure, because a normal accordion has multiple indvidual content elements.
+
+Now, let's style this up a bit. Here's the CSS for styling the accordion.
+
+.accordion-header {
+    background: #e76;
+    color: #fff;
+    padding: 5px 10px;
+    margin: 0;
+    cursor: pointer;
+  }
+  .accordion {
+    border: 2px solid #e76;
+  }
+  .accordion .content {
+    height: 0px;  
+    overflow-y: hidden;
+    padding: 0px 10px;
+  }
+  .full-height {
+    height: auto !important;
+  }
+
+  
+  The main thing to note here is that we initially have provided 0px height to the content, since we don't want it to show it up. Next we have a secondary class, .full-height that has the styling, height: auto !important which will change the height to auto. Note the !important condition here, because we want it as the highest priority.
+
+Now, comes the time to add the real magic to make it functional.
+
+//Get the elements based on their class name
+var tabs = document.getElementsByClassName('accordion-header');
+
+for(var i=0; i<tabs.length; i++) {
+  // Add event listener to each accordion element
+  tabs[i].addEventListener('click', function() {
+    var content = this.nextElementSibling;
+    content.classList.toggle('full-height');
+  });
+}
+
+
+In this code, first we have a tabs variable that holds the array of accordion-header elements, which is nothing but our headers.
+
+Now, for each element of this array, we need it to respond on clicks. To make that happen, we need to add an event listener to register click, and inside that we need the next element of this header, which is our content element.
+
+Now using the this.nextElementSibling we get the next element corresponding to the current accordion-header element. Next we toggle the class full-height for this content element. We do toggle instead of add so that on second click, the toggle will remove the class full-height from the element and it will return to default 0px height, we set for .content element in CSS.
+
+This is how you can easily create accordion content with JavaScript and CSS. -->

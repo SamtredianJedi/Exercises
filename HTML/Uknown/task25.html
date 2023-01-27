@@ -1,0 +1,47 @@
+<!-- Understanding callbacks in JavaScript
+
+In this article, we are going to learn about the callbacks in JavaScript and its implementations. Callbacks are just regular functions with special functionality. Unlike functions in traditional programming languages like C family, the callbacks are called upon when the corresponding task are completed.
+Submitted by Abhishek Pathak, on June 01, 2018
+JavaScript is an important and integral part of modern web and web technologies, and callbacks are an integral part of modern JavaScript syntax. Callbacks lay down the basis of the asynchronous JavaScript. If you're not familiar with this term, we'll look at it in a moment.
+
+What are callbacks?
+Callbacks are just regular functions with special functionality. Unlike functions in traditional programming languages like C family, the callbacks are called upon when the corresponding task is completed. For example, if you are reading data from the database, callbacks provide you with the ability to execute a function at a later stage, when you have successfully fetched results from the database.
+
+Most callbacks are error first callbacks. The error first means the first parameters of such functions is the error object, which shows the details of the error that was logged in.
+
+In this article, we will be learning how actually callbacks works and what gives them this functionality. Now, for the sake of brevity of this article, we'll not be querying the database, but showing a demonstration of delaying process in the event loop. We'll be using JavaScript inbuilt, setTimeout() method, which will delay the execution of code for the specified time.
+
+function printer(data, time, callback) {
+    if(time > 100) {
+      setTimeout(function() {
+        console.log(data);
+        callback(null, "Result Printed");
+      }, time);
+    } else {
+      callback("Invalid Timer");
+    }
+  }
+  
+  printer("Hello World", 2000, function(err, result) {
+    if(err) {
+      console.log(err);
+    } else {
+      console.log(result);
+    }
+  });
+
+  
+
+  In this example, we have function printer, which expects 3 parameters, the data to be printed, the time to delay this execution and the third one is the callback function, which will be called upon the completion of this time delay.
+
+Inside this function, we check if time is greater than 100 milliseconds, then we call the setTimeout function with the given time delay. Inside this setTimeout, we simply console the data. After that, we call the callback function. Note that we are passing two parameters, first is null and the second is the success message. As I have specified, the first parameter in the callback is the error parameter, and since we successfully executed this code, we don't need an error object.
+
+In the else part, we send the callback with an error message. Here, the success message doesn't matter, since we will never use it.
+
+Finally, we call the printer function and give it three parameters and the last one being callback function. Inside this function, we console.log() error if there's something in this error. If there was no error, `err` value would be null, ie, false value and we will print the success returned from the callback.
+
+So, this is how callbacks work in JavaScript. Next time you use callbacks, just remember the first parameter is error and second onwards will be the success parameters.
+
+Hope you like the article and had a better understanding of callbacks in JavaScript.
+
+Please share and write your thoughts in comments about it. -->
