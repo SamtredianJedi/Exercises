@@ -1,0 +1,74 @@
+<!-- JavaScript code to check whether a Number is Prime or Not
+
+Prime: When a number can be divide by one (1) or itself then the number is Prime number.
+
+Example: 2 3 5 7 11 ... etc.
+
+JavaScript code to check whether a Number is Prime or Not
+
+<script>
+	function Prime()
+	{
+		var i,flag=0,number;
+		number = Number(document.getElementById("N").value);
+
+		for(i=2; i <= number/2; i++)
+		{
+			if(number%i == 0)
+			{
+				flag = 1;
+				break;
+			}
+		}
+		if(flag == 0)
+		{
+			window.alert(number+"-The inputed number is Prime");
+		}
+		else
+		{
+			window.alert(number+"-The inputted number is not Prime");
+		}
+	}
+</script>
+
+
+Calling JavaScript function in HTML (HTML, JS Code)
+
+<html>
+	<head>
+		<script>
+			function Prime()
+			{
+				var i,flag=0,number;
+				number = Number(document.getElementById("N").value);
+
+				for(i=2; i <= number/2; i++)
+				{
+					if(number%i == 0)
+					{
+						flag = 1;
+						break;
+					}
+				}
+				if(flag == 0)
+				{
+					window.alert(number+"-The inputed number is Prime");
+				}
+				else
+				{
+					window.alert(number+"-The inputted number is not Prime");
+				}
+			}
+	</script>
+	</head>
+	<body>
+		<br>
+		<h1>Whether a number is Prime or not</h1>
+		Enter The Number :<input type="text" name="n" id = "N"/>
+		<hr color="cyan">
+		<br>
+		<center><button onClick="Prime()">CHECK</button>
+	</body>
+</html>
+
+ -->

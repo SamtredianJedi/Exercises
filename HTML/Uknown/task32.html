@@ -1,0 +1,200 @@
+<!-- Form validation using JavaScript
+
+function validation()
+{
+	var fname=document.registration.fname;
+	var lname=document.registration.lname;
+	var gname=document.registration.gname;
+	var number=document.registration.number;
+
+	if(allLettername(fname))
+	{
+		if(allLetterlast(lname))
+		{
+			if(genderselect(gname))
+			{
+				if(Mobile(number))
+					{
+					}
+			}
+		}
+	}
+	return false;
+}	
+
+function allLettername(fname)
+{ 
+	var letters = /^[A-Za-z]+$/;
+	if(fname.value.length==0)
+	{
+		alert('Please enter first name');
+		fname.focus();
+		return false;
+	}
+
+	else if(fname.value.match(letters))
+	{
+		return true;
+		
+	}
+	else
+	{
+		alert('First name must have alphabet characters only');
+		fname.focus();
+		return false;
+	}
+}
+
+function allLetterlast(lname)
+{ 
+	var letters = /^[A-Za-z]+$/;
+	if(lname.value.length==0)
+	{
+		alert('Please enter last name');
+		fname.focus();
+		return false;
+	}
+	else if(lname.value.match(letters))
+	{
+		return true;
+		
+	}
+	else
+	{
+		alert('last name must have alphabet characters only');
+		fname.focus();
+		return false;
+		
+	}
+}
+
+function genderselect(gname)
+{
+	if(gname.value == "Default")
+	{
+		alert('Select your gender');
+		gname.focus();
+		return false;
+	}
+	else
+	{
+		return true;
+	}
+}
+
+function Mobile(number)
+{ 
+	var numbers = /^[0-9]+$/;
+	if(number.value.length==0 )
+	{
+		alert('Please enter contact number');
+		fname.focus();
+		return false;
+	}
+	else if(number.value.length>10)
+	{
+		alert('Please enter a valid contact number');
+		fname.focus();
+		return false;
+
+	}
+	else if(number.value.match(numbers))
+	{
+		alert('Form Succesfully Submitted');
+		window.location.reload();
+		return true;
+	}
+	else
+	{
+		alert('Please check your contact number');
+		return false;
+	}
+}
+
+
+
+
+HTML code with JavaScript:
+
+
+
+<html>
+<head>
+	<title>Form Validation</title>
+
+<script type="text/JavaScript">
+
+	
+
+
+</script>
+
+
+<style type="text/css">
+	
+body,html{
+	margin:0px;
+	background-color:rgb(211,211,211);
+
+
+}
+#form{
+	width: 40%;
+	height: auto;
+	background-color:#C4C7E2;
+	margin-left: 30%;
+	margin-right: 30%;
+	margin-top:10%;
+	padding: 10px;
+}
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=submit] {
+    width: 100%;
+    background-color: gray;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: cursive;
+}
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+</style>
+</head>
+<body >
+	<div id="form" >
+	<form  name="registration" onSubmit="return validation();">
+		<fieldset>
+			<legend style="align:center;">Personal Detail</legend></br>
+				<label>First Name:</label></br>
+				<input type="text" placeholder="First Name" name="fname"></input></br>
+				<label>Last Name:</label></br>
+				<input type="text" placeholder="Last Names" name="lname"></input></br>
+				<label>Gender</label></br>
+				<select name="gname">
+				<option selected="" value="Default">Select</option>
+				<option>Male</option>
+				<OPTION>Female</OPTION></select></br>
+				<label>Contact Number</label></br>
+				<input type="text" placeholder="Mobile Number" name="number"></input>
+				<input type="submit" value="Submit" name="Submit"></input>
+		</fieldset>
+		</form>
+	</div>
+
+</body>
+</html>
+
+ -->

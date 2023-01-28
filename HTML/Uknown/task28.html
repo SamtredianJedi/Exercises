@@ -1,0 +1,83 @@
+<!-- JavaScript code to check number is Armstrong or not
+
+Armstrong number
+A number is said to be Armstrong when its value is equal to its sum of cube of digits.
+
+Example:
+
+    Input:
+    Number: 153
+
+    Output:
+    It is a prime number
+
+    Explanation:
+    153 = (1*1*1) + (5*5*5) + (3*3*3) = 1+125+27 = 153
+    Here, number (153) is equal to its sum of the digits cube (153).
+
+    <script>
+        function Armstrong()
+        {
+            var flag,number,remainder,addition = 0;
+            number = Number(document.getElementById("N").value);
+    
+            flag = number;
+            while(number > 0)
+            {
+                remainder = number%10;
+                addition = addition + remainder*remainder*remainder;
+                number = parseInt(number/10);
+            }
+    
+            if(addition == flag)
+            {
+                window.alert("-The inputed number is Armstrong");
+            }
+            else
+            {
+                window.alert("-The inputed number is not Armstrong");
+            }
+        }
+    </script>
+
+
+Calling JavaScript function in HTML (HTML, JS Code)
+
+<html>
+	<head>
+		<script>
+			function Armstrong()
+			{
+				var flag,number,remainder,addition = 0;
+				number = Number(document.getElementById("N").value);
+
+				flag = number;
+				while(number > 0)
+				{
+					remainder = number%10;
+					addition = addition + remainder*remainder*remainder;
+					number = parseInt(number/10);
+				}
+
+				if(addition == flag)
+				{
+					window.alert("-The inputed number is Armstrong");
+				}
+				else
+				{
+					window.alert("-The inputed number is not Armstrong");
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<br>
+		<h1>Whether a number is Armstrong or not</h1>
+		Enter The Number :<input type="text" name="n" id = "N"/>
+		<hr color="cyan">
+		<br>
+		<center><button onClick="Armstrong()">CHECK</button>
+	</body>
+</html>
+
+ -->
