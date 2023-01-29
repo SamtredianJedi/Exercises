@@ -1,0 +1,21 @@
+<!-- How to get URL parameters using JavaScript?
+
+The URL or Uniform resource locator is the address of a website which browsers use to access the website. When working with client and server, it is often required to transfer data from client to server, through forms and most of the time, the data is sent by appending it to the URL where at the back end the server processes it. But using the JavaScript we can access the information and in this article, we will learn how to get URL parameters using JavaScript?
+
+We will be using the JavaScript's built in function split() which splits the string from a separator which is passed as a parameter to this function. The result is stored as an array and we will be using it multiple times since we want to split data into key value pairs, as the server generally processes it. Have a look at the following code.
+
+//Store the URI in variable
+var url = 'https://example.com/page?one=two';
+
+//The query
+var query = url.split('?')[1].split('&');
+
+query.forEach(function(key) {
+  var pair = key.split('=');
+  console.log('Key: ' + pair[0] + ' _ Value: ' + pair[1]);
+});
+
+
+First, we take the url variable which will contain the url we want the data from. Then we have the query variable which contains the result of the split operator. Here we are chaining the split operation, one after another to get the query parameters as an array. The first url.split('?') divides the original url into 2 parts from the ? and since we are concerned with latter part, we access it using the first element returned from this operation and again perform a split operation using & as a separator to get array of key-value pairs.
+
+As the query is an array, we traverse through each one of them with forEach loop and inside it we finally split the key value pair using = and store this array in pair which contains only 2 element, the first one being *key* and second one is *value*. We display out the values to the console. -->

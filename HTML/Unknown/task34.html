@@ -1,0 +1,31 @@
+<!-- Disable right click on webpage with JavaScript
+
+Many times there are special requirements of applications that do not want to enable secondary options on webpage like right clicking and copying text, mostly seen in interview based web applications. To disable the context menu that appears on right click we have to use the JavaScript. In this article, we will learn how to disable right click on webpage with JavaScript?
+
+Here is the code that we will break in a moment,
+
+
+
+function f1() {
+    if(document.all) { return false; }
+  }
+  function f2(e) {
+    if(document.layers || (document.getElementById &! document.all)) {
+      if(e.which==2 || e.which==3) { return false; }
+    }
+  }
+  if(document.layers) {
+    document.captureEvents(Event.MOUSEDOWN);
+    document.onmousedown = f1;
+  }
+  else {
+    document.onmouseup = f2;
+    document.oncontextmenu = f1;
+  }
+
+  
+  In this code, we first define few functions, f1() and f2() which will track the activity related to event. We'll come back to it in a moment, and first get inside the if, which checks if document has layers to capture event. If yes, it will capture events using captureEvents() methods and get the MOUSEDOWN event from event object. Upon the mousedown we will execute the function f1().
+
+  In this function, we check if document.all property is true and if it is true, it will return false. Since we don't want to do it on every mouseclick but only right click. Next, we have else condition, which will monitor for mouseup event, that is releasing mouse event. If so, then execute the f2() function. In f2() function, we have event argument, which checks which button was clicked using which property. Right click and mouse wheel have 2 and 3 respectively, if it true, then return false.
+  
+  Finally for the context menu property of the document, simple disable it by passing it to f1() function. Now whenever the user clicks with the right click on the page, the context menu is not shown. -->

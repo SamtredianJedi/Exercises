@@ -1,0 +1,49 @@
+<!-- Return multiple elements from function in JavaScript
+
+Functions in JavaScript has three main components. The function name through which we call the function, the function parameters and the data function returns. In most of the programming language, the return statement returns only a single data. But many times we need to return multiple elements from a function. In this article, we will learn how to return multiple elements from function in JavaScript.
+
+We have two methods of doing this:
+
+Returning with Array
+Returning with Objects
+
+1) Returning with Array
+Arrays are very useful data structures that store multiple elements as one entity. Using the arrays in JavaScript, we can return multiple elements from a function. First we need to store all the elements that we want to return from the function in the array. We can use the array.push() function to push elements in the array and then at the end of function using the return statement, we return the array. Here's a code to implement it,
+
+// Function to return 2 consecutive numbers
+// n is the first number
+function consecutive(n) {
+	var numbers = []; //Empty array declaration
+
+	//For loop to push 3 consecutive numbers	
+	for(var i = n; i <= n+2; i++) {
+		numbers.push(i); //Push elements to array
+	}
+	return numbers; //Returns 3 elements
+}
+
+
+When the function returns it returns an array, which can be used to get the multiple number of elements in our main code. For example, if we want to use the second number, we can easily do the threeNumbers[1] to get the second number returned from the function.
+
+The array method can be little unclear of what it returns as a whole entity. Using the object method, we can select the element explicitly.
+
+
+2) Returning with Objects
+Objects binds the data just like the arrays, but what makes them different is they can be accessed via properties. Another advantage in JavaScript can be when returning from functions using object is that we can return even functions as well which will become methods of the object. The objects can also contain composite data and can be used to return multiple elements from the function. Let's see the same example.
+
+
+
+// Function to return 2 consecutive numbers
+// n is the first number
+function consecutive(n) {
+	var numbers = {}; //Empty object declaration
+
+	numbers.first = n;
+	numbers.second = n+1;
+	numbers.third = n+2;
+
+	return numbers; //Returns numbers object
+}
+
+
+Now if we want to use this returned value from function, we can use it more properly. For example, threeNumbers.first is easy to understand which says first of the three numbers. While both of these methods work perfectly, it is recommended that we use objects to return data since it can be used for various other JavaScript concepts such as object chaining, which applies properties in a chain, one after if they return the element. -->

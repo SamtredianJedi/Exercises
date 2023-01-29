@@ -1,0 +1,58 @@
+<!-- How to make the font bold using JavaScript?
+
+The front-end JavaScript is fun as it deals with creativity along with programming the webpage and making it intractable. The text is a common element on a webpage and sometimes we need to use a bold font to differentiate it from the other content and
+make it easy for vision impaired people to read the text. This can all be done with a click of button and all the credit goes to the JavaScript that will run in the browser when the button will be clicked. Let's see how to do it, but first we need to
+start with the markup.
+
+<p id="content"> This is a sample paragraph </p>
+<button id="button"> Make Bold </button>
+
+
+<!-- It's a simple markup that will teach how it works at the 
+basic level. We have a paragraph that we want to target wi
+th id content and a button with id button to trigger the
+ change in font weight. Now time to sprinkle some JavaScript code. 
+
+ //Get the button element
+var btn = document.getElementById('button');
+
+//Get paragraph element
+var para = document.getElementById('content');
+
+//Define an click event listener on button
+btn.addEventListener('click', function() {
+	//Change the font weight style to 700
+	para.style.fontWeight = '700';
+});
+
+
+n this code, we first select the elements on the document using their id. The button element is stored in btn variable and paragraph is stored in para variable. Then we apply a click event listener using addEventListener method which on receiving the click event will call the callback function.
+
+In this function, we target the style property and inside it we use the fontWeight property and set the value to 700. Note that this value is string since it works only with string values. After adding this event listener, when the user clicks on the button, the content paragraph changes into bold text. 
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bold Text Demo</title>
+</head>
+<body>
+    <p id="content"> This is a sample paragraph </p>
+    <button id="button"> Make Bold </button>
+
+    <script>
+        //Get the button element
+        var btn = document.getElementById('button');
+
+        //Get paragraph element
+        var para = document.getElementById('content');
+
+        //Define an click event listener on button
+        btn.addEventListener('click', function() {
+        	//Change the font weight style to 700
+        	para.style.fontWeight = '700';
+        });
+    </script>
+</body>
+</html> -->
