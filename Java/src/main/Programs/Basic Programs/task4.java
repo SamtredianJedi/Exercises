@@ -1,5 +1,7 @@
 // How to Compare Two Objects in Java
 
+
+
 Java Object class is the super class of all the Java classes. All Java classes implements the Object class by default. The Java Object class provides the two important methods to compare two objects in Java, i.e. equals() and hashCode() method. In this section, we will learn how equals() and hashCode() method works. Along with this, we will also learn how to compare two objects in Java with proper examples.
 
 Java provides the two methods of the Object class to compare the objects are as follows:
