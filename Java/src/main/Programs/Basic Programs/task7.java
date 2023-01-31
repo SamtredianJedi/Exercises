@@ -1,5 +1,7 @@
 // How to Print ASCII Value in Java
 
+
+
 ASCII acronym for American Standard Code for Information Interchange. It is a 7-bit character set contains 128 (0 to 127) characters. It represents the numerical value of a character. For example, the ASCII value of A is 65.
 
 In this section, we will learn how to print ASCII value or code through a Java program.
