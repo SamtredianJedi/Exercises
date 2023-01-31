@@ -1,6 +1,8 @@
 // How to Generate Random Number in Java
 
 
+
+
 In Java programming, we often required to generate random numbers while we develop applications. Many applications have the feature to generate numbers randomly, such as to verify the user many applications use the OTP. The best example of random numbers is dice. Because when we throw it, we get a random number between 1 to 6.
 
 In this section, we will learn what is a random number and how to generate random numbers in Java.
