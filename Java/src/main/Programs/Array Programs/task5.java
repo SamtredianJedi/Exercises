@@ -1,5 +1,8 @@
 // Java Program to find Smallest Number in an Array
 
+
+
+
 We can find the smallest element or number in an array in java by sorting the array and returning the 1st element. Let's see the full example to find the smallest number in java array.
 
 public class SmallestInArrayExample{  
