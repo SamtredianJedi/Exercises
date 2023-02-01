@@ -1,0 +1,42 @@
+<!-- Ways to access object property in JavaScript
+
+Objects are the strong pillars of JavaScript. As a fact, everything in JavaScript is an object and they all have got properties and methods on them. The properties are simply the variables under the scope of that object and methods are the functions scoped under that object.
+
+The key are the names of the object's properties. A method is simply a property that can be called, for example if it has a reference to a Function instance as its value.
+
+We can access the object property and methods using two notations which are described below,
+
+Dot Notation
+Bracket Notation
+1. Dot notation - to access object property
+In this code, property must be a valid JavaScript identifier, i.e. a sequence of alphanumerical characters, also including the underscore (_) and dollar sign ($), that cannot start with a number.
+
+For example, object.someProperty1 is valid, while object.1someProperty is not.
+
+
+var foo = {
+    bar: 'Hello World'
+};
+
+foo.bar;
+
+
+Here, we can access the bar property of foo object by using dot in between them. This is the most preferred way to access the properties as it is brief and does the work very well. But there's another notation called, Bracket notation which is better if we want to dynamically access the property of an object.
+
+2. Bracket Notation - to access object property
+It can be a property name or an expression. The expression can evaluate as a string as well. The string does not have to be a valid identifier which means it can have any value, e.g. "1foo", "!bar!", or even " " (a space) as a way to dynamically access any property inside the object.
+
+
+
+var foo = {
+    bar: 'Hello World'
+};
+
+var output = 'bar';
+
+foo['bar']; //Hello World
+foo[output]; //Hello World
+
+
+
+This can come very handy when we want to access an object property dynamically, say from an input from the user. The bracket notation is generally used for this special purpose and is relatively more to write so developers prefer the first method. -->

@@ -1,0 +1,33 @@
+<!-- Get browser details through JavaScript
+
+The web is accessed through Browser. There are a number of browsers available online that has different features but at the core, provide us the medium to access Websites. Different browsers have different internal implementations and this information is accessible to the website through JavaScript.
+
+It can be used to get various information about user such as his language. The browser information can be used to provide access only to particular kind of browser. It can be accessed through the navigator object that contains all the details. In this article, we will create a program to get browser details through JavaScript.
+
+1) Browser Language
+The default language that user has set for the browser. It can be accessed via the navigator.language object property. Here's an example.
+
+
+var language = navigator.language;
+console.log('Your default language is ' + language);
+
+//Output: Your default language is en-US
+
+
+
+2) Browser Name
+The browser name can be accessed by navigator.userAgent object property. But here's a catch, most of the browsers use the same userAgent name as they have same implementations at the core level. It primarily consists of Mozilla, Safari and Chrome.
+
+var browser = navigator.userAgent;
+console.log('Your browser is ' + browser);
+
+
+3) Is Java Enabled?
+We can also check using JavaScript that if Java is enabled in browser by the navigator.javaEnabled() object method which returns true is Java is enabled in the browser.
+
+var java = navigator.javaEnabled();
+if(java) {
+	console.log('Java is enabled');
+} else {
+	console.log('Java is not enabled');
+} -->

@@ -1,0 +1,37 @@
+<!-- How to copy text to clipboard with JavaScript?
+
+JavaScript was built to provide interaction and accessibility to web pages. Whether it is zooming a text or animations on mouse hover, JavaScript does it work perfectly. Copying content text is one of the relatively new accessibility that many modern websites offer. In this article, we will learn how to copy text to clipboard with JavaScript and help your visitors save time by selecting text, right clicking and selecting copy option or hitting Ctrl + C every time.
+
+We need to define the markup from which the JavaScript will take text input. It can be anything, paragraph or list, but in this example, we will use textarea content.
+
+
+
+<button class="js-textareacopybtn">Copy Text</button>
+<textarea class="js-copytextarea">Include Help copying text content example</textarea>
+
+
+
+
+var copyTextareaBtn = document.querySelector('.js-textareacopybtn');
+
+copyTextareaBtn.addEventListener('click', function(event) {
+  var copyTextarea = document.querySelector('.js-copytextarea');
+  copyTextarea.select();
+
+  try {
+    var successful = document.execCommand('copy');
+    var msg = successful ? 'successful' : 'unsuccessful';
+    console.log('Copying text command was ' + msg);
+  } catch (err) {
+    console.log('Oops, unable to copy');
+  }
+});
+
+
+
+In this code, we define the copyTextareaBtn which contains the button element and we add an event listener to it which will have an event passed as parameter in callback. We first get the copyTextarea variable as text area element whose text will be copied. To copy the text, we first need to select it and we do it using the select() method on element which selects the content.
+
+Then we do a try-catch to make sure that the system and browser supports content copying. We call the execCommand('copy') which will copy the text and return the status. Then we need to show a message to user which will be based on the value returned by copy command. If it was true, then display message that the copying text command was successful otherwise, catch the error and display, unsuccessful message.
+
+This is how we can implement the copy functionality and provide a better user experience for our visitors saving their mouse clicks and keystrokes. Hope you like the article; share your thoughts in the comments below.
+ -->

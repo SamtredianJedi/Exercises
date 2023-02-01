@@ -1,0 +1,27 @@
+<!-- Calculate the average of arguments in JavaScript
+
+Functions provide modularity to the program and they are an important part of JavaScript. Functions expect arguments on basis of which they can perform the operation. However they are optional and even if the number of arguments doesn't match in the function call and function definition, JavaScript allows it. It has a special variable called arguments variable which keeps the list of arguments passed to the function.
+
+Using the arguments property, we will write a program to calculate the average of arguments in JavaScript.
+
+function average() {
+    var length = arguments.length;
+    var sum = 0;
+    
+    for(var i=0; i<length; i++) {
+      sum = sum + arguments[i];
+    }
+    
+    return sum/length;
+  }
+  
+  console.log(average(1,2,3,4,5));
+
+  
+  In this program, we have a function average() that takes no parameter. In JavaScript, if we pass more parameters to function than it expects, the extra parameters are ignored but it doesn't cause any error. Although the function silently executes but it knows the number of arguments passed it to it via the arguments variable available inside all function.
+
+It contains all the arguments as an array. Inside the function, we take the length of this array and a sum to count the sum, later used to average. Then we loop over each element of the arguments array and add it to sum. Finally we return the `sum/length` which means the total sum divided by the number of elements, the basic average formula.
+
+In the end, we print the result on the console by passing values to the average() function.
+
+If you like the article, please share your thoughts in the comments below. -->

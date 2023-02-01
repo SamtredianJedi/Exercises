@@ -1,0 +1,41 @@
+<!-- How to get days of current month in JavaScript?
+
+JavaScript has a good support when it comes to date. It has lots of built in methods and properties to perform operations on date and using them we will write a program to get the days of current month in JavaScript.
+
+First, we will get the today's date and then print the number of days that are in the current month. Following is the code for the program.
+
+
+var today = new Date(); // 2017-11-04
+
+var currentMonth = today.getMonth();
+
+switch(currentMonth) {
+  case 1: checkLeap(); break;
+  case 0:
+  case 2:
+  case 4:
+  case 6:
+  case 7:
+  case 9:
+  case 11: console.log('31 Days');
+           break;
+  case 3:
+  case 5:
+  case 8:
+  case 10: console.log('30 Days');
+          break;
+}
+
+function checkLeap() {
+  if((today.getYear())%4 === 0 )
+    console.log('29 Days');
+  else
+    console.log('28 Days');
+}
+
+
+First we store the today's date in today using the Date constructor. With the help of built in date method, getMonth() we get the current month and this value is then switched using the switch case. Note that getMonth() returns the month value starting from 0 index, which means Janauary is 0 and December is 11.
+
+In the switch statement, we check if case the month is February. We call the checkLeap() function to test whether the year is leap year or not to determine the days in February. The getYear() method just like the month method, returns the year and we check if it is divisible by 4. If so, then February has 29 days otherwise 28 days. For the other months having 31 days, we stack the switch cases for 31 days month and 30 days month. We use the break statement in order to prevent the switch case below it to execute.
+
+This is how we get the number of days in the current month? If you like the article, please share your thoughts in the comments below. -->
