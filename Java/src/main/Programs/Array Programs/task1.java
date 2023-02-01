@@ -1,5 +1,7 @@
 // How to Sort an Array in Java
 
+
+
 The sorting is a way to arrange elements of a list or array in a certain order. The order may be in ascending or descending order. The numerical and lexicographical (alphabetical) order is a widely used order.
 
 In this section, we will learn how to sort array in Java in ascending and descending order using the sort() method and without using the sort() method. Along with this, we will also learn how to sort subarray in Java.
