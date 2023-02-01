@@ -1,5 +1,7 @@
 // Java Program to find Second Largest Number in an Array
 
+
+
 We can find the second largest number in an array in java by sorting the array and returning the 2nd largest number. Let's see the full example to find the second largest number in java array.
 
 public class SecondLargestInArrayExample{  
