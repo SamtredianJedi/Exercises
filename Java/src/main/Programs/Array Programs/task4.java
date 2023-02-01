@@ -1,5 +1,7 @@
 // Java Program to find Second Smallest Number in an Array
 
+
+
 We can find the second smallest number in an array in java by sorting the array and returning the 2nd element. Let's see the full example to find the second smallest number in java array.
 
 public class SecondSmallestInArrayExample{  
