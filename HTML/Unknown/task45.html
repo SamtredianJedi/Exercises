@@ -1,0 +1,37 @@
+<!-- Create a student object and print the details in JavaScript
+
+
+Objects are the core of JavaScript and having the concepts of Objects and functions should be clear to every JavaScript developer out there. In this article, we will create a student object and print the details.
+
+
+function Student(n, a, m) {
+    var name = n;
+    var age = a;
+    var marks = m;
+    
+    var averageMarks = function() {
+      var sum = 0;
+      marks.forEach(function(m){
+        sum += m;
+      });
+      return sum/marks.length;    
+    }
+    this.printDetails = function() {
+      console.log('Name: ' + name + ' Age: ' + age + ' Average Marks: ' + averageMarks());
+    }
+  }
+  
+  var student1 = new Student('Abhinav', 21, [70, 92, 84]);
+  student1.printDetails();
+
+  
+
+  In this code, we create a student function that will be used as a constructor. Using the new operator we can make an object using this function. Also read, different ways to (create Object in JavaScript)[]
+
+In the function, we have three variables, name, age and marks that will take values when object is defined outside the function. We simply assign these variables the values coming from parameters. The data types will be string, number and array for them respectively.
+
+After that, we have a function averageMarks that calculate the average of marks array. We use the forEach() method to store the sum of each element in array and return the average by dividing the whole sum by number of elements, which is done using marks.length.
+
+Next, the printDetails function is bind with this to call the function from the object. Inside this function we simply print the values of name, age and for average marks we call averageMarks() array that will return the average marks.
+
+Outside the function, we create an object using the Student constructor and call the printDetails() method on it and we get the result on our console. Also read, how to (create Object using function in JavaScript). -->

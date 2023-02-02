@@ -1,0 +1,56 @@
+<!-- How to allow only alphabets in input field in JavaScript?
+
+
+Many times we require input from user, for example in filling profile information or reserving tickets but generally the data is not filtered. Sometimes we want the data to be in specific format, like for name which should be in alphabets only.
+
+To deal such type of situations, JavaScript provides us the ability to handle the situation. Using the JavaScript events that contains the data such as mouse movement, or characters input from keyboard. In this article, we will learn how to allow only alphabets in input field in JavaScript?
+
+Here is the simple HTML code that lays us the markup of the webpage,
+
+
+
+<form action="/data.php" method="get">
+	<input type="text" name="fullName">
+	<input type="submit" value="submit">  
+</form>
+
+
+
+In this HTML document, we create a form element that sends the data to backend through get method. Inside this form, we have 2 elements, one for Input and another one to submit the data. These are the basic markup. To make it work, we have to apply inline JavaScript that will check while typing.
+
+The onkeypress attribute is a JavaScript event attribute that executes the following peice of code whenever a user press key from his keyboard. Inside this function, we check if the character code of the input character lies between the standard ASCII character codes for alphabets.
+
+For reference, the capital A-Z start from 65 and ends at 90 and small a-z starts from 97 and ends at 122. Here is the code for allowing only alphabets on key press.
+
+
+
+<input type="text" name="fullName" onkeypress="return (event.charCode > 64 && 
+event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" >
+
+
+
+
+Here we simply check, using the charCode property which returns the ASCII code of the input character. If it lies between capital range and small range, the function will return true and character will be allowed otherwise not. The event object is the key press event which contains the character entered from keyboard.
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Javascript Demo</title>
+</head>
+<body>
+
+  <form action="/data.php" method="get">
+    <input type="text" name="fullName" onkeypress="return (event.charCode > 64 && 
+	event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" 
+	placeholder="Full Name">
+    <input type="submit">  
+  </form>
+  
+</body>
+</html>
+
+ -->

@@ -1,0 +1,67 @@
+<!-- Create forward and back buttons in JavaScript
+
+Navigation is an important part of a website. A website with easy navigation helps to improve user experience and visitors feel comfortable. In this article we will learn how to create a forward and back buttons in JavaScript?
+
+Navigation is an important part of a website. A website with easy navigation helps to improve user experience and visitors feel comfortable. Navigation not only includes menu links and footer navigation, but also forward and backward navigation while browsing the website also matters.
+
+In this article, we will create a forward and a back button in JavaScript. Notice they have the same functionality as the back and forward buttons in the browser. They might be useful when someone is viewing your website in full screen mode and can easily navigate forward and backward WebPages.
+
+Let's define HTML first. We will create two buttons, one for forward and another for backward.
+
+
+
+<button id="back" onclick="goBack()">BACK</button>
+<button id="forward" onclick="goForward()">FORWARD</button>
+
+
+
+Then we apply onclick paramters which will execute the mentioned functions when these buttons are clicked. The goBack() and goForward() functions are defined below.
+
+
+
+function goBack() {
+	window.history.back();
+	console.log('We are in previous page');
+}
+
+function goForward() {
+	window.history.back();
+	console.log('We are in next page');
+}
+
+
+
+
+In these functions, we have a global window object which has the history object in it. The history object is used to navigate using the two functions back() to go backward and forward() to go forward. If there are no forward or backward ways to go, this function won't work.
+
+Then we print the message on console to let users know that they have switched page.
+
+Here is a demo of the following program.
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Javascript back demo</title>
+	</head>
+	<body>
+		<h1>PAGE 1</h1>
+		<p>Go to <a href="javascript-back-demo-two.html">Next Page</a></p>
+		<button id="back" onclick="goBack()">BACK</button>
+		<button id="forward" onclick="goForward()">FORWARD</button>
+		<script id="jsbin-javascript">
+			function goBack() {
+				window.history.back();
+				console.log('We are in previous page');
+			}
+
+			function goForward() {
+				window.history.back();
+				console.log('We are in next page');
+			}
+		</script>
+	</body>
+</html>
+
+ -->

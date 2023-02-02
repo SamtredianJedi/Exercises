@@ -1,0 +1,18 @@
+<!-- How to get the decimal part of a floating number in JavaScript?
+
+Floating values are part of number system in programming languages. As the computation is handled by machine, so the precision is increased and can produce reliable results. In this article we will see how to get the decimal part of the floating number in JavaScript?
+
+Subtracting two floating values is not as simple as subtracting two numbers. When it comes to floating values, the JavaScript can handle precision upto 16 decimal units. The smallest number in JavaScript is 5e-324. It is like the smallest block that adds up to make numbers and therefore, we can't reach a perfect floating result when performing floating operations. Keeping this in mind, we will see how to get the decimal part of the floating number.
+
+
+function getDecimal(n) {
+	return (n - Math.floor(n));
+}
+
+console.log(5.224);
+//Output: 0.2240000000000002
+
+
+In this code, we are creating a function that will accept the floating number from the argument 'n' and use this value in the function. Now, to return just the decimal part we have to subtract the number counterpart before decimal point from the number. This will return the values right to the decimal point. Finally we console log the output.
+
+Note that the value returned is not exact, and approximate upto 16 decimal places. Since the smallest value in JavaScript is close to zero, but still large in very minute scale, therefore it will not result in exact precision. That is why we get the strange result which is close to actual result or approximate but not accurate. -->

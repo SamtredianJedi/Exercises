@@ -1,0 +1,38 @@
+<!-- How to parse number from string in JavaScript?
+
+
+In JavaScript, most the data is handled in the form of Strings. Taking input from user and appending the output in DOM, is all done in String data type. Let's suppose we take input from user and we require a number input, but the input will be in form of string, hence we need to parse a number from this string. This article will teach you how to do this in JavaScript.
+
+Let us assume that we take input from prompt() function. We can also use input fields, but using prompt function it is easy to show the core functioning of the string parsing.
+
+var input = prompt('Enter a number');
+Now, we get a string with a number in it. Using the Number() constructor function which is also used to create new numbers, we can do a explicit type conversion here to convert this string into Number.
+
+ar input = prompt('Enter a number');
+var number = Number(input);
+Now, we get a number with us that were actually a string when user input it. But note that this works only when the entire string contains nothing other than digits. If it contains, suppose any character, it will return NaN value. The NaN value stands for not a number which can't be used for mathematical operations.
+
+But, JavaScript has another method for it, known as parseInt() and parseFloat() respectively to parse integer and float values from the string. The numbers should be present at the beginning of the string and before any other character. These functions return numbers parsed till either the string ends or encounters first character. Let's see parseInt and parseFloat in action.
+
+We have the same, prompt code, that will store the input string, var input = prompt('Enter a number')
+
+Now, we will use different functions to show the returned values from these functions.
+
+
+
+
+// Input: 30abc
+console.log(parseInt(input)); // Output: 30
+
+// Input: 30a500
+console.log(parseInt(input)); // Output: 30
+
+// Input: 30.05abc
+console.log(parseInt(input)); // Output: 30
+
+// Input: 30.05abc
+console.log(parseFloat(input)); // Output: 30.05
+
+
+
+This is how we can parse numbers, integers and floating values from the strings -->

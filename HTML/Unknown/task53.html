@@ -1,0 +1,48 @@
+<!-- Get current date, month and year in JavaScript
+
+Many of the websites rely on Date and Time for providing interaction, such as event based websites. The client side scripting language JavaScript handles it very well through the built in Date object and the methods associated with it. In this article, we will learn how to get today's date, current month and current year in JavaScript?
+
+First, we will create a date object that will be the current Date-Time object. Using the Date() constructor we can create a date object. In the following code, we define a date variable today using the new operator which will create a date object of today's date and store in today variable.
+
+var today = new Date();
+//Today's Date: 27-10-2017
+
+
+
+Now, we will use the Date object methods available to get the current Date, current month and current year. JavaScript provides with three different methods for each of them and here's how they are used.
+
+1) Current Date
+
+To get the current date, use the getDate() method. This method returns the today's date and it does not expect any argument. Here is an example,
+
+
+var today = new Date();
+var date = today.getDate(); // Returns 27
+console.log(date); // Output: 27
+
+
+
+2) Current Month
+
+To get the current month, use the getMonth() method. This method returns the current month and it does not expect any argument. Note that, it returns value ranging from 0 to 11 for 12 months. This means January is 0 and December is 11. Here is an example,
+
+
+
+var today = new Date();
+var month = today.getMonth(); // Returns 9
+console.log(month); // Output: 9
+
+
+
+3) Current Year
+
+To get the current year, use the getFullYear() method. This method returns the current year and like the getDate and getMonth, it does not expect any argument. Here is an example,
+
+
+var today = new Date();
+var year = today.getFullYear(); // Returns 2017
+console.log(year); // Output: 2017
+
+
+
+How easily we can get the today's date parameters with in-built JavaScript Date methods. -->

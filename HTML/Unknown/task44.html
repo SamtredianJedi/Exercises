@@ -1,0 +1,35 @@
+<!-- Creating a property on prototype in JavaScript
+
+It is a common misunderstanding that JavaScript isn’t object-oriented. It is indeed true that until recently JavaScript has not had the class keyword. But functions in JavaScript are more powerful than they are in many other languages and can be used to mimic traditional object oriented languages features.
+
+What is Prototype?
+Every object in JavaScript has an internal link to another object called the prototype. When we read a property on an object (for example, foo.bar reads the property bar from foo), JavaScript checks that this property exists on foo. If not, JavaScript checks if the property exists on foo.__proto__ and so on till __proto__ itself is not present. If a value is found at any level, it is returned. Otherwise, JavaScript returns undefined.
+
+
+var student = {
+	name: 'John'
+}; //A student object
+
+console.log(student.name); // John
+console.log(student.age); // undefined
+
+
+
+As it clear from the example, the student object has a name property that will return its value when it is referred. But when we print the student.age, we get undefined because that property is not present in the object. The JavaScript checks if the property exists on student.__proto__ and so on till __proto__ itself is not present.
+
+Since this value is not present at any level, hence it will return undefined. But let's say, we define the following way.
+
+var student = {
+	name: 'John'
+}; //A student object
+
+student.__proto__.age = 32;
+
+console.log(student.name); // John
+console.log(student.age); // 32
+
+
+As we can see, we have not directly defined the property age in student object, but instead in prototype, we will be able to get the value using the prototype. Since it checks up one level and found it in prototype so, it used it.
+
+The prototype is very useful and mostly we don't notice it. That is why we are able to use toString() method on any user created object. It is not defined in the object itself, but in the prototype of the Object() constructor and hence we can use the method without any problem.
+ -->

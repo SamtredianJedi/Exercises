@@ -1,0 +1,34 @@
+<!-- Get the size of a file with JavaScript
+
+Forms extend the usability of the web. Through forms we can do lots of things such as book tickets, send information etc. We can also upload out files on the server using the HTML forms. But as a developer, you might want to put restrictions on the file size to avoid overloading your servers with big files. JavaScript can help you out easily.
+
+In this example, we will write a code to upload a file to server. When the user uploads the file, we will print the size of the file in the console. Following is the program for it.
+
+<form method="get" action="/data.php">
+	<input type="file" name="file">
+	<input type="submit" value="Upload">
+</form>
+
+
+In this HTML code, we define a form element with 2 inputs on it. One is the file input which will allow the user to upload file. It has an id of file. The other element is the submit button, that submits the form to server. Next, we add some JavaScript code it.
+
+//Get the file input element by its id 
+var file = document.getElementById('file');
+
+//Add a change listener to it.
+file.addEventListener('change', function() {
+  var size = file.files[0].size/1024; //To convert in KB
+  
+  //Print the final size in KB
+  console.log(size + 'KB');
+});
+
+
+
+
+In this code, we first define the variable file that has the file input element. Next, we add an event listener to it which will listen for any change in it. We generally use change event for file, since whenever user selects to upload a new file, the state of element changes and JavaScript catches it.
+
+Inside the callback function, we have a size variable that will hold the size of file. We get the files from file input using the files array. The file.files[0] means get the first file from files array of the input. Next we have `size` property for each file and we use it to get the size. We divide the size by 1024 in order to convert it into KiloByte, since by default it is in bytes.
+
+Finally, we print the output to the console and user will be shown the file size of his uploaded file.
+ -->

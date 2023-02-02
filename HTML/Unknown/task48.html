@@ -1,0 +1,54 @@
+<!-- Different ways to create an Object in JavaScript
+
+Objects are the core of the JavaScript. Everything in JavaScript is based on the objects. Strings, Arrays and even functions are objects in JavaScript. JavaScript is the object based language and follows some OOPs features. In this article we will learn different ways to create an object in JavaScript.
+
+An object is a group of data that is stored as a series of name-value pairs encapsulated in one entity. Each item in the list is called a property and the functions are called methods. But to use the objects, we have to create them and in JavaScript, we get different types of ways to do it.
+
+1. Using Object Literal
+The most common way of Object declaration is using the Object literal. It is directly creating the object in a variable by defining properties and methods to it. It is the recommended method as it is brief and works very well. Here is an example.
+
+var car = {
+	type: "sedan",
+	doors: 4,
+	enterCar: function() {	
+			console.log("Inside Car"); 
+		  }
+}
+
+
+
+2. Using Object Constructor
+Using the Object constructor function Object() we can create an object using new keyword. The Object definition can be passed as an argument to object constructor. Here's an example.
+
+
+
+var car = new Object({
+	type: "sedan",
+	doors: 4,
+	enterCar: function() {	
+			console.log("Inside Car"); 
+		  }
+});
+
+
+
+
+The Object constructor works in similar way, expect that everything is passed as a parameter.
+
+3. Using function constructor
+If you want to create custom objects than this is the method you require. Here you define the properties of the object inside the function and then create a new object based on it. The example will make more sense.
+
+
+
+var car = function(t, d) {
+	this.type = t;
+	this.doors = d;
+	this.enterCar = function() {
+		console.log("Inside Car"); 
+	}
+};
+
+//Creating an object of this function
+var audi = new car('sedan', 2);
+
+ -->

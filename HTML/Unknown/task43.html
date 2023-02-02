@@ -1,0 +1,29 @@
+<!-- Count occurrence of a particular character in a string in JavaScript
+
+
+Strings in JavaScript are very popular data type. It is used for input/output data to the user. Today, in this article, we will write a program to count occurrence of a particular character in a string in JavaScript and get to know how we can access each element in a string and compare it with the particular character.
+
+
+var string = "I am amazing";
+
+function countOccurrence (char) {
+  var count = 0;
+  for(var i=0; i<string.length; i++) {
+  	if(string[i] === char) {
+    	count++;
+    }
+  }
+  return count;
+}
+
+console.log(countOccurrence ('a'));
+console.log(countOccurrence ('n'));
+
+
+Let's break down this code. First we define a string variable which contains a string that will be used for this operation. Next we define a function named countOccurrence which expects a parameter. This parameter is character which will be compared with every element of the string.
+
+Inside this function, we define a count variable which will store the count of the number of occurrence of the element. We reset this to 0, as by default the starting count should be 0, if the character is not found even once, we will return 0. Next, we run a for loop until the length of the string and inside it check if the ith character, using string[i] matches with the argument specified. If it is true, simply increment the count using count++.
+
+At the end, we return the count variable. Then we call the function inside console.log() to directly print the value to the console.
+
+ -->
