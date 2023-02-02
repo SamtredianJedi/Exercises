@@ -1,0 +1,40 @@
+<!-- How to find absolute value of a number in JavaScript
+
+Working with Mathematics in JavaScript in a lot of fun because of the methods that this language provides. JavaScript has wide range of methods available for almost all sort of Mathematic operations, ranging from power functions to trigonometric and logarithmic functions.
+
+One such method that JavaScript provides is to find the absolute value of a number. The absolute value of a number is a scalar quantity that represents only the value, not the direction. Direction here means, negative and positive. Suppose, the absolute value of 3 is 3, which is same as absolute value of -3.
+
+We have the Math.abs() function which returns the absolute value of the number passed to it. This abs() method is the function inside the Math object which is an inbuilt object that JavaScript provides for Mathematical operations. Here is an example,
+
+
+
+var n1 = 10;
+var n2 = -10;
+
+var abs_n1 = Math.abs(n1);
+var abs_n2 = Math.abs(n2);
+
+console.log(abs_n1); // 10
+console.log(abs_n2); // 10
+
+
+
+As we can see, we have only the value of the number 10, which is same for both -10 and +10. This was done through the JavaScript inbuilt methods. Let us create and define our own absolute function in JavaScript.
+
+
+
+function absolute(n) {
+	if(n>=0)
+		return n;
+	else
+		return n * (-1);
+}
+
+console.log(absolute(-20)); // 20
+console.log(absolute(20)); // 20
+
+
+
+
+In this function, we check if number is greater than equal to 0. If so, we can simply return this value as it itself denotes the scalar value. Else if the number is negative, we multiply it by -1 to change its sign.
+ -->
