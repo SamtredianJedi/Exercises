@@ -1,0 +1,33 @@
+<!-- Count the number of arguments passed to function in JavaScript
+
+Functions provides modularity in every programming language, be it JavaScript or traditional languages like C/Java. Functions have a body, a return type and number of arguments that define a function. The arguments are the data passed to function when they are called.
+
+In JavaScript, unlike C, it is not an error to pass more or less arguments to the function. Consider this example,
+
+
+
+function myFunc(n) {
+	return n+10;
+}
+
+myFunc(10); // 20
+myFunc(); // undefined
+myFunc(50,20); // 60
+
+
+If we pass less number of arguments, the latter arguments are given undefined value and if more arguments are passed, they are simply ignored. Keeping this is mind, we can however, get to know how many arguments were passed to the function.
+
+JavaScript has a special "arguments" variable which keeps the record of how many arguments have been passed to the function. It is an array that holds all the arguments passed to the function. Using this, we can get how many arguments were passed to the function.
+
+
+function ArgCounter() {
+	return arguments.length;
+}
+
+ArgCounter(10); //1
+ArgCounter(); //0
+ArgCounter(10,20,30,40,50); //5
+
+
+The ArgCounter function doesn't expect the parameters. The arguments variable works on how many data items are passed when function is called, and not in function definition. The arguments.length property returns the length of the data items passed to the function.
+ -->

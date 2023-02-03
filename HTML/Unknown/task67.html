@@ -1,0 +1,63 @@
+<!-- Addition of two numbers using JavaScript
+
+Here, we are taking input from HTML form (using input tags) and printing the sum (addition) on the HTML by calculating it through JavaScript.
+
+The JavaScript code will be called on button submit event, when we will click on the button (which is placed on the HTML file).
+
+
+value1 = <input type="text" id="value1" name="value1" value=""/>
+value2 = <input type="text" id="value2" name="value2" value=""/>
+
+
+
+There are two ids value1 and value2 which are going to be used in the JavaScript, JavaScript function will get the values from these input tags by using given ids (value1 and value2).
+
+
+<script language="javascript">
+	function addNumbers()
+	{
+		var val1 = parseInt(document.getElementById("value1").value);
+		var val2 = parseInt(document.getElementById("value2").value);
+		var ansD = document.getElementById("answer");
+		ansD.value = val1 + val2;
+	}
+</script>
+
+
+
+
+Note: JavaScript code is written within in the <script> ... </script> tag.
+
+Here, we are defining a function addNumbers() which is getting the value of first input using parseInt(document.getElementById("value1").value); and second input using parseInt(document.getElementById("value2").value); values are getting stored in variables val1 and val2.
+
+Variable ansD is getting initialized with the element having id answer, which is the id of third input box where we are going to be display the result.
+
+Finally, we are assigning the sum (addition) of val1 and val2, which will display within the third input box.
+
+
+
+
+
+
+<html>
+  <head>
+        <title>Add program</title>
+        <script language="javascript">
+                function addNumbers()
+                {
+                        var val1 = parseInt(document.getElementById("value1").value);
+                        var val2 = parseInt(document.getElementById("value2").value);
+                        var ansD = document.getElementById("answer");
+                        ansD.value = val1 + val2;
+                }
+        </script>
+  </head>
+  <body>
+        value1 = <input type="text" id="value1" name="value1" value=""/>
+        value2 = <input type="text" id="value2" name="value2" value=""/>
+        <input type="button" name="Sumbit" value="Click here" onclick="javascript:addNumbers()"/>
+        Answer = <input type="text" id="answer" name="answer" value=""/>
+  </body>
+</html>
+
+ -->

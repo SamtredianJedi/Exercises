@@ -1,0 +1,38 @@
+<!-- Find substring within a string in JavaScript
+
+String is a common data type in JavaScript. User Input and most of the output is done in String format. A substring represents a part of the string and in this article is going to look at different ways to find substring within a string function in JavaScript.
+
+Suppose the string is, "Hello World" then, "hell" and "or" are the substring of this string. We will be using built in methods of JavaScript to find the substring.
+
+1) Using indexOf
+The indexOf returns the index of a character or string if it present in the original string, otherwise it returns "-1". It is fast and effective way to find a substring inside a string. Consider this code,
+
+
+var string = "hello world",
+    substring = "hell";
+if(string.indexOf(substring) !== -1)
+	console.log('String Found');
+else
+	console.log('Not Found');
+
+
+
+    In this code, we are using two variables, one for string and other for substring and then in the of condition checking that if substring has an index in the original string. If it doesn't it returns -1 and therefore the condition becomes false otherwise it will print that substring found.
+
+2) Using Regular Expression
+Regular expressions are the format that is used to match with the data. Using, test() function, we can test if the substring is present in the string or not. But first we have to define what our regxp is.
+
+
+
+var string = "hello world",
+    expr = /hell/; //Regular expression
+if(expr.test(string)) {
+	console.log('Found');
+} else {
+	console.log('Not Found');
+}
+
+
+
+
+he expr is the regular expression and we test the string against it. If it matches, it returns true and therefore we print String found, otherwise, String not found. -->

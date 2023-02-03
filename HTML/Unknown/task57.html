@@ -1,0 +1,63 @@
+<!-- How to return object from function in JavaScript
+
+
+In JavaScript, everything is object based. Even the functions and arrays, are at the core, objects in JavaScript. The objects in JavaScript are its pillars and the compelling reason why JavaScript is known as object-based language. Since, we are familiar with functions and their return types, in this article we will learn how to return object from the function in JavaScript.
+
+The return statement in function returns a value specified by the programmer. In JavaScript, a function can return nothing, by just using empty return statement. But without using even the statement, the function returns undefined. Because function call expects a return value and if nothing is returned, it will be assumed as undefined. Here is a small example to show all the three types of return statements.
+
+
+
+function myFun1() {
+	// Do something
+	return 1;
+}
+
+function myFun2() {
+	// Do something
+	return;
+}
+
+function myFun3() {
+	// Do something
+}
+
+console.log(myFun1); //Output: 1
+console.log(myFun2); // No Output
+console.log(myFun3); // Output: undefined.
+
+
+
+
+Returning a string or number is quite straightforward in JavaScript. Even returning arrays is quite easy; just return the array by its name. But with objects, it is different. It is not complex, but tricky to understand. And once the function returns, how to use the value returned further in program. We will discuss it using a program.
+
+
+
+
+function Human(n, a, w) {
+	var name = n;
+	var age = a;
+	var weight = w;
+
+	//Do something
+
+	return {
+		_name: name,
+		_age: age,
+		_weight: weight
+	}
+};
+
+var someone = Human('John', 24, 56);
+
+console.log(someone._name); // John
+console.log(someone._age); // 24
+console.log(someone._weight); // 56
+
+
+
+
+
+In this code, we have human function which has 3 parameters, name, age and weight, which will be passed when this function will be called. Inside this function we are simply setting the values from parameters that are going to be returned back to function call. In the return statement, we return an object literal which has 3 properties, denoting name, age and weight. The '_' underscores are used to differentiate the name with the variable names used in the function.
+
+Then we create a variable, which will be object because it will contain what the function will return and in our case, it returns object. Now we can access the properties of this object using dot notation and console out its values.
+ -->

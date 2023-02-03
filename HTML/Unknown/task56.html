@@ -1,0 +1,38 @@
+<!-- Create functions with default arguments in JavaScript
+
+Functions make programming modular by keeping a block of code reusable. Functions are helpful in not just JavaScript, but other traditional languages as well. In JavaScript, functions have 2 important things, function name and parameters or arguments.
+
+The arguments are the variables that are local to function and take values from the parameters passed during function call. In JavaScript, it is not important to declare and define function before calling, like in some traditional languages. The number of parameters during the function call can be of any numbers. For example, if function expects 2 arguments and we supply more or less arguments, JavaScript won't complain.
+
+
+
+function myFunc(a, b) {
+	return a+b;
+}
+
+myFunc(10, 20) // 30
+myFunc(10, 20, 30) //30
+myFunc(10) // Undefined
+
+
+When more parameters are passed to function, it simply ignores the extra arguments. It doesn't affect the JavaScript program anyway. But if we supply less parameter, then the arguments that have no values are given value undefined. This may affect the program and might not produce correct output.
+
+To handle this situation, JavaScript provides a concept of default arguments. If less number of parameters is passed during function call, they will be assigned with the default value. The default parameters are assigned using the following syntax in function definition.
+
+
+
+function myFunc2(a=0, b=0) {
+	return a+b;
+}
+
+
+
+Now, even if the function is not provided with any parameters, it will process the result with default arguments value and return the value. Now, if we call this function, we will get
+
+
+myFunc2(10, 20) // Return: 30
+myFunc2(10, 20, 30) // Return: 30
+myFunc2(10) // Return: 10
+myFunc2(); // Return: 0
+
+ -->

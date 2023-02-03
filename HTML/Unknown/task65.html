@@ -1,0 +1,31 @@
+<!-- Check if number is a valid number in JavaScript
+
+
+Numbers are building blocks of any machine. They are the one of the basic units that languages operate with and manipulate numbers and data to produce output. While working with numbers in JavaScript, it is quite likely that you have come through a situation where a number is not actually a number and we are performing operations on it.
+
+Consider this situation,
+
+
+var input = prompt('Enter a number');
+var output = (0 / input) + 10;
+
+
+In this code, suppose the user enters 0 in the input. And the output variable will evaluate the expression and store it in output variable. In this situation, 0/0 is not defined and performing addition with it might not produce correct output.
+
+But, JavaScript's isNaN() function is there to save you from these situations. JavaScript has a special data type called, NaN, which simply means Not a number. It is used to represent data that is not a number. Such as square root of -1, 0/0 etc. And to check those NaN values, the isNaN() function expects the data as parameter and returns true if it is Not a Number.
+
+
+Here, is same program with isNaN() function,
+
+
+
+var input = prompt('Enter a number');
+var output = 0 / input;
+
+if(isNaN(output))
+	console.log('You entered a wrong number');
+else
+	output = output + 10;
+
+
+    This will store the 0/input in output variable and then check with if condition that the output is not a number. If the operation on output is not a valid number, then isNaN() will return true. Otherwise continue the output operation. -->

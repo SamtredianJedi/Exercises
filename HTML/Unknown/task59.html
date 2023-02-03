@@ -1,0 +1,35 @@
+<!-- 
+
+Print a fibonacci series in JavaScript 
+
+
+The fibonacci series is one of the famous series that is also asked in many interviews as a coding question. The famous series has a recursive addition operation and each number in the series is the sum of the previous number and number before previous number.
+
+Here is an example,
+
+
+0 1 1 2 3 5 8 13 21 ...
+Let's have a look at the JavaScript code; we will be building a recursive function that will return a string.
+
+
+
+var output = "0 1";
+var n = 10, f=0, s=1, sum=0;
+
+for(var i=2; i<=n; i++) {
+  sum = f + s;
+  output += ' ' + sum;
+  f = s;
+  s = sum;
+}
+
+console.log(output);
+
+
+
+
+Let's break down this code. Here we are taking the output string to store the result and later display the series. Next we have n which store the number of elements to print in the series. Next, we define three variables, first, second, sum. The first and second will be used in loop to store values and sum for storing the sum in output string. Then we have a for loop.
+
+In this for loop we start traversing the loop with i=2 upto n. Notice that we have already filled the output with initial first and second values; this is why we traverse 2 elements less. First, we calculate the sum of first and second elements, and store it in output string with a space preceding it to output in clean series form.
+
+Then, we simply assign the value of second in first and give the second value the value of temporary sum. Finally, after the loop, we print the output in the console and a fibonacci series will be waiting for us in the console. -->-->

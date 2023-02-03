@@ -1,0 +1,55 @@
+<!-- Find the larger of two numbers in JavaScript
+
+
+
+In this article, we will learn how to find a larger number of two numbers (also from user input) in JavaScript? JavaScript is built to provide interaction on web pages but it can be used for various other computations that might be required for web applications. We will create a function to return the larger of two numbers when given numbers as parameters to them.
+
+The basic logic behind this program is that we check if one is greater than other, than simply return the first one otherwise, of course another number will be greater. We will be creating two versions, one with given numbers and another with user input from prompt() function to return the largest of the two to the user. However, the concept of the function will be same. So let's begin by writing with the function definition first so that we can call it later.
+
+
+
+function largest(a, b) {
+	if(a > b)
+		return a;
+	else if(a === b)
+		return 0;
+	else
+		return b;
+}
+
+
+
+
+As told above, inside the function with two parameters a and b we are comparing in the if condition if a is greater than b. If this condition holds true, then return the first element, a here. Then we check for else if, both the elements are equal, then return 0, since none of them is largest and our function will cleverly return false or 0. Otherwise, return b, since if a is not greater and equal to b, therefore it must be smaller than b. Therefore, we return b.
+
+Now will call this function. First we will call this function on given numbers.
+
+
+
+var first = 10;
+var second = 50;
+
+console.log(largest(first, second));
+
+
+We simply provide the parameters the first and second variables which hold the value. We can also provide data without variables in function call.
+
+
+console.log(largest(10, 50));
+
+
+
+
+Suppose, we want to call this function on user input, then first we take input from user. We will use the prompt() method and store the value returned in two different variables and pass them to function.
+
+
+
+var first = Number(prompt('Enter first number')); // Input 1: 20
+var second = Number(prompt('Enter second number')); // Input 2: 5
+
+console.log(largest(first, second));
+
+
+
+
+Notice that, we are doing explicit type conversion using the Number() method. This is necessary because the prompt method returns the inputs from user in the string format which will not work will our function. So, we convert it into numbers first then use them in function and get the larger of the two values.v -->

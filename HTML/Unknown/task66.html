@@ -1,0 +1,29 @@
+<!-- Determine the largest element in the array in JavaScript
+
+Array is one of the most popular data type in JavaScript. It is used to store similar elements together in one entity and used with various operations on it. One such array operation is finding the maximum element in the array.
+
+We will use a function in which array is passed and inside function, we will determine the largest element in this array and finally return this element.
+
+function largest(arr) {
+	var large = arr[0];
+	for(var i=1; i<arr.length; i++) {
+		if(large < a[i]) {
+			large = a[i];
+		}
+	}
+	return large;
+}
+
+var input = [10, 30, 85, 43, 70];
+var output = largest(input);
+
+console.log(output); //85
+
+
+
+
+In this program, we have function largest which expects an array argument. Inside it, we assign the first element of this array as largest and compare it with every element in the array. If we find an element with value greater than the large variable, we will assign large to this value and check further.
+
+Using for loop, we traverse the array upto it's length and inside it, we check if large is less than element at current index in for loop. If the element is smaller, that means there is this element which is greater, therefore assign the variable large value of this element. Finally, we return the large variable, which will have the largest element in the array in it.
+
+Then we define the input array and pass it to largest function. We store the largest returned value in output variable and finally, print its value in the console. -->

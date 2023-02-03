@@ -1,0 +1,19 @@
+<!-- Ways to create Date object in JavaScript
+
+ate object in JavaScript is used quite often. Whether it is countdown timer for an event or picking up a date through user Input, Dates in JavaScript have a lot of use cases and in JavaScript we have got lot of ways to create Date object.
+
+Creating date with Date constructor is the simplest way to create a date. Consider this example,
+
+var today = new Date();
+The Date() constructor creates a new date object and stores it inside the today variable and the value of this variable is, "Wed Oct 18 2017 00:45:58 GMT+0530 (India Standard Time)", ie the date-time when this object was created.
+
+We can also define a specific date in the above format using this code,
+
+var event = new Date('December 25, 2017 00:00:00');
+This will create an event variable with the specified Date value given as a string. Also note, instead of providing month in words, we can provide the date-time format. The date time format is in following format, "YYYY-MM-DDTHH:MM:SS". Consider this example,
+
+var event = new Date('2017-12-25T00:00:00');
+While providing time string is preferred in this format, but you can also specify date without giving all fields. This is also valid in JavaScript and works perfectly fine.
+
+var event = new Date(2017, 12, 25);
+This will create an event object with only these values and other date parts as 00:00:00 by default. -->
