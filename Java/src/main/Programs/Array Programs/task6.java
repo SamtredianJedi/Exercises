@@ -1,5 +1,7 @@
 // Java Program to find Third Largest Number in an Array
 
+
+
 We can find the third largest number in an array in java by sorting the array and returning the 3nd largest number. Let's see the full example to find the third largest number in java array.
 
 public class ThirdLargestInArrayExample{  
