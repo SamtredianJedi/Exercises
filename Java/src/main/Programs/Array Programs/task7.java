@@ -1,5 +1,8 @@
 // Java Program to print Odd and Even Numbers from an Array
 
+
+
+
 We can print odd and even numbers from an array in java by getting remainder of each element and checking if it is divided by 2 or not. If it is divided by 2, it is even number otherwise it is odd number.
 
 public class OddEvenInArrayExample{  
