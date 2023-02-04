@@ -1,5 +1,7 @@
 // Program to find the frequency of each element in the array
 
+
+
 In this program, we have an array of elements to count the occurrence of its each element. One of the approaches to resolve this problem is to maintain one array to store the counts of each element of the array. Loop through the array and count the occurrence of each element as frequency and store it in another array fr.
 
 1    2   8  3   2   2   2   5   1  
