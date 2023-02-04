@@ -1,6 +1,8 @@
 // Program to copy all elements of one array into another array
 
 
+
+
 In this program, we need to copy all the elements of one array into another. This can be accomplished by looping through the first array and store the elements of the first array into the second array at the corresponding position.
 
 ARRAY 1  
