@@ -1,5 +1,7 @@
 // Java Program to print the sum of all the items of the array
 
+
+
 In this program, we need to calculate the sum of all the elements of an array. This can be solved by looping through the array and add the value of the element in each iteration to variable sum.
 
 Sum of all elements of an array is 1 + 2 + 3 + 4 + 5 = 15.
