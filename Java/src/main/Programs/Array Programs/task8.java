@@ -1,5 +1,7 @@
 // Java Program to print the number of elements present in an array
 
+
+
 In this program, we need to count and print the number of elements present in the array.
 
 The number of elements present in the array can be found by calculating the length of the array.
