@@ -1,5 +1,7 @@
 // Program to print the elements of an array present on even position
 
+
+
 In this program, we need to print the element which is present on even position. Even positioned element can be found by traversing the array and incrementing the value of i by 2.
 
 
