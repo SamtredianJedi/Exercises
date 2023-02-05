@@ -1,5 +1,7 @@
 // Java Program to determine whether two matrices are equal
 
+
+
 In this program, we need to check whether given matrices are equal or not.
 
 Two matrices are said to be equal if and only if they satisfy the following conditions:
