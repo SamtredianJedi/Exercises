@@ -1,6 +1,8 @@
 // Java Program to add two matrices
 
 
+
+
 We can add two matrices in java using binary + operator. A matrix is also known as array of arrays. We can add, subtract and multiply matrices.
 
 To subtract two matrices, use - operator. Let's see a simple example to add two matrices of 3 rows and 3 columns.
