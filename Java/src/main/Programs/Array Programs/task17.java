@@ -1,5 +1,7 @@
 // Program to print the duplicate elements of an array
 
+
+
 In the above array, the first duplicate will be found at the index 4 which is the duplicate of the element (2) present at index 1. So, duplicate elements in the above array are 2, 3 and 8.
 
 Algorithm
