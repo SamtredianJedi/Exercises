@@ -1,6 +1,8 @@
 // Program to print the elements of an array
 
 
+
+
 This is a simple program to create an array and then to print it's all elements.
 
 Now, just know about arrays.
