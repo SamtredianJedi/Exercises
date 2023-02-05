@@ -1,5 +1,7 @@
 // Program to left rotate the elements of an array
 
+
+
 In this program, we need to rotate the elements of an array towards the left by the specified number of times. In the left rotation, each element of the array will be shifted to its left by one position and the first element of the array will be added to end of the list. This process will be followed for a specified number of times.
 
 Consider above array, if n is 1 then, all elements of the array will be moved to its left by one position such that second element of the array will take the first position, the third element will be moved to the second position and so on. The first element of the array will be added to the last of the array.
