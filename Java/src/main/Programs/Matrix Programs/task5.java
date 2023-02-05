@@ -1,5 +1,7 @@
 // Java Program to display the lower triangular matrix
 
+
+
 In this program, we need to display the lower triangular matrix.
 
 Lower Triangular Matrix
