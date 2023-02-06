@@ -1,5 +1,7 @@
 // Java Program to find the frequency of odd & even numbers in the given matrix
 
+
+
 In this program, we need to find the frequencies of odd and even numbers present in the matrix.
 
 In the above example, all odd numbers are represented by the blue square and even numbers are represented by red circles. To find the frequencies of odd and even numbers, loop through the array and check if the element of the array is divisible by 2. If it is divisible by 2(even) then, increment the count of countEven by 1. Else, increment the countOdd by 1.
