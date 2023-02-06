@@ -1,5 +1,7 @@
 // Java Program to find the sum of each row and each column of a matrix
 
+
+
 In this program, we need to calculate the sum of elements in each row and each column of the given matrix.
 
 Above diagram shows the sum of elements of each row and each column of a matrix.
