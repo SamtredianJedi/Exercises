@@ -1,6 +1,8 @@
 // Java Program to display the upper triangular matrix
 
 
+
+
 In this program, we need to display the upper triangular matrix.
 
 Upper Triangular Matrix
