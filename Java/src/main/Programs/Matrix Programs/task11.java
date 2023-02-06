@@ -1,5 +1,7 @@
 // Java Program to multiply two matrices
 
+
+
 We can multiply two matrices in java using binary * operator and executing another loop. A matrix is also known as array of arrays. We can add, subtract and multiply matrices.
 
 In case of matrix multiplication, one row element of first matrix is multiplied by all columns of second matrix.
