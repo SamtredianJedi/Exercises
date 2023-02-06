@@ -1,5 +1,7 @@
 // Java Program to transpose matrix
 
+
+
 Converting rows of a matrix into columns and columns of a matrix into row is called transpose of a matrix.
 
 Let's see a simple example to transpose a matrix of 3 rows and 3 columns.
