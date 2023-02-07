@@ -1,5 +1,7 @@
 // Java Program Number to Word
 
+
+
 In this section, we will create a Java program that converts the given number into words. For example, if the given number is 54,297 then the output should be Fifty-Four Thousand Two Hundred Ninety-Seven. Let's create a Java program for the same.
 
 NumberToWordExample1.java
