@@ -1,6 +1,8 @@
 // Fascinating Number in Java
 
 
+
+
 In this section, we will learn what is a fascinating number and also create Java programs to check if the given number is fascinating or not. The fascinating number program is frequently asked in Java coding tests.
 
 Fascinating Numbers
