@@ -1,5 +1,7 @@
 // Java Program to Find Square Root of a Number Without sqrt Method
 
+
+
 In Java, to find the square root of a number is very easy if we are using the pre-defined method. Java Math class provides sqrt() method to find the square root of a number. In this section, we will create a Java program to find the square root of a number without using the sqrt() method. It is the most popular question asked in the Java interview.
 
 If the square of a number is x, the square root of that number will be the number multiplied by itself. For example, the square root of 625 is 25. If we multiply 25 two times, we get the square of the number. Mathematically, the square root of a number is given as:
