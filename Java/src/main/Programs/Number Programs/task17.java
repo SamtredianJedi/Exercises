@@ -1,5 +1,7 @@
 // Java Program to Display Odd Numbers From 1 to 100
 
+
+
 In this section, we will create a Java program to display odd numbers from 1 to 100. To learn the Java odd number program, you must have the basic knowledge of Java for loop and if statement.
 
 We can use different Java loops to display odd numbers:
