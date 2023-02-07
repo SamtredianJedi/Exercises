@@ -1,5 +1,7 @@
 // Java Program to Display Alternate Prime Numbers
 
+
+
 In this section, we will learn how to create a Java program to display alternate prime numbers.
 
 Prime Number: A prime number is a number p such that whenever p divides ab, then either p divides a or p divides b. In other words, a number that is divisible by itself only is called a prime number. For example, 2, 3, 5, 7, etc. are prime numbers.
