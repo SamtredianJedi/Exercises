@@ -1,6 +1,8 @@
 // Bouncy Number in Java
 
 
+
+
 In this section, we will learn what is a bouncy number and also create Java programs to check if the given number is bouncy. The bouncy number program frequently asked in Java coding tests and academics. Before understanding the bouncy number, first, we will understand what is increasing and decreasing numbers.
 
 Increasing Numbers
