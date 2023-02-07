@@ -1,5 +1,7 @@
 // Java Program to Find GCD of Two Numbers
 
+
+
 In this section, we have covered different logics in Java programs to find GCD of two numbers.
 
 Greatest Common Divisor: It is the highest number that completely divides two or more numbers. It is abbreviated for GCD. It is also known as the Greatest Common Factor (GCF) and the Highest Common Factor (HCF). It is used to simplify the fractions.
