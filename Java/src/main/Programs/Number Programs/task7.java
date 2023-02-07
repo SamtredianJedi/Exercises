@@ -1,5 +1,7 @@
 // Emirp Number in Java
 
+
+
 In this section, we will learn what is an emirp number and also create Java programs to check if the given number is emirp or not. The emirp number Java program frequently asked in Java coding tests to check the logic of the programmer.
 
 Emirp Number
