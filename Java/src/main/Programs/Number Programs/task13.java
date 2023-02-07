@@ -1,5 +1,7 @@
 // Java Program to Check if a Given Number is Perfect Square
 
+
+
 In this section, we have created a number of Java program to check if a given number is perfect square or not.
 
 The perfect square or square number is a positive integer that is square of an integer. In other words, when we multiply two same numbers together, then the product that we get is called the perfect square. In short, it is the product of two positive equal integers or product of an integer with itself.
