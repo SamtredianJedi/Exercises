@@ -1,5 +1,7 @@
 // Buzz Number Java
 
+
+
 Buzz number is another special number in Java that ends with digit 7 or divisible by 7. Unlike Prime and Armstrong numbers, the Buzz number is not so popular and asked by the interviewers.
 
 In simple words, a number is said to be Buzz if it ends with 7 or is divisible by 7.
