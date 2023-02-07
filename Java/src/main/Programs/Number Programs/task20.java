@@ -1,5 +1,7 @@
 // Java Program to Find Smallest of Three Numbers Using Ternary Operator
 
+
+
 In this section, we will learn how to create a Java program to find the smallest of three numbers. Along with this, we will also learn how to find the smallest of three numbers in Java using the ternary operator.
 
 Using Ternary Operator
