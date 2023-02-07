@@ -1,5 +1,7 @@
 // Automorphic Number Program in Java
 
+
+
 In this section, we will learn automorphic numbers with examples and also create Java programs that check whether the number is automorphic or not.
 
 What is an automorphic number?
