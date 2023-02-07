@@ -1,6 +1,8 @@
 // Java Program to Check if a Number is Positive or Negative
 
 
+
+
 In this section, we will write the Java programs to check if a number is positive or negative. We have used the following ways to check the number is positive, negative, or zero.
 
 Using Relational Operator
