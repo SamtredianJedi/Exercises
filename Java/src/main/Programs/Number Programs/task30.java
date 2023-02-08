@@ -1,5 +1,7 @@
 // Sphenic Number in Java
 
+
+
 In this section, we will learn what is a sphenic number and also create Java programs to check if the given number is sphenic or not. The sphenic number program frequently asked in Java coding tests and academics.
 
 Sphenic Number
