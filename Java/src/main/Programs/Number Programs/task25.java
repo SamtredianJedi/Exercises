@@ -1,5 +1,7 @@
 // Krishnamurthy Number Java
 
+
+
 Krishnamurthy number is another special number in Java. A number is said to be Krishnamurthy if the factorial sum of all its digits is equal to that number. Krishnamurthy number is also referred to as a Strong number. Just like Prime and Armstrong numbers, Krishnamurthy number is also frequently asked by the interviewers but with it's another name, i.e., Strong number.
 
 These are the following steps which we use to check Krishnamurthy number
