@@ -1,5 +1,7 @@
 // nth Prime Number Java
 
+
+
 A number is prime if it is divisible by 1 and itself. In other words, a prime number is a natural number with exactly two distinct natural number divisors 1 and itself. For example, 2, 3, 5, 7, 11, etc. are the prime numbers. Note that 0 and 1 are not prime numbers. The number 2 is the only even prime number because all the other even numbers are divisible by 2. In this section, we will learn how to find the nth prime number in Java.
 
 There are two ways to find the nth prime number in Java:
