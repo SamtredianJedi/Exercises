@@ -1,5 +1,7 @@
 // Strontio Number in Java
 
+
+
 In this section, we will learn what is a strontio number and also create Java programs to check if the given number is strontio. The strontio number program frequently asked in Java coding tests and academics.
 
 Strontio Number
