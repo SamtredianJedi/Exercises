@@ -1,5 +1,7 @@
 // Neon Number in Java
 
+
+
 Neon Number in Java
 In this section, we will discuss what is the neon numbers and also create a Java program to check if the given number is neon or not. Also, we will find all the neon numbers between a specified range.
 
