@@ -1,5 +1,7 @@
 // Sunny Number in Java
 
+
+
 In this section, we will learn what is sunny numbers and how to create a Java program to find the sunny numbers. We will also create a Java program to find all the sunny numbers between the specified range.
 
 Sunny Number
