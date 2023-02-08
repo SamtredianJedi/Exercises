@@ -1,5 +1,7 @@
 // Tech Number in Java
 
+
+
 In this section, we will learn what is tech number and how can we find tech numbers through a Java program.
 
 Tech Number
