@@ -1,5 +1,7 @@
 // Peterson Number in Java
 
+
+
 In this section, we will learn what is Peterson number and how can we check whether a given number is Peterson or not through a Java program.
 
 Peterson Number
