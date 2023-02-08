@@ -1,5 +1,7 @@
 // Spy Number in Java
 
+
+
 In this section, we will learn what is a spy number and also create Java programs to check if the given number is Spy or not. The spy number program is frequently asked in Java coding test.
 
 Spy Number
