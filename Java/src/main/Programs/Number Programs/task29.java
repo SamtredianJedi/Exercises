@@ -1,6 +1,8 @@
 // Smith Number in Java
 
 
+
+
 In this section, we will learn what is a smith number and also create Java programs to check if the given number is smith or not. The smith number program frequently asked in Java coding tests and academics.
 
 Smith Number
