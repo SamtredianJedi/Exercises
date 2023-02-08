@@ -1,5 +1,7 @@
 // Java Program to Swap Two Numbers Using Bitwise Operator
 
+
+
 In Java, there are many ways to swap two numbers. Generally, we use either swap() method of the Math class or use a third (temporary) variable to swap two numbers. Except these two ways, we can also swap two numbers using the bitwise operator (XOR) and using division and multiplication.
 
 In this section, we will focus on creating a Java program to swap two numbers using bitwise operator (^).
