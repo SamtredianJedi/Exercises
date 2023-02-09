@@ -1,0 +1,151 @@
+<!-- HTML Classes
+
+
+Class Attribute in HTML The HTML class attribute is used to specify a single or multiple class names for an HTML element. The class name can be used by CSS and JavaScript to do some tasks for HTML elements. You can use this class in CSS with a specific
+class, write a period (.) character, followed by the name of the class for selecting elements. A class attribute can be defined within
+<style>
+    tag or in separate file using the (.) character. In an HTML document,
+    we can use the same class attribute name with different elements. Defining an HTML class To create an HTML class,
+    firstly define style for HTML class using <style>tag within <head>section as following example: Example: <head><style>.headings {
+        color: lightgreen;
+        font-family: cursive;
+        background-color: black;
+    }
+</style>
+</head>
+We have define style for a class name "headings", and we can use this class name with any of HTML element in which we want to provide such styling. We just need to follow the following syntax to use it.
+
+<tag class="ghf"> content </tag>
+Example 1:
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .headings {
+            color: lightgreen;
+            font-family: cursive;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="headings">This is first heading</h1>
+    <h2 class="headings">This is Second heading</h2>
+    <h3 class="headings">This is third heading</h3>
+    <h4 class="headings">This is fourth heading</h4>
+</body>
+
+</html>
+
+
+
+Another Example with different class name Example: Let's use a class name "Fruit" with CSS to style all elements.
+
+<style>
+    .fruit {
+        background-color: orange;
+        color: white;
+        padding: 10px;
+    }
+</style>
+
+<h2 class="fruit">Mango</h2>
+<p>Mango is king of all fruits.</p>
+
+<h2 class="fruit">Orange</h2>
+<p>Oranges are full of Vitamin C.</p>
+
+<h2 class="fruit">Apple</h2>
+<p>An apple a day, keeps the Doctor away.</p>
+
+
+
+Class Attribute in JavaScript You can use JavaScript access elements with a specified class name by using the getElementsByClassName() method. Example: Let's hide all the elements with class name "fruit" when the user click on the button.
+
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>Class Attribute with JavaScript</h2>
+    <p>Click the button, to hide all elements with the class name "fruit", with JavaScript:</p>
+
+    <button onclick="myFunction()">Hide elements</button>
+
+
+    <h2 class="fruit">Mango</h2>
+    <p>Mango is king of all fruits.</p>
+
+    <h2 class="fruit">Orange</h2>
+    <p>Oranges are full of Vitamin C.</p>
+
+    <h2 class="fruit">Apple</h2>
+    <p>An apple a day, keeps the Doctor away.</p>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementsByClassName("fruit");
+            for (var i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
+
+
+
+Multiple Classes You can use multiple class names (more than one) with HTML elements. These class names must be separated by a space. Example: Let's style elements with class name "fruit" and also with a class name "center".
+
+<!DOCTYPE html>
+<html>
+<style>
+    .fruit {
+        background-color: orange;
+        color: white;
+        padding: 10px;
+    }
+    
+    .center {
+        text-align: center;
+    }
+</style>
+
+<body>
+
+    <h2>Multiple Classes</h2>
+    <p>All three elements have the class name "fruit". In addition, Mango also have the class name "center", which center-aligns the text.</p>
+
+    <h2 class="fruit center">Mango</h2>
+    <h2 class="fruit">Orange</h2>
+    <h2 class="fruit">Apple</h2>
+
+</body>
+
+</html>
+
+
+Same class with Different Tag You can use the same class name with different tags like
+<h2> and
+    <p> etc. to share the same style. Example:
+        <!DOCTYPE html>
+        <html>
+        <style>
+            .fruit {
+                background-color: orange;
+                color: white;
+                padding: 10px;
+            }
+        </style>
+
+        <body>
+            <h2>Same Class with Different Tag</h2>
+            <h2 class="fruit">Mango</h2>
+            <p class="fruit">Mango is the king of all fruits.</p>
+        </body>
+
+        </html> -->

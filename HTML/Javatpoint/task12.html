@@ -1,0 +1,118 @@
+<!-- HTML form Attribute -->
+
+
+
+HTML
+<form> element attributes In HTML there are various attributes available for
+    <form> element which are given below: HTML action attribute The action attribute of
+        <form> element defines the process to be performed on form when form is submitted, or it is a URI to process the form information. The action attribute value defines the web page where information proceed. It can be .php, .jsp, .asp, etc. or any URL
+            where you want to process your form. Note: If action attribute value is blank then form will be processed to the same page. Example:
+            <form action="action.html" method="post">
+                <label>User Name:</label><br>
+                <input type="text" name="name"><br><br>
+                <label>User Password</label><br>
+                <input type="password" name="pass"><br><br>
+                <input type="submit">
+            </form>
+
+
+
+            HTML method attribute The method attribute defines the HTTP method which browser used to submit the form. The possible values of method attribute can be: post: We can use the post value of method attribute when we want to process the sensitive data as
+            it does not display the submitted data in URL. Example:
+            <form action="action.html" method="post">
+                get: The get value of method attribute is default value while submitting the form. But this is not secure as it displays data in URL after submitting the form. Example:
+                <form action="action.html" method="get">
+                    When submitting the data, it will display the entered data in the form of: file:///D:/HTML/action.html?name=JavaTPoint&pass=123 HTML target attribute The target attribute defines where to open the response after submitting the form. The following are
+                    the keywords used with the target attribute. _self: If we use _self as an attribute value, then the response will display in current page only. Example:
+                    <form action="action.html" method="get" target="_self">
+                        _blank: If we use _blank as an attribute it will load the response in a new page. Example:
+                        <form action="action.html" method="get" target="_blank">
+
+
+
+                            HTML autocomplete attribute The HTML autocomplete attribute is a newly added attribute of HTML5 which enables an input field to complete automatically. It can have two values "on" and "off" which enables autocomplete either ON or OFF. The default value
+                            of autocomplete attribute is "on". Example:
+                            <form action="action.html" method="get" autocomplete="on">
+                                Example:
+                                <form action="action.html" method="get" autocomplete="off">
+                                    Note: it can be used with
+                                    <form> element and <input> element both. HTML enctype attribute The HTML enctype attribute defines the encoding type of form-content while submitting the form to the server. The possible values of enctype can be: application/x-www-form-urlencoded:
+                                        It is default encoding type if the enctype attribute is not included in the form. All characters are encoded before submitting the form. Example:
+                                        <form action="action.html" method="post" enctype="application/x-www-form-urlencoded">
+                                            multipart/form-data: It does not encode any character. It is used when our form contains file-upload controls. Example:
+                                            <form action="action.html" method="post" enctype="multipart/form-data">
+                                                text/plain (HTML5): In this encoding type only space are encoded into + symbol and no any other special character encoded. Example:
+                                                <form action="action.html" method="post" enctype="text/plain">
+                                                    HTML novalidate attribute HTML5 The novalidate attribute is newly added Boolean attribute of HTML5. If we apply this attribute in form then it does not perform any type of validation and submit the form. Example:
+                                                    <form action="action.html" method="get" novalidate>
+
+
+
+                                                        HTML <input> element attribute HTML name attribute The HTML name attribute defines the name of an input element. The name and value attribute are included in HTTP request when we submit the form.
+                                                        Note: One should not omit the name attribute as when we submit the form the HTTP request includes both name-value pair and if name is not available it will not process that input field. Example:
+                                                        <form action="action.html" method="get">
+                                                            Enter name:<br><input type="name" name="uname"><br> Enter age:<br><input type="number" name="age"><br> Enter email:<br><input type="email"><br>
+                                                            <input type="submit" value="Submit">
+                                                        </form>
+
+
+
+                                                        HTML value attribute The HTML value attribute defines the initial value or default value of an input field. Example:
+                                                        <form>
+                                                            <label>Enter your Name</label><br>
+                                                            <input type="text" name="uname" value="Enter Name"><br><br>
+                                                            <label>Enter your Email-address</label><br>
+                                                            <input type="text" name="uname" value="Enter email"><br><br>
+                                                            <label>Enter your password</label><br>
+                                                            <input type="password" name="pass" value=""><br><br>
+                                                            <input type="submit" value="login">
+                                                        </form>
+
+
+
+                                                        HTML required attribute HTML5 HTML required is a Boolean attribute which specifies that user must fill that filed before submitting the form. Example:
+                                                        <form>
+                                                            <label>Enter your Email-address</label><br>
+                                                            <input type="text" name="uname" required><br><br>
+                                                            <label>Enter your password</label><br>
+                                                            <input type="password" name="pass"><br><br>
+                                                            <input type="submit" value="login">
+                                                        </form>
+
+
+
+                                                        HTML autofocus attribute HTML5 The autofocus is a Boolean attribute which enables a field automatically focused when a webpage loads. Example:
+                                                        <form>
+                                                            <label>Enter your Email-address</label><br>
+                                                            <input type="text" name="uname" autofocus><br><br>
+                                                            <label>Enter your password</label><br>
+                                                            <input type="password" name="pass"><br><br>
+                                                            <input type="submit" value="login">
+                                                        </form>
+
+
+
+                                                        HTML placeholder attribute HTML5 The placeholder attribute specifies a text within an input field which informs the user about the expected input of that filed. The placeholder attribute can be used with text, password, email, and URL values. When the
+                                                        user enters the value, the placeholder will be automatically removed. Example:
+                                                        <form>
+                                                            <label>Enter your name</label><br>
+                                                            <input type="text" name="uname" placeholder="Your name"><br><br>
+                                                            <label>Enter your Email address</label><br>
+                                                            <input type="email" name="email" placeholder="example@gmail.com"><br><br>
+                                                            <label>Enter your password</label><br>
+                                                            <input type="password" name="pass" placeholder="your password"><br><br>
+                                                            <input type="submit" value="login">
+                                                        </form>
+
+
+                                                        HTML disabled attribute The HTML disabled attribute when applied then it disable that input field. The disabled field does not allow the user to interact with that field. The disabled input filed does not receive click events, and these input value will
+                                                        not be sent to the server when submitting the form. Example:
+                                                        <input type="text" name="uname" disabled><br><br> HTML size attribute The size attribute controls the size of the input field in typed characters. Example:
+                                                        <label>Account holder name</label><br>
+                                                        <input type="text" name="uname" size="40" required><br><br>
+                                                        <label>Account number</label><br>
+                                                        <input type="text" name="an" size="30" required><br><br>
+                                                        <label>CVV</label><br>
+                                                        <input type="text" name="cvv" size="1" required><br><br> HTML form attribute HTML form attribute allows a user to specify an input filed outside the form but remains the part of the parent form.
+                                                        Example: User email: <br><input type="email" name="email" form="fcontrol" required><br>
+                                                        <input type="submit" form="fcontrol">

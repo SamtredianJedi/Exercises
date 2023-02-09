@@ -1,0 +1,261 @@
+<!-- HTML Description List  HTML Definition List -->
+
+HTML Description List or Definition List displays elements in definition form like in dictionary. The
+<dl>, <dt> and <dd> tags are used to define description list.
+
+    The 3 HTML description list tags are given below:
+    
+    <dl> tag defines the description list.
+    <dt> tag defines data term.
+    <dd> tag defines data definition (description).
+    <dl>  
+      <dt>HTML</dt>
+    <dd>is a markup language</dd>
+    <dt>Java</dt>
+    <dd>is a programming language and platform</dd>
+    <dt>JavaScript</dt>
+    <dd>is a scripting language</dd>
+    <dt>SQL</dt>
+    <dd>is a query language</dd>
+</dl>
+
+An HTML form is a section of a document which contains controls such as text fields, password fields, checkboxes, radio buttons, submit button, menus etc. An HTML form facilitates the user to enter data that is to be sent to the server for processing
+such as name, email address, password, phone number, etc. . Why use HTML Form HTML forms are required if you want to collect some data from of the site visitor. For example If a user want to purchase some items on internet, heshe must fill the form such
+as shipping address and creditdebit card details so that item can be sent to the given address. HTML Form Syntax form action=server url method=getpost input controls e.g. textfield, textarea, radiobutton, button form HTML Form Tags Let's see the list
+of HTML 5 form tags. Tag Description form It defines an HTML form to enter inputs by the used side. input It defines an input control. textarea It defines a multi-line input control. label It defines a label for an input element. fieldset It groups the
+related element in a form. legend It defines a caption for a fieldset element. select It defines a drop-down list. optgroup It defines a group of related options in a drop-down list. option It defines an option in a drop-down list. button It defines a
+clickable button. HTML 5 Form Tags Let's see the list of HTML 5 form tags. Tag Description
+<datalist>	It specifies a list of pre-defined options for input control.
+    <keygen>	It defines a key-pair generator field for forms.
+    <output>	It defines the result of a calculation.
+    HTML <form> element
+    The HTML <form> element provide a document section to take input from user. It provides various interactive controls for submitting information to web server such as text field, text area, password field, etc.
+    
+    Note: The <form> element does not itself create a form but it is container to contain all required form elements, such as <input>, <label>, etc.
+    Syntax:
+    
+    <form>  
+    //Form elements  
+    </form>  
+    HTML <input> element
+    The HTML <input> element is fundamental form element. It is used to create form fields, to take input from user. We can apply different input filed to gather different information form user. Following is the example to show the simple text input.
+    
+    Example:
+    <body>  
+      <form>  
+         Enter your name  <br>  
+        <input type="text" name="username">  
+      </form>  
+    </body>  
+    
+    
+    HTML TextField Control
+    The type="text" attribute of input tag creates textfield control also known as single line textfield control. The name attribute is optional, but it is required for the server side component such as JSP, ASP, PHP etc.
+    
+    <form>  
+        First Name: <input type="text" name="firstname"/> <br/>  
+        Last Name:  <input type="text" name="lastname"/> <br/>  
+     </form>  
+    
+    
+    Note: If you will omit 'name' attribute then the text filed input will not be submitted to server.
+    HTML <textarea> tag in form
+    The <textarea> tag in HTML is used to insert multiple-line text in a form. The size of <textarea> can be specify either using "rows" or "cols" attribute or by CSS.
+    
+    Example:
+    
+    <!DOCTYPE html>  
+    <html>  
+    <head>  
+        <title>Form in HTML</title>  
+    </head>  
+    <body>  
+      <form>  
+            Enter your address:<br>  
+          <textarea rows="2" cols="20"></textarea>  
+      </form>  
+    </body>  
+    </html>  
+    
+    
+    Label Tag in Form
+    It is considered better to have label in form. As it makes the code parser/browser/user friendly.
+    
+    If you click on the label tag, it will focus on the text control. To do so, you need to have for attribute in label tag that must be same as id attribute of input tag.
+    
+    
+    NOTE: It is good to use <label> tag with form, although it is optional but if you will use it, then it will provide a focus when you tap or click on label tag. It is more worthy with touchscreens.
+    <form>  
+        <label for="firstname">First Name: </label> <br/>  
+                  <input type="text" id="firstname" name="firstname"/> <br/>  
+       <label for="lastname">Last Name: </label>  
+                  <input type="text" id="lastname" name="lastname"/> <br/>  
+     </form>  
+    
+    
+    HTML Password Field Control
+    The password is not visible to the user in password field control.
+    
+    <form>  
+        <label for="password">Password: </label>  
+                  <input type="password" id="password" name="password"/> <br/>  
+    </form>
+    
+    
+    HTML 5 Email Field Control
+    The email field in new in HTML 5. It validates the text for correct email address. You must use @ and . in this field.
+    
+    <form>  
+        <label for="email">Email: </label>  
+                  <input type="email" id="email" name="email"/> <br/>  
+    </form>  
+    
+    
+    Radio Button Control
+    The radio button is used to select one option from multiple options. It is used for selection of gender, quiz questions etc.
+    
+    If you use one name for all the radio buttons, only one radio button can be selected at a time.
+    
+    Using radio buttons for multiple options, you can only choose a single option at a time.
+    
+    <form>  
+        <label for="gender">Gender: </label>  
+                  <input type="radio" id="gender" name="gender" value="male"/>Male  
+                  <input type="radio" id="gender" name="gender" value="female"/>Female <br/>  
+    </form>  
+    
+    
+    Checkbox Control
+    The checkbox control is used to check multiple options from given checkboxes.
+    
+    <form>  
+    Hobby:<br>  
+                  <input type="checkbox" id="cricket" name="cricket" value="cricket"/>  
+                     <label for="cricket">Cricket</label> <br>  
+                  <input type="checkbox" id="football" name="football" value="football"/>  
+                     <label for="football">Football</label> <br>  
+                  <input type="checkbox" id="hockey" name="hockey" value="hockey"/>  
+                     <label for="hockey">Hockey</label>  
+    </form>  
+    Note: These are similar to radio button except it can choose multiple options at a time and radio button can select one button at a time, and its display.
+    
+    
+    Submit button control
+    HTML <input type="submit"> are used to add a submit button on web page. When user clicks on submit button, then form get submit to the server.
+    
+    Syntax:
+    
+    <input type="submit" value="submit">  
+    The type = submit , specifying that it is a submit button
+    
+    The value attribute can be anything which we write on button on web page.
+    
+    The name attribute can be omit here.
+    
+    Example:
+    
+    <form>  
+        <label for="name">Enter name</label><br>  
+        <input type="text" id="name" name="name"><br>  
+        <label for="pass">Enter Password</label><br>  
+        <input type="Password" id="pass" name="pass"><br>  
+        <input type="submit" value="submit">  
+    </form>  
+    
+    
+    HTML <fieldset> element:
+    The <fieldset> element in HTML is used to group the related information of a form. This element is used with <legend> element which provide caption for the grouped elements.
+    
+    Example:
+    
+     <form>  
+         <fieldset>  
+          <legend>User Information:</legend>  
+        <label for="name">Enter name</label><br>  
+    <input type="text" id="name" name="name"><br>  
+    <label for="pass">Enter Password</label><br>  
+    <input type="Password" id="pass" name="pass"><br>  
+    <input type="submit" value="submit">  
+    </fieldset>  
+    lt;/form>  
+    
+    
+    
+    HTML Form Example
+    Following is the example for a simple form of registration.
+    
+    <!DOCTYPE html>  
+     <html>  
+     <head>  
+      <title>Form in HTML</title>  
+    </head>  
+     <body>  
+         <h2>Registration form</h2>  
+        <form>  
+         <fieldset>  
+            <legend>User personal information</legend>  
+            <label>Enter your full name</label><br>  
+            <input type="text" name="name"><br>  
+             <label>Enter your email</label><br>  
+             <input type="email" name="email"><br>  
+             <label>Enter your password</label><br>  
+             <input type="password" name="pass"><br>  
+             <label>confirm your password</label><br>  
+             <input type="password" name="pass"><br>  
+             <br><label>Enter your gender</label><br>  
+             <input type="radio" id="gender" name="gender" value="male"/>Male  <br>  
+             <input type="radio" id="gender" name="gender" value="female"/>Female <br/>    
+             <input type="radio" id="gender" name="gender" value="others"/>others <br/>   
+              <br>Enter your Address:<br>  
+             <textarea></textarea><br>  
+             <input type="submit" value="sign-up">  
+         </fieldset>  
+      </form>  
+     </body>  
+    </html>  
+    
+    
+    HTML Form Example
+    Let's see a simple example of creating HTML form.
+    
+    <form action="#">  
+    <table>  
+    <tr>  
+        <td class="tdLabel"><label for="register_name" class="label">Enter name:</label></td>  
+        <td><input type="text" name="name" value="" id="register_name" style="width:160px"/></td>  
+    </tr>  
+    <tr>  
+        <td class="tdLabel"><label for="register_password" class="label">Enter password:</label></td>  
+        <td><input type="password" name="password" id="register_password" style="width:160px"/></td>  
+    </tr>  
+    <tr>  
+        <td class="tdLabel"><label for="register_email" class="label">Enter Email:</label></td>  
+        <td  
+    ><input type="email" name="email" value="" id="register_email" style="width:160px"/></td>  
+    </tr>  
+    <tr>  
+        <td class="tdLabel"><label for="register_gender" class="label">Enter Gender:</label></td>  
+        <td>  
+    <input type="radio" name="gender" id="register_gendermale" value="male"/>  
+    <label for="register_gendermale">male</label>  
+    <input type="radio" name="gender" id="register_genderfemale" value="female"/>  
+    <label for="register_genderfemale">female</label>  
+        </td>  
+    </tr>  
+    <tr>  
+        <td class="tdLabel"><label for="register_country" class="label">Select Country:</label></td>  
+        <td><select name="country" id="register_country" style="width:160px">  
+        <option value="india">india</option>  
+        <option value="pakistan">pakistan</option>  
+        <option value="africa">africa</option>  
+        <option value="china">china</option>  
+        <option value="other">other</option>  
+    </select>  
+    </td>  
+    </tr>  
+    <tr>  
+        <td colspan="2"><div align="right"><input type="submit" id="register_0" value="register"/>  
+    </div></td>  
+    </tr>  
+    </table>  
+    </form>

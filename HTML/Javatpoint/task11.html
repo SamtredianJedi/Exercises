@@ -1,0 +1,67 @@
+<!-- HTML File Paths -->
+
+
+
+An HTML file path is used to describe the location of a file in a website folder. File paths are like an address of file for a web browser. We can link any external resource to add in our HTML file with the help of file paths such as images, file, CSS
+file, JS file, video, etc. The src or href attribute requires an attribute to link any external source to HTML file. Following are the different types to specify file paths:
+
+<img src="picture.jpg"> It specifies that picture.jpg is located in the same folder as the current page.
+<img src="images/picture.jpg"> It specifies that picture.jpg is located in the images folder in the current folder.
+<img src="/images/picture.jpg"> It specifies that picture.jpg is located in the images folder at the root of the current web.
+<img src="../picture.jpg"> It specifies that picture.jpg is located in the folder one level up from the current folder. File paths are used on webpages to link external files like: Web pages Images Style sheets JavaScript There are two types of File Paths:
+Absolute File Paths Relative File Paths Absolute File Paths Absolute file path specifies full URL address. Example:
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h2>Using a Full URL File Path</h2>
+    <img src="https://www.javatpoint.com/images/nature-1.jpg" alt="image" style="width:300px">
+</body>
+
+</html>
+
+
+
+
+Relative File Paths The relative file path specifies to a file which is related to the location of current page. Example: Let's take an example to see how the file path points to a file in the images folder located at the root of the current web.
+
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h2>Using a Relative File Path</h2>
+    <img src="/images/nature-2.jpg" alt="Mountain" style="width:300px">
+</body>
+
+</html>
+
+
+
+Example: This is how a file path points to a file in the images folder located in the current folder.
+
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h2>Using a Relative File Path</h2>
+    <img src="images/nature-3.jpg" alt="Mountain" style="width:300px">
+</body>
+
+</html>
+
+
+When the images folder located in the folder one level above the current folder.
+
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h2>Using a Relative File Path</h2>
+    <img src="../images/nature4.jpg" alt="Mountain" style="width:300px">
+</body>
+
+</html>
+
+
+
+Important Points for File path: Always remember to use proper URL, file name, image name, else it will not display on the webpage. Try to use relative file paths, so that your code will be independent of URL.
