@@ -1,0 +1,68 @@
+<!-- HTML Id Attribute
+
+
+The id attribute is used to specify the unique ID for an element of the HTML document. It allocates the unique identifier which is used by the CSS and the JavaScript for performing certain tasks. Note: In the Cascading Style sheet (CSS), we can easily
+select an element with the specific id by using the # symbol followed by id. Note: JavaScript can access an element with the given ID by using the getElementById() method. Syntax
+<tag id="value">
+    Example 1: The following example describes how to use the id attribute in CSS document:
+
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <title>
+            Example of Id attribute in CSS
+        </title>
+        <style>
+            #Cars {
+                padding: 40px;
+                background-color: lightblue;
+                color: black;
+                text-align: center;
+            }
+            
+            #Bikes {
+                padding: 50px;
+                background-color: lightGreen;
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <p> Use CSS to style an element with the id: </p>
+        <h1 id="Cars"> Cars </h1>
+        <h1 id="Bikes"> Bikes </h1>
+    </body>
+
+    </html>
+
+
+
+    Example 2: The following example describes how to use the ID attribute in JavaScript.
+
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <title> Date Attribute </title>
+        <script>
+            function viewdate() {
+                var x = document.getElementById("dob").value;
+                document.getElementById("demo").innerHTML = x;
+        </script>
+    </head>
+
+    <body>
+        Employee Name: <input type="text" placeholder="Your Good name" />
+        <br>
+        <br> Date of Joining:
+        <input type="date" id="dob">
+        <br>
+        <button onclick="viewdate()"> Submit   
+</button>
+        <br>
+        <h2 id="demo"> </h2>
+    </body>
+
+    </html> -->

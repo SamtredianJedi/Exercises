@@ -1,0 +1,301 @@
+<!-- HTML Head
+
+
+The HTML
+
+<head> element is used as a container for metadata (data about data). It is used between
+    <html> tag and
+
+    <body> tag. The head of an HTML document is a part whose content is not displayed in the browser on page loading. It just contains metadata about the HTML document which specifies data about the HTML document. An HTML head can contain lots of metadata information
+        or can have very less or no information, it depends on our requirement. But head part has a crucial role an HTML document while creating a website. Metadata defines the document title, character set, styles, links, scripts, and other meta information.
+        Following is a list of tags used in metadata:
+
+        <title>
+            <style>
+                <meta><link><script><base>HTML <title>Element The HTML <title>element is used to define the title of the document. It is used in all HTML/XHTML documents. The <title>element must be placed between <head>element,
+                and one document can only have one title element. What does <title>element do? It defines a title in the browser tab. It provides a title for the page when it is added to favorites. It displays a title for the page in search engine results. Note: The title element must be specific about the document and its recommended length is 65 to 70 characters including spaces. Example : <!DOCTYPE html><html><head><title>This Page Title</title></head><body><p>The body's content is displayed in the browser window.</p>  
+ <p>The content of the title element is displayed in the browser tab,
+                in favorites and in search engine results.</p></body></html>HTML <style>Element The HTML <style>element is used to style the HTML page. The <style>element can have CSS properties for that HTML page only. If we want to apply CSS for multiple pages then we should use separate CSS file. Example : <!DOCTYPE html><html><head><title>This is Page Title</title><style>body {
+                    background-color: pink;
+                }
+                
+                h1 {
+                    color: red;
+                }
+                
+                p {
+                    color: blue;
+                }
+            </style>
+</head>
+
+<body>
+    <h1>This is a Heading</h1>
+    <p>This is a paragraph.</p>
+</body>
+
+</html>
+
+
+
+HTML
+<link> Element The HTML
+<link> element is used to link an external style sheet to your webpage. The
+<link> element contains main two attributes which are "rel" and "href". The rel attribute indicates that it is a stylesheet, and href gives the path to that external file. Example:
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>This is title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2>Web-page with external CSS</h2>
+    <p>This is looking a cool page</p>
+</body>
+
+</html>
+
+
+
+HTML
+<meta> Element The HTML
+<meta> element is used to specify the character set, page description, keywords, authors and other metadata on the webpage. Metadata is mainly used by browsers, search engines, and other web services to rank your webpage better. Let's see how to use metadata:
+To define a character set:
+
+<meta charset="UTF-8"> The charset attribute specifies the character encoding. In this example we have set it to "UTF-8" which means it can handle to display any language. Example:
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <p>This is written in English language<span style="color: blue"> My friend's name is.......</span></p>
+    <p>This is Chinese language <span style="color: red">Wǒ de péngyǒu jiào</span></p>
+</body>
+
+</html>
+
+
+
+To define a description of your webpage:
+
+<meta name="description" content="Free Web tutorials"> If you give a meta description then it will be useful for the relevant search to perform by search engines. To define keywords for search engines:
+
+<meta name="keywords" content="HTML, CSS, XML, JavaScript"> The keyword value is also used to provide keywords for a search engine, but it may ignore by browser due to spammers. To define author of the webpage:
+
+<meta name="author" content="Akon"> The author value specifies the name of the person who wrote the page content, and it is useful to automatically extract author information by some content management systems. To refresh document every 30 seconds:
+
+<meta http-equiv="refresh" content="30"> Meta refresh is used to provide instructions to the browser to automatically refresh the page after the given time interval. As in above example it will automatically refresh after 30 sec
+
+<meta http-equiv="refresh" content="10; url=https://www.javatpoint.com/html-head>  
+    If you add an URL with content value, then it will redirect to that page after the time limit will over.
+    
+    Example:
+    
+    <!DOCTYPE html>  
+    <html>  
+     <head>  
+       <meta http-equiv=" refresh " content="5; url=https://www.javatpoint.com/html-head ">  
+     </head>  
+       <body>  
+        <h2>Meta element Example</h2>  
+       <p style="color: green; ">Kindly wait for 5 seconds and after 5 seconds it will automatically redirect to URL specified in meta tag</p>  
+     </body>  
+    </html>  
+    
+    
+    
+    Following is an example to show how to use all Meta elements within HTML head
+    
+    Example:
+    
+    <!DOCTYPE html>  
+    <html>  
+    <head>  
+    <meta charset="UTF-8 ">  
+    <meta name="description " content="Free Web tutorials ">  
+    <meta name="keywords " content="HTML,CSS,XML,JavaScript ">  
+    <meta name="author " content="Akon ">  
+    </head>  
+    <body>  
+    <p>All the meta information are set.</p>  
+    </body>  
+    </html>  
+    
+    
+    
+    Use <meta> tag to set the Viewport
+    This method is introduced in HTML5 to take control over the viewport by using <meta> tag.
+    
+    Viewport is the user's visible area of a webpage. It changes from device to device and appears smaller on mobile phones than computer screens.
+    
+    Syntax for <meta> viewport element:
+    
+    <meta name="viewport " content="width=device-width, initial-scale=1.0 ">  
+    Here, the <meta> viewport element specifies how to control the page's dimensions and scaling.
+    
+    The width=device-width is used to set the width of the page to follow the screen-width of the device (which will vary depending on the device).
+    
+    The initial-scale=1.0 is used to set the initial zoom level when the page is first loaded by the browser.
+    
+    Example of a web page without the viewport <meta> tag:
+    
+    <!DOCTYPE html>  
+    <html>  
+    <body>  
+      
+    <p><b>To understand this example, you should open this page on a phone or a tablet.</b></p>  
+      
+    <img src="image.jpg " alt="image " width="460 " height="345 ">  
+      
+    <p>  
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut   
+    laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation   
+    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel   
+    eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu   
+    feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum  
+    zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis   
+    eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.  
+    Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat  
+    facer possim assum.  
+    </p>  
+      
+    </body>  
+    </html>  
+    
+    
+    
+    Example of a web page with the viewport <meta> tag:
+    
+    <!DOCTYPE html>  
+    <html>  
+    <head>  
+    <meta name="viewport " content="width=device-width, initial-scale=1.0 "/>  
+    <style>  
+    img {  
+        max-width: 100%;  
+        height: auto;  
+    }  
+    </style>  
+    </head>  
+    <body>  
+    <p><b>To understand this example, you should open this page on a phone or a tablet.</b></p>  
+      
+    <img src="image.jpg " alt="image " width="460 " height="345 ">  
+      
+    <p>  
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut   
+    laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation   
+    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel   
+    eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu   
+    feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum  
+    zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis   
+    eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.  
+    Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat  
+    facer possim assum.  
+    </p>  
+      
+    </body>  
+    </html>  Example of a web page with the viewport <meta> tag:
+    
+    <!DOCTYPE html>  
+    <html>  
+    <head>  
+    <meta name="viewport " content="width=device-width, initial-scale=1.0 "/>  
+    <style>  
+    img {  
+        max-width: 100%;  
+        height: auto;  
+    }  
+    </style>  
+    </head>  
+    <body>  
+    <p><b>To understand this example, you should open this page on a phone or a tablet.</b></p>  
+      
+    <img src="image.jpg " alt="image " width="460 " height="345 ">  
+      
+    <p>  
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut   
+    laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation   
+    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel   
+    eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu   
+    feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum  
+    zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis   
+    eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.  
+    Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat  
+    facer possim assum.  
+    </p>  
+      
+    </body>  
+    </html>  
+    
+    
+    
+    
+    Note: To see the difference clearly, open this page on smartphone or tablet.
+    HTML <base> Element
+    The HTML <base> element is used to specify the base URL and base target for all relative URLs in a page.
+    
+    Example:
+    
+    <!DOCTYPE html>  
+    <html>  
+    <head>  
+    <title>Page Title</title>  
+    <base href="https://static.javatpoint.com/htmlpages/images/ " target="_blank ">  
+    </head>  
+    <body>  
+    <img src="html5.png ">  
+    <p>We have specified a base URL, the browser will look for the image "html5.png "   
+    at "https://static.javatpoint.com/htmlpages/images/html5.png "</p>  
+    <p><a href=" https://www.javatpoint.com ">JavatPoint</a></p>  
+    <p>The link above will open in a new window because base target is set to "_blank ".</p>  
+    </body>  
+    </html>  
+    
+    
+    
+    HTML <script> element
+    HTML <script> element is used to apply client side JavaScript for the same page or to add an external JavaScript file to current page.
+    
+    Example:
+    
+    <!DOCTYPE html>  
+    <html>  
+    <head>  
+        <script>  
+            function fun() {  
+            document.getElementById("p ").style.color="green ";     
+            }  
+        </script>  
+    </head>  
+    <body>  
+    <h2>Script within Head element</h2>  
+    <p id="p ">This will change the color</p>  
+    <button type="button " onclick="fun() ">Click me</button>  
+    </body>  
+    </html>  
+    
+    
+    
+    If we want to use some external JavaScript file then it can be applied by:
+    
+    <script src=".js file_path ">  
+    Excluding <html>, <head> and <body> elements
+    HTML 5 facilitates us to omit the <html>, the <body>, and the <head> tag.
+    
+    Example:
+    
+    <!DOCTYPE html>  
+    <title>Page Title</title>  
+    <h1>This is a heading</h1>  
+    <p>This is a paragraph.</p>  
+    
+    
+    
+    Note: It is not recommended to omit the <html> and <body> tags. Omitting these tags can crash DOM or XML software and produce errors in older browsers (IE9). -->

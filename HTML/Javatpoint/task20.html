@@ -1,0 +1,186 @@
+<!-- HTML JavaScript
+
+
+
+
+A Script is a small program which is used with HTML to make web pages more attractive, dynamic and interactive, such as an alert popup window on mouse click. Currently, the most popular scripting language is JavaScript used for websites.
+
+Example:
+<!DOCTYPE html>  
+<html>  
+<body>  
+<h1>JavaScript Date and Time example</h1>  
+<button type="button"  
+onclick="document.getElementById('demo').innerHTML = Date()">  
+Click me to display Date and Time.</button>  
+<p id="demo"></p>  
+</body>  
+</html>  
+
+
+
+HTML <script> Tag
+The HTML <script> tag is used to specify a client-side script. It may be an internal or external JavaScript which contains scripting statements, hence we can place <script> tag within <body> or <head> section.
+
+It is mainly used to manipulate images, form validation and change content dynamically. JavaScript uses document.getElementById() method to select an HTML element.
+
+Example:
+<!DOCTYPE html>  
+<html>  
+<body>  
+<h2>Use JavaScript to Change Text</h2>  
+<p id="demo"></p>  
+<script>  
+document.getElementById("demo").innerHTML = "Hello JavaTpoint";  
+</script>  
+</body>  
+</html>  
+
+
+
+HTML events with JavaScript
+An event is something which user does, or browser does such as mouse click or page loading are examples of events, and JavaScript comes in the role if we want something to happen on these events.
+
+HTML provides event handler attributes which work with JavaScript code and can perform some action on an event.
+
+Syntax:
+<element event = "JS code">   
+Example:
+<input type="button" value="Click" onclick="alert('Hi, how are you')">
+
+
+
+HTML can have following events such as:
+
+Form events: reset, submit, etc.
+Select events: text field, text area, etc.
+Focus event: focus, blur, etc.
+Mouse events: select, mouseup, mousemove, mousedown, click, dblclick, etc.
+Following are the list for Window event attributes:
+
+Event Event Name	Handler Name	Occurs when
+onBlur	blur	When form input loses focus
+onClick	click	When the user clicks on a form element or a link
+onSubmit	submit	When user submits a form to the server.
+onLoad	load	When page loads in a browser.
+onFocus	focus	When user focuses on an input field.
+onSelect	select	When user selects the form input filed.
+Note: You will learn more about JavaScript Events in our JavaScript tutorial.
+Let's see what JavaScript can do:
+
+1) JavaScript can change HTML content.
+
+Example:
+<!DOCTYPE html>  
+<html>  
+<body>  
+<p>JavaScript can change the content of an HTML element:</p>  
+<button type="button" onclick="myFunction()">Click Me!</button>  
+<p id="demo"></p>  
+<script>  
+function myFunction() {   
+    document.getElementById("demo").innerHTML = "Hello JavaTpoint!";  
+}  
+</script>  
+</body>  
+</html>  
+
+
+
+2) JavaScript can change HTML style
+
+Example:
+<!DOCTYPE html>  
+<html>  
+<body>  
+<p id="demo">JavaScript can change the style of an HTML element.</p>  
+<script>  
+function myFunction() {  
+    document.getElementById("demo").style.fontSize = "25px";   
+    document.getElementById("demo").style.color = "brown";  
+    document.getElementById("demo").style.backgroundColor = "lightgreen";         
+}  
+</script>  
+<button type="button" onclick="myFunction()">Click Me!</button>  
+</body>  
+</html>  
+
+
+
+3) JavaScript can change HTML attributes.
+
+Example:
+<!DOCTYPE html>  
+<html>  
+<body>  
+<script>  
+function light(sw) {  
+    var pic;  
+    if (sw == 0) {  
+        pic = "pic_lightoff.png"  
+    } else {  
+        pic = "pic_lighton.png"  
+    }  
+    document.getElementById('myImage').src = pic;  
+}  
+</script>  
+<img id="myImage" src="pic_lightoff.png" width="100" height="180">  
+<p>  
+<button type="button" onclick="light(1)">Light On</button>  
+<button type="button" onclick="light(0)">Light Off</button>  
+</p>  
+</body>  
+</html> 
+
+
+
+Use External Script
+Suppose, you have various HTML files which should have same script, then we can put our JavaScript code in separate file and can call in HTML file. Save JavaScript external files using .js extension.
+
+Note: Do not add <script> tag in the external file, and provide the complete path where you have put the JS file.
+Syntax:
+<script type="text/javascript" src="URL "></script>  
+Example:
+<!DOCTYPE html>  
+<html>  
+   <head>  
+    <script type="text/javascript" src="external.js"></script>  
+    </head>  
+     <body>  
+      <h2>External JavaScript Example</h2>  
+       <form onsubmit="fun()">  
+         <label>Enter your name:</label><br>  
+      <input type="text" name="uname" id="frm1"><br>  
+       <label>Enter your Email-address:</label><br>    
+      <input type="email" name="email"><br>  
+      <input type="submit">  
+  </form>  
+ </body>  
+ </html>  
+
+
+
+JavaScript code:
+
+function fun() {  
+       var x = document.getElementById("frm1").value;  
+        alert("Hi"+" "+x+ "you have successfully submitted the details");  
+    }  
+
+
+
+HTML <noscript> Tag
+HTML <noscript> tag is used to write disabled script in the browser. The text written within <noscript></noscript> tag is not displayed on the browser.
+
+Example:
+<!DOCTYPE html>  
+<html>  
+<body>  
+<p id="demo"></p>  
+<script>  
+document.getElementById("demo").innerHTML = "Hello JavaScript!";  
+</script>  
+<noscript>This text is not visible in the browser.</noscript>  
+</body>  
+</html>  
+ -->

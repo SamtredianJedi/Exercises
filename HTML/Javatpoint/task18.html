@@ -1,0 +1,141 @@
+<!-- HTML iframes
+
+
+
+
+HTML Iframe is used to display a nested webpage (a webpage within a webpage). The HTML <iframe> tag defines an inline frame, hence it is also called as an Inline frame.
+
+    An HTML iframe embeds another document within the current HTML document in the rectangular region.
+    
+    The webpage content and iframe contents can interact with each other using JavaScript.
+    
+    Iframe Syntax
+    An HTML iframe is defined with the <iframe> tag:
+    
+    <iframe src="URL"></iframe>  
+    Here, "src" attribute specifies the web address (URL) of the inline frame page.
+    
+    Set Width and Height of iframe
+    You can set the width and height of iframe by using "width" and "height" attributes. By default, the attributes values are specified in pixels but you can also set them in percent. i.e. 50%, 60% etc.
+    
+    Example: (Pixels)
+    <!DOCTYPE html>    
+    <html>    
+    <body>    
+    <h2>HTML Iframes example</h2>    
+    <p>Use the height and width attributes to specify the size of the iframe:</p>    
+    <iframe src="https://www.javatpoint.com/" height="300" width="400"></iframe>    
+    </body>    
+    </html>  
+    
+    
+    Example: (Percentage)
+    <!DOCTYPE html>    
+    <html>    
+    <body>    
+    <h2>HTML Iframes</h2>    
+    <p>You can use the height and width attributes to specify the size of the iframe:</p>    
+    <iframe src="https://www.javatpoint.com/" height="50%" width="70%"></iframe>    
+    </body>    
+    </html>    
+    
+    
+    You can also use CSS to set the height and width of the iframe.
+    
+    Example:
+    <!DOCTYPE html>    
+    <html>    
+    <body>    
+    <h2>HTML Iframes</h2>    
+    <p>Use the CSS height and width properties to specify the size of the iframe:</p>    
+    <iframe src="https://www.javatpoint.com/" style="height:300px;width:400px"></iframe>    
+    </body>    
+    </html>    
+    
+    
+    
+    Remove the border of iframe
+    By default, an iframe contains a border around it. You can remove the border by using <style> attribute and CSS border property.
+    
+    Example:
+    <!DOCTYPE html>    
+    <html>    
+    <body>    
+    <h2>Remove the Iframe Border</h2>    
+    <p>This iframe example doesn't have any border</p>     
+    <iframe src="https://www.javatpoint.com/" style="border:none;"></iframe>    
+    </body>    
+    </html>    
+    
+    
+    
+    You can also change the size, color, style of the iframe's border.
+    
+    Example:
+    <!DOCTYPE html>    
+    <html>    
+    <body>    
+    <h2>Custom Iframe Border</h2>    
+    <iframe src="https://www.javatpoint.com/" style="border:2px solid tomato;"></iframe>    
+    </body>    
+    </html>    
+    
+    
+    
+    Iframe Target for a link
+    You can set a target frame for a link by using iframe. Your specified target attribute of the link must refer to the name attribute of the iframe.
+    
+    Example:
+    <!DOCTYPE html>  
+    <html>  
+    <body>  
+      
+    <h2>Iframe - Target for a Link</h2>  
+    <iframe height="300px" width="100%" src="new.html" name="iframe_a"></iframe>  
+    <p><a href="https://www.javatpoint.com" target="iframe_a">JavaTpoint.com</a></p>  
+    <p>The name of iframe and link target must have same value else link will not open as a frame. </p>  
+      
+    </body>  
+    </html>  
+    
+    
+    
+    Embed YouTube video using iframe
+    You can also add a YouTube video on your webpage using the <iframe> tag. The attached video will be played at your webpage and you can also set height, width, autoplay, and many more properties for the video.
+    
+    Following are some steps to add YouTube video on your webpage:
+    
+    Goto YouTube video which you want to embed.
+    Click on SHARE ➦ under the video.
+    Click on Embed <> option.
+    Copy HTML code.
+    Paste the code in your HTML file
+    Change height, width, and other properties (as per requirement).
+    Example:
+    <iframe width="550" height="315" src="https://www.youtube.com/embed/JHq3pL4cdy4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="padding:20px;"></iframe>  
+            <iframe width="550" height="315" src="https://www.youtube.com/embed/O5hShUO6wxs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" style="padding:20px;">></iframe>  
+    
+    
+    
+    Attributes of <iframe>
+    Attribute name	Value	Description
+    allowfullscreen		If true then that frame can be opened in full screen.
+    height	Pixels	It defines the height of the embedded iframe, and the default height is 150 px.
+    name	text	It gives the name to the iframe. The name attribute is important if you want to create a link in one frame.
+    frameborder	1 or 0	It defines whether iframe should have a border or not. (Not supported in HTML5).
+    Width	Pixels	It defines the width of embedded frame, and default width is 300 px.
+    src	URL	The src attribute is used to give the path name or file name which content to be loaded into iframe.
+    sandbox
+    This attribute is used to apply extra restrictions for the content of the frame
+    allow-forms	It allows submission of the form if this keyword is not used then form submission is blocked.
+    allow-popups	It will enable popups, and if not applied then no popup will open.
+    allow-scripts	It will enable the script to run.
+    allow-same-origin	If this keyword is used then the embedded resource will be treated as downloaded from the same source.
+    srcdoc		The srcdoc attribute is used to show the HTML content in the inline iframe. It overrides the src attribute (if a browser supports).
+    scrolling
+    It indicates that browser should provide a scroll bar for the iframe or not. (Not supported in HTML5)
+    auto	Scrollbar only shows if the content of iframe is larger than its dimensions.
+    yes	Always shows scroll bar for the iframe.
+    no	Never shows scrollbar for the iframe.
+    
+     -->
