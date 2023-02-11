@@ -1,0 +1,80 @@
+<!-- HTML Responsive -->
+
+
+
+Responsive Web design Responsive web design is used to make your web page look appropriate, good, and well placedon all devices (desktop, tablet, smartphone etc.) Responsive web design uses HTML and CSS to resize, hide, shrink, enlarge, or move the content.
+It makes the content look good on any screen. Set the viewport Let's see how to set the viewport. how to set the viewport Responsive Images Images which can be scaled nicely to fit any browser size are known as responsive images. How to make Image Responsive?
+By using the width property Set the CSS width property to 100% to make the image responsive and scale up and down. Example
+
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<body>
+    <h2>Responsive Image</h2>
+    <p>When we set the CSS width property to 100%, it makes the image responsive. Resize the browser window to see the effect.</p>
+    <img src="img_girl.jpg" style="width:100%;">( change image)
+</body>
+
+</html>
+
+
+
+Note: A problem with the above method (width: 100%) is that the image can be scaled up to be larger than its original size. So, it is better to use the max-width property instead. By using the max-width Property This method is best and most used because
+it facilitates that the image will scale down if it has to, but never scale up to be larger than its original size. Example
+
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<body>
+    <h2>Responsive Image</h2>
+    <p>"max-width:100%" makes the image responsive and also ensures that the image doesn't get bigger than its original size.</p>
+    <p>Resize the browser window to see the effect.</p>
+    <img src="img_girl.jpg" style="max-width:100%;height:auto;"> (Change the image)
+</body>
+
+</html>
+
+
+
+Change images according to the browser width By using the HTML
+<picture> element, you can set two or more imagesaccording to the browser width. It will change the picture when you change the browser-size. i.e. desktop and phone. Example
+
+    <!DOCTYPE html>
+    <html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <body>
+        <h2>Change Images Depending on Browser Width</h2>
+        <p>Resize the browser width and the image will change at 600px and 1500px.</p>
+        <picture>
+            <source srcset="img_smallflower.jpg" media="(max-width: 600px)">(Change image)
+            <source srcset="img_flowers.jpg" media="(max-width: 1500px)">(Change image)
+            <source srcset="flowers.jpg">
+            <img src="img_flowers.jpg" alt="Flowers" style="width:auto;">
+        </picture>
+    </body>
+
+    </html>
+
+
+
+    Responsive Text-size We can make the text size responsive by using the "uv" unit. It means viewport-width. By using this, we can make the text size to follow the browserwindow screen. Example
+
+    <!DOCTYPE html>
+    <html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <body>
+        <h1 style="font-size:10vw;">Here size is 10vw.</h1>
+        <p style="font-size:6vw;">Here size is 6vw.</p>
+        <p style="font-size:4vw;">Here size is 4vw.</p>
+        <p>Resize the browser window to see how the text size changes.</p>
+    </body>
+
+    </html>
+
+
+
+    Media Query We can also use media query to make responsive websites. Read the details of media query from here: Media Query

@@ -1,0 +1,113 @@
+<!-- HTML style using CSS
+
+
+
+Let's suppose we have created our web page using a simple HTML code, and we want something which can present our page in a correct format, and visibly attractive. So to do this, we can style our web page with CSS (Cascading Stylesheet) properties.
+
+CSS is used to apply the style in the web page which is made up of HTML elements. It describes the look of the webpage.
+
+CSS provides various style properties such as background color, padding, margin, border-color, and many more, to style a webpage.
+
+Each property in CSS has a name-value pair, and each property is separated by a semicolon (;).
+
+Note: In this chapter, we have given a small overview of CSS. You will learn everything in depth about CSS in our CSS tutorial.
+Example:
+<body style="text-align: center;">  
+      <h2 style="color: red;">Welcome to javaTpoint</h2>  
+      <p style="color: blue; font-size: 25px; font-style: italic ;">This is a great website to learn technologies in very simple way. </p>  
+</body>  
+
+
+
+Three ways to apply CSS
+To use CSS with HTML document, there are three ways:
+
+Inline CSS: Define CSS properties using style attribute in the HTML elements.
+Internal or Embedded CSS: Define CSS using <style> tag in <head> section.
+External CSS: Define all CSS property in a separate .css file, and then include the file with HTML file using tag in section.
+Inline CSS:
+Inline CSS is used to apply CSS in a single element. It can apply style uniquely in each element.
+
+To apply inline CSS, you need to use style attribute within HTML element. We can use as many properties as we want, but each property should be separated by a semicolon (;).
+
+Example:
+<h3 style="color: red;  
+            font-style: italic;  
+            text-align: center;  
+            font-size: 50px;  
+            padding-top: 25px;">Learning HTML using Inline CSS</h3> 
+
+
+
+Internal CSS:
+An Internal stylesheets contains the CSS properties for a webpage in <head> section of HTML document. To use Internal CSS, we can use class and id attributes.
+
+We can use internal CSS to apply a style for a single HTML page.
+
+Example:
+<!DOCTYPE html>  
+<html>  
+<head>  
+                  <style>  
+      /*Internal CSS using element name*/  
+            body{background-color:lavender;  
+             text-align: center;}  
+             h2{font-style: italic;  
+              font-size: 30px;  
+              color: #f08080;}  
+            p{font-size: 20px;}  
+        /*Internal CSS using class name*/  
+            .blue{color: blue;}  
+            .red{color: red;}  
+            .green{color: green;}  
+      </style>  
+    </head>  
+  <body>  
+   <h2>Learning HTML with internal CSS</h2>  
+    <p class="blue">This is a blue color paragraph</p>  
+    <p class="red">This is a red color paragraph</p>  
+    <p class="green">This is a green color paragraph</p>  
+  </body>  
+</html>  
+
+
+
+External CSS:
+An external CSS contains a separate CSS file which only contains style code using the class name, id name, tag name, etc. We can use this CSS file in any HTML file by including it in HTML file using <link> tag.
+
+If we have multiple HTML pages for an application and which use similar CSS, then we can use external CSS.
+
+There are two files need to create to apply external CSS
+
+First, create the HTML file
+Create a CSS file and save it using the .css extension (This file only will only contain the styling code.)
+Link the CSS file in your HTML file using tag in header section of HTML document.
+
+
+
+Example:
+<!DOCTYPE html>  
+<html>  
+<head>  
+    <link rel="stylesheet" type="text/css" href="style.css">  
+    </head>  
+  <body>  
+   <h2>Learning HTML with External CSS</h2>  
+    <p class="blue">This is a blue color paragraph</p>  
+    <p class="red">This is a red color paragraph</p>  
+    <p class="green">This is a green color paragraph</p>  
+  </body>  
+</html>  
+
+
+
+Commonly used CSS properties:
+Properties-name	Syntax	Description
+background-color	background-color:red;	It defines the background color of that element.
+color	color: lightgreen;	It defines the color of text of an element
+padding	padding: 20px;	It defines the space between content and the border.
+margin	margin: 30px; margin-left:	It creates space around an element.
+font-family	font-family: cursive;	Font-family defines a font for a particular element.
+Font-size	font-size: 50px;	Font-size defines a font size for a particular element.
+text-align	text-align: left;	It is used to align the text in a selected position.
+ -->
