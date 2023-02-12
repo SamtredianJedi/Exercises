@@ -1,0 +1,36 @@
+<!-- Concatenation operator in JavaScript
+
+
+The + operator, is one of widely used operator in JavaScript and Java as well. This operator not only adds two numbers but it also concatenates two string literals when applied between them. This makes it very important to understand how it actually works and doesn't trip you when you are using it in your code.
+
+The + and - operators in JavaScript and other languages as well are unary and binary. A unary operator requires only one operand to operate. Some examples are,
+
+//Unary + operator
+var x = +10;
+console.log(x);
+
+//Unary - operator
+var y = -10;
+console.log(y);
+
+
+The binary operator, on the other hand, requires two operands to work. Like,
+
+
+
+var x = 10;
+var y = 20;
+
+console.log(x + y); //30
+
+When we are talking in respect to arithmetic operators, the + operator works as arithmetic operator. But, it has another very popular use case in JavaScript. To concatenate strings, as generally seen in output.
+
+console.log( 'Hello' + 'World' );
+The concatenation operator takes the latter operand, i.e. (second string) and appends it to the first operand (i.e., first string). This is why when you'll run the above program, we will get output as "HelloWorld". Note that this operator doesn't add spaces. If you need spaces, you need to provide it explicitly.
+
+But, an interesting case comes up when we have multiple types of variables, say, string and an integer. Applying + operator between them will result in following output.
+
+console.log( 'Include Help' + 10 );
+//Output Include Help10
+The reason for this is, JavaScript can't add string and numbers, as it is meaningless. So, the arithmetic operator changes to concatenation operator and adds the number after the string. However, since it is a number, an implicit type conversion occurs, and number is changed into string, and this why we get this output.
+ -->

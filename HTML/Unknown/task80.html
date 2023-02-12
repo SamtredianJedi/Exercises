@@ -1,0 +1,50 @@
+<!-- Check if an element is present in an Array in JavaScript?
+
+JavaScript and Arrays have a close connection. In fact, array has close relation with every language, and why not? Array is one of the popular data type to store elements, perform searching and sorting on it and even matrix operations. But knowing basic array operations is important to develop strong programming skills.
+
+Suppose we have an element, and we have to search that element in an array in JavaScript. We must also define statements if element is not present in the array, like a message.
+
+Code:
+
+var array = [12, 5, 8, 3, 17];
+
+var el = 8; //Element to be searched
+
+for(var i=0; i<array.length; i++) {
+	if(el == array[i])
+		console.log('Element Found');
+}
+A simple but working solution. Here we traverse the array from index 0 to array.length - 1 index, notice only less than operator (<) instead of less than equal to (<=). Now in the if condition, we simply check if array element is equal to element to be searched value's. If it is, print element found.
+
+Let's define for conditions. We need to take a variable which will tell if element is found.
+
+
+var array = [12, 5, 8, 3, 17];
+
+var el = 8; //Element to be searched
+var flag = 0;  // Initially 0 - Not found
+
+for(var i=0; i<array.length; i++) {
+	if(el == array[i])
+		flag = 1;
+}
+
+//Check if flag value changed.
+if(flag == 1)
+	console.log('Element Found');
+else
+	console.log('Element Not Found');
+
+
+
+
+    The flag's value will only change if element is found, inside the if condition. And that is how you get your element.
+
+Using JavaScript's inbuilt method
+In the latest JavaScript standard 2015 (ES6), JavaScript has added an inbuilt method on arrays to check if they contain the element. The Array.includes() method check if element is included in the array. If it is, it returns true, else false.
+
+Code:
+
+var array = [12, 5, 8, 3, 17];
+console.log( array.includes(5) ); //True
+ -->

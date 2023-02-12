@@ -1,0 +1,55 @@
+<!-- New variable declaration keywords in JavaScript
+
+
+
+The latest standardized version of JavaScript, which is ES6 released in 2015, has a lot of improvements and features to offer. Also, it has some new variable declaration keywords that are required to be understood in order to build interactive websites with modern JavaScript code.
+
+Traditionally, there was only one way of declaring variables before ES6, which was using var keyword. The keyword declared had only 2 scope rules. If it was declared outside all the functions, then the variable will have global scope, otherwise, its scope was limited to the function it was defined in. Consider this example,
+
+var age = 10;
+//This varible will have global scope.
+
+function life() {
+	var life = 3;
+	//This variable will have function scope	
+
+	console.log(age); //Global variable accessible here
+	console.log(life); //Local variable accessible here
+}
+
+console.log(age); //Global variable still accessible
+console.log(life); //Local variable will give reference error.
+
+
+
+
+As it is clear from the above code, the function level scope variable is not accessible outside the function and will give reference error. Reference error is when JavaScript is not able to find the variable which has been referenced in the code.
+
+This was all about var, but with ES6, we have two new keywords called let and const.
+
+The const keyword is just like var, but only difference being the value once assigned to it can't be changed. It is like the constant keyword in C/C++. If you try to change the value of this constant variable, it will show error.
+
+
+
+const age = 10;
+console.log(age); //Output: 10
+age = 20; //Error, as it constant variable.
+
+
+The const keyword should be used for variables which won't change their value.
+
+The let keyword however, is just like var, but with a little difference, that it has a block scope. That is, if it is declared inside a block, then it won't be able to accessible outside. Here's an example,
+
+function life() {
+	for (var i=0; i<3; i++) {
+		var age = 10;
+		let life = 3;
+		console.log(age) // Output: 10
+		console.log(life) //Output: 3
+	}
+	console.log(age); //Output: 3
+	console.log(life); //Error, reference error to variable life
+}
+
+
+The var as already mentioned has only function scope and global scope and not block scope, like let. So, it even accessible outside the for loop, but not the let declared variable. -->

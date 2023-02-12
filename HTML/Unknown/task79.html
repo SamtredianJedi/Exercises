@@ -1,0 +1,85 @@
+<!-- Different ways to display output in JavaScript
+
+
+avaScript is one of the most widely used scripting languages in the world. Initially it was built for the web, but today it has taken over the traditional LAMP stack, with the server side platform in Node.js.
+
+JavaScript is an easy language to begin with. With support for loose typing and no strict checking JavaScript is a very forgiving language. But this sometimes not helps developers so much. Take the example of displaying data on the screen.
+
+There are various methods to do display content on the screen or console. While they all might display your data, but they are different from each other. Let's discuss them one by one...
+
+1) Console.log()
+One of the basic methods to output data to console, it is good for debugging and listing out errors while not showing them to your visitors on the webpage. The data you want to output is passed as a parameter in the log() method.
+
+
+//Simple string output
+console.log('Hello World');
+
+
+
+//Using variables
+var name = 'John';
+console.log('Hello, ' + name);
+
+
+2) Alert method
+You might be familiar with this one. You will find many tutorials using the alert method to data because it is easy and shows data on the page without altering the DOM. The alert method is straightforward and just like console.log() method it expects argument that will be alerted.
+
+But, it has few disadvantages. Firstly, it stops the script to execute while alert box is shown. It requires an action, like OK, from the user. This pauses the script and might perform badly in some cases. Secondly, the pop-up might not be very user friendly. So, it is advised that you don't use the alert to display your data on real website, and only in development mode.
+
+alert('Welcome, User');
+
+
+//Using Variables
+var name = 'John';
+alert('Hello' + name);
+
+
+3) Altering the DOM
+DOM stands for document object model. Through JavaScript we can display output directly in the webpage and most of the websites you use, use this method to display data on webpage using technologies like, AJAX. There are various methods available to do this, but we will discuss the mostly used methods and also because they are better than rest.
+
+3.1) document.write()
+The document.write() method does work and shows the data in the webpage, but it is infamous and is not used frequently. After the DOM loads (ie, webpage loads) and then if document.write() is called, it clears all the data in the document (page) and rewrites with the data provided.
+
+
+
+var loggedIn;
+
+//Let's assume LoggedIn is true from some code
+if(loggedIn) {
+	//Do something
+} else {
+	document.write('Login first');
+}
+
+
+
+
+This will erase all data on the page, clear white and then writes a fresh line on it.
+
+3.2) InnerText
+The InnerText is the variable of the element object and whatever is provided as a value is written inside that element. But it should be text only. So it is good if you want to display data on text elements like, headings or paragraph.
+
+Let's suppose this is our HTML
+
+Code - HTML
+
+<p id="output"></p>
+We define a paragraph with an ID and let's keep it empty because we want to display data in it. If there would have been some content, the content would be overwritten.
+
+Code - Script
+
+var para = document.getElementById('output');
+para.innerText = 'Hello, World!';
+This will change the text inside the paragraph. We first select the paragraph element by its ID, then we change its text, ie, display output via innerText variable.
+
+3.3) InnerHTML
+Just like innerText, innerHTML is a variable of element object, but unlike innerText which only sets the innerText, innerHTML changes the HTML. It can be used in div to enter multiple elements. Here is an example:
+
+Code - HTML
+
+<div id="box">
+	<!-- Content Goes here -->
+</div>
+Code - Script var box = document.getElementById('box'); box.innerHTML = '
+<h1>Heading</h1>
+<p>With paragraph</p>'; Here in innerHTML, we provide the html tags as well, because we are dealing with HTML directly. Hope you like this article and learned new ways to output your data. -->

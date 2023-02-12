@@ -1,0 +1,41 @@
+<!-- Join elements of an array in JavaScript
+
+
+Working with arrays can be tricky for beginners. Mostly because they are different from rest of the data types. But array operations are quite important from the programming point of view and therefore, it is important that every developer should know these basic operations on Arrays. On IncludeHelp you'll find various articles related to Array operations ranging in different languages, don't forget to check them out.
+
+Joining array elements is a quite common array operation you'll be using often in JavaScript. When we say Join, we mean that each element of the array is joined with the previous element in the form of string. Though JavaScript has in-built function for it, but it is good to know how you can do it yourself.
+
+Let's say we have an array of planets,
+
+var planets = ['mercury', 'venus', 'earth', 'mars', 'jupiter', 'saturn', 'neptune', 'uranus'];
+
+
+Here, we have array of strings. Now traversing each element of array, we can join them in string using following code.
+
+
+var planets = ['mercury', 'venus', 'earth', 'mars', 'jupiter', 'saturn', 'neptune', 'uranus'];
+var output = "";
+for(var i=0; i<planets.length; i++) {
+	if(i=planets.length - 1)
+		output = output + planets[i] + '.';
+	else
+		output = output + planets[i] + ',';
+}
+console.log('Planets in Solar System: ' + output);
+
+
+
+
+Here, we define an output variable which is an empty string and data will be added in it. Next, we define a for loop until length of planets array. Inside this loop, we check if the element is the element at last index, since we want . (fullstop) to be appended to the last item. For other elements, we append , . We add the planets[i] with the output as it will concatenated along with the ,. Hence, we get the desired result.
+
+Using in-built JavaScript join function
+JavaScript is amazing because it has lots of in-built functions to help us code faster and efficiently. The Array.join() method does the same work we did above, it joins the elements of the array. It also expects one parameter which can be any character, like join(',').
+
+
+
+var planets = ['mercury', 'venus', 'earth', 'mars', 'jupiter', 'saturn', 'neptune', 'uranus'];
+console.log(planets.join(','));
+
+//A better approach using space after ,
+console.log(planets.join(', '));
+console.log(planets.join('/')); -->

@@ -1,0 +1,43 @@
+<!-- JavaScript check if an array element is empty
+
+
+
+JavaScript doesn't have data types. This sounds a good feature, but it is mostly bad. The loose type checking might sometimes give unexpected results that would halt our application or even crash. So, it better to be cautious from your side and write code that goes with standards.
+
+With arrays in JavaScript, we can create heterogeneous collection of data. This is valid is JavaScript,
+
+
+
+var array = ['Smartphones, 'Laptops', 'TV', 100, 5.2];
+
+
+
+
+This type of feature might give the developer the freedom to code the way they like, but would put the system to test if something goes out of the line. Say, you provide an empty element in the array; it might return runtime errors if the operations performed on it are invalid.
+
+
+
+var array = ['Banana', 'Apple', '', 'Orange', , 'Kiwi'];
+
+
+Notice the empty string and empty element. This is valid in JavaScript, but might not produce correct output when operations are performed on it.
+
+Using the Array.filter() method, we filter out all the non-empty elements in the Array to a new array. This will not only save your code from producing incorrect output, but will also help to make your array data consistent.
+
+
+
+var array = ['Banana', 'Apple', '', 'Orange', , 'Kiwi'];
+
+//Using the filter method
+var newArray = array.filter(function(element) {
+	if(element != '') return element;
+});
+
+console.log(newArray);
+
+
+
+
+In this code, we apply filter() method on the original Array and in the callback function, we check if element is not equal to empty. If this is true, then return element. The filter method returns the filtered elements on a new array called newArray. Finally we output the newArray in the console.
+
+ -->

@@ -1,0 +1,49 @@
+<!-- Create a string parser with symbols for actions in JavaScript
+
+
+JavaScript is not just a language that lives in Web. It can used for many purpose, prominent example being Node.js, used as server platform. This shows that JavaScript is mature and capable enough to experiment with some cool stuff.
+
+In this post, we will create a basic string parser, asked in interview coding rounds, and give it some functionality. The functionality would be simple, just to show how things work in JavaScript.
+
+So, let's define what we are going to build. We have a string of characters with a unique symbol called @ which will toggle the case (capital or small) of the following characters.
+
+Example, we have this string, abc@def@gh will output as abcDEFgh. As with every @ symbol, the case toggles, therefore we get the DEF capitalized and gh in small. Initially, the case will be small. So let's dive in
+
+
+
+//Global Variables
+var CASE = 0; // 0 for Small, 1 for Capital
+var output = ""; // To store output
+
+//Ask the input from the user and store in input variable
+var input = prompt('Enter input string');
+
+//Split the input string into individual characters
+var characters = input.split("");
+
+//Traverse every element of characters array
+for(var i=0; i<characters.length; i++) {
+  
+  //Check if element is equal to @ symbol
+  if(characters[i] == '@') {
+    CASE = CASE ? 0 : 1; //Toggle the Case
+  } else {
+    //If case = 1, ie true, add characters in upper case.
+    if(CASE) output += characters[i].toUpperCase();
+    else output += characters[i].toLowerCase(); //else lowercase 
+  }
+}
+
+//Print the final output
+console.log(output);
+
+
+
+
+Let's break the code,
+
+First we defined 2 global variables; one is CASE which will be used to determine case using 0 or 1 value. Another is output to store the output. Then using the prompt function we get the input from the user. This input is then split at every word and stored as an array in characters array. We then traverse the array using the for loop.
+
+Inside the for loop, we check if the element is equal to @ symbol. If it is, then simply switch the case value. The ternary operator is used to toggle the value of case. If the value of case is 0, i.e. false, 1 will be assigned to CASE. If it is already 1, i.e. true, then 0 value will be assigned to it, making the CASE variable toggle its value.
+
+If it is not symbol, we go inside else and again check for CASE value. If it is 1, ie capital, then print the character element, using toUpperCase() function, which add the element as upper case in the output, otherwise in small case. Then finally, we print the value of output through console.log(). -->

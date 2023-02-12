@@ -1,0 +1,50 @@
+<!-- JavaScript multiply every array element with a constant
+
+JavaScript is the language of the web, but with Node.js this scenario has changed. Now JS is running outside of the browser and on the server side with the invention of Node. This makes JavaScript a good language choice to learn. Developers often find JavaScript easy and it is, when we have lots of in built features to help anyone to code so quickly.
+
+Arrays in JavaScript are important, just like in any other language. Manipulating arrays might be not so easy in other traditional languages like C / C++, but with JavaScript it is a piece of cake. This is because JavaScript has lots of in-built methods to improve the coding speed in an efficient and standardized manner.
+
+Let's say, we have to multiply (or perform any operation) on every element and store it in a new array. We could do it like this in a traditional approach.
+
+var luckyNumbers = [3, 5, 7, 9];
+for(var i=0; i<luckyNumbers.length; i++) {
+	//Let's take the constant factor as 2
+	luckyNumbers[i] = luckyNumbers[i] * 2;
+}
+console.log(luckyNumbers);
+
+
+But in JavaScript, we also have an inbuilt method called map(), which operates on every array element and perform some operation on it. Just take a look, how easy it becomes to code with JavaScript.
+
+
+var luckyNumbers = [3, 5, 7, 9];
+var unluckyNumbers = luckyNumbers.map(function(element) {
+	return element*2;
+});
+console.log(unluckyNumbers);
+
+
+
+As you can see, the code has become much briefer and does the work more efficiently. The map() method takes the callback function argument with current element as parameter (element here) and returns element*2 on a new array called unluckyNumbers. Finally we print out the unluckyNumbers.
+
+Let's extend this code for other operations as well,
+
+
+
+var luckyNumbers = [3, 5, 7, 9];
+
+//Halving the elements
+var luckyNumbers_half = luckyNumbers.map(function(element) {
+	return element/2;
+});
+
+//Incrementing by 10
+var luckyNumbers_ten = luckyNumbers.map(function(element) {
+	return element + 10;
+});
+
+console.log(luckyNumbers_half);
+console.log(luckyNumbers_ten);
+
+
+ -->

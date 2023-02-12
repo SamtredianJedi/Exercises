@@ -1,0 +1,85 @@
+<!-- How to fill dropdowns using JavaScript?
+
+
+First of all, we are going to create an html document name dropdown.html and adding our JavaScript named dropdown.js using script tag like <script src="dropdown.js"></script>.
+
+Then, we create two dropdowns by using select tags with id st and ct and add an onchange event in first dropdown. So that dropdown for state will be filled with the given states.
+
+Now, in JavaScript file we make four functions addElements, removeElements to add and remove options from select tag and fillState, fillCity to fill the data in dropdowns by their id(s), which we get by calling document.getElementById() method.
+
+
+
+// addElements function to add elements as options
+function addElements(dd,array)
+{  for(i=0;i<array.length;i++)
+    {
+	var opt=document.createElement('option');
+     opt.text=array[i];
+     opt.value=array[i];
+	 dd.add(opt);
+	}
+}
+//  removeElements function to remove elements in dropdown city while changing the states 
+function removeElements(dd)
+{  for(i=dd.options.length-1;i>=0;i--)
+    {
+	  dd.remove(i);
+	}
+}
+// function to fill states
+function fillState()
+{  
+	var state=["-Select-","Madhya Pradesh","Haryana","Gujrat","Himachal"];
+	var st=document.getElementById("st");
+	addElements(st,state);
+}
+// functions to fill city dropdown after changing the state values
+function fillCity()
+{
+	var st=document.getElementById("st");
+	var ct=document.getElementById("ct");
+	var i=st.selectedIndex;
+	removeElements(ct);
+	//switch cases according to the state values
+	switch(i)
+	{ 
+		case 1:
+			var mp=["-Select-","Gwalior","Bhopal","Indore","Ujjain"];
+			addElements(ct,mp);
+			break;
+		case 2:
+			var hr=["-Select-","Rohtak","Faridabad","Sonipat","Panipat"];
+			addElements(ct,hr);
+			break;
+		case 3:
+			var gj=["-Select-","Ahemdabad","Surat","Gandhinagar","Rajkot"];
+			addElements(ct,gj);
+			break;
+		case 4:
+			var hp=["-Select-","Dharamshala","Shimla","kasauli","Nahan"];
+			addElements(ct,hp);
+			break;
+	}
+}
+
+
+
+
+<html>
+	<head>
+		<title>
+			Example of dropdown filling
+		</title>
+		<script src="dropdown.js"></script>
+	</head>
+	<body onload="fillState();">
+		<select id="st" onchange="fillCity();"></select>
+		<br><br>
+		<select id="ct">
+		<option>-City-</option>
+		</select>
+	</body>
+</html>
+
+
+ -->

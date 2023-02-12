@@ -1,0 +1,48 @@
+<!-- Access global variables inside function in JavaScript
+
+
+In traditional JavaScript, var is the most widely used keyword to declare variables. But with latest JavaScript version (ES6), "let" was introduced as a block level scope. Until ES6, unlike C, there were only two scopes in JavaScript, Global scope and function scope. But after ES6, there's new scope called block scope. But var is out of it. Declaring variables with var applies it to only 2 traditional scope, Global and function scope.
+
+Accessing a global variable is required a lot of times. If a variable is going to be used throughout the program it is important that you declare the variable in global scope. But, because JavaScript allows re-declaration of same variables, it can easily become a problem if a function is using a variable with same name as global variable in its scope.
+
+Normally accessing this variable's value will return the value of the current scope variable. Here is what we are talking about.
+
+
+
+var age = 21;
+
+function checkAge() {
+	var age = 18;
+	console.log(age); // Output: 18
+}
+
+checkAge();
+
+
+
+
+Here, the function's age variable overshadows the global age variable. This is the default behaviour in not only JavaScript but some other languages as well. But JavaScript has answer to this problem.
+
+Using the global window object, we can access the global variable. The window object is the global object that represents the browser window. All the variables declared in the global scope become the variable of window object. To access this window object, we have to use the object dot notation.
+
+
+window.age;
+
+//Assign a value
+window.age = 30;
+
+
+
+var age = 22;
+
+function checkAge(a) {
+	var age = a;
+	if(age > 18) 
+		console.log('You are Adult'); //True
+	if(window.age > 21) 
+		console.log('You are eligible for marriage'); //True
+}
+
+checkAge(19);
+
+ -->

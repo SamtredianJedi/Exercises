@@ -1,0 +1,68 @@
+<!-- Dynamically add CSS class with JavaScript
+
+JavaScript was built to provide interaction. With JavaScript and CSS combined user experience can be significantly improved. This includes effect such as display something on click on a button. All of this happens with adding JavaScript layer over the CSS.
+
+DOM element in JavaScript have a property in them called 'classList' which returns out the classes attached with that element along with some other native methods.
+
+Let us suppose an element with following class,
+
+<div id="div" class="one two three four">
+Using the in-built 'classList' methods, we can get a lot of information such as,
+
+
+
+
+var element = document.getElementById('div');
+//We have div element in 'element' variable
+
+//Returns the number of classes
+console.log(element.classList.length); //Output: 4
+
+//Returns the value of the class attribute
+console.log(element.classList.value); //Output: one two three four
+
+
+
+
+
+But, not just this, we can also add or remove classes using the in-built method, add() and remove(). Both of them expect a string class name that will be added and removed respectively.
+
+element.classList.add('five');
+Let's understand this by example:
+
+We have a button element, on clicking which will display the text. So, first, let's define the markup.
+
+
+
+<button onclick='addClass()'> Show Text </button>
+<p id="text" class="text hidden">This is the magic text</p>
+
+
+We have a button element, which has onclick attribute that will trigger the addClass() function we have defined below. The paragraph element contains the text.
+
+
+
+.text {
+	text-align: center;
+}
+.hidden {
+	display: none;
+}
+.show {
+	display: block;
+}
+
+
+In this code, we target three class selectors, all of which are for text. Now in .hidden selector, we define display property as none, which will not display the text in the webpage. The .show class, which we will add on button click, will however, because of display: block; property, will show the element.
+
+
+
+function addClass() {
+	var text = document.getElementById('text');
+	text.classList.remove('hidden');
+	text.classList.add('show');
+}
+
+
+In this simple code, we first select the text element and then from it's classList, remove the hidden class, which was hiding the element. And then we add the class show which will show the element.
+ -->
