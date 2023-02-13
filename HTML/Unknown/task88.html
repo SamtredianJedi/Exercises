@@ -1,0 +1,62 @@
+<!-- JavaScript program to split the keywords in the string
+
+
+In this simple program, we will use the JavaScript to input a list of keywords from the user. The keywords will be prompted by the browser and the user will enter the keywords, separated by "," character.
+
+From the input, we will separate the keywords using the split() method of String object. The split method takes single argument, which is the character where to split.
+
+
+JavaScript code to split the keywords in the string
+
+
+var sentence = prompt('Enter keywords separated by ","',"");
+var keywords = sentence.split(",");
+
+var opString = "";
+
+keywords.forEach(function(keyword){
+  keyword = keyword.trim();  
+  opString += "I love " + keyword + "<br/>";
+});
+
+document.getElementById("output").innerHTML = opString;
+
+
+
+In this program we will input the string from the user using the prompt() method. The returned value will be stored in the sentence string.
+
+Then we will apply the split() method on the sentence string object. We will pass the character ",". Now, the method returns value in array. This value will be stored in the array variable named as keywords.
+
+Now using forEach method on keywords array, we will print the result in the browser. For that we have to stuff the opString by concatenating with each keyword. But wait, there a simple thing that we need to take care of, which is the extra space in between the keywords. We can omit the extra space by using the trim() method on the keyword.
+
+Finally, we print the opString by adding it to innerHTML of the output element.
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript Split String</title>
+    
+    <script>
+		window.onload = function() {
+			var sentence = prompt('Enter your hobbies separated by ","',"");
+			var keywords = sentence.split(",");
+
+			var opString = "";
+
+			keywords.forEach(function(keyword){
+			  keyword = keyword.trim();  
+			  opString += "I love " + keyword + "<br/>";
+			});
+			document.getElementById("output").innerHTML = opString;
+		}
+     </script>    
+</head>
+
+<body>
+
+    <p id="output"></p>
+
+</body>
+</html> -->

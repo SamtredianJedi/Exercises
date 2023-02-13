@@ -1,0 +1,33 @@
+<!-- How to change the font-size with JavaScript?
+
+The scripting language of web can be used for immersive interactions on the website, but what makes it more special is the ability to alter HTML page to make it accessible for different users.
+
+Font size on a webpage might look beautiful, but it is of no use when someone with eye problem can't read it. But with JavaScript, we can remove this problem by manually increasing / decreasing the font-size.
+
+
+<p id="para">This is an example of font-sizing with JavaScript</p>
+<btn id="dec"> A- </btn>
+<btn id="inc"> A+ </btn>
+
+
+
+Here, para is the id of the paragraph or text whose font-size we have to change. The two buttons, A- and A+ also have respective ids and they will be used to control the font-size. Now, time for some Java Scripting.
+
+var text = document.getElementById('para');
+var btn-dec = document.getElementById('dec');
+var btn-inc = document.getElementById('inc');
+
+var size = 16; //Default
+
+btn-dec.addEventListener('click', function() {
+  text.style.fontSize = size-- + 'px';
+});
+btn-inc.addEventListener('click', function() {
+  text.style.fontSize = size++ + 'px';
+});
+
+
+
+Here we take 3 variables to get elements by their IDs. Then we add two event listeners on the buttons, which will execute the callback function if they record any clicks on them. Next we take size variable which will be the size value.
+
+The main part comes here, the text.style.fontSize accesses the font-size property of the text element and decreases it. The size++ increases the font-size and concatenates with px as a string. Similarly for increasing the size, increment the font-size. And that's it. Easy and clean. -->

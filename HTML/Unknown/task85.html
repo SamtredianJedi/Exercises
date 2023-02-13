@@ -1,0 +1,27 @@
+<!-- The JavaScript forEach method in detail
+
+
+JavaScript just like any other programming language supports the array data type for storing data. But unlike C/C++ JavaScript supports various methods on arrays. For this post, we will discuss about Array forEach method.
+
+Why do we store data? To access it by a reference at later time. Generally we iterate over each element of array through for loop, which is how we do in every language. Just like that, in JavaScript we can access elements of array using for loop like,
+
+Example:
+
+var arr = [1,2,3,4,5];
+for(var i=0; i<arr.length(); i++) {
+  console.log(arr[i]);
+}
+
+
+But we have a very efficient and straight way to traverse the array, using the Array.forEach() method. Let's understand by an example.
+
+
+var arr = [1,2,3,4,5];
+arr.forEach(function(element, index) {
+  console.log('The element at index ' + index + ' is: ' + element);
+}
+
+
+
+Now what's happening is the forEach method has a function as an argument, which has 3 arguments. The arguments are the element itself in each iteration; the corresponding index of the array and last one is the array itself, if the function is defined somewhere else.
+ -->

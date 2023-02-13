@@ -1,0 +1,38 @@
+<!-- JavaScript program to check if the variable is a valid string variable
+
+
+rings are arguably the most important data type in JavaScript. Whether you fetch a value from a form or seek a user input, most of the time it is encoded as string.
+
+Here is a program that checks if any variable is a valid string. By the term valid we mean that:
+
+It is a string type variable
+It is not undefined
+Its value is not null
+
+
+
+JavaScript code to validate string
+
+
+
+<script>
+    var myString = "Hello";
+    if(((typeof myString != "undefined") && (typeof myString.valueOf() == "string")) && (myString.length > 0)) {
+        console.log("String variable");
+    }
+    else {
+        console.log("Not a String variable!");
+    }
+</script>
+
+
+
+We define a myString variable which we will be testing.
+
+Firstly, we check if the variable is not undefined. We test these conditions in if statement. Using the typeof variable we get the data type of the variable. If it is not undefined, along with its data type as string type and its value is not null.
+
+The valueOf method returns the value of the variable. We are testing the value with the typeOf operator to check if it is a string.
+
+Lastly, we simply check if the string is not null by applying length method and check if it is greater than 0. If the length is greater than 0, then of course, it is not empty.
+
+Finally, we console.log out the print statement. -->

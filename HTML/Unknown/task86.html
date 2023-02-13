@@ -1,0 +1,25 @@
+<!-- Generate random number within a range in JavaScript
+
+
+avaScript is a front-end scripting language. Many a times we need to generate random numbers between a range, say for an input. JavaScript has its own built in Math library and under that we have random function, which is like 'Math.random()', but it generates floating numbers between 0 and 1.
+
+So, manipulating it with some other Math functions and simple maths logic, we can generate random numbers between a range. Here, is a simple program to do so.
+
+JavaScript code to generate random numbers within a range
+
+
+function randomNumber(start, end) {
+    var diff = end - start;
+    return Math.floor((Math.random)*diff + start);
+  }
+  console.log(randomNumber(1111, 9999));
+
+  
+
+  Looks unusual? It might look by just looking but it is not actually.
+
+Only a simple logic is followed. First, we have taken the difference between starting range and end range.
+
+As we know, 'Math.random()' returns numbers between 0 and 1. So the minimum number it will return is 0. Now if a number is multiplied with 0 (diff here), it will be 0. Adding the starting range to 0 will give the starting number itself.
+
+Now, the maximum number randomly generated will be 1. If this is multiplied with difference, it will result difference. Now adding this difference to starting range, will give out nothing but the end range. Simple maths, right? Likewise, the maths goes for all the floating numbers between 0 to 1. -->

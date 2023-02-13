@@ -1,0 +1,74 @@
+<!-- JavaScript program to create an object from a function
+
+Unlike the traditional programming languages like C, Java where objects are the instance of classes, JavaScript goes with a different approach. Instead of class, JavaScript is based on prototypal inheritance.
+
+Prototypal inheritance means that objects are created using the new instances of existing objects. Instead of extensibility occurring through class inheritance, prototypal extensibility happens by enhancing an existing object with new properties and methods.
+
+Based on this concept, we will create our JavaScript object using a function definition. We will need newoperator to create an instance of the function.
+
+
+JavaScript code to create an Object from function
+
+
+
+var vehicle = function(type, tyre){
+    this.type = type;
+    this.tyre = tyre;
+    this.tellTyres = function(){
+      console.log(this.type + " has " + this.tyre + " tyres");
+    };
+  };
+  
+  var car = new vehicle("Car", 4);
+  var bus = new vehicle("Bus", 6);
+  var truck = new vehicle("Truck", 18);
+  
+  car.tellTyres();
+  bus.tellTyres();
+  truck.tellTyres();
+
+  
+
+  Here we define a vehicle function having two arguments, type and tyre. Inside this function we are referencing the properties of the corresponding object using this keyword.
+
+Next, we defined a tellTyre function that prints out a nice formatted string.
+
+Now, we come to our main point of discussion. We create a carvariable and using new operator with vehicle function, we created a new object based on the vehicle function. The properties and methods are attached to the new object.
+
+Now we can access the methods and properties on this new object just like any other object, using the . (dot) operator. Calling the car.tellTyres() method will print the type and number of tyres.
+
+
+
+Similarly, we create bus and truck objects to add more examples. Simple and nice concept you see… JavaScript makes it possible.
+
+
+<html>
+    <head>
+        <title>Javascript object from Function</title>
+        
+        <script>
+            var vehicle = function(type, tyre){
+              this.type = type;
+              this.tyre = tyre;
+              this.tellTyres = function(){
+                console.log(this.type + " has " + this.tyre + " tyres");
+              };
+            };
+
+            var car = new vehicle("Car", 4);
+            var bus = new vehicle("Bus", 6);
+            var truck = new vehicle("Truck", 18);
+
+            car.tellTyres();
+            bus.tellTyres();
+            truck.tellTyres();        
+        </script>
+    
+    <head>
+    
+    <body>
+        <p>Open Console by pressing "Ctrl" + "Shift" + "J"</p>
+    </body>
+</html>
+
+ -->

@@ -1,0 +1,39 @@
+<!-- Template literals in JavaScript
+
+
+ou must have been using single/double quotes for strings until now. The problem with them is you have to escape the corresponding quotes and interpolation is not supported. But to the rescue, the latest specification of JavaScript which is ES 2015 (ES6) has standardized the template literals as a part of the JavaScript language.
+
+So, what are Template Literals?
+Template literals are the quotations used for specifying strings using ` (backtick) symbol. Just like the '/" quotes, they are used to denote the beginning and end of the string. Here's an example.
+
+Example: using quotes
+
+var str1 = 'Hello World!';
+var str2 = "Hello World!";
+Example: using template literals
+
+var str = `Hello World!`;
+Pretty straigt forward, right? But it has tons of advantages over these commonly used quotations.
+
+1) It supports interpolation
+
+Interpolation means using variables inside the string. String literals do it in the following way,
+
+Example:
+
+var name = 'Sam';
+console.log(`Hello, ${name}`); \\Output: Hello, Sam
+Inside the $ symbol followed by a set of curly braces, we can add variable names to get their data inside the string. You'll find it useful and faster than concatenating with + operators.
+
+2) No need to escape quotes
+
+It will be very rare that you'll need to escape any `(backtick) symbol than single/double quotes that are found in english sentences based strings. But if you need to escape backticks, you can do so, console.log(`This is a \` - backtick.`);. Same goes for escaping interpolation symbol, like '\${}'.
+
+3) Multiline support
+
+Another big advantage of using backticks is that it supports multiline strings. This is correct inside backtick quotation.
+
+var string = `I love
+eating
+chocolates and cakes.`;
+That said, following the standards is a good practice and therefore you should also start using backticks in your JavaScript projects. -->

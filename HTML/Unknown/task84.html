@@ -1,0 +1,20 @@
+<!-- How to get the extension of a file using JavaScript?
+
+The front-end programming relies on JavaScript for providing interaction with the users. JavaScript in addition to interaction also provides validation on input forms. Many of the times, a user needs to input the file, say a photo for profile picture.
+
+How do we get the extension and check if it is only png and jpeg. Of course, HTML in built provides "allow" tag to filter only selected file types, but it is not secured. We have to validate it using JavaScript.
+
+So, let's say we have an input tag with type set to 'file'. Now to get the file from this is pretty easy. We have a files array as a value from the input. Note that a file input can also take multiple files if given 'multiple' attribute in the input.
+
+
+var ip = document.getElementById('fileInput');  // fileInput is the Id
+var file = ip.files[0];  //Accessing the first file
+var fileName = file.name;
+
+//Let's say file name is Hello.world123.txt
+console.log(fileName.split('.').pop());
+
+
+Getting the fileName is just like how we get files from input. The file object contains the name of the file under name attribute of object. Now, the String split() methods splits the strings at the given argument and stores in the array. Here we are splitting on the basis of "period". The extension name will be preceeded by a period symbol, so the last element in the stored array will be period.
+
+The pop() method on array, returns and removes the last element of the array. Therefore what we get is the extension name. That simple it is. Hope you learned something useful from this article. -->
