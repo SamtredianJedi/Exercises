@@ -1,0 +1,52 @@
+<!-- JavaScript - Redirect to another URL on Button Click
+
+
+
+In this code snippet we will learn How to redirect to another URL using JavaScript function, in this example we will take three buttons and redirect to other URLs through button click.
+
+Redirect to another URL on Button Click
+
+
+<script type="text/javascript">
+    function redirectToURL(btnId){
+        if(btnId=="button1")
+            window.location.replace("https://en.wikipedia.org/wiki/Main_Page");
+        else if(btnId=="button2")
+            window.location.replace("https://www.google.com");
+        else if(btnId=="button3")
+            window.location.replace("http://www.bing.com/");
+    }
+ </script>
+
+
+
+
+<!--JavaScript - Redirect to another URL on Button Click.-->
+<html>
+
+<head>
+    <title>JavaScript - Redirect to another URL on Button Click.</title>
+    <script type="text/javascript">
+        function redirectToURL(btnId) {
+            if (btnId == "button1")
+                window.location.replace("https://en.wikipedia.org/wiki/Main_Page");
+            else if (btnId == "button2")
+                window.location.replace("https://www.google.com");
+            else if (btnId == "button3")
+                window.location.replace("http://www.bing.com/");
+        }
+    </script>
+</head>
+
+<body style="text-align: center">
+    <h1>
+        JavaScript - Redirect to another URL on Button Click.
+        <h1>
+            <input type="button" id="button1" value="www.wikipedia.com" onClick='redirectToURL(this.id)' />
+            <input type="button" id="button2" value="www.google.com" onClick='redirectToURL(this.id)' />
+            <input type="button" id="button3" value="www.bing.com" onClick='redirectToURL(this.id)' />
+</body>
+
+</html>
+
+-->

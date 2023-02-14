@@ -1,0 +1,66 @@
+<!-- JavaScript - Select/Unselect (Check/Uncheck) all CheckBoxes on Button Click
+
+This JavaScript function is used to check (select), unselect (uncheck) all checkboxes, in this example we will check all checkboxes by clicking Select All button and unselect by clicking on Unselect All button.
+
+There are two JavaScript functions which will be called on both button click events.
+
+<script type="text/javascript">
+    function selectAll() {
+        var items = document.getElementsByName('acs');
+        for (var i = 0; i < items.length; i++) {
+            if (items[i].type == 'checkbox')
+                items[i].checked = true;
+        }
+    }
+
+    function UnSelectAll() {
+        var items = document.getElementsByName('acs');
+        for (var i = 0; i < items.length; i++) {
+            if (items[i].type == 'checkbox')
+                items[i].checked = false;
+        }
+    }			
+</script>
+
+
+
+<!--JavaScript - Select/Unselect (Check/Uncheck) all CheckBoxes on Button Click.-->
+<html>
+
+<head>
+    <title>JavaScript - Select/Unselect (Check/Uncheck) all CheckBoxes on Button Click.</title>
+    <script type="text/javascript">
+        function selectAll() {
+            var items = document.getElementsByName('acs');
+            for (var i = 0; i < items.length; i++) {
+                if (items[i].type == 'checkbox')
+                    items[i].checked = true;
+            }
+        }
+
+        function UnSelectAll() {
+            var items = document.getElementsByName('acs');
+            for (var i = 0; i < items.length; i++) {
+                if (items[i].type == 'checkbox')
+                    items[i].checked = false;
+            }
+        }
+    </script>
+</head>
+
+<body style="text-align: left;">
+    <h1>JavaScript - Select/Unselect (Check/Uncheck) all CheckBoxes on Button Click.</h1>
+    <big>Select your favourite accessories: </big><br>
+    <input type="checkbox" name="acs" value="Mobile">Mobile<br>
+    <input type="checkbox" name="acs" value="Tab">Tab<br>
+    <input type="checkbox" name="acs" value="Laptop">Laptop<br>
+    <input type="checkbox" name="acs" value="IPod">IPod<br>
+    <p>
+        <input type="button" onclick='selectAll()' value="Select All" />
+        <input type="button" onclick='UnSelectAll()' value="Unselect All" />
+    </p>
+</body>
+
+</html>
+
+-->

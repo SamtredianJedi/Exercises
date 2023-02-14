@@ -1,0 +1,56 @@
+<!-- JavaScript - Allow only numbers in TextBox (Restrict Alphabets and Special Characters)
+
+
+This JavaScript function will be used to restrict alphabets and special characters in Textbox , only numbers, delete, arrow keys and backspace will be allowed.
+
+JavaScript Code Snippet - Allow Numbers in TextBox, Restrict Alphabets and Special Characters
+
+
+
+JavaScript function
+
+
+<script type="text/javascript">
+    /*code: 48-57 Numbers*/
+    function restrictAlphabets(e){
+        var x = e.which || e.keycode;
+        if((x>=48 && x<=57))
+            return true;
+        else
+            return false;
+    }
+ </script>
+
+
+
+
+
+<!--
+   JavaScript - Allow only numbers in TextBox 
+   (Restrict Alphabets and Special Characters).
+   -->
+<html>
+
+<head>
+    <title>JavaScript - Allow only numbers in TextBox (Restrict Alphabets and Special Characters).</title>
+    <script type="text/javascript">
+        /*code: 48-57 Numbers*/
+        function restrictAlphabets(e) {
+            var x = e.which || e.keycode;
+            if ((x >= 48 && x <= 57))
+                return true;
+            else
+                return false;
+        }
+    </script>
+</head>
+
+<body style="text-align: center;">
+    <h1>JavaScript - Allow only numbers in TextBox (Restrict Alphabets and Special Characters).</h1>
+    <big>Enter numbers only: </big>
+    <input type="text" onkeypress='return restrictAlphabets(event)' />
+</body>
+
+</html>
+
+-->

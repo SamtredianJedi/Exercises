@@ -1,0 +1,37 @@
+<!-- Display different Alert Message on different Button Click Event using JavaScript
+
+
+In this code snippet we will learn how to display different alert messages using JavaScript by clicking on different buttons. Here we will pass the Button Ids in JavaScript function on Button onClick event and JavaScript function will display alert messages according to Button Ids.
+
+Display Different Alert Messages on Different Button Click Events
+
+
+<!--Display different Alert Message on different Button Click Event.-->
+<html>
+
+<head>
+    <title>Display different Alert Message on different Button Click Event.</title>
+    <script type="text/javascript">
+        function showMessage(btnId) {
+            if (btnId == "btnShowMsg1") alert("You clicked on Button 1.");
+            else if (btnId == "btnShowMsg2") alert("You clicked on Button 2.");
+            else if (btnId == "btnShowMsg3") alert("You clicked on Button 3.");
+            else alert("Invalid Button Id.");
+        }
+    </script>
+</head>
+
+<body>
+    <center>
+        <h1>Display different Alert Message on different Button Click Event.</h1>
+        <b>Click on button to display message: </b><br />
+        <br />
+        <input type="button" id="btnShowMsg1" value="Button 1" onClick="showMessage(this.id)" />
+        <input type="button" id="btnShowMsg2" value="Button 2" onClick="showMessage(this.id)" />
+        <input type="button" id="btnShowMsg3" value="Button 3" onClick="showMessage(this.id)" />
+    </center>
+</body>
+
+</html>
+
+-->

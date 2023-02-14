@@ -1,0 +1,33 @@
+JavaScript - Display Input Text into Uppercase
+
+
+<script type="text/javascript">
+    function convertCase(text) {
+        var strUCase = text.toUpperCase();
+        document.getElementById("dispText").innerHTML = strUCase;
+    }
+</script>
+
+
+
+<!--JavaScript-Display Input Text into Uppercase Characters.-->
+<html>
+
+<head>
+    <title>JavaScript-Display Input Text into Uppercase Characters.</title>
+    <script type="text/javascript">
+        function convertCase(text) {
+            var strUCase = text.toUpperCase();
+            document.getElementById("dispText").innerHTML = strUCase;
+        }
+    </script>
+</head>
+
+<body style="text-align: center">
+    <h1>JavaScript-Display Input Text into Uppercase Characters.</h1>
+    <input type="text" id="inputText" /><br><br>
+    <input type="button" value="Display in Uppercase" onClick='convertCase(inputText.value)' />
+    <!-- Uppercase text will display here
+      <div id="dispText" style="text-size: 200%"></div>
+   </body>
+</html> -->

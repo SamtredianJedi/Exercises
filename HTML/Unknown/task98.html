@@ -1,0 +1,37 @@
+<!-- JavaScript - Display current Date and Time
+
+
+
+Here we will learn how to display current system date and time using JavaScript function? In this example current Date and Time will display in H2 tag using document.getElementById("ID").innerHTML.
+
+Function to Display Current System Date and Time
+JavaScript function:
+
+<script type="text/javascript">
+   function getCurrentDate(){
+   	var curDate=new Date();
+   	document.getElementById("showDate").innerHTML = curDate.toString();
+   }
+</script>
+HTML Source Code with JavaScript:
+
+<!--JavaScript to display current Date and Time.-->
+<html>
+
+<head>
+    <title>JavaScript to display current Date and Time.</title>
+    <script type="text/javascript">
+        function getCurrentDate() {
+            var curDate = new Date();
+            document.getElementById("showDate").innerHTML = curDate.toString();
+        }
+    </script>
+</head>
+
+<body onLoad='getCurrentDate()' style="text-align: center">
+    <h1>Get current date using JavaScript.</h1>
+    <!--Here date and time will display-->
+    <h2 id="showDate"></h2>
+</body>
+
+</html> -->

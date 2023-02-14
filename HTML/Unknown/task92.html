@@ -1,0 +1,39 @@
+<!-- JavaScript to detect whether page is load on Mobile or Desktop
+
+
+The web is accessible on many devices, from Desktops to Smartphones and wearable. Some of you might be even browsing this website on your smartphones. As for the developers, it is on them how they make any website accessible and responsive irrespective of the device used.
+
+But how do you differentiate between a mobile device and a desktop computer? CSS media queries is a good guess, but it's only limited to styling a web page. What about functionality? Javascript? Right guess.
+
+We can use Javascript to tell whether the website is being viewed from a Smartphone device or desktop computer. Here's a simple script that does this.
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mobile Test</title>
+</head>
+<body>
+
+	<p id="text"></p>
+
+	<script type="text/javascript">
+		var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+		var element = document.getElementById('text');
+		if (isMobile) {
+  			element.innerHTML = "You are using Mobile";
+		} else {
+			element.innerHTML = "You are using Desktop";
+		}
+	</script>
+</body>
+</html>
+
+
+
+
+Here, we are writing the script in the html file to keep it brief.
+
+First, we are declaring a isMobile variable that tests the navigator.userAgent against a regular expression. The navigator.userAgent object method gives the browser details in plain text format. The regular expression is simply checking the occurrence of the pattern through the test function.
+
+If it returns true, which means it is passes the mobile check regular expression and therefore is a mobile device. Otherwise we print the desktop string. -->
