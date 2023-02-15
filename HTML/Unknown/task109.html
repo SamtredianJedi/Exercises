@@ -1,0 +1,40 @@
+<!-- JavaScript - Set Focus on Particular Field in a Form using JavaScript Function -->
+
+
+In this example, we will learn how to set focus in any textbox (field) in a form using JavaScript Function. Set Focus in any Field of a Form using JavaScript Function
+
+
+<script type="text/javascript">
+    function setFocus(indexForm, indexField) {
+        document.forms[indexForm].elements[indexField].focus();
+    }
+</script>
+
+
+
+<!--JavaScript - Set Focus on Particular Field in a Form using JavaScript Function.-->
+<html>
+
+<head>
+    <title>JavaScript - Set Focus on Particular Field in a Form using JavaScript Function.</title>
+    <script type="text/javascript">
+        function setFocus(indexForm, indexField) {
+            document.forms[indexForm].elements[indexField].focus();
+        }
+    </script>
+</head>
+
+<body onload="setFocus(0,0)">
+    <h1>JavaScript - Set Focus on Particular Field in a Form using JavaScript Function.</h1>
+    <form>
+        <b>Name:</b><br />
+        <input type="text" width="100px" /><br />
+        <b>Address:</b><br />
+        <input type="text" width="200px" /><br />
+        <b>Mobile:</b><br />
+        <input type="text" width="50px" /><br />
+        <input type="button" value="Submit." />
+    </form>
+</body>
+
+</html>

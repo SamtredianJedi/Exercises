@@ -1,0 +1,41 @@
+<!-- JavaScript - Detect and Display Screen Resolution using JavaScript Function -->
+
+
+In this example, we will learn how to detect and display Screen Resolution using JavaScript Function, we will create a JavaScript function that will detect and display using alert message box Screen Resolution on Button Click Event. Detect and Display
+Screen Resolution using JavaScript Function
+
+
+<script type="text/javascript">
+    function displayResolution() {
+        if (window.screen) {
+            var width = screen.width;
+            var height = screen.height;
+            alert("Screen Resolution: " + width + "x" + height);
+        }
+    }
+</script>
+
+
+
+<!--JavaScript - Detect and Display Screen Resolution using JavaScript Function.-->
+<html>
+
+<head>
+    <title>JavaScript - Detect and Display Screen Resolution using JavaScript Function.</title>
+    <script type="text/javascript">
+        function displayResolution() {
+            if (window.screen) {
+                var width = screen.width;
+                var height = screen.height;
+                alert("Screen Resolution: " + width + "x" + height);
+            }
+        }
+    </script>
+</head>
+
+<body style="text-align: center;">
+    <h1>JavaScript - Detect and Display Screen Resolution using JavaScript Function.</h1>
+    <p><input type="button" value="Display Screen Resolution." onclick="displayResolution()" /></p>
+</body>
+
+</html>

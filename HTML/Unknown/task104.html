@@ -1,0 +1,55 @@
+<!-- JavaScript - Print value of all checked (selected) CheckBoxes on Button click
+
+
+This JavaScript function will print value of all selected (checked) CheckBoxes, value will be printed in alert (message) box on Button Click event.
+
+Print Value of All Checked (Selected) CheckBoxes
+
+
+<script type="text/javascript">
+    function printChecked() {
+        var items = document.getElementsByName("acs");
+        var selectedItems = "";
+        for (var i = 0; i < items.length; i++) {
+            if (items[i].type == "checkbox" && items[i].checked == true) selectedItems += items[i].value + "\n";
+        }
+        alert(selectedItems);
+    }
+</script>
+
+
+
+
+<!--JavaScript - Print value of all checked (selected) CheckBoxes on Button click.-->
+<html>
+
+<head>
+    <title>JavaScript - Print value of all checked (selected) CheckBoxes on Button click.</title>
+    <script type="text/javascript">
+        function printChecked() {
+            var items = document.getElementsByName("acs");
+            var selectedItems = "";
+            for (var i = 0; i < items.length; i++) {
+                if (items[i].type == "checkbox" && items[i].checked == true) selectedItems += items[i].value + "\n";
+            }
+            alert(selectedItems);
+        }
+    </script>
+</head>
+
+<body style="text-align: left;">
+    <h1>JavaScript - Print value of all checked (selected) CheckBoxes on Button click.</h1>
+    <big>Select your favourite accessories: </big><br />
+    <input type="checkbox" name="acs" value="Mobile" />Mobile<br />
+    <input type="checkbox" name="acs" value="Tab" />Tab<br />
+    <input type="checkbox" name="acs" value="Laptop" />Laptop<br />
+    <input type="checkbox" name="acs" value="IPod" />IPod<br />
+    <p>
+        <input type="button" onclick="printChecked()" value="Print Selected Items" />
+    </p>
+</body>
+
+</html>
+
+
+-->

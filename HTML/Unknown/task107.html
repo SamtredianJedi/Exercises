@@ -1,0 +1,89 @@
+<!-- JavaScript - Required Field Validator for TextBox on Submit
+
+
+
+In this code snippet we will check how to validate textboxes on submit, JavaScript function for Required field validator for Textboxes on Submit.
+
+Required Field Validator on Submit
+
+
+<style type="text/css">
+    .reqError {
+        color: #ff0000; /*Red Color*/
+        font-weight: bold;
+    }
+</style>
+<script type="text/javascript">
+    //function to check validation (Required field)
+    function checkReqFields() {
+        var returnValue;
+        var name = document.getElementById("txtName").value;
+        var address = document.getElementById("txtAddress").value;
+
+        returnValue = true;
+        if (name.trim() == "") {
+            document.getElementById("reqTxtName").innerHTML = "* Name is required.";
+            returnValue = false;
+        }
+        if (address.trim() == "") {
+            document.getElementById("reqTxtAddress").innerHTML = "* Address is required.";
+            returnValue = false;
+        }
+        return returnValue;
+    }
+</script>
+
+
+
+<!--JavaScript - Required Field Validator for TextBox on Submit.-->
+<html>
+
+<head>
+    <title>JavaScript - Required Field Validator for TextBox on Submit</title>
+    <style type="text/css">
+        .reqError {
+            color: #ff0000;
+            /*Red Color*/
+            font-weight: bold;
+        }
+    </style>
+    <script type="text/javascript">
+        //function to check validation (Required field)
+        function checkReqFields() {
+            var returnValue;
+            var name = document.getElementById("txtName").value;
+            var address = document.getElementById("txtAddress").value;
+
+            returnValue = true;
+            if (name.trim() == "") {
+                document.getElementById("reqTxtName").innerHTML = "* Name is required.";
+                returnValue = false;
+            }
+            if (address.trim() == "") {
+                document.getElementById("reqTxtAddress").innerHTML = "* Address is required.";
+                returnValue = false;
+            }
+            return returnValue;
+        }
+    </script>
+</head>
+
+<body>
+    <h1>JavaScript - Required Field Validator for TextBox on Submit</h1>
+    <form onsubmit="return checkReqFields()">
+        <b>Enter Name: </b><br />
+        <input type="text" id="txtName" />
+        <span id="reqTxtName" class="reqError"></span><br />
+        <br />
+
+        <b>Enter Address: </b><br />
+        <input type="text" id="txtAddress" />
+        <span id="reqTxtAddress" class="reqError"></span><br />
+
+        <p><input type="submit" value="Submit" /></p>
+    </form>
+</body>
+
+</html>
+
+-->

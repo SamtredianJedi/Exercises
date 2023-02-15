@@ -1,0 +1,49 @@
+<!-- JavaScript - Function to Display Table of an entered Number -->
+
+
+In this example we will learn how to print table of an integer number using JavaScript function. In this example we will take an integer value as input through text box and will display table of that number in a paragraph tag. Except of table printing
+we will learn read value an integer through textbox, converting string to integer and printing text into paragraph using .innerHTML. Function to Print Table of an Entered Number
+
+
+<script type="text/javascript">
+    function printTable() {
+        var num;
+        num = Number(document.getElementById("txtNumber").value);
+        for (var i = 1; i <= 10; i++) {
+            var pTag = document.getElementById("pPrint");
+            pTag.innerHTML += num * i + "<br/>";
+        }
+    }
+</script>
+
+
+
+<!--JavaScript - Function to Display Table of an entered Number.-->
+<html>
+
+<head>
+    <title>JavaScript - Function to Display Table of an entered Number.</title>
+    <script type="text/javascript">
+        function printTable() {
+            var num;
+            num = Number(document.getElementById("txtNumber").value);
+            for (var i = 1; i <= 10; i++) {
+                var pTag = document.getElementById("pPrint");
+                pTag.innerHTML += num * i + "<br/>";
+            }
+        }
+    </script>
+</head>
+
+<body style="text-align: center;">
+    <h1>JavaScript - Function to Display Table of an entered Number.</h1>
+    <p><input type="text" id="txtNumber" placeholder="Enter number" /></p>
+    <p>
+        <input type="button" value="Print Table." onclick="printTable()" />
+        <!--print numbers-->
+    </p>
+
+    <p id="pPrint"></p>
+</body>
+
+</html>

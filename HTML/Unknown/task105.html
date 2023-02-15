@@ -1,0 +1,38 @@
+JavaScript - Print Selected Item from SelectBox JavaScript function to print selected item from SelectBox on onchange event, in this code we will select a city from given selectbox and print selected item. Print Selected Item from SelectBox
+
+
+<script type="text/javascript">
+    function printSelectedItem() {
+        var e = document.getElementById("cities");
+        var selectedItem = e.options[e.selectedIndex].value;
+        alert(selectedItem);
+    }
+</script>
+
+
+
+<!--JavaScript - Print Selected Item from SelectBox.-->
+<html>
+
+<head>
+    <title>JavaScript - Print Selected Item from SelectBox.</title>
+    <script type="text/javascript">
+        function printSelectedItem() {
+            var e = document.getElementById("cities");
+            var selectedItem = e.options[e.selectedIndex].value;
+            alert(selectedItem);
+        }
+    </script>
+</head>
+
+<body style="text-align: center;">
+    <h1>JavaScript - Print Selected Item from SelectBox.</h1>
+    <big>Select your favourite city:</big>
+    <select id="cities" onchange="printSelectedItem()">
+            <option value="New york">New york</option>
+            <option value="New jersey">New jersey</option>
+            <option value="Washington DC">Washington DC</option>
+        </select>
+</body>
+
+</html>
