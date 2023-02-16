@@ -1,0 +1,71 @@
+<!-- Data Unit Conversion Tool in JavaScript -->
+
+
+Hi! At times, beginners always find it hard getting the application of the theory they learn In programming or a particular language. In this article, we'll see another application of JavaScript. A little web app tool that converts data measurement from
+one unit to another. For example, from kilobytes to megabytes. We'll make use of 3 forms and 2 buttons. Understanding how projects are built helps to expand our minds and become more creative. In this project, I used a very simple CSS style, but feel
+free if you have something better. You can further modify it to something better as you wish. Open a text editor and type the code below. Save the file with the name data tool.html
+
+
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Good coders code, great coders reuse." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/style-index.css" />
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="top">
+            <div id="logo">
+                <a href="https://go237.com"><img src="images/logo.png" alt="comic.browserling.com logo" title="Tools For All" /></a>
+            </div>
+        </div>
+    </div>
+    <div id="body">
+        <h1>Coders</h1>
+
+        <div id="text">
+            Good coders code, great coders reuse.
+        </div>
+        <hr />
+        <form>
+            <script type="text/javascript">
+                function go() {
+                    var x = document.getElementById("#1").value;
+                    var z = x / 1024;
+                    document.getElementById("#2").value = z;
+                }
+
+                function go2() {
+                    var y = document.getElementById("#2").value;
+                    var z = y / 1024;
+                    document.getElementById("#3").value = z;
+                }
+            </script>
+            <center>
+                KB:
+                <input type="number" id="#1" placeholder="0KB" required /> MB: <input type="number" id="#2" placeholder="0MB" readonly disabled /> GB:
+                <input type="number" id="#3" placeholder="0GB" readonly disabled />
+                <br />
+                <br />
+
+                <img id="pic" src="1.gif" width="30%" />
+                <br />
+                <br />
+                <input type="button" onclick="go();" value="Go!" />
+                <input type="button" onclick="go2();" value="Next!" />
+            </center>
+            <br />
+            <br />
+        </form>
+    </div>
+</body>
+
+</html>

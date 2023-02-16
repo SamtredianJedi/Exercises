@@ -1,0 +1,70 @@
+<!-- JavaScript - Show/Hide Paragraph Text inside Div on Button Click. -->
+
+
+In this code snippet we will learn how to show/hide paragraph text inside a div using button click? This example can also be used to slide text on button click, in this example we will use two paragraph text inside a div and will show/hide on button click.
+Show/Hide Paragraph Text inside Div on Button Click
+
+
+<script type="text/javascript">
+    function hideDef() {
+        document.getElementById("p01").style.display = "block";
+        document.getElementById("p02").style.display = "none";
+    }
+
+    function nextCall() {
+        if (document.getElementById("p01").style.display == "block") {
+            document.getElementById("p01").style.display = "none";
+            document.getElementById("p02").style.display = "block";
+        } else if (document.getElementById("p02").style.display == "block") {
+            document.getElementById("p01").style.display = "block";
+            document.getElementById("p02").style.display = "none";
+        }
+    }
+</script>
+
+
+
+
+<!--JavaScript - Show/Hide Paragraph Text inside Div on Button Click.-->
+<html>
+
+<head>
+    <title>JavaScript - Show/Hide Paragraph Text inside Div on Button Click.</title>
+    <style type="text/css">
+        .divContainer {
+            width: 300px;
+            background-color: #efefcc;
+        }
+    </style>
+    <script type="text/javascript">
+        function hideDef() {
+            document.getElementById("p01").style.display = "block";
+            document.getElementById("p02").style.display = "none";
+        }
+
+        function nextCall() {
+            if (document.getElementById("p01").style.display == "block") {
+                document.getElementById("p01").style.display = "none";
+                document.getElementById("p02").style.display = "block";
+            } else if (document.getElementById("p02").style.display == "block") {
+                document.getElementById("p01").style.display = "block";
+                document.getElementById("p02").style.display = "none";
+            }
+        }
+    </script>
+    <!--Example CSS-->
+    <link href="ExampleStyle.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body onload="hideDef()">
+    <big>
+            <h1>JavaScript - Show/Hide Paragraph Text inside Div on Button Click.</h1>
+            <div class="divContainer">
+                <p id="p01">This is the first paragraph.</p>
+                <p id="p02">This is the second paragraph.</p>
+                <input type="button" id="next" value="&rarr;" onclick="nextCall()" />
+            </div>
+        </big>
+</body>
+
+</html>

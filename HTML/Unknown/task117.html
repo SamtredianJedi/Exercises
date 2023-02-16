@@ -1,0 +1,103 @@
+<!-- Simple Web Dictionary | JavaScript Switch Statement Project -->
+
+
+Hi! At times, beginners always find it hard getting the application of the theory they learn in programming or a particular language. In this article, we'll look at another application of JavaScript. We'll see the use/application of the switch statement
+which will help us build a simple web dictionary app. I called it a web dictionary app because the switch statement gives us the opportunity to program different outputs when different requests are made. The application will get user input via a form
+and will output the result as an alert. It equally has an assigned default value if no result is found. First of all, let's begin by revising the syntax of the switch statement. The switch statement is used to avoid writing several if...else statements.
+switch(expression) { case a: code block break; case b: code block break; default: code block } Therefore, it evaluates different entries(case) and checks for its specific output, else it displays the default value. Open a text editor and type the code
+below. Save the file with the name Web Dictionary.html In this project, I added just some few test word in the switch case. Every acronym has it's meaning registered in the switch statement and a default value has been set for a case with no results.
+NB: You can still use your desired CSS style!
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style></style>
+    <script type="text/javascript">
+        function Dic() {
+            var Word = document.getElementById("word").value;
+            var w = document.getElementById("go").value;
+            switch (Word) {
+                case "PDF":
+                    alert("portable digital format");
+                    break;
+                case "ASCII":
+                    alert("american standard code for information interchange");
+                    break;
+                case "SIM":
+                    alert("subscriber identity module");
+                    break;
+                case "HTML":
+                    alert("hypertext markup language");
+                    break;
+                case "PHP":
+                    alert("hypertext preprocessor");
+                    break;
+                case "CSS":
+                    alert("cascading style sheet");
+                    break;
+                case "MTN":
+                    alert("Mobile telephone network");
+                    break;
+                case "ISP":
+                    alert("internet service provider");
+                    break;
+                case "DSL":
+                    alert("digital subscriber line");
+                    break;
+                default:
+                    alert("Thanks for trusting us! No match found!");
+            }
+        }
+    </script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>C.P.O TOOLS</title>
+    <meta name="description" content="Good coders code, great coders reuse." />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/style-index.css" />
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="top">
+            <div id="logo">
+                <a href="https://go237.com"><img src="images/logo.png" alt="comic.browserling.com logo" title="Tools For All" /></a>
+            </div>
+            <div id="logo-text">
+                Tools For All
+            </div>
+        </div>
+    </div>
+
+    <div id="body">
+        <h1>Coders</h1>
+
+        <div id="text">
+            Good coders code, great coders reuse.
+        </div>
+        <hr /> Free Computer Acronym (Abbreviation) Dictionary!!
+        <p>Test Acronyms include...</p>
+        <br /> PDF <br /> MTN <br /> DSL <br /> SIM <br /> ASCII
+
+        <form>
+            <br />
+            <input type="text" id="word" size="30" required placeholder="Word" />
+            <br />
+            <br />
+            <button onclick="Dic2();" id="go">Search!</button>
+        </form>
+
+        <br />
+        <br />
+
+        <hr />
+    </div>
+</body>
+
+</html>
