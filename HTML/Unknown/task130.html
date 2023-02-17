@@ -1,0 +1,64 @@
+<!-- Convert an array to an object in JavaScript
+
+
+Let's say you have the following array,
+
+const nums = [1, 2, 3, 4, 5];
+console.log(nums);
+
+
+
+We know that nums is an array and we can see in the output that we get an array. Let's convert it into an object,
+
+console.log(Object.assign({}, nums));
+
+
+
+Now we get an object displayed on the console!
+
+Let's see how the Object.assign() method works? The Object.assign() method is built on top of the object class and it takes in two parameters; the target and the source respectively. It copies all values from the source to the target. Let's see some more examples,
+
+const arr=[
+ {name:'harry', age:14},
+ {name:'sam', age:40},
+ {name:'gloria', age:16},
+ {name:'riky', age:33},
+]
+console.log(arr);
+
+
+
+We have an arr array that contains objects as individual elements. In essence, we have an array of objects. We'll use the object.assign() method to convert this array of objects into an object of objects.
+
+const namesObj = Object.assign({}, arr);
+console.log(namesObj);
+
+
+
+
+Now we get back an object of objects! It's pretty simple to use Object.assign() for these types of conversions but it's more important to understand what's going on and how under the hood. Can you think of the internal difference between an array and an object? Now, can you figure out how to write a function that takes in an object and converts it to an array?
+
+Let's see how we'll implement our function that is capable of converting an array to an object. We need two things- a key and a value. Let's assume that we will send across the key as a parameter to our function which we will use as the key for our new object.
+
+const convertArrtoObj = (arr, key) => {
+};
+Now we'll create an empty object which we'll fill with elements from our array. We'll use the reduce() method to traverse through the array and put the current value against a key.
+
+const convertArrtoObj=(arr,key)=>{
+	const initObj={};
+	return arr.reduce((obj,currVal)=>{
+		return{
+        	...obj,
+			[currVal[key]]:currVal
+		}
+    },initObj);
+};
+
+const newnamesObj=convertArrtoObj(arr,'age');
+
+console.log(newnamesObj);
+
+
+
+We converted our original names array to an object using the age of each person as the key.
+ -->

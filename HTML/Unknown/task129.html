@@ -1,0 +1,86 @@
+<!-- How to check if an array includes an object in JavaScript?
+
+
+
+In this article, we will look at various methods to check if an array includes an object in JavaScript. Consider the following object,
+
+const squirtle= {
+	name: 'Squirtle-1', 
+	HP: 100, 
+	type: 'water', 
+	favSnack: 'Choco balls'
+}
+
+const pokeArray=['name','location','type'] 
+console.log(squirtle);
+console.log(pokeArray);
+
+
+The first method we can use is the includes() method to check if an array contains a property. We can call this method on an array and pass in two parameters, the object name and starting position.
+
+console.log(pokeArray.includes(squirtle,0))
+
+
+
+The pokeArray array doesn't contain the squirtle object hence it returned "false". The meaning that an array includes an object implies that we're checking inside an array that contains the name of objects and not just properties. So let's create an array of Pokemon,
+
+const pokemons = ["charmander", squirtle, "pikachu"];
+console.log(pokemons.includes(squirtle, 0));
+
+
+
+Now we get true! Let's change our array a bit,
+
+const list=["charmander",
+"pikachu",
+{
+    name: 'Squirtle-1', HP: 100, type: 'water', favSnack: 'Choco balls'
+}
+] 
+console.log(list);
+
+
+
+Our list array contains the whole object inside it. Now we can't use includes() because we don't know the name of the object. We can simply loop through our array and check for each element's type and return true if it was an object.
+
+list.forEach(l => {
+    if (typeof l == 'object')
+        console.log('Its an object!');
+});
+
+
+
+We can simplify the above forEach loop by using some() method instead.
+
+list.some(value => {
+    return typeof value == 'object';
+});
+
+
+
+Let's try a few more examples...
+
+const cars=['merc','ferrari',{name: 'Audi'},'tesla'] 
+cars.some(car=>{return typeof car=='object';});
+
+
+
+
+Our cars array represents the names of car brands however it has an object inside it. Sometimes your array might contain objects which shouldn't have been one since they represent the same information that other elements of the array. In those cases, identifying if your array contains an object and then making the data structure consistent would be useful. We could also capture that object and use it somewhere else.
+
+const colors=['red','orange','blue',{
+	date:'12th December',
+	day:'Thursday',
+	year: 2019
+}
+]
+var Date;
+colors.forEach(color=>{
+	if(typeof color=='object')
+	Date=color;
+})
+console.log(Date);
+
+
+In the above example, our colors array had a date object which made no sense so we captured the date object in another variable. This could be useful when you're getting loads of unkempt data from a server and you want to conditionally segregate your data based on what it represents and it's data type.
+ -->

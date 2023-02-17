@@ -1,0 +1,57 @@
+<!-- How to get a key in an object by its value in JavaScript?
+
+
+In this article, we'll see two methods on how to get a key in an object from its value? Usually, when we traverse through an object we traverse through its keys and can easily get the corresponding value. However, the reverse is actually a bit different. Consider the following object,
+
+
+const car= {
+	company: 'Merc', 
+	model: 'Benz', 
+	type: 'luxury sedan', 
+	year: 2007, 
+	modelNo: 'MB2007-4762', 
+	topSpeed: 240
+}
+
+console.log(car);
+
+
+
+We can easily get the value corresponding to a certain key using the dot notation or the index method. However, to get a key from value one way would be to iterate through its properties and check for a match for a value. We can do this using a for loop and hasOwnProperty() method.
+
+
+function getkeyFromvalue(object, value) {
+    for (let ob in object) {
+        if (object.hasOwnProperty(ob)) {
+            if (object[ob] === value)
+                return ob;
+        }
+    }
+}
+
+console.log(getkeyFromvalue(car, 2007));
+
+
+
+The reason we use the hasOwnProperty(), first is to check if the object had the same property or if it inherited that property from somewhere. Let's try this a few more times,
+
+
+
+console.log(getkeyFromvalue(car, 'Merc'));
+console.log(getkeyFromvalue(car, 240));
+
+
+
+This way we can get a key in an object from its value. However, this is a naive approach where we check for every key through the object to match its value. We can use the find() method to compare keys to have a certain value that we want to find. We'll call this on an array of keys that we can get using the Object.keys() method that returns us all the keys of an object. Let's try to do it this way,
+
+function getkeyFromvalue2(object, value) {
+    return Object.keys(object).find(key => object[key] === value)
+}
+
+console.log(getkeyFromvalue2(car, 2007));
+console.log(getkeyFromvalue2(car, 240));
+console.log(getkeyFromvalue2(car, 'Benz'));
+
+
+
+This method is much easier and also simpler with fewer lines of code. If we look into this, it's something very similar to how we did it before using the for loop. Object.keys() was introduced in ES15 and makes the task of storing all the keys somewhere and then iterating through them simpler. -->

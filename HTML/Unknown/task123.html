@@ -1,0 +1,57 @@
+<!-- How to get multiple random unique elements from an array in JavaScript?
+
+
+The JavaScript is a very versatile language and it has a function almost everything that you want.
+
+Here, we will show you how to generate random unique elements from an array in JavaScript?
+
+The random() function does this work for you. It is a powerful function that can generate multiple random unique numbers. The random() function generates a float number between o and 1. Including only 1. So, we will use this random number to find random elements of the JavaScript array.
+
+JavaScript code to get multiple random unique elements from an array
+
+
+<html>
+
+<body>
+
+    <div id="one">
+        <p>one</p>
+    </div>
+
+    <div id="two">
+        <p>two</p>
+    </div>
+
+    <script>
+        function shuffle(a) {
+            for (let i = a.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [a[i], a[j]] = [a[j], a[i]];
+            }
+            return a;
+        }
+
+        var arr = [
+            "<span class=\"booklink\"><a href=\"/one\">one</a></span>",
+            "<span class=\"booklink\"><a href=\"/one\">two</a></span>",
+            "<span class=\"booklink\"><a href=\"/one\">three</a></span>",
+            "<span class=\"booklink\"><a href=\"/one\">four</a></span>",
+            "<span class=\"booklink\"><a href=\"/one\">five</a></span>"
+        ]
+
+        /* note: the JavaScript that updates the div had to be near the end
+         * of the body to work (probably just after the div)
+         */
+        shuffle(arr);
+        document.getElementById("one").innerHTML = arr.slice(0, 3).toString();
+    </script>
+
+</body>
+
+</html>
+
+
+
+Explanation:
+
+This program finds the random number and then uses the index of the array to fetch elements of the array and then displays the content. Here the content is a link with the index number. -->

@@ -1,0 +1,65 @@
+<!-- JavaScript | Create an object by passing values in the function and display in the table
+
+
+
+In this example, we created an object named employee with id, name, gender, city, and salary and assigning the values by passing the values from the function, input the values through user and display in the table.
+
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <script>
+            function Employee(i,n,g,c,s){
+                this.id=i,
+                this.name=n,
+                this.gender=g,
+                this.city=c,
+                this.salary=s,
+                this.show=function(){
+                    document.write("<table border=1 >");
+                    document.write("<tr>");
+                    document.write("<th>Employee Id</th>");
+                    document.write("<td>"+this.id+"</td>");
+                    document.write("</tr>");
+                    document.write("<tr>");
+                    document.write("<th>Employee Name</th>");
+                    document.write("<td>"+this.name+"</td>");
+                    document.write("</tr>");
+                    document.write("<tr>");
+                    document.write("<th>Gender</th>");
+                    document.write("<td>"+this.gender+"</td>");
+                    document.write("</tr>");
+                    document.write("<tr>");
+                    document.write("<th>City</th>");
+                    document.write("<td>"+this.city+"</td>");
+                    document.write("</tr>");
+                    document.write("<tr>");
+                    document.write("<th>Salary</th>");
+                    document.write("<td>"+this.salary+"</td>");
+                    document.write("</tr>");
+                    document.write("</table>");
+                }
+            };
+            
+        </script>
+    </head>
+    <body>
+        <script>
+            /*
+            document.write("<h2>Java Script Objects : Type 3</h2><hr />");
+            var emp = new Employee(1,"pooja","female","pune",45000);
+            emp.show();
+            */
+            var i=parseInt(prompt("Enter Id:"));
+            var n=prompt("Enter Name:");
+            var g=prompt("Enter Gender:");
+            var c=prompt("Enter City");
+            var s=parseInt(prompt("Enter Salary:"));
+            var emp = new Employee(i,n,g,c,s);
+            emp.show();
+        </script>
+    </body>
+</html>
+
+ -->

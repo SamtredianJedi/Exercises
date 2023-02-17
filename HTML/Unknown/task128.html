@@ -1,0 +1,55 @@
+<!-- How to access an object having spaces in the object's key using JavaScript?
+
+
+Sometimes your JavaScript object may contain a key having spaces between them. As a key can also be a string and a string may contain spaces, it is very much possible that you encounter this problem. Consider the following object,
+
+const character= {
+	name: 'Emily', 
+	age: 30, 
+	'Detective Rating': 422
+}
+
+console.log(character);
+
+
+
+Let's use the dot notation to access the properties of our object,
+
+console.log(character.name);
+console.log(character.Detective Rating);
+console.log(character.'Detective Rating');
+
+
+
+For regular properties we can easily use the dot notation however for a string property having spaces in between the dot notation doesn't work. Then how do we directly access such properties?
+
+Remember, there is another way of accessing the object's properties, ie, using the square bracket notation.
+
+console.log(character["name"]);
+console.log(character["Detective Rating"]);
+
+
+
+The square bracket notation works for keys having spaces between them since it takes in a string as a parameter. Let's try some more examples,
+
+const instructor={
+	ID: 'EC-203',
+	subject: 'Electronics',
+	'Project advisor': 'Digital signal processing documentation',
+}
+	
+console.log(instructor["Project advisor"]);
+
+
+
+Here our instructor object has a key Project advisor with space in between and we access this property using the square bracket notation.
+
+const monsters={
+	'Monster names': ['Sesham','Goku','Samu']
+}
+
+console.log(monsters["Monster names"]);
+
+
+Our monsters have a property Monster names with space in between. This is an array and we have accessed this using the square bracket notation.
+ -->

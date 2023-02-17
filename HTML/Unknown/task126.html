@@ -1,0 +1,84 @@
+<!-- How to check if a key exists in a JavaScript Object?
+
+
+
+Consider the following object,
+
+const cookie= {
+	flavour: 'Chocolate', 
+	size: 'medium', 
+	company: 'Parle'
+}
+
+console.log(cookie);
+
+
+We have a simple cookie object having three properties; flavour, size and company that makes the cookies. Now let's say we want to know the color of the cookie,
+
+console.log(cookie.color);
+
+
+How were we so sure that the cookie had a color? Maybe we weren't given this information in the first place. So how do we first check if the cookie had this property or in general any object has a property?
+
+1) Using in operator
+The first method is using the in operator. The in operator checks for a property in an object and returns a boolean value.
+
+console.log('color' in cookie);
+console.log('size' in cookie);
+
+
+
+
+Since color is a property that does not exist in our cookie, we get a false and for size, we get true because our cookie had a size property.
+
+2) hasOwnProperty() method
+There is another way through which we can do this, using the hasOwnProperty() method. It also returns us a boolean value indicating if the object had that property or not.
+
+const bunny={
+	name: 'Bugs Bunny',
+	teeth: 2,
+	color: 'white',
+	isEndangered: false
+}
+console.log(bunny);
+
+
+
+Using the hasOwnProperty(), we'll check if our bunny object has a property habitat.
+
+console.log(bunny.hasOwnProperty('habitat'));
+
+
+
+Let's check if it has a property named color,
+
+console.log(bunny.hasOwnProperty('color'));
+
+
+
+
+Now that we know how to check if a property exists in an object, let's see where it can be used. Imagine you're a frontend developer and you have to manage a website where some data about a user comes from the backend, an API or a server which you have to display for a particular user's account. Now you have various fields however you don't know what data user filled. Only that data about the user was stored which the user entered. So let's say the user entered the following information and you got back a json object which you converted to a normal JS object that looks something like this,
+
+const user377_19={
+	name: 'Harry',
+	age: 22,
+	email: 'harry@gg.com',
+	address: '43/5 H block new coastal colony',
+	userID: '351817bjhh1937t13b7f379371fjfuifh3y1397'
+}
+Now if you output a property that doesn't exist, it will be a bad user interface design. So before outputting, we'll check if a particular property exists.
+
+function checkIfexists(object, prop) {
+    if (object.hasOwnProperty(prop))
+        return `${prop} Exists, proceed to display`;
+    else
+        return `${prop} info does not exist`;
+}
+Let's call this function to see if it has the properties we need.
+
+const props=['name','age','email','address','phoneno']
+props.forEach(prop=>console.log(checkIfexists(user377_19,prop)));
+
+
+
+Hence using the "in operator" or the hasOwnProperty() method we can check if an object has a key inside it with the given name and use it to conditionally output content. -->

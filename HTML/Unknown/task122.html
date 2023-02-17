@@ -1,0 +1,40 @@
+<!-- Capitalize words in a string in JavaScript
+
+
+
+String in JavaScript is a sequence of characters. And capitalizing characters of words in a JavaScript string will change each character of the string with the capital letter of it.
+
+To convert words to uppercase we have the following method defined by slicing each character and then converting it to uppercase.
+
+Components are defined as:
+
+Slice():
+The slice method will return the specified element of the object and returns it to another object.
+
+For slice(3) for the array [3,5,6,8,9] will give 8.
+
+toUpperCase():
+The method will return the uppercase changed the value of the character. For example: for 'f' input, the output is 'F'.
+
+charAt():
+returns the charter at the given index.
+
+Program to capitalize each character of the sting using JavaScript
+
+
+< script >
+	function capitalizeEachWord(str) {
+		var cstr = '';
+		str.split('').forEach(function(char) {
+			cstr = cstr + char.toUpperCase();
+		});
+		return cstr;
+	}
+	console.log("Hello, world!")
+	var x = "learning JavaScript at include help"
+	var y = capitalizeEachWord(x);
+	console.log('x = ' + x);
+	console.log('y = ' + y); 
+</script>
+
+ -->

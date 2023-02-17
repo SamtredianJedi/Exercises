@@ -1,0 +1,72 @@
+<!-- How to get the first key name of a JavaScript Object?
+
+
+
+Let's say we have an array of fruits,
+
+const fruits = ['apple', 'banana', 'orange', 'peach']
+console.log(fruits[0]);
+
+
+The first member of our fruits array is apple and we can easily access it since we know the first element is on the 0th index of the array. Let's say we now have an object whose first key name is fruits and the value is an array of fruits.
+
+const fruitObj={
+	fruits: ['apple','banana','orange','peach']
+}
+console.log(fruitObj[0]);
+
+
+
+Since objects do not have indices, we cannot call for the first property, second or last one the way we do in arrays. Then how do we do it?
+
+The easiest way to do this would be to iterate over the object using the for loop and break out of the loop as soon as we get through the first iteration. We'll store the key in a variable whose scope will not be contained inside the loop so we can simply output that variable onto the console and we'll get the first key name of our object.
+
+Let's create a simple object first,
+
+const fruitObj={
+	fruits: ['apple','banana','orange','peach']
+}
+console.log(fruitObj[0]);
+
+
+
+
+We need to get type somehow. Let's do it the way we just discussed,
+
+var key;
+for (prop in mojo) {
+    key = prop;
+    break;
+}
+console.log(key);
+
+
+
+
+Instead of breaking the loop we can create a function to do so and simply return that key from the function.
+
+function getFirstKey(obj) {
+    for (key in obj) {
+        return key;
+    }
+}
+console.log(getFirstKey(mojo));
+
+
+
+
+This is cool but it seems a little off. Running a loop and breaking it, we're only being witty. Can we do a little better?
+
+Remember in the beginning how I said and even proved that since objects do not have index referencing we cannot simply call for the first element or last element etc. However, if we somehow get our object to behave like an array, we can easily do so. But the conversion of an object into an array seems like a task. But we don't need to do that. All we have to do is get all the keys in an array and then we can simply get the first key by referencing the 0th index in that array. We can use the object.keys() method,
+
+console.log(Object.keys(mojo));
+
+
+
+
+As you can see, the object.keys() returns us an array. Now all we have to do is reference the 0th index of this array,
+
+console.log(Object.keys(mojo)[0]);
+
+
+Cool. A one-liner to get the first key name of a JavaScript object! -->
