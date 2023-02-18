@@ -1,0 +1,31 @@
+<!-- <!-- How to create hash from string in JavaScript?
+
+Hashing a string means decoding it to a certain other string of alphanumeric characters depending on the hashing algorithm used. The reason why hashing is done is to provide security to the string. A common example is passwords. When you register on a legit website and create a user ID and password for your login credentials, your password string is not directly stored in their database. It is first converted to a hash value and then stored so that any kind of data leak does not jeopardize your account directly. This hash value is generated using a hashing algorithm that is written out in such a way that any two strings do not generate the same hash value. Hashing is extensively used in blockchain applications these days.
+
+Let's see a very simple algorithm of hashing and learn how we can implement it in JavaScript.
+
+Suppose we have a string "abc". We can generate a hash number if we assign a number to each letter of the alphabet and the easiest way to do this is to use the already existing library, the ASCII code where each character is assigned some ASCII value. Since all the letters of the alphabet have different ASCII values we can use them directly.
+
+The algorithm first takes the ASCII code and generates a unique number to multiply it with. This unique number is hash, which will be different for every character. In the end, we will do a bitwise AND of the current hash with the previous hash. To begin with, we will take hash to be 0 as the hash value of an empty string is always 0 (One of the reasons why your password can never be blank!).
+
+Let's look at the algorithm now, -->
+
+
+
+Assign hash as 0 Iterate through the string Take character at ith position Obtain ASCII code as charCode Generate Hash as Hash(2^k-1)*charCode Assign hash as bitwise AND of hash with itself Let's see it's an implementation in JavaScript.
+
+<!-- We'll create a generateHash() function that will take a string as a parameter and return the final hash value of that string.
+
+function generateHash(string) {
+    var hash = 0;
+    if (string.length == 0)
+        return hash;
+    for (let i = 0; i < string.length; i++) {
+        var charCode = string.charCodeAt(i);
+        hash = ((hash << 7) - hash) + charCode;
+        hash = hash & hash;
+    }
+    return hash;
+}
+generateHash("abc");
+ -->

@@ -1,0 +1,86 @@
+<!-- JavaScript | Search from Array of Objects
+
+
+
+
+We have seen and worked with JavaScript arrays before and now we will talk about objects in the array.
+
+Before jumping into Arrays of Objects, let’s see the following Example:
+
+const todoList = ['Buy Chocolates','Go to Gym','Complete the Assignment'] //line1
+console.log(todoList.indexOf('Buy chocolates'))	//line 2
+
+
+
+Don’t worry; the above code is deliberately done such a way to point out a common mistake that can be encounter by you later, so making you aware about it now. The above result it because the phrase "Buy Chocolate" in Line 1 and "Buy chocolate" in Line 2 are different due to a different case of C (one is lowercase and other uppercase) so now -1 makes sense, it means it doesn’t exist in the array.
+
+Now we create an array of Objects:
+
+const todoList = [{
+	job: 'Buy Chocolates',
+	isDone: false,
+},{
+	job: 'Go to Gym',
+	isDone: false,
+},{
+	job: 'Complete the Assignment',
+	isDone: true,
+}]
+
+
+
+In the above code, we created an array with objects with similar properties job which tells the task description and isDone is the status of the task whether it’s done or not it takes Boolean as its value.
+
+Now we will proceed to search for our object in our Array, for that we have two array methods and here we will discuss both here,
+
+1) Using the findIndex() Method
+Syntax:
+
+ array.findIndex(callback[,thisArgs])
+findIndex() uses a callback function and returns the index of the objects its name says, else return -1 is object will not in the array.
+
+Example:
+
+const todoList = [{
+	job: 'Buy Chocolates',
+	isDone: false,
+},{
+	job: 'Go to Gym',
+	isDone: false,
+},{
+	job: 'Complete the Assignment',
+	isDone: true,
+}]
+
+const findTask = function(arrayTodo,value){				//line 1
+	const position = arrayTodo.findIndex(function(objectTodo){  //line 2
+		return objectTodo.job.toLowerCase() === value.toLowerCase() //line 3
+	})
+	return position
+}
+
+console.log(findTask(todoList,'complete the assignment'))
+Explanation:
+
+Let me explain what happened in the above code, after creating an array of objects we created a function findTask which will return the position of the job. We passed arrayTodo an array and value the job that needs to be searched in the array, then we call method findIndex() with a callback function as its parameter where we passed a local object which will pass for each object in arrayTodo array. In line 3, when the job of objectTodo will be equal to the value passed then it will return the index of that object to position then position will be returned to findTask. Thus the output of the above code is 2.
+
+2) Using the find() Method
+const todoList = [{
+	job: 'Buy Chocolates',
+	isDone: false,
+},{
+	job: 'Go to Gym',
+	isDone: false,
+},{
+	job: 'Complete the Assignment',
+	isDone: true,
+}]
+const findTask = function(arrayTodo,value){				//line 1
+	const position =arrayTodo.find(function(objectTodo){ //line 2
+		return objectTodo.job.toLowerCase() ===value.toLowerCase() //line 3
+	})
+	return position
+}
+
+console.log(findTask(todoList,'complete the assignment'))
+Now, above code snippet is same as in case of findIndex() method but the only findIndex is changed with find() and the output will be changed from 2 to { job: 'Complete the Assignment', isDone: true } rest will remain same... -->

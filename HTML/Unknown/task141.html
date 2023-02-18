@@ -1,0 +1,98 @@
+<!-- How to return a value from a JS asynchronous callback function?
+
+
+
+<!-- What are callbacks?
+Quite literally, callbacks can be understood as calling something back. In programming, we use a call to imply that we're calling a function, so what's callback? To put simply, it's one function calling another. Quite literally, callbacks can be understood as calling something back. In programming, we use a call to imply that we're calling a function, so what's callback? To put simply, it's one function calling another. 
+
+Now let's see the more accurate definition of a callback with an example.
+
+A callback is a function that is passed to another function as a parameter and then invoked by other functions. The function to which the callback is passed is often referred to as a higher-order function. Conversely, Higher-Order Functions operate on other functions by either taking them as arguments or by returning them.
+
+function higherOrder(callbackfn) {
+    console.log('invoked higher order! ');
+    callbackfn();
+}
+
+function callbackfn() {
+    console.log('invoked callback! ');
+}
+
+higherOrder(callbackfn); -->
+
+
+
+
+
+
+<!-- The above example shows the simplest version of callbacks. The names of the functions are self-explanatory and you can understand how they are working. Now that we have a basic knowledge of what callbacks are, we can move to understand asynchronous functions with callbacks.
+
+Recall that asynchronous functions are those which execute after a certain time interval. They are not immediately executed and while they are running in the background we can have some other code running synchronously. For example, a spinner or a loader you see on a website that runs while they are fetching data through asynchronous calls.
+
+Example:
+
+var timerID = setTimeout(function() {
+    console.log('Runs in 3s');
+}, 3000);
+setTimeout(function() {
+    console.log('cancelling first timeout', timerID);
+    const a = 10;
+    clearTimeout(timerID);
+    return a;
+}, 2000); -->
+
+
+
+
+
+<!-- Let's understand what's going on in the above code. We are running the first asynchronous function in seconds but before that happens we cancel that function in two seconds. Makes sense, but why didn't we get the value 10 returned from our second asynchronous function? We know it executed since this was the function that canceled our first asynchronous function, so we know it did run right from it's the first line to the last line, so why didn't we get 10 on the console?
+
+function run() {
+    const a = 10;
+    return a;
+}
+
+run(); -->
+
+
+
+
+
+<!-- The above code shows a normal function which returns some value. When we try to return the same value from an asynchronous callback function, we simply get nothing. So how do we do that?
+
+Promise
+A promise is simply an object that represents a task that will be completed in the future.
+
+A promise is a way of returning values from asynchronous callback functions. To understand promise in simpler terms you can imagine it as a token being given in a government office to get some help on a certain problem. That token represents that you will be called in at some later time and your problem will be addressed. That token, analogically, is a promise. The help you get from the office is the invocation of your callback.
+
+var p = new Promise(function(resolve, reject) {
+    resolve(10);
+});
+undefined
+p.then(function(a) {
+    console.log('Promise p resolved with data: ', a);
+})
+ -->
+
+
+
+
+
+<!-- We returned value from an asynchronous callback function using a promise!
+
+Let's see another example:
+
+var promise = new Promise(function(resolve, reject) {
+    setTimeout(function() {
+        var randomNo = Math.floor(Math.random() * 10);
+        resolve(randomNo);
+    }, 3000);
+});
+promise.then(function(data) {
+    console.log('resolved! ', data);
+}); -->
+
+
+
+<!-- We create a new promise, an object that will be returned from our callback using the new Promise() function. We invoke a .then() function on our promise object which is an asynchronous function and passes our callback to that function. That callback function takes in two parameters, a resolve, and a reject. If our code is successfully executed we get the resolved result and if there is an error we get a reject. Promises are a great way to return values from an asynchronous callback function. Besides we can also chain multiple .then() functions to a promise and avoid messy, difficult to read nested async callbacks. They are widely used today through several promise libraries.
+ -->

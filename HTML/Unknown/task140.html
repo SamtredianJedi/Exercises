@@ -1,0 +1,91 @@
+<!-- How to round Off a number upto 2 decimal places using JavaScript?
+
+
+
+There are various methods of rounding off a number upto 2 decimal places in JavaScript but the simplest is using the Math.round() method. We already know that the Math object has a lot of methods attached to it which we can use for carrying out calculations and one of them is Math.round().
+
+Math.round() takes in one parameter, the number to be rounded and returns the nearest integer value of that number.
+
+let b = 10.9;
+console.log(b);
+console.log(Math.round(b));
+
+
+
+10.9 is rounded off as 11 by Math.round() since the nearest integer to 10.9 is 11.
+
+let c = 10.3;
+console.log(c);
+console.log(Math.round(c));
+
+
+
+10.3 is rounded off to 10 as it's the nearest integer is 10.
+
+So, how can we use Math.round() to round off a number upto 2 decimal places?
+
+Let's say we have a number 10.1234 rounding this number off to 2 decimal places would yield us 10.12 so let's try to derive a formula using Math.round() which can help us achieve it,
+
+var num = 10.1234;
+console.log(num);
+
+
+
+
+If we multiply 10.1234 by 100 it gives us 1012.34
+
+console.log(num*100);
+
+
+
+
+
+What if we round this number now?
+
+console.log(Math.round(num*100))
+
+
+
+
+Can you see that we're close to our answer here, the only thing we need to do is to put the decimal point by looking at our original number. Since the original number had a decimal after two digits from the beginning, let's place a decimal point after two digits by dividing our number by 100.
+
+console.log(Math.round(num*100)/100);
+
+
+
+
+oila! We got the number we wanted. Let's look at the formula we derived,
+
+roundedNumber=Math.round(originalNumber*100)/100;
+If we had to round this number to 3 decimal places, we would first multiply our number by 1000 and then after rounding it using Math.round() divide it by 1000.
+
+In general,
+
+roundedNumber=Math.round(originalNumber*10^i)/10^i;
+Where, i is the number of decimal places to be rounded off.
+
+var num = 10.1234;
+console.log(num);
+var roundedNum = Math.round(num * 100) / 100;
+console.log(roundedNum);
+
+
+
+
+Let's create a simple function which performs this calculation for us.
+
+function roundoff_2(num) {
+    return Math.round(num * 100) / 100;
+}
+
+console.log(roundoff_2(77.6345));
+
+
+
+
+Let's check if this function returns the same for 10.1234
+
+console.log(roundoff_2(10.1234));
+
+
+ -->

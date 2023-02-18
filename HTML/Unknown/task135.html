@@ -1,0 +1,117 @@
+<!-- <!-- How to add a class name to an element in JavaScript?
+
+
+
+
+Adding class names using JavaScript can be often used to give certain functionalities to your web application. In this article, we will learn how to add class names to elements on the DOM through JavaScript?
+
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+     Compiled and minified CSS 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
+<style>
+    body {
+        background: yellow;
+    }
+    
+    .title {
+        color: white;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h2>Blog Page </h2>
+        <div class="blog">
+            <h2 class="center title">How to learn JavaScript</h2>
+            <div class="card">
+                <p class="card-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, ut provident odit corporis quidem neque in facilis enim! Non possimus provident vitae culpa sed facere voluptatum expedita! Mollitia, rerum porro. Lorem ipsum, dolor sit
+                    amet consectetur adipisicing elit. Libero, ut provident odit corporis quidem neque in facilis enim! Non possimus provident vitae culpa sed facere voluptatum expedita! Mollitia, rerum porro. Lorem ipsum, dolor sit amet consectetur adipisicing
+                    elit. Libero, ut provident odit corporis quidem neque in facilis enim! Non possimus provident vitae culpa sed facere voluptatum expedita! Mollitia, rerum porro. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, ut provident
+                    odit corporis quidem neque in facilis enim! Non possimus provident vitae culpa sed facere voluptatum expedita! Mollitia, rerum porro. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, ut provident odit corporis quidem
+                    neque in facilis enim! Non possimus provident vitae culpa sed facere voluptatum expedita! Mollitia, rerum porro. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, ut provident odit corporis quidem neque in facilis enim!
+                    Non possimus provident vitae culpa sed facere voluptatum expedita! Mollitia, rerum porro.
+                </p>
+            </div>
+            <button class="left btn">Subscribe</button>
+            <button class="right btn">Mark as favorite</button>
+        </div>
+    </div>
+    </div>
+
+</body>
+<script>
+</script>
+
+</html>
+
+
+
+
+To demonstrate, let's add some materialize classes to some of our elements. I want the title to align in the center and the blog heading to have a black background. Also, I want both our buttons to be black.
+
+
+
+<script>
+    const title = document.querySelector('h2');
+    const heading = document.querySelector('.title');
+    const subBtn = document.querySelector('.sub');
+    const favBtn = document.querySelector('.fav');
+
+    title.classList.add('center');
+    heading.classList.add('black');
+    subBtn.classList.add('black');
+    favBtn.classList.add('black');
+</script>
+
+
+
+
+
+Great! Our HTML looks much better now. We can add any CSS class to an element using JavaScript by getting a reference to that element, then using the classList property and calling then add method and pass the desired class name as a string inside. Let's
+say that you want to subscribe to this blog post. We'll add a class which disables the HTML and add this class when we hit the subscribe button. .subscribed{ display: none; }
+
+
+
+<!-- Inside our script tag
+
+
+
+
+subBtn.addEventListener('click',()=>{
+    alert("You've now subscribed to this blog post!");
+    subBtn.classList.add('subscribed');
+})
+
+
+
+
+Cool! Let's hook up something to the favorite button as well. When you click it, I want to change its color to pink and give it a border. Can you think of how we'll do this?
+
+CSS:
+
+
+
+.fav-triggered {
+    border: 2px solid pink;
+    color: salmon;
+}
+
+
+
+JavaScript:
+
+favBtn.addEventListener('click',()=>{
+	favBtn.classList.add('fav-triggered');
+})
+ -->

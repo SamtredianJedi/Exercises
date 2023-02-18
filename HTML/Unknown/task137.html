@@ -1,0 +1,116 @@
+<!-- <!-- 
+How to change the class of an element in JavaScript? -->
+
+
+
+
+n this article, we'll see how to change the class of an element using JavaScript? Through HTML classes we can group certain elements and style them collectively. Dynamically changing classes through JavaScript offers a great user experience on the client-side.
+Let's learn how to do it through a practical example,
+
+
+
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
+<style>
+    body {
+        background: black;
+    }
+    
+    span {
+        font-weight: bolder;
+    }
+    
+    .rule-yellow {
+        position: relative;
+        left: 200px;
+    }
+    
+    ul {
+        font-size: 24px;
+    }
+    
+    .to-do {
+        color: tomato;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h2 class="center white">Tasks</h2>
+        <h5 class="center white-text">Let's mark our tasks in progress, completed and yet to be touched</h5>
+        <br>
+        <br>
+        <br>
+        <p class="white-text">Remeber to follow the rules:</p>
+        <span style="color: tomato" class="left rule-red">Red for not yet started</span>
+        <span style="color:yellow" class="center rule-yellow">Yellow for under progress</span>
+        <span style="color: green" class="right rule-green">Green for completed</span>
+        <br>
+        <br>
+        <br>
+        <br>
+        <ul class="collection tasks white center">
+            <li class="collection-item to-do">Study for end semester</li>
+            <li class="collection-item to-do">Learn JavaScript on includehelp.com</li>
+            <li class="collection-item to-do">Take cooper for a walk</li>
+            <li class="collection-item to-do">Solve sudoku</li>
+        </ul>
+    </div>
+</body>
+<script>
+</script>
+
+</html>
+
+
+
+
+We have created a very naive task manager where we can mark tasks as done, not yet started or under progress by changing the font color of that task. Before we get started I want you to quickly take a look at the styles I wrote for this,We have created
+a very naive task manager where we can mark tasks as done, not yet started or under progress by changing the font color of that task. Before we get started I want you to quickly take a look at the styles I wrote for this, .to-do{ color: tomato; } You
+can see that this class is responsible for setting the font color of our tasks as red. This also indicates that we have not started on the task yet. Let's add two more classes that will set the font color to yellow and green for marking them as under
+progress and completed respectively. .in-progress { color: yellow; } .completed { color: green; } Great. Now we're done. Next thing we need is a reference to our list,
+
+
+
+<script>
+    const tasks = document.querySelectorAll('.tasks li');
+    console.log(tasks);
+</script>
+
+
+
+
+<!-- We can now access the individual li's through their index. Let's say you're done studying for your end sems. We need to get our first li and change its name from to-do to completed.
+
+tasks[0].classList.add('completed').remove('to-do');
+
+
+
+Our first task is marked completed! Cool. Since you're always learning JS let's mark the second task as under progress.
+
+tasks[1].classList.add('in-progress').remove('to-do');
+
+
+
+What we're doing is adding the new class and removing the old class and in essence we're changing the class!
+
+We can also use the toggle() method to add or remove that class if it does not exist. Let's say you solved the sudoku so mark it completed,
+
+<li class="collection-item completed">Solve sudoku</li>
+
+
+Oops, you solved it wrong! We can add it back to the task list by toggling the completed class,
+
+tasks[3].classList.toggle('completed'); -->

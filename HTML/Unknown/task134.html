@@ -1,0 +1,70 @@
+<!-- How to replace element from an array in JavaScript?
+
+
+
+In this article, we'll see various methods in action to replace an element from an array in JavaScript.
+
+Consider the following array,
+
+let heroes = [
+    "Captain America",
+    "Iron Man",
+    "Thor",
+    "Hulk",
+    "Loki"
+]
+console.log(heroes);
+
+
+
+
+After the endgame, we are sure we will never see "Iron Man" again and our friendly neighborhood "spiderman" has very well joined the crew. So how do we replace Iron Man with SpiderMan in the heroes array?
+
+The first approach is the naive approach where we can cycle through the array, find the element we had to replace and change it with the new element.
+
+let heroes = [
+    "Captain America",
+    "Iron Man",
+    "Thor",
+    "Hulk",
+    "Loki"
+]
+console.log(heroes);
+
+for (let i = 0; i < heroes.length; i++) {
+    if (heroes[i] == "Iron Man")
+        heroes[i] = "Spiderman";
+}
+console.log(heroes);
+
+
+
+Can we do a bit better?
+
+We can use the spice() method on our array which is used to add and remove elements from an array. This method takes the first argument as an index which specifies the position of the element to be added or removed. The next argument it takes is the number of elements to be removed and is optional. The last argument is the new items added to the array.
+
+    array.splice(index,number,newItem);
+Example:
+
+heroes.splice(1,1,"Spiderman");
+console.log(heroes);
+
+
+
+Another way we can do this is by using the map method. The map method iterates through the array it is invoked on and runs a callback function on each value. It adds the result of that callback to the new array and returns an array at the end of the execution of callback of the same length.
+
+let newHeroes = heroes.map(hero => {
+    if (hero == "Iron Man")
+        return "Spiderman";
+    else
+        return hero;
+})
+
+console.log(newHeroes);
+
+
+
+Since the map returns us a new array, we can use the new array obtained and copy that to our old array so that effectively our operation seems in place.
+
+heroes = newHeroes;
+console.log(heroes); -->

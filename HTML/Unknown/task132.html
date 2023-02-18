@@ -1,0 +1,73 @@
+<!-- How to check object is an array in JavaScript?
+
+
+
+You might think that to check if an object is an array, we can simply use the typeof operator.
+
+const var1 = 10;
+const str = 'hello'
+console.log(typeof var1);
+console.log(typeof str);
+
+
+Well the typeof operator works fine for numbers and strings. What about an object?
+
+const obj= {
+    name: 'Lily', age: 18
+}
+
+console.log(typeof obj);
+
+
+
+So it works for objects too. Let's try it out for an array,
+
+const arr = [1, 2, 3, 4, 5, 6];
+console.log(typeof arr);
+
+
+
+The typeof operator tells the type of object that data set is and not it's inherent type. Arrays are a derived data type of objects hence they are considered as a plain simple objects. We can check using a method isArray() to see if our object is an array.
+
+Let's say we have the following object,
+
+const obj={
+	name: 'Courage',
+	animal: 'Dog',
+	color: 'Pink',
+	show: 'Courage the cowardly dog',
+	genre: 'Horror-comedy'
+} 
+console.log(Array.isArray(obj));
+
+
+
+The way we use isArray() is that we always call it on the Array object. This method was introduced in ES6 and it's built on top of the Array class. Inside the method, we pass in the data set, object or array whatever we want to be evaluated as a parameter. It returns a boolean value, true if the parameter is an array and false otherwise.
+
+Let's check it out for a few more examples,
+
+const colors=['red','orange','blue',{
+	date:'12th December',
+	day:'Thursday',
+	year: 2019
+}
+]
+
+console.log(Array.isArray(colors));
+
+
+
+Indeed colors is an array and not an object. It contains an object as one of the values inside it, but it's still very much an array.
+
+const data = {
+    colors: ['blue', 'green', 'red'],
+    names: ['Sarah', 'Remi', 'Roy']
+}
+
+console.log(Array.isArray(data))
+console.log(Array.isArray(data.colors));
+console.log(Array.isArray(data.names));
+
+
+
+Data is an object containing the arrays: names and colors. Hence we get a false for data and true for the arrays colors and names. It's quite clear that this method is built on the syntactical definition of arrays. The square brackets and curly brackets distinguish an object to be an array or pure object respectively. Can you implement your isArray() method? It's quite difficult to do so looking at the way it's built on syntax, at least so it seems. What if you convert it to a string and look for the first bracket that comes in the string? Think, you might come to an interesting way to implement your isArray() method! -->

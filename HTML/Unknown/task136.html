@@ -1,0 +1,96 @@
+<!-- How to change the src of an element in JavaScript?
+
+We know that the img tag in HTML has a src attributed associated with it which specifies the source of the image, the URL or the path to that image. We can easily change it using JavaScript and in this article, we'll explore how and an important use case of this feature.
+
+A quick walkthrough that the src property sets or returns the value of the src attribute of an image using the img tag. It can be changed easily anytime using JS however the new image's src specified will inherit and height and width of the image that was used before unless these properties are mentioned otherwise.
+
+Imagine you clicked a new picture and want to change your profile picture on facebook. Your Facebook profile can be imagined as an HTML page with an img tag that represents your profile photo. When you upload a new picture and click upload, facebook actually changes the src of your profile picture to the new picture that you uploaded! Let's build something of this sort now,
+ -->
+
+
+
+
+
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
+<style>
+    body {
+        background: blueviolet;
+    }
+    
+    .card {
+        height: 700px;
+        width: 400px;
+    }
+    
+    .card-image img {
+        height: 400px;
+        width: 200px;
+    }
+    
+    .upload {
+        position: relative;
+        top: -600px;
+        border: 2px solid salmon;
+        padding: 20px;
+        background: salmon;
+    }
+</style>
+
+<body>
+    <h1 class="center white">Social Media</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m7">
+                <div class="card">
+                    <div class="card-image">
+                        <img class="profile-pic" src="https://images-na.ssl-images-amazon.com/images/I/71wiruqIZ9L._SY606_.jpg" alt="">
+                    </div>
+                    <div class="card-content">
+                        <h3>Ninja Turtle</h3>
+                        <h4>From Los Angeles</h4>
+                        <p>Likes painting and playing banjo. Wanna jam? Connect with me at ninjatut@ninja.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right upload">
+            <h4 class="white-text">Change your profile image:</h4>
+            <input type="text" placeholder="url of new image" id="url">
+            <button class="btn white center black-text">Change</button>
+        </div>
+    </div>
+</body>
+<script>
+</script>
+
+</html>
+
+
+
+We have an input tag on the right which will take in the URL of the new image to be uploaded. On clicking the change button we need to fire an event listener which will grab the input field's value and put that URL as the source of the image inside our
+profile card's img tag. Makes sense?
+
+
+
+<script>
+    document.querySelector('.btn').addEventListener('click', () => {
+        const url = document.querySelector('#url').value;
+        console.log(url);
+        document.querySelector('.profile-pic').src = url;
+    })
+</script>
+
+
+Thus on clicking change we successfully change the src our image! Awesome. This how can change the source of an element using JavaScript? And, use that functionality in a number of applications.

@@ -1,0 +1,128 @@
+<!-- How to remove CSS property using JavaScript? -->
+
+
+In this article, we'll see how we can remove a CSS property from a certain element using JavaScript? We can remove only those properties that we assign ourselves and the pre-default ones cannot be removed by this method.
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Removing CSS property</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</head>
+<style>
+    body {
+        background: silver;
+    }
+    
+    h2 {
+        background: wheat;
+        padding: 10px;
+    }
+    
+    .btn {
+        background: tomato;
+    }
+    
+    .text {
+        font-weight: 500;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h2>Let's remove some css!</h2>
+        <div class="container">
+            <button class="btn">Just a random button!</button>
+            <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora quis asperiores dicta quos laborum laboriosam perferendis ab veniam odit saepe, obcaecati officiis iure iste voluptates at quod commodi cupiditate voluptas!</p>
+        </div>
+    </div>
+</body>
+<script>
+</script>
+
+</html>
+
+
+
+
+We can call on a certain DOM selector's style property and use the remove property method to remove that particular CSS property. First, let's get a reference to all the DOM elements.
+
+<script>
+    const heading = document.querySelector('h2');
+    const button = document.querySelector('.btn');
+    const para = document.querySelector('.text');
+</script>
+Now let's try to remove the background property from our heading, heading.style.removeProperty("background"); Oops! That didn't quite work, did it? There's a simple explanation. We are loading our scripts when our whole page loads and the styles are written
+inside our stylesheet. Even if we remove a certain property using JavaScript, it wouldn't make any difference since that DOM element is also hooked to a stylesheet and we aren't removing any kind of CSS that we have written. Let's refactor our code a
+little bit now, let's clear out styles and apply those styles using JavaScript,
+
+<style>
+    /* body{
+    background: silver;
+  }
+  h2{
+    background: wheat;
+    padding: 10px;
+  }
+  .btn{
+    background: tomato;
+  }
+  .text{
+    font-weight: 500;
+  } */
+</style>
+
+
+
+As you can see now all our styles are removed. Let's add them back in our JavaScript,
+
+<!-- <script>
+	const heading = document.querySelector('h2');
+	const button = document.querySelector('.btn');
+	const para = document.querySelector('.text');
+	heading.style.background = "wheat";
+	heading.style.padding = "10px";
+	document.querySelector('body').style.background = "silver";
+	button.style.background = "tomato";
+	para.style.fontWeight = "500";
+</script> -->
+
+
+
+
+
+
+<!-- And we have our styles back! Great. Now let's try removing them using our JavaScript,
+
+heading.style.removeProperty("background");
+
+
+
+
+
+
+Our heading no longer has a wheat background! Great. Let's remove all the CSS properties inside a function and see if we get back the same unstyled page.
+
+function removeProperties() {
+  document.querySelector('body').style.removeProperty("background");
+  heading.style.removeProperty("background");
+  heading.style.removeProperty("padding");
+  button.style.removeProperty("background");
+  para.style.removeProperty("fontWeight");
+}
+
+
+
+
+
+Everything should remain the same as we have not yet called or invoked our function so let's do it now inside our console,
+
+    removeProperties();
+ -->
