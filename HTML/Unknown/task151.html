@@ -1,0 +1,54 @@
+<!-- Length of a JavaScript object
+
+
+
+As we already know, an object in JavaScript is a variable or a variable with some properties in it.
+
+Example:
+
+ var person ={
+    'name':'John',
+    'age':'25'
+};
+In above example, person is an object with properties name and age.
+
+To find the length of an object, there are following ways:
+
+1) Using Object.keys() Method
+This method will return the properties of the object as an array and length will print the length of that array i.e., the length of the object.
+
+Example 1:
+
+var universe = {
+	'star': 'Sun',
+	'planet': 'Earth',
+	'satellite': 'Moon'
+};
+
+console.log(Object.keys(universe).length); -->
+
+
+
+
+
+
+<!-- 2) Using hasOwnProperty() Method
+With the help of a loop, this method will check whether the key is present in the object or not. If the key is present then it will Boolean value (True/False) which then will increment the count variable.
+
+Example 2:
+
+var universe = {
+	'star': 'Sun',
+	'planet': 'Earth',
+	'satellite': 'Moon'
+};
+
+var key, count = 0;
+
+for (key in universe) {
+	if (universe.hasOwnProperty(key))
+		count++;
+}
+objectlength = count;
+
+console.log(objectlength); -->

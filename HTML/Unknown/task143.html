@@ -1,0 +1,131 @@
+<!-- Method to show or hide elements in HTML using display property in JavaScript -->
+
+
+
+
+
+In HTML, we can use the display property to selectively show and hide elements. In this tutorial, we'll see how...
+
+
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</head>
+<style>
+    body {
+        background: burlywood;
+    }
+</style>
+
+<body>
+    <div class="container center">
+        <h4>Here's a new year party you'll never forget!</h2>
+
+            <div class="row">
+                <div class="col">
+                    <div class="card blue-grey darken-1">
+                        <div class="card-content white-text">
+                            <span class="card-title">Tuesday, 31st December 2019</span>
+                            <p>New Year's Eve Plans!</p>
+                            <span>Short party hosted at my place, be sure to come and don't forget to wear your dancing shoes! :)</span>
+                        </div>
+                        <div class="schedule white-text">
+                            <h5>Schedule is as follows</h5>
+                            <p>5pm Snacks</p>
+                            <p>6pm Resolution making</p>
+                            <p>7pm Musical chairs, dog in the bone and other fun games!</p>
+                            <p>9pm Dinner</p>
+                            <p>10 pm Karoke</p>
+                            <p>11pm 2019: an overview and let the countdown begin!</p>
+                        </div>
+
+                        <div class="card-action">
+                            <button class="btn">RSVP</button>
+                            <button class="btn hide-btn">Hide Schedule</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</body>
+<script>
+</script>
+
+</html>
+
+
+
+
+
+
+
+<!-- Now that we have a template setup let's try to hide the schedule on clicking the button. We can attach an event listener and set the display property to none. First, we need a reference to both our schedule as well as our button.
+
+const schedule = document.querySelector('.schedule');
+const hideBtn = document.querySelector('.hide-btn');
+Now let's add an event listener to set the display of our schedule as none.
+
+<script>
+    const schedule=document.querySelector('.schedule');
+    const hideBtn=document.querySelector('.hide-btn');
+    hideBtn.addEventListener('click',()=>{
+        schedule.style.display="none";
+    })
+</script> -->
+
+
+
+
+
+
+<!-- You can see that on clicking the hide schedule button we are able to successfully hide the schedule! Great. You can see that on clicking the hide schedule button we are able to successfully hide the schedule! Great.
+
+Let's try to do this the other way. After we have clicked the hide schedule button we'll change the text to show schedule and then if the user clicks it we'll get the schedule back again.
+
+<script>
+    const schedule=document.querySelector('.schedule');
+    const hideBtn=document.querySelector('.hide-btn');
+    hideBtn.addEventListener('click',()=>{
+        schedule.style.display="none";
+        hideBtn.textContent="Show Schedule";
+    })
+</script> -->
+
+
+
+
+
+You can see now the button's text has changed! But how do we get the schedule back? We can set the display property to block but how do we know when to do that? A simple way would be to check if the button says hide or show.
+
+<!-- <script>
+    var showSchedule=new Boolean();
+    const schedule=document.querySelector('.schedule');
+    const hideBtn=document.querySelector('.hide-btn');
+
+    hideBtn.addEventListener('click',()=>{
+        if(hideBtn.textContent=="Hide Schedule")
+        showSchedule=false;
+        else
+        showSchedule=true;
+
+        if(showSchedule){
+        schedule.style.display="block";
+        hideBtn.textContent="Hide Schedule";
+        }
+        else{
+        schedule.style.display="none";
+        hideBtn.textContent="Show Schedule";
+        }
+    })
+</script> -->

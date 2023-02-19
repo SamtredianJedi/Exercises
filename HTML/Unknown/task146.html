@@ -1,0 +1,45 @@
+<!-- Get current UTC time in Hours24: Minutes: Seconds format in JavaScript -->
+
+
+
+<!-- Getting current UTC time in JavaScript
+To get the current UTC time in JavaScript, we need to use three library functions of Date class,
+
+Date getUTCHours() Method – It returns current UTC hours
+Date getUTCMinutes() Method – It returns current UTC minutes
+Date getUTCSeconds() Method – It returns current UTC seconds
+Note: To call these functions, we need to create an object to the Date class using Date class constructor.
+
+Examples:
+
+    Date class constructor:
+    var dt = new Date();
+
+    Function calls:
+    dt.getUTCHours();
+    dt.getUTCMinues();
+    dt.getUTCSeconds(); -->
+
+
+
+
+JavaScript code to get the current UTC time in Hours24: Minutes: Seconds format
+
+<html>
+
+<head>
+    <title>JavaScipt Example</title>
+</head>
+
+<body>
+    <script>
+        var dt = new Date(); //Date constructor 
+        var hh = dt.getUTCHours();
+        var mm = dt.getUTCMinutes();
+        var ss = dt.getUTCSeconds();
+        //printing time
+        document.write("Current UTC time is= " + hh + ":" + mm + ":" + ss + "<br>");
+    </script>
+</body>
+
+</html>

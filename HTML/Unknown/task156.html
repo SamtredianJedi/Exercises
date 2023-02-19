@@ -1,0 +1,53 @@
+<!-- How do you get a timestamp in JavaScript? -->
+
+
+
+<!-- What is Timestamp?
+First, let's understand what is a timestamp? Here, the timestamp is the number of milliseconds that have passed since Jan 1, 1970. This is known as the Unix epoch. So basically, if we print the timestamp it is going to be a long integer as it is the number of milliseconds. It is going to be something like 1652189912918.
+
+1) Using Date.now()
+This method will return the current timestamp in milliseconds.
+
+Example 1:
+
+// Creating a timestamp
+var timestamp = Date.now();
+console.log(timestamp); -->
+
+
+
+
+
+
+<!-- These are the number of milliseconds passed from Jan 1, 1970. To see the number of seconds, we will divide the time by 1000.
+
+Example 2:
+
+// Creating a timestamp
+var timestamp = Date.now() / 1000;
+console.log(timestamp);
+
+
+
+
+
+To get the floor value of this number we'll use the Math.floor() method. This will round off the given value.
+
+Example 3:
+
+// Creating a timestamp
+var timestamp = Math.floor(Date.now() / 1000);
+console.log(timestamp);
+
+
+
+But this is not in human-readable form, as we cannot understand what is time by looking at this number. So, to make it human-readable form we'll follow the next method.
+
+2) Using new Date() Method
+You can simply initialize this object without passing any value. This will return the current date which is easy to understand.
+
+Example 4:
+
+var d = new Date();
+console.log(d);
+ -->

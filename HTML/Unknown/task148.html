@@ -1,0 +1,46 @@
+Retrieve the position (XY) of an HTML element
+
+
+<!-- At times there's a need to know the exact position of an element in HTML to make our websites responsive. The position refers to x & y coordinates. We can find the coordinates of an element at the top-left point in a document using JavaScript.
+
+Let's say, the coordinate of an element is (25,6). Here, X=25 represents the horizontal position and Y=6 represents the vertical position.
+
+We use XY.getBoundingClientRect() method in JavaScript to retrieve the position (XY) of an HTML element.
+ -->
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Position(XY)</title>
+    <!-- JavaScript code to retrieve position of an element -->
+    <script>
+        function Position(XY) {
+            var pos = XY.getBoundingClientRect();
+            document.getElementById('container').innerHTML = 'X= ' + pos.x + ', ' + 'Y= ' + pos.y
+        }
+    </script>
+</head>
+
+<style>
+    img {
+        display: flex;
+        align-items: center;
+    }
+</style>
+
+<body>
+    <div id="container"></div>
+    <h2 class="click" onclick="Position(this)">IncludeHelp</h2>
+    <nav class="topics" onclick="Position(this)">
+        <a href="#">HTML</a>
+        <a href="#">CSS</a>
+    </nav>
+    <img src="https://static.vecteezy.com/system/resources/thumbnails/000/180/409/small/software_enginner_1-01.png"          onclick="Position(this)" />
+</body>
+
+</html>

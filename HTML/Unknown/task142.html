@@ -1,0 +1,67 @@
+<!-- How to compare two JavaScript array objects using JavaScript
+
+
+
+
+There are two approaches to this problem, first let's look at the brute force approach.
+
+In the brute force approach, we'll take one array as constant and traverse through the second array. We'll check for every element if it occurs in the first array. If it does, we'll go on to the next element and if it doesn't we'll return false from there.
+
+First, let's create three arrays,
+
+
+
+
+let arr1 = [1, 2, 3];
+let arr2 = [1, 5, 4];
+let arr3 = [2, 1, 3];
+
+console.log(arr1);
+console.log(arr2);
+console.log(arr3);
+
+
+
+
+Let's create a function that takes two arrays and checks if they're equal. We can use the includes method to check if an element occurs in an array.
+
+function compare(arr1, arr2) {
+     for (let i = 0; i < arr1.length; i++) {
+         if (!arr2.includes(arr1[i]))
+             return false;
+     }
+     return true;
+ }
+
+ compare(arr1, arr2);
+ compare(arr1, arr3);
+
+
+
+
+ Our function works just fine! But let's understand what we're doing here, we're comparing every element of one array for its existence in the second array. If the length of the first array is n and that of the other is m, our code takes a time of O(n*m). Can we do a bit better?
+
+When two arrays are the same, they have the same elements. Here the problem is that the elements are not following a particular order. What if we sort the two arrays?
+
+function compare(arr1, arr2) {
+    arr1.sort();
+    arr2.sort();
+    if (arr1.length != arr2.length)
+        return false;
+    for (let i = 0; i < arr1.length; i++) {
+        if (arr1[i] != arr2[i])
+            return false;
+    }
+    return true;
+}
+
+compare(arr1, arr2);
+compare(arr1, arr3);
+
+
+
+
+When we sort the two arrays if they contain the same elements their order becomes the same. We can then simply check if both the arrays have the same element present at the same index and return true and false otherwise.When we sort the two arrays if they contain the same elements their order becomes the same. We can then simply check if both the arrays have the same element present at the same index and return true and false otherwise.
+
+Let's look at how much optimization we have achieved. Sorting takes O(n*logn) time if the array contains n elements and finally, our comparing function's loop takes O(n) time. Effectively, our code now runs in O(nlogn) time which is a good upgrade from the previous code that took O(n^2) time!
+ -->

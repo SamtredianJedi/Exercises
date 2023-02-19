@@ -1,0 +1,49 @@
+<!-- 
+Get current UTC Date in Date / Month / Year format in JavaScript -->
+
+
+
+
+
+<!-- Getting current UTC date in JavaScript
+To get the current UTC date in JavaScript, we need to use three library functions of Date class,
+
+Date getDate() Method – It returns current UTC date (day of the month)
+Date getMonth() Method – It returns current UTC month of the year
+Date getFullYear() Method – It returns UTC current year in 4 digits format
+Note: To call these functions, we need to create an object to the Date class using Date class constructor.
+
+Examples:
+
+    Date class constructor:
+    var dt = new Date();
+
+    Function calls:
+    dt.getUTCDate();
+    dt.getUTCMonth()+1;
+    dt.getUTCFullYear(); -->
+
+
+
+
+
+JavaScript code to get the current UTC date in Date / Month / Year format
+
+<html>
+
+<head>
+    <title>JavaScipt Example</title>
+</head>
+
+<body>
+    <script>
+        var dt = new Date(); //Date constructor 
+        var dd = dt.getUTCDate();
+        var mm = dt.getUTCMonth() + 1;
+        var yy = dt.getUTCFullYear();
+        //printing date
+        document.write("Current UTC date is= " + dd + "/" + mm + "/" + yy + "<br>");
+    </script>
+</body>
+
+</html>

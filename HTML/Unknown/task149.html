@@ -1,0 +1,79 @@
+Dynamically Populating drop-down list from selection another drop-down value
+
+
+
+
+<!-- JavaScript is one of the most widely used programming languages (Front-end as well as Back-end). In-browser JavaScript can do everything related to webpage manipulation, interaction with the user, and the webserver.
+
+Dynamically populating a drop-down list from the selection of another list means that the selection of a value from list 1 gives respective values in list 2.
+
+Example: Two drop-down lists are given labeled company and model respectively. If a company is chosen from list 1, let’s say Apple, then all the respective models should be seen in list 2. If the company in list 1 is changed then all the models in list 2 should also be changed according to it.
+
+The JavaScript function for doing this is given below: -->
+
+
+
+
+<script>
+    function fillmobile() {
+        removeOptions()
+        switch (company.selectedIndex) {
+            case 1:
+                var mb = ["-Model-", "Note 10 Lite", "S21", "M31", "M51"]
+                fillModel(mb)
+                break
+            case 2:
+                var mb = ["-Model-", "Iphone 13 Pro", "Iphone 13", "Iphone 13 Mini"]
+                fillModel(mb)
+                break
+
+            case 3:
+                var mb = ["-Model-", "Redmi Note 6", "Redmi Note 7", "Redmi Note 7 Pro"]
+                fillModel(mb)
+                break
+        }
+    }
+
+    function removeOptions() {
+        for (var j = model.options.length - 1; j >= 0; j--) {
+            model.remove(j)
+        }
+
+    }
+
+    function fillModel(mb) {
+        for (var i = 0; i < mb.length; i++) {
+            var opt = document.createElement("option")
+            opt.text = mb[i]
+            model.add(opt)
+        }
+    }
+</script>
+
+
+
+
+HTML code to display this on a webpage is:
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <b>Company:</b><br><br>
+    <select id="company" onchange="fillmobile()">
+         <option>-Company-</option>
+         <option>Samsung</option>
+         <option>Apple</option>
+         <option>Redmi</option>
+      </select>
+    <br><br>
+    <b>Model:</b><br><br>
+    <select id="model">
+         <option>-Model-</option>
+      </select>
+    <br><br>
+</body>
+
+</html>

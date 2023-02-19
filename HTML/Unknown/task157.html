@@ -1,0 +1,42 @@
+<!-- Which 'href' value should I use for JavaScript links, '#' or 'javascript:void(0)'?
+
+
+
+What is href ?
+
+The HTML code, Hypertext REFerence, is used to create a link to another page. The HREF is an attribute of the anchor tag, which is also used to identify sections within a document.
+
+<a href="https://www.google.com/">Google</a>
+This will redirect the page to the given link in the anchor tag. Here, it will open the google home page. The href attribute can be used to link to local files or files on the internet.
+
+Also, href="#" is used to link to the top of the current page.
+
+The HREF in JavaScript is a method to call a JavaScript function when a user clicks on the link.
+
+Example:
+
+
+<a href="#">This is a dead link</a><br><br>
+<a href="https://www.google.com/">This is a live link to Google</a><br>
+The first link will remain on that page only as it is a dead link and no page is linked to it (it will just take you to the top of the page). The other link will redirect the page to google.com
+
+What is javascript:void()?
+It evaluates an expression and returns undefined value.
+
+<a href= 'javascript:void(0);' is an alternative way of using <a href= '#'.
+
+When JavaScript is used as an alternative, the void (0), returns undefined, which is a primitive value, this forces the browser to stay on the same page, in short, void(0) is a short script that evaluates to undefined by default.
+
+void(0) means, do nothing. So, it will not reload to any other page or run any code. With void, it tells the browser not to return anything, hence, it returns undefined.
+
+Basically, this ensures that a page does not navigate to another page or reload the current page when clicked.
+
+What to use in JavaScript '#' or void(0)?
+The href="" will only load the current page, while href="#" scrolls the current page to the top, while href='javascript:void(0)' will do nothing at all.
+
+The hash is safest, just in case your user has JavaScript disabled.
+
+Use the javascript:void(0) if you want to be raw, precise, and fast.
+
+I would say both hyperlinks have their special cases where one is better than the other and vice versa.
+ -->

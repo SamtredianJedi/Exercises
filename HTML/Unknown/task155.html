@@ -1,0 +1,62 @@
+<!-- How do I check if an array includes a value in JavaScript? -->
+
+
+
+
+
+<!-- To check if an array includes a value, we can use two methods:
+
+includes()
+indexoOf()
+Here the value can be anything, it can be a string or any number. Using the following method, you can check any string or number in the given array.
+
+1) Using includes() Method
+There is a method in JavaScript to do this task very easily. Using includes() method we can check whether a particular value is present in the given array or not. This value to be checked is given inside the brackets.
+
+Syntax:
+
+array.includes('value');
+It gives the result true/false. Also, keep in mind that includes() is case sensitive. So basically, this is a very simple way of doing this.
+
+Example 1:
+
+const names = ['John', 'Peter', 'James', 'Jason', 'William'];
+let result = names.includes('Peter');
+console.log(result); -->
+
+
+
+
+
+
+<!-- Example 2:
+
+const names = ['John', 'Peter', 'James', 'Jason', 'William'];
+let result = names.includes('Vicky');
+console.log(result);
+
+
+
+
+
+1) Using indexoOf() Method
+There is another method called indexoOf(), but this is not the direct method to find a value in an array. Here the value is given with a condition for its index. If the condition is true, it will return true, else false.
+
+Syntax:
+
+array.indexOf('value') !== -1;
+It explains that if the index of the given value is not equal to -1 then obviously that the given value is in the given array and hence this will return true, else false.
+
+Example 3:
+
+const names = ['John', 'Peter', 'James', 'Jason', 'William'];
+let result = names.indexOf('James') !== -1;
+console.log(result);
+
+
+
+Example 4:
+
+const names = ['John', 'Peter', 'James', 'Jason', 'William'];
+let result = names.indexOf(5) !== -1;
+console.log(result); -->

@@ -1,0 +1,47 @@
+<!-- Get current Date in Date / Month / Year format in JavaScript
+
+
+
+
+<!-- Getting current date in JavaScript
+To get the current date in JavaScript, we need to use three library functions of Date class,
+
+Date getDate() Method – It returns current date (day of the month)
+Date getMonth() Method – It returns current month of the year
+Date getFullYear() Method – It returns current year in 4 digits format
+Note: To call these functions, we need to create an object to the Date class using Date class constructor.
+
+Examples:
+
+    Date class constructor:
+    var dt = new Date();
+
+    Function calls:
+    dt.getDate();
+    dt.getMonth()+1;
+    dt.getFullYear(); -->
+
+
+
+
+
+JavaScript code to get the current date in Date / Month / Year format
+
+<html>
+
+<head>
+    <title>JavaScipt Example</title>
+</head>
+
+<body>
+    <script>
+        var dt = new Date(); //Date constructor 
+        var dd = dt.getDate();
+        var mm = dt.getMonth() + 1;
+        var yy = dt.getFullYear();
+        //printing date
+        document.write("Current date is= " + dd + "/" + mm + "/" + yy + "<br>");
+    </script>
+</body>
+
+</html>

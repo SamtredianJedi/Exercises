@@ -1,0 +1,46 @@
+<!-- Get current time in Hours24: Minutes: Seconds format in JavaScript
+
+
+
+
+<!-- Getting current time in JavaScript
+To get the current time in JavaScript, we need to use three library functions of Date class,
+
+Date getHours() Method – It returns current hours
+Date getMinutes() Method – It returns current minutes
+Date getSeconds() Method – It returns current seconds
+Note: To call these functions, we need to create an object to the Date class using Date class constructor.
+
+Examples:
+
+    Date class constructor:
+    var dt = new Date();
+
+    Function calls:
+    dt.getHours();
+    dt.getMinues();
+    dt.getSeconds(); -->
+
+
+
+
+JavaScript code to get the current time in Hours24: Minutes: Seconds format
+
+<html>
+
+<head>
+    <title>JavaScipt Example</title>
+</head>
+
+<body>
+    <script>
+        var dt = new Date(); //Date constructor 
+        var hh = dt.getHours();
+        var mm = dt.getMinutes();
+        var ss = dt.getSeconds();
+        //printing time
+        document.write("Current time is= " + hh + ":" + mm + ":" + ss + "<br>");
+    </script>
+</body>
+
+</html>

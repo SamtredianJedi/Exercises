@@ -1,0 +1,82 @@
+<!-- How to replace all occurrences of a string in JavaScript? -->
+
+
+<!-- In JavaScript, there are a few ways to do this.
+
+Using replace() method
+Using replaceAll() method
+Splitting & joining an array
+Using replace() Method
+As the name suggests, it will replace the substring that is given within the brackets.
+
+Syntax:
+
+string.replace(/regExpSearch/, "replaceWith")
+
+Where, regExpSearch is the string to be searched and has to be replaced with the replaceWith string.
+
+Example 1:
+
+string = "The dog is a dog, and a cat is a cat.";
+newString = string.replace(/dog/, 'lion');
+console.log(newString); -->
+
+
+
+
+
+<!-- But the drawback is that it will only replace the first occurrence of the substring in the given string and the rest of the substrings will remain same.
+
+So, in order to replace the all the occurrences of the substring, you'll have to invoke the global flag on the regular expression, i.e., regExpSearch.
+
+string.replace(/regExpSearch/g, "replaceWith")
+Example 2:
+
+string = "The dog is a dog, and a cat is a cat.";
+newString = string.replace(/dog/g, 'lion');
+console.log(newString); -->
+
+
+
+
+<!-- But what if the substring to be replaced has different cases. To make sure that all occurrences of the substring has been removed irrespective of the cases you'll have to i flag to the regular expression.
+
+string.replace(/regExpSearch/gi, "replaceWith")
+Example 3:
+
+string = "The dog is a dog, and a cat is a cat.";
+newString = string.replace(/dog/gi, 'lion');
+console.log(newString); -->
+
+
+
+
+<!-- Using replaceAll() Method
+This method is similar to the replace() method apart from the thing that you do not need to invoke a global or cases sensitive flag to replace all the occurrences from the string.
+
+This method simply replaced all the appearances of the substring searched with the replaceWith string.
+
+Syntax:
+
+string.replaceAll(search, replaceWith)
+Example:
+
+string = "The DOG is a dog, and a cat is a cat.";
+newString = string.replaceAll('cat', 'tiger');
+console.log(newString); -->
+
+
+
+
+<!-- Splitting & Joining an Array
+This is a bit different way to replace the substring. Let's take a look how?
+
+Here, using the two methods of JavaScript, split() & join(), we will replace all the occurrences of a substring from the string.
+
+First and foremost, you'll split the given string by the search string. search is the substring that has to be replaced. Next, you will join the split string with the substring to be replaced with using join() method. Here's an example for better understanding.
+
+Example:
+
+string = "big white cat";
+newString = string.split(' ').join('-');
+console.log(newString); -->
