@@ -1,0 +1,53 @@
+<!-- Check whether a string contains a substring using includes() and indexOf() methods in JavaScript -->
+
+
+
+<!-- Suppose we have a string "My name is Tom". A string is a combination of different substrings. There are many substrings in this given string. To check whether a specified substring is present in this string or not, let's discuss the following methods.
+
+Using includes() method
+Using indexOf() method
+1) Using includes() Method
+In JavaScript, includes() method checks whether a sub-string or a character is present in the string or not. It will return output in terms of true and false. This method is case sensitive, which means that it will consider uppercase and lowercase differently.
+
+Syntax:
+
+string.includes("SubString");
+Let's understand this with examples.
+
+Example 1:
+
+str = "My name is Tom";
+check = str.includes("ame");
+console.log(check); -->
+
+
+
+
+<!-- Example 2:
+
+str = "My name is Tom";
+check = str.includes("tom");
+console.log(check);
+
+
+
+
+2) Using indexOf() Method
+As the name indicates, indexOf() will return the index of the value or character specified inside it. If a substring is specified then it will return the index if the starting of the substring.
+
+Also, just to check whether the substring is present in the string or not then we can apply a condition. If the index of the sub-string is not equals to (-1) then obviously it is present in the given string and hence it will return true, if not then it will return false.
+
+Example 3:
+
+str = "My name is Tom";
+subString = str.indexOf("ame i");
+console.log(subString);
+
+
+
+Example 4:
+
+str = "My name is Tom";
+subString = str.indexOf("Tom") !== -1;
+console.log(subString);
+ -->

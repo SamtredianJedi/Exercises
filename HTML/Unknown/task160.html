@@ -1,0 +1,40 @@
+<!-- What is the most efficient way to deep clone an object in JavaScript? -->
+
+
+
+
+<!-- Deep Clone
+There are two types of copies – Shallow copy and Deep copy. In Shallow copy, only the address/reference of the original object is copied and hence the changes made to copied object are also reflected in the original object. Whereas in Deep copy the actual original object is copied and both the original and the copied objects are stored. So, even if we make any changes to the copied object, the original object remains unchanged.
+
+Now, let's see how to make a deep clone of an object in JavaScript?
+
+object2 = JSON.parse(JSON.stringify(object1))
+By using this, first, we'll stringify object1 into a JSON string and then again create another object through parsing it.
+
+There is an object person1 with some values in it. An object person2 has been created as a deep copy of person1.
+
+let person1 = {name:'John', age:20, place:'Delhi'};
+let person2 = JSON.parse(JSON.stringify(person1));
+
+console.log(person1);
+console.log(person2); -->
+
+
+
+
+
+<!-- Now, let's check whether the created person2 is a deep copy of person1 or not. Let's say, we'll change the age in person2 and if it is a deep copy, it should not reflect the change in object1.
+
+let person1 = {name:'John', age:20, place:'Delhi'};
+let person2 = JSON.parse(JSON.stringify(person1));
+
+person2.age=25; // changing the value in person2
+
+console.log(person1);
+console.log(person2);
+
+
+
+As the value is only changed in person2, we can say that it is a deep copy/clone of a person1.
+
+Hence, this is the most efficient way of creating a deep clone of any object in JavaScript. -->

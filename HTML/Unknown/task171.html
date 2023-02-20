@@ -1,0 +1,37 @@
+<!-- Set a default parameter value for a JavaScript function -->
+
+
+
+<!-- First, let's understand what is parameter in a function. What is the difference between a parameter and an argument?
+
+When a function is declared in JavaScript, the values that are specified are the parameters. Whereas, the values given when a function is called are called arguments.
+
+function sum(a, b) {
+	return a + b;
+}
+
+sum(5, 4);
+Here, a and b are parameters while 5 and 4 are arguments for the function.
+
+Now, to set a default parameter value for a JavaScript function we use the following way.
+
+Syntax:
+
+function functionName(param1 = default1, param2 = default2, ...) {
+	// function body
+}
+A default value is set for the parameters in the function. While calling the function, if the arguments are specified then the function takes those values, but if no arguments are passed then the function will return the result by considering the default parameters.
+
+Let's understand this with the help of an example.
+
+function mul(x = 4, y = 50) {
+	// return mul
+	return x * y;
+}
+
+console.log(mul(2, 17));
+console.log(mul(3));
+console.log(mul()); -->
+
+
+<!-- Here, the default parameters are 4 and 50. So, if the arguments are not passed then these values will be taken into consideration. -->

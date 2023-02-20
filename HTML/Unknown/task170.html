@@ -1,0 +1,54 @@
+<!-- Compare two dates with JavaScript -->
+
+
+
+<!-- Here, we will discuss two methods to compare the dates in JavaScript.
+
+1) Using Comparison Operators
+This is the most basic and simplest way of comparing dates. Here, the dates are compared with the help of various comparison operators like >, <, etc.
+
+Firstly, the date object is created using the Date() constructor. It is then compared. It can compare two current dates, past date and current date, future date and past date, etc.
+
+Syntax:
+
+DateObjectOne > DateObjectTwo
+Example 1:
+
+function CompareDates() {
+	var DateOne = new Date(2019, 02, 14); //(YYYY-MM-DD)
+	var DateTwo = new Date(2011, 05, 7); //(YYYY-MM-DD)
+
+	if (DateOne > DateTwo) {
+		console.log("Date One is greater than Date Two.");
+	} else {
+		console.log("Date Two is greater than Date One.");
+	}
+}
+CompareDates();
+ -->
+
+
+
+<!-- 2) Using getTime() Method
+If we have to compare and check which date is greater, then another way of doing this is by using the getTime() method of JavaScript.
+
+This method basically returns the numeric value of the date specified. The getTime() converts the date into the number of milliseconds passed since ECMAScript epoch. We can then easily compare this numeric value and find which one is greater.
+
+Syntax:
+
+dateObject.getTime()
+Example 2:
+
+var Date_1 = new Date();
+var Date_2 = new Date(2021 - 07 - 15); // (YYYY-MM-DD)
+
+if (Date_1.getTime() < Date_2.getTime())
+	console.log("Date_1 is lesser than Date_2");
+
+else if (Date_1.getTime() > Date_2.getTime())
+	console.log("Date_1 is greater than Date_2");
+
+else
+	console.log("both are equal");
+
+     -->

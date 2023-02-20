@@ -1,0 +1,80 @@
+<!-- Which equals operator (== vs ===) should be used in JavaScript comparisons? -->
+
+
+
+<!-- There are three types of equals operator with different functions:
+
+Assignment Operator (=)
+Equality Operator (==) / Comparison Operator
+Identity Operator (===) / Comparison Operator
+1) Assignment Operator (=)
+A single equals operator (=) is used to assign values. It is hence called assignment operator. It does not return any true/false value. It just assigns the value to the right of the operator to the left. 
+
+Syntax:
+
+var a = 10;
+Here, 10 is assigned to the variable a. Now we print a, it will return the value assigned to it, i.e., 10.
+
+2) Equity Operator (==)
+It is used to compare the variable in JavaScript. But it does not check the data type of the variable to be compared. It checks the equity of the variables without considering their types. It returns output in terms of true or false. If they are equal, it returns true otherwise false.
+
+Syntax:
+
+a == b;
+Example 1:
+
+var a = 10;
+var b = 20;
+
+if (a == b) {
+	console.log('Hey');
+} else {
+	console.log('Bye');
+} -->
+
+
+
+<!-- Example 2:
+
+var a = '10';
+var b = 10;
+
+if (a == b) {
+	console.log('Hey');
+} else {
+	console.log('Bye');
+} -->
+
+
+
+<!-- In example 2, even though the data type of variable a and b are different, but (==) makes their type same and then compares them. Since, 10==10, it returns true and hence the if loop will be implemented.
+
+3) Identity Operator (===)
+This is also used to compare variables but the difference is that it also checks the datatype of the compared variables. It returns true only if both, the value and the type, of the variable is same.
+
+Syntax:
+
+a === b;
+Example 3:
+
+var a = '10';
+var b = 10;
+
+if (a === b) {
+	console.log('Hey');
+} else {
+	console.log('Bye');
+}
+
+
+Example 4:
+
+var a = '10';
+var b = '10';
+
+if (a === b) {
+	console.log('Hey');
+} else {
+	console.log('Bye');
+}
+ -->

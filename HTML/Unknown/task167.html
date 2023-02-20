@@ -1,0 +1,66 @@
+<!-- Check if a variable is a string in JavaScript -->
+
+
+
+<!-- A data type is said to be a string if it is a sequence of characters. It is the textual data stored in a variable. In JavaScript, it is defined within single or double quotes and also using a new String() constructor.
+
+str1 = "This is my place."
+str2 = 'That is your place.'
+str3 = new String('Great Place');
+Now to check whether a given variable is a string or not, we'll use a JavaScript operator called typeof.
+
+Syntax:
+
+typeof variable;
+This operator returns the data type of the variable specified after it. If the variable is of string data type, it will return a string.
+
+Alternatively, it can also be used as typeof() method in JavaScript.
+
+Syntax:
+
+typeof(variable);
+Example 1:
+
+str = "This is my place.";
+
+if (typeof str == String) {
+console.log('The variable is a String.');
+} else {
+console.log('The variable is not a String.');
+}
+ -->
+
+
+
+
+
+<!-- Example 2:
+
+str = "That is your place.";
+
+if (typeof(str) === 'string') {
+	console.log('The variable is a String.');
+} else {
+	console.log('The variable is not a String.');
+}
+
+
+
+But, one of the drawbacks of using typeof() is that when it is applied to the variable declared by the new String() constructor, then instead of returning a string, its return object as its data type. Hence, it does not recognize the strings created in this way.
+
+So, here instead of using typeof(), we'll use instanceof operator. This operator detects the strings created by the new String() constructor.
+
+Syntax:
+
+variable instanceof String;
+The above expression will return true if the variable is String.
+
+Example 3:
+
+str = new String("My name is Tom.");
+
+if (str instanceof String) {
+	console.log('The variable is a String.');
+} else {
+	console.log('The variable is not a String.');
+} -->

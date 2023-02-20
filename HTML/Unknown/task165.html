@@ -1,0 +1,58 @@
+<!-- What's the difference between using 'let' and 'var'? -->
+
+
+
+<!-- JavaScript 'let' Keyword
+This is used to declare variables in JavaScript. It is block-scoped which means it can only be accessed inside a block of code. Block in nothing but some code written within {} brackets. So, variable declared with let is only available to use inside that block.
+
+We see that using let variable outside its block (the curly braces where it was defined) returns an error. This is because let variables are block scoped.
+
+Syntax:
+
+let a = 'value';
+Example 1:
+
+// variable name cannot be used here
+function person() {
+	let name = 'John';
+
+	// variable age cannot be used here
+	if (name == 'John') {
+		// variable age can be used here
+		let age = '20';
+		console.log(name + ' ' + age);
+	}
+
+	// variable age cannot be used here
+	console.log(name + ' ' + age); // will return error
+}
+
+// variable name cannot be used here
+
+person(); -->
+
+
+
+
+
+<!-- JavaScript 'var' Keyword
+This is also used to declare a variable. The var keyword is used here. The variable declared inside a function with var can be used anywhere within a function. Hence, it is function-scoped. Once the variable is declared with var. The variable can be used anywhere inside the function.
+
+It is also called globally-scoped. The scope is global when a var variable is declared outside a function. This means that any variable that is declared with var outside a function block is available for use in the whole window.
+
+Syntax:
+
+var b = 'value';
+Example 2:
+
+// variable name cannot be used here
+
+function person() {
+	// variable name can be used here
+	var name = 'Tom';
+	console.log(name);
+}
+
+// variable name cannot be used here
+
+person(); -->

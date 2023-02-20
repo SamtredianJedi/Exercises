@@ -1,0 +1,27 @@
+<!-- Can (a== 1 && a ==2 && a==3) ever evaluate to true? -->
+
+
+
+<!-- There's given a condition that if the expression is (a==1 && a==2 && a==3), then will this ever be true? Let's discuss this below.
+
+So, the answer to this question is 'yes'. But you must be wondering how?
+
+Before starting, you must have a basic knowledge of loose equality operator. Basically, it is nothing but the use of (==) to compare the values. This compares the value by first making the data types of the variables same and then comparing them.
+
+Now, to make the expression true, we'll first create an object. Let's name that object 'a'. In this object, we'll declare a variable 'num' and initialize its value to 0.
+
+Next, we'll create a function valueOf which will convert a to an int and increment it by one. So, the first time a is converted to int, it will return 1, then 2 and then 3. Which will hence satisfy the equation.
+
+Let's make a clear picture of this by the implementing the following code.
+
+Example:
+
+const a = {
+	num: 0,
+	valueOf: function() {
+		return this.num += 1
+	}
+};
+
+const equality = (a == 1 && a == 2 && a == 3);
+console.log(equality); // true -->

@@ -1,0 +1,60 @@
+<!-- How do I remove a property from a JavaScript object? -->
+
+
+
+<!-- Object in JavaScript is a variable or a variable with some properties in it. An object can be created with figure brackets {...} with an optional list of properties. A property is a "key: value" pair, where the key is a string (also called a "property name"), and the value can be anything.
+
+var person ={
+    'name':'John',
+    'age': 25,
+    'place':'Delhi',
+    'position':'Developer'
+};
+In the above example, a person is an object with properties like name, age, place, and position.
+
+Suppose we want to remove the position property of the object person.
+
+Here's a way to do this.
+
+JavaScript Delete Operator
+This helps to delete/ remove any property of an object in JavaScript. There are two ways to write down the delete operator.
+
+Using the dot (.) Operator
+delete object.property;
+Using the square brackets []
+delete object['property'];
+Let's understand this better by taking an example.
+
+As mentioned above, there is an object person with properties like name, age, place, and position. Now, to remove the position from the object:
+
+Example 1:
+
+var person = {
+	'name': 'John',
+	'age': 25,
+	'place': 'Delhi',
+	'position': 'Developer'
+};
+
+delete person.position; // position property deleted
+console.log(person);
+ -->
+
+
+
+
+
+
+<!-- Let's also see an example of removing the property by using the square brackets.
+
+Example 2:
+
+var person = {
+	'name': 'John',
+	'age': 25,
+	'place': 'Delhi',
+	'position': 'Developer'
+};
+
+delete person['age']; // age property deleted
+console.log(person); -->

@@ -1,0 +1,32 @@
+<!-- Open a URL in a new tab (and not a new window) -->
+
+
+<!-- You can use the following method to open a link in new tab, but it also depends upon the user's browser settings and preferences. So, there is no way that can guarantee to strictly open the link in new tab.
+
+Window open()
+By using the open() method of window interface we can open the specified content in the new tab, window or even <iframe>.
+
+Syntax:
+
+window.open(URL, Target, WindowFeatures);
+Here, the URL is the link of the webpage that has to be linked.
+
+The target keywords are _blank, _self, _parent, _top. This means where to load the URL. Like _self will open the link in the same tab which you are working on, _blank will open the link in the new tab.
+
+The WindowFeatures are the features that are specified for the new window that opens like the width, height, screenX, screenY, popup, etc.
+
+To open the link in new tab (not in a new window) we will use the _blank target keyword and no Windowfeatures as no new window has to be opened.
+
+Example:
+
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Title</title>
+   </head>
+   <body>
+      <button onclick="window.open('https://www.google.com','_blank');">
+      CLICK HERE
+      </button>
+   </body>
+</html> -->

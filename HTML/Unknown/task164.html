@@ -1,0 +1,55 @@
+<!-- var functionName = function() {} vs function functionName() {} -->
+
+
+
+<!-- A function is composed of a sequence of statements called the function body. Values can be passed to a function, and the function will return a value.
+
+Now, there are broadly two ways of writing a function in the JavaScript code.
+
+1) var functionName = function() {}
+This is a function expression. It is only defined when that line is reached. This function can only be called after that point in the code. This is because the function is assigned to the variable functionName at run time.
+
+Syntax:
+
+var functionName = function() {...};
+Example 1:
+
+var functionOne = function() {
+	console.log("Hello World!");
+};
+
+functionOne(); -->
+
+
+
+
+<!-- Since, when we define a function in this way, then it is only defined from that line onwards. If the function is called before declaring then it will return error.
+
+Example 2:
+
+// TypeError: functionOne is not a function
+functionOne();
+
+var functionOne = function() {
+	console.log("Hello World!");
+};
+
+
+
+
+2) function functionName() {}
+This is a function declaration and is defined as quickly as its surrounding characteristic or script is executed (due to hoisting). Here, the function is available to code that runs above where the function is declared. The function is assigned to that identifier, functionName, at parse time.
+
+Syntax:
+
+function functionName() {…};
+Example 3:
+
+functionTwo();
+
+function functionTwo() {
+	console.log("Hello World!");
+}
+
+
+ -->

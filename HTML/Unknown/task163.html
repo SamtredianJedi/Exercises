@@ -1,0 +1,67 @@
+<!-- How can I remove a specific item from an array in JavaScript? -->
+
+
+<!-- To remove an item from an array there are a few methods that are discussed below.
+
+Using splice() method
+Using shift() / pop() method
+The best way to do this task is by using the splice() method.
+
+Using splice() Method
+The splice() method is a built-in method for JavaScript Array objects. In this method, you need to specify the index and the number of items to be deleted from that index. These are the two parameters that it takes.
+
+Syntax:
+
+array.splice(index, number of items to be removed);
+It changes the original array and returns the leftover items in the array. All the elements including the specified index get removed. If you want to remove just the specified index then, the number of items to be removed should be 1. Moreover, if the number of items is not specified then it will remove all the items starting from that specified index. Let's understand this better with help of an example.
+
+Given an array of names, "John, Thomas, Peter, Tom, James". To remove, let's say "Tom", the specified index should be 3 as the position of "Tom" is 3 in the array. Since only "Tom" has to be removed the number of elements here is 1.
+
+Example 1:
+
+let person = ["John", "Thomas", "Peter", "Tom", "James"];
+person.splice(3, 1); // will remove 'Tom'
+console.log(person); -->
+
+
+
+
+
+<!-- Example 2:
+
+let person = ["John", "Thomas", "Peter", "Tom", "James"];
+person.splice(2, 2); // will remove 'Peter','Tom'
+console.log(person);
+Output:
+
+
+
+Using shift() and pop() Methods
+When you want to remove just the first element of an array, in that case, the shift() method can be used. No parameters are passed here.
+
+Syntax:
+
+array.shift();
+Similarly, when you want to remove the last element of the array, the pop() method can be used.
+
+Syntax:
+
+array.pop();
+Example 3:
+
+let person = ["John", "Thomas", "Peter", "Tom", "James"];
+
+person.shift(); // will remove 'John’
+console.log(person);
+
+
+
+
+Example 4:
+
+let person = ["John", "Thomas", "Peter", "Tom", "James"];
+
+person.pop(); // will remove 'James'
+console.log(person);
+
+ -->

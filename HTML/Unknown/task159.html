@@ -1,0 +1,47 @@
+<!-- What does 'use strict' do in JavaScript, and what is the reasoning behind it?
+
+
+
+
+The "use strict" is used to implement the code in strict mode. In JavaScript, a variable can work even if the type of the variable is not declared. Like, if 'x=1.2' is declared, it will work and execute the rest of the code.
+
+Example:
+
+x=2.5;
+console.log(x);
+
+
+
+But, if we apply "use strict" mode then writing only 'x=1.2' will return error as no data type has been assigned to the variable. In strict mode, using a variable without declaring it throws an error.
+
+Example:
+
+'use strict';
+x=2.5;
+console.log(x);
+This will return undefined error as the data type of the variable is not specified.
+
+
+
+
+Note: You need to declare strict mode at the beginning of the program. If you declare strict mode below some code, it won't work.
+
+You can also use strict mode inside a function. If 'use strict' is used inside a function then all the variables inside that function will be in strict mode.
+
+Example:
+
+a = 5.6;
+console.log(a); // Prints 5.6
+
+function first(){
+	'use strict';
+	x = 2.5;
+}
+
+first(); // Throws error as type is not defined
+
+
+
+
+Why should we apply "use strict"?
+This makes it easier to write good and secure JavaScript code. Strict mode removes certain JavaScript silent errors. It makes your code more robust, readable, and accurate. -->
