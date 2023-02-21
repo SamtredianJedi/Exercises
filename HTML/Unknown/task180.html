@@ -1,0 +1,57 @@
+<!-- How to print a number with commas as thousands separators in JavaScript? -->
+
+
+
+<!-- Sometimes, it is very important to put commas in the number which helps in understanding the value more precisely. Therefore, for doing this there are different ways which are discussed below.
+
+Using toLocalString() Method
+Using Intl.NumberFormatter
+Creating Function
+Printing number with commas as thousands separators using toLocalString() Method
+For separating the number with commas as thousand separators, we can use toLocalString() method.The toLocalString() is a built-in function in JavaScript. The optional locales parameter is used to specify the format of the number.
+
+The locale 'en-US' is used to specify that the locale takes the format of the United States and the English language. This will format the number with commas at the thousands of places and return a string with the formatted number.
+
+Syntax:
+
+Number.toLocaleString('en-US')
+Example 1:
+
+const n = 589614832;
+const formatted = n.toLocaleString('en-US');
+console.log(formatted)
+
+
+
+
+Printing number with commas as thousands separators using Intl.NumberFormatter
+You can use this namespace (Intl) to format numbers for different localizations. To do this, use the Intl.NumberFormat() object by providing with it the localization code. In case you want to use commas as thousand separators, use the en-US.
+
+Example 2:
+
+const n = 716298462;
+const numberFormatter = Intl.NumberFormat('en-US');
+const formatted = numberFormatter.format(n);
+console.log(formatted);
+
+
+
+
+Printing number with commas as thousands separators by creating function
+A custom function can also be created for doing this task. This will include using some Regular Expressions (RE). To implement your thousand-comma-separator function, you need to convert the number to a string. Then split a digit into a number part and a possible decimal part. Use regex to find the thousands (groups of 3 digits) in the number part and add a comma in-between. Separate the number and the decimal part with a dot.
+
+Example 2:
+
+
+
+function comma(n) {
+	var parts = n.toString().split(".");
+	const numberPart = parts[0];
+	const decimalPart = parts[1];
+	const thousands = /\B(?=(\d{3})+(?!\d))/g;
+	console.log(numberPart.replace(thousands, ",") + (decimalPart ? "." + decimalPart : ""));
+}
+
+comma(25496873);
+
+ -->

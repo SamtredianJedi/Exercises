@@ -1,0 +1,33 @@
+<!-- JavaScript - Add st, nd, rd and th (ordinal) suffix to a number
+
+
+Now, for adding a suffix after a number, there is no direct method present in JavaScript. We can create a function with simple and basic logic for it. This function will return the number along with its appropriate suffix.
+
+First, let's make clear where to use what suffix.
+
+Generally, 'th' is used with every number except all the numbers ending with one, two, or three. Also, all the teen numbers starting from 13-19 do not use 'th' as their suffix.
+
+The numbers ending with one use 'st' as their suffix (1, 21, 31, 41, ...) but 11 does not fall in this category.
+
+Similarly, numbers ending with two use 'nd' as their suffix (2, 22, 32, 42, ...) but 12 does not fall in this category.
+
+Also, the numbers ending with three use 'rd' as their suffix (3, 23, 33, 43, ...) but 13 does not fall in this category.
+
+Now let's apply these conditions and create a function for this,
+
+JavaScript code to add st, nd, rd and th (ordinal) suffix to a number
+function addSuffix(i) {
+    var a = i % 10,
+        b = i % 100;
+
+    if (a == 1 && b != 11) {
+        console.log(i + "st");
+    } else if (a == 2 && b != 12) {
+        console.log(i + "nd");
+    } else if (a == 3 && b != 13) {
+        console.log(i + "rd");
+    } else {
+        console.log(i + "th");
+    }
+}
+addSuffix(155); -->

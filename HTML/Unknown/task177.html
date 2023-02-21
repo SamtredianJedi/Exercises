@@ -1,0 +1,43 @@
+<!-- JavaScript equivalent to printf/String.Format -->
+
+
+
+
+<!-- 1) Using console.log()
+One way is by using console.log(). This helps in printing it on the console. It is the most common form of printing and is used by many developers. It is as simple as printf. The string/variable that has to be printed is specified in the same way as it is specified in printf.
+
+Syntax:
+
+console.log("...");
+Example 1:
+
+<script>
+  var a = "This is Example 1."
+  
+  console.log(a);
+  console.log("This is a string.");
+  console.log(500);
+</script> -->
+
+
+
+
+
+<!-- 2) Using String.format() Function
+When you want to customize the string, then String.format() function is used. Using this simple formatting of the string can be done on your own simultaneously.
+
+So basically, this works such that within the string it looks for the curly brackets {}, and replaces the index/value inside it with the value specified at the right hand side of the .format keyword.
+
+Example 2:
+
+
+
+<script>
+    String.prototype.format = function () {
+        var args = arguments;
+        return this.replace(/{(\d+)}/g, function (match, number) {
+        return typeof args[number] != "undefined" ? args[number] : match;
+        });
+    };
+    console.log("{0} is a country, furthermore {1} is it's capital {0}, {2}".format("India", "New Delhi"));
+</script> -->

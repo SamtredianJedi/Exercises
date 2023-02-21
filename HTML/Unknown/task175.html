@@ -1,0 +1,57 @@
+<!-- How to check if element is visible after scrolling? -->
+
+
+
+<!-- Sometimes it is necessary to check whether the specific element is in viewport, i.e., visible on the screen at a particular point, or not. This is important to know because many other decisions can be based on this.
+
+For example: The pictures and images on a particular website are only loaded when the <img> tag of HTML is in the viewport, i.e., it is visible on the screen. Also loading the advertisements only when it is visible on the user screen. This saves a lot of money of the advertisement companies and also improves the loading speed of the website.
+
+To find whether the element is visible or not we will first have to find the relative position of the element. This can be done with the JavaScript method element.getBoundingClientRect(). This returns the element's relative position to the viewport. It returns a set of values in form of an object that includes element's height, width, and its distance from the top, left, bottom, and right of the viewport.
+
+Also in order to find the size of the viewport we'll have to calculate the window's content size which is calculated as window.innerWidth and window.innerHeight. Then after comparing this and element's relative size, if the element relative position value is less than the window height and width then it is visible on the screen, otherwise not.
+
+Let's see an example:
+
+Example:
+
+HTML Code:
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title>Title</title>
+   </head>
+   <body>
+      <h1>Example</h1>
+      <div>|</div>
+      <div>|</div>
+      <div>|</div>
+      <div>|</div>
+      <div>|</div>
+      <div>|</div>
+      <div>|</div>
+      <div>|</div>
+      <h2 id="footer">Footer</h2>
+   </body>
+</html>
+
+
+
+
+<script>
+    const footer = document.getElementById('footer')
+
+    const checkIsVisible = (element) => {
+        const rect = element.getBoundingClientRect();
+        if(rect.bottom <= window.innerHeight){
+            console.log("I see you!");
+        }
+    };
+
+    document.addEventListener('scroll', () => {
+        checkIsVisible(footer);
+    })
+</script> -->

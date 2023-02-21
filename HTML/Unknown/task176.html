@@ -1,0 +1,80 @@
+<!-- Get all unique values in a JavaScript array (remove duplicates) -->
+
+
+
+<!-- To make sure whether the given array contains all unique values (no repeated values) then there are the following ways to do so in JavaScript:
+
+Sets
+Filter
+ForEach
+1) Using Sets
+Sets in JavaScript are used to store only unique values. Set is a collection of unique values.
+
+Syntax:
+
+new Set()
+Now, to remove the duplicate values in an array, we can create a set of that array. We'll use spread operator for this so that the output is also in the form of array data type.
+
+Example 1:
+
+
+
+<script>
+    const colors = ["Black","White","Yellow","Blue","Pink","Black","Red","Yellow","Violet","Green","Green"];
+
+    const unique = [...new Set(colors)];
+    console.log(unique);
+</script>
+
+
+
+
+
+2) Using filter() Method
+This method in JavaScript creates a new array with the values that passes the condition specified within. The array is passed through the filter method and the values that fulfils the condition is put in the new array.
+
+Syntax:
+
+array.filter(function(currentValue, index, arr), thisValue)
+
+
+
+
+<script>
+    const colors = ["Black","White","Yellow","Blue","Pink","Black","Red","Yellow","Violet","Green","Green"];
+
+    const unique = colors.filter((value,index)=>{
+        return colors.indexOf(value) === index;
+    });
+    console.log(unique);    
+</script>
+
+
+
+
+3) Using forEach() Method
+Unlike sets and filter() methods, this method does not directly removes all the duplicate values from an array. Here, we need to write down some logic to remove repeated values. This logic is then put in a loop that runs for each value in the given array.
+
+Syntax:
+
+array.forEach(condition);
+
+
+
+<script>
+    const colors = ["Black","White","Yellow","Blue","Pink","Black","Red","Yellow","Violet","Green","Green"];
+
+    // using foreach
+    function uniqueElements(array){
+        const unique = [];
+        array.forEach((value)=>{
+            if(!unique.includes(value)){
+                unique.push(value);
+            }
+        })
+        return unique;
+    };
+
+    console.log(uniqueElements(colors));
+</script>
+ -->

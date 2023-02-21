@@ -1,0 +1,36 @@
+<!-- What is the opposite of event.preventDefault() in JavaScript? -->
+
+
+
+<!-- Before discussing the opposite of preventDefault(), first, let us know what is this method?
+
+What is preventDefault() Method?
+The preventDefault() metho prevents the default action that occurs when the event is triggered. Suppose if preventDefault() is applied for a checkbox, then when a user clicks on the checkbox this method prevents the user to check that particular checkbox, i.e., the event belonging to a checkbox.
+
+Syntax:
+
+event.preventDefault();
+It is specified within a function and that function takes an event as its parameter. preventDefault() does not accept any parameter.
+
+Opposite of preventDefault()
+But what if we want to revert this method, that is, we want the default action to occur when the event is triggered. For this, the simplest way that we’ll be going to discuss this is by defining a new function as the passing event as its parameter. This function will simply return true. So, whenever the event is triggered, this function will return true, and hence the default action will occur.
+
+Let's clear this more by understanding the following example.
+
+Example:
+
+HTML:
+
+<!DOCTYPE html>
+<html>
+  <body>
+    <a id="first" href="https://www.google.com/">Google</a>
+    <p>By clicking on the above link, you will be redirected to Google.</p>
+  </body>
+</html>
+JavaScript Function:
+
+document.getElementById("first").addEventListener("click", function(event){
+  event.preventDefault()
+});
+function(event) {return true;} -->

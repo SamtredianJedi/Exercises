@@ -1,0 +1,55 @@
+<!-- Validate decimal numbers in JavaScript - IsNumeric() -->
+
+
+
+
+<!-- What is Validation?
+
+Validation is a method to authenticate the user. JavaScript provides the facility to validate the form on the client-side so data processing will be faster than server-side validation. Through JavaScript, we can validate name, password, email, date, mobile numbers, and more fields.
+
+So, to validate decimal numbers, we will create a function IsNumeric() which will return true if the input is decimal or numeric, or false if it is not a decimal input.
+
+function IsNumeric(input){}
+Then a regular expression (RE) will be created which will store the condition to check that the input string is decimal or not. If the input string fulfills those conditions, then the function should return true, else false.
+
+function IsNumeric(input) {
+	var RE = /^-{0,1}\d*\.{0,1}\d+$/;
+}
+Now, we will use the test() method of JavaScript to test whether the string fulfills these conditions or not.
+
+function IsNumeric(input) {
+	var RE = /^-{0,1}\d*\.{0,1}\d+$/;
+	return (RE.test(input));
+}
+Hence, the IsNumeric() function is created now we will pass some input string to check whether the input is decimal or not.
+
+Example 1:
+
+function IsNumeric(input) {
+	var RE = /^-{0,1}\d*\.{0,1}\d+$/;
+	return (RE.test(input));
+}
+
+console.log(IsNumeric(-1.2));
+ -->
+
+
+
+<!-- Example 2:
+
+function IsNumeric(input) {
+	var RE = /^-{0,1}\d*\.{0,1}\d+$/;
+	return (RE.test(input));
+}
+
+console.log(IsNumeric(5.4));
+
+
+Example 3:
+
+function IsNumeric(input) {
+	var RE = /^-{0,1}\d*\.{0,1}\d+$/;
+	return (RE.test(input));
+}
+
+console.log(IsNumeric('John')); -->

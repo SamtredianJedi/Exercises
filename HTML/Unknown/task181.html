@@ -1,0 +1,26 @@
+<!-- Can I get the name of the currently running function in JavaScript? -->
+
+
+<!-- Yes!, we can get the name of the currently running function in JavaScript. There is a method for this using which we can easily return the currently running function.
+
+Using callee() Method
+callee() is a JavaScript's inbuilt method. If the name of the running function is unknown, we can used .callee() method to get the name of that function. Callee is a property of arguments object. Therefore, we'll use arguments.callee to get the name of the function.
+
+Syntax:
+
+console.log(arguments.callee.name);
+.name will return the name of the currently running function. So, when the function is called, therefore, when the function is in running state presently then callee calls that function and name will return it name in a string.
+
+Let's see a basic example for better understanding.
+
+Example:
+
+function One() {
+   console.log(arguments.callee.name);
+}
+One();
+
+function abc() {
+    console.log( arguments.callee.name );
+}
+abc(); -->

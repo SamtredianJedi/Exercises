@@ -1,0 +1,46 @@
+<!-- How can I determine if a variable is 'undefined' or 'null'? -->
+
+
+
+<!-- What are Undefined and Null Variables?
+
+The variable that is not assigned any value is said to be undefined. It means that the variable is not defined by any value.
+
+Null variable on the other hand is the variable that is defined but the value is not specified.
+
+let a;
+console.log(a); // undefined
+
+let b = null;
+console.log(b); // null
+To determine whether the variable is null or undefined, == and === operators can be used. Both of them compares the variables but the difference is that Loose Equality Operator (==) treats null and undefined as the same and Strict Equality Operator (===) checks null and undefined separately.
+
+Example 1:
+
+let a;
+
+if (a == null) {
+	console.log('Null or undefined value');
+} else {
+	console.log(a);
+} -->
+
+
+
+
+<!-- Here, even the a is undefined but it will be treated the same as null because a loose equality operator has been used.
+
+Example 2:
+
+let a;
+
+if (a === null) {
+	console.log('Null Value');
+} else if (a === undefined) {
+	console.log('Undefined Value');
+} -->
+
+
+
+
+Here, since a strict equality operator has been used, we will consider null and undefined values as two different cases. Therefore, to check whether the variable is undefined or null, a strict equality operator (===) should be used.

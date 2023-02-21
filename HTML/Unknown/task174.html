@@ -1,0 +1,43 @@
+<!-- Generate random string/characters in JavaScript -->
+
+
+<!-- We will discuss two methods for generating random strings. This string can be a simple character string or an alpha-numeric string. We will use JavaScript's Math.random() function to generate a random string.
+
+Generating random strings are now-a-days very important. Whenever you login to a website, there is a captcha which is a result of random string generation. OTP is also random strings/numbers generated at run-time.
+
+The two ways to do this are discussed below.
+
+Approach 1:
+
+A variable, characters are declared which contains all the alphabets (capital and small) and numbers. A function is created which will take the length of the string to be generated as its parameters. A new variable newString is declared which will store the new string generated. Now, traverse the string using a loop and a new character will be generated during each iteration. To make sure that the generated characters are random we will use Math.random() method. The floor() method will be used to round off the value. This will be used as Math.floor(Math.random() * characters.length). -->
+
+
+<!-- Example 1:
+
+const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+
+function GenerateRandomString(length) {
+	let newString = ' ';
+	const charactersLength = characters.length;
+	for (let i = 0; i < length; i++) {
+		newString += characters.charAt(Math.floor(Math.random() * charactersLength));
+	}
+
+	return newString;
+}
+
+console.log(GenerateRandomString(5));
+console.log(GenerateRandomString(7));
+console.log(GenerateRandomString(10)); -->
+
+
+
+
+<!-- Approach 2:
+
+In this approach, built-in methods are used to generate random characters. The Math.random() method generates the random number between 0 and 1. In toString(36) method, 36 represents base 36. The toString(36) represents digits beyond 9 by letters. The substring(2, 7) method returns five characters.
+
+Example 2:
+
+const result = Math.random().toString(36).substring(2, 7);
+console.log(result); -->

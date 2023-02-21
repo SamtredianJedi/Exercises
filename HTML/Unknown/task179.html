@@ -1,0 +1,38 @@
+<!-- Replace multiple characters in one replace call using JavaScript -->
+
+
+
+<!-- JavaScript replace() Method
+It is one of the methods in JavaScript which is used for replacing a particular character or multiple characters in a string with some other character.
+
+Syntax:
+
+string.replace(oldVal, newValue);
+Here, this method is applied to the string whose characters are needed to be replaced. It takes two parameters which are the value/character that has to be replaced and the new character.
+
+But this way only one character can be replaced in a single replace() method. For replacing multiple characters, one can use more replace() methods over and over again.
+
+Syntax:
+
+string.replace(oldVal, newVal).replace(oldVal, newVal), ...
+Example 1:
+
+// using multiple replace:
+let String = 'Replace^Multiple$Characters Using_Replace$Method.';
+newString = String.replace('_', ':').replace('^', ' ').replace('$', '+');
+console.log('Original String: ', String);
+console.log('New String: ', newString);
+
+
+
+This can be one way of replacing multiple characters using multiple replace() methods. But let's talk about doing this task by just using the single replace() method.
+
+When only a single replace() method has to be used then regular expression comes into consideration. In place of the oldVal a regular expression is declared and in place of the newVal a new character is mentioned.
+
+Example 2:
+
+// using single replace:
+let String = 'Replace^ Multiple$ Characters Using_ Replace$ Method.';
+newString = String.replace(/\$|_|\^/gi, '');
+console.log('Original String: ', String);
+console.log('New String: ', newString); -->
