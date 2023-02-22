@@ -1,0 +1,48 @@
+<!-- HTML text input allow only numeric input JavaScript -->
+
+
+<!-- JavaScript, also known as JS, is a programming language used for making websites dynamic, alongside HTML and CSS. It is a simple and user-friendly language. Many JavaScript functions and methods can be used for making the UI more convenient for the user. The data can be fetched and used for other calculations and storage purposes.
+
+When an input field is declared in HTML, either in form or not, there is an attribute of the input field to specify the type of data to be entered for that particular field. This type can be specified in each input field created. The different forms of input types are – text, number, email, password, date, etc. All these are the input types that are necessary for a form or any input. By specifying the type of input, the user will only be able to enter that form of data in the given input field.
+
+But what if this task has to be done using JavaScript? Then it is not as that simple as it was above. In JavaScript, there is no such direct way to change the type of the input field, yet this can be achieved by using regular expressions in it. It is alone a very vast topic to discuss, but let's have an overview of it.
+
+Regular Expression can be defined as a pattern of characters that when defined can be used to match a certain string or data. When this regular expression is passed as a condition, then the string fulfilling the condition will be accepted otherwise it will be ignored. This is the logic we'll be using over here to allow numeric data for the input field using JavaScript.
+
+Example to allow only numeric value in text box in an HTML Text Box using JavaScript -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>DETAILS</h2>
+    <label>Enter Name:</label>
+    <input type="text"><br><br>
+    <label>Enter Age:</label>
+    <input type="text" onkeyup="numberOnly(this)"><br><br>
+    <label>Enter Gender:</label>
+    <input type="radio">Female
+    <input type="radio">Male
+    <br><br>
+    <label>Enter Contact:</label>
+    <input type="text" onkeyup="numberOnly(this)"><br><br>
+</body>
+
+<script type="text/javascript">
+    function numberOnly(input) {
+        var num = /[^0-9]/gi;
+        input.value = input.value.replace(num, "");
+    };
+</script>
+
+</html>

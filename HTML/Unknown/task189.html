@@ -1,0 +1,48 @@
+<!-- Get selected element's outer HTML using JavaScript -->
+
+
+
+<!-- Outer HTML means the HTML element including itself and the content inside it. The Outer HTML property allows you to get or set the outer HTML string of an element. This means you are going to get something like the actual tag, the id, the content, and also the closing tag, etc.
+
+Let's see how to access this outer HTML using JavaScript
+
+Here we have a .outerHTML property for the same. This will help us to get or set the outer HTML of the selected tag. The element here can be specified through ID.
+
+Syntax:
+
+Using this property of outer HTML, one can replace the complete element with some other tag, the content can be changed, and therefore overall, it will help to alter the outer HTML of the element.
+
+Let's see an example of this. Over here, we will console the outer HTML of the div element. Its console will show the entire ‘div’ tag with the attributes specified for it like name, id, class, etc. with its content and the closing tag.
+
+Example to get selected element's outer HTML using JavaScript -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Get Selected Element's Outer HTML</h2>
+    <p>Click the following button and get the outer HTML of div tag.</p>
+    <div id="myDiv">This is a DIV Element.</div>
+    <br><br>
+    <button type="button" id="button1" onclick="myFunction()">Click Here</button>
+</body>
+
+<script type="text/javascript">
+    function myFunction() {
+        const div = document.getElementById('myDiv');
+        // Get the outer HTML
+        console.log(div.outerHTML);
+    };
+</script>
+
+</html>

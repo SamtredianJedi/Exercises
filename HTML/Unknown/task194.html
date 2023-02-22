@@ -1,0 +1,57 @@
+<!-- Run JavaScript function when user finishes typing instead of on key up? -->
+
+
+<!-- Sometimes we need to perform actions like searching for similar words, etc. as soon as the user pauses or stops writing. Hence, in an HTML document, we can achieve this using JavaScript or jQuery.
+
+It can easily be done using .on(keyup) method of jQuery. But, in order to do this using a function, we can follow the given example.
+
+A JavaScript variable is considered which can store time in milliseconds. The timer can be set as required (1000ms, 500ms, etc). As soon as the timer goes out, the function attached is fired, which further performs the required actions as needed.
+
+The above process is achieved using the setTimeout() method in JavaScript. The function and time in milliseconds are given to this method. It is executed once the time mentioned is achieved.
+
+Syntax:
+
+timer = setTimeout(function(){}, milliseconds);
+In order to set the timer to 0, we need to clear the timer variable which is done using clearTimeout().
+
+Syntax:
+
+clearTimeout(timer);
+Let's have a look at the following example which shows the execution of a function after the user pauses typing for 1000 milliseconds, i.e., 1 second.
+
+JavaScript example to run function when user finishes typing instead of on key up
+ -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Run javascript function when user finishes typing instead of on key up?</h2>
+    <p>Write your name in the following text box to see the results.</p>
+    Name: <input type="text" value=""><br><br>
+    <hr>
+    <h4></h4>
+</body>
+
+<script type="text/javascript">
+    let timer;
+    $('input').keyup(function() {
+        clearTimeout(timer);
+
+        timer = setTimeout(function() {
+            $('h4').html('Welcome ' + $('input').val());
+        }, 1000);
+    });
+</script>
+
+</html>

@@ -1,0 +1,56 @@
+<!-- How to link a JavaScript file to a HTML file? -->
+
+
+
+<!-- There are different ways to apply JavaScript to your HTML code. JavaScript files can be attached internally or externally.
+
+Internal JavaScript
+When JavaScript function is written internally in a HTML file, then it is written within <script>...</script>. For uniformity, the <script> tag is defined in the head tag of HTML code, but it doesn't affect if it is written somewhere else. Script tag can even be defined after the HTML body or anywhere else.
+
+Example 1: Link/Write Internal JavaScript File to HTML file
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+      alert("Hello Friends");
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
+
+
+
+
+But this can be hectic when you have to apply the same JavaScript to various other HTML files. Apart from hectic, when the JavaScript code becomes more complicated and lengthier. Then, it can be messy and the user will not be able to keep proper track of all the functions created in the JavaScript code. To avoid this, there is an alternate way to insert JavaScript code, by using JavaScript externally.
+
+External JavaScript
+To link JavaScript code externally, firstly a new JavaScript File is created with a .js extension (which represents it as a JS File). All the JS code is written in that file, but no <script> tag is used here. Then this file acts as a source script file for the given HTML File. To link this JS File, the <script> tag is created inside the head of the HTML code and this file is mentioned inside the src attribute.
+
+Example 2: Link an External JavaScript File to HTML file
+JS file: "JScode.js"
+
+
+console.log("Hello Everybody.");
+
+
+
+HTML file:
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+	<script src="JScode.js"></script>	
+  </head>
+  <body>
+	<h1>Check the log</h1>
+  </body>
+</html>
+ -->

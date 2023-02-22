@@ -1,0 +1,79 @@
+<!-- How to check for a #hash in a URL using JavaScript? -->
+
+
+
+Check for a #hash in a URL using JavaScript window.location.hash Property In JavaScript, one can check whether the URL contains #hash or not by using a property of the window called window.location.hash. This property of windows.location helps to have
+an access to the anchor of the URL. Using this we can either set or return the anchor of the URL. This property in particular helps only to access the #hash in the URL. This property returns the part of the URL which contains the #hash. Syntax: console.log(window.location.hash);
+This way we can get the specific part of the URL. Let's see an example for this where we'll give an alert if the URL contains a #hash. Example to check for a #hash in a URL using JavaScript window.location.hash Property
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Check Whether the URL Contains #(hash) in it</h2>
+    <p>Click the following button to get an alert.</p>
+    <button id="button1" type="button" onclick="myFunction()">Click Here</button>
+</body>
+
+<script type="text/javascript">
+    function myFunction() {
+        if (window.location.hash) {
+            alert('URL Contains Hash(#)');
+        } else {
+            alert('URL Does Not Contains Hash(#)');
+        }
+    };
+</script>
+
+</html>
+
+
+
+
+
+Check for a #hash in a URL using JavaScript indexOf() method Another approach to this can be a basic one, where no predefined method is used for this. In this, the URL is traversed and if the hash is present in the URL, then it returns an alert. Just
+to get the index of the #hash in the URL, we'll be using the indexOf() method. It will give the integer value of the position of the #hash in the string. If the position is equal to '-1', then the #hash is not present in the string, otherwise, it is present.
+Let's have a look at this. Example to check for a #hash in a URL using JavaScript indexOf() method
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Check Whether the URL Contains #(hash) in it</h2>
+    <p>Click the following button to get an alert.</p>
+    <button id="button1" type="button" onclick="myFunction()">Click Here</button>
+</body>
+
+<script type="text/javascript">
+    function myFunction() {
+        let URL = "http://abc.com/#xyz";
+        var hash = URL.indexOf('#');
+
+        if (hash == -1) {
+            alert('URL Does Not Contains Hash(#)');
+        } else {
+            alert('URL Contains Hash(#)');
+        }
+    };
+</script>
+
+</html>

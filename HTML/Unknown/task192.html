@@ -1,0 +1,27 @@
+<!-- Regex to replace multiple spaces with a single space in JavaScript -->
+
+
+<!-- Regex is known as a regular expression. To match the values, we create some sort of uniform pattern. It helps to match the strings with the given specified patterns. Since we need to find out the multiple spaces in the given string, the regular expression for it will be - '/ +/g'. The 'g' here represents that it is for global searching. This way we can find the extra spaces in a string.
+
+Syntax:
+
+'/  +/g'
+Now, we need to replace these found-out spaces with a single one. For this, the replace() method will be used. It is a JavaScript inbuilt method that helps to replace one character with some other character or string. It takes in two parameters - the character/string that needs to be replaced and the character/string with which it needs to be replaced.
+
+Syntax:
+
+string.replace(searchValue, newValue);
+Since we'll be using regex to find the spaces, hence we need to specify the above regular expression in place of searchValue. The newValue will be a singular space specified like '' . If 'g' is not specified in the regular expression, then this will just replace the first expression matched. Therefore to replace all the matched expressions we need to specify the 'g' at the end of the regex.
+
+Let's have a look at the following example.
+
+JavaScript code to replace multiple spaces with a single space
+
+
+
+const sentence = "Welcome      To     Include    Help      !!";
+console.log('Original String : '+ sentence);
+
+const newSentence = sentence.replace(/  +/g, ' ');
+console.log('New String : '+ newSentence);
+ -->

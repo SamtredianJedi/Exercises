@@ -1,0 +1,138 @@
+<!-- How do I redirect to another webpage using JavaScript? -->
+
+
+
+
+
+<!-- 
+In a webpage, a URL can be linked using JavaScript using any of the following ways:
+
+Using window.location.replace()
+Using window.location.href
+Using window.location.assign()
+Now let's discuss each of the above-mentioned ways in detail,
+
+1) Redirect to another webpage using window.location.replace()
+Here, window.location can be used as a global parameter. It will help to redirect the webpage to another webpage. So when replace() is used over here with this, it will remove the current URL from the history and replace it with the new one.
+
+Syntax:
+
+window.location.href = "URL";
+When using this replace() method of JavaScript, once the URL has been clicked then there is no going back, that is, you cannot revert to the previous back. Hence, the arrow for going back to the previous page on the browser gets disabled.
+
+Example 1:
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  
+  <body>
+    <center>
+      <h2>Redirect To Another WebPage !!</h2>
+      <p>Using replace() method, this page will be redirected to a new page in the same tab and the history of the present tab will get deleted.</p>
+      <div>Click Below to Visit a New WebPage.</div>
+      <br>
+      <button onclick="myFunc()">Click Here</button>
+    </center>
+	
+    <!--JavaScript code-->
+<script type="text/javascript">
+    function myFunc() {
+        window.location.replace("https://www.includehelp.com/");
+    }
+</script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+2) Redirect to another webpage using window.location.href This is the simplest way for redirecting the page using the URL in JavaScript. As you know, href means hyperlink reference. So, this will link the webpage to the provided URL. Syntax: window.location.href="URL";
+The difference over here is that, using href, you can revert to the previous page of your history. Also, apart from this, it uses the cache memory of the browser for navigating and searching the webpages instead of requesting to the host server. Example
+2:
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <center>
+        <h2>Redirect To Another WebPage !!</h2>
+        <p>Using href, this page will be redirected to a new page in the same tab and it generally uses cache memory of browser to navigate faster.</p>
+        <div>Click Below to Visit a New WebPage.</div>
+        <br>
+        <button onclick="myFunc()">Click Here</button>
+    </center>
+
+    <script type="text/javascript">
+        function myFunc() {
+            window.location.href = "http://includehelp.com";
+        }
+    </script>
+
+</body>
+
+</html>
+
+
+
+
+
+3) Redirect to another webpage using window.location.assign() Now, the assign() method over here does the same job as replace() as we learned above. But the only difference is that it can revert to the previous page also which replace() could not provide.
+Syntax: window.location.assign("URL"); It does not use the cache memory of the browser for searching and loading webpages like href. Therefore, it differs from it also. Example 3:
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <center>
+        <h2>Redirect To Another WebPage !!</h2>
+        <p>Using assign() method, this page will be redirected to a new page in the same tab and the user can revert back also.</p>
+        <div>Click Below to Visit a New WebPage.</div>
+        <br>
+        <button onclick="myFunc()">Click Here</button>
+    </center>
+
+    <script type="text/javascript">
+        function myFunc() {
+            window.location.assign("https://www.includehelp.com/");
+        }
+    </script>
+
+</body>
+
+</html> -->

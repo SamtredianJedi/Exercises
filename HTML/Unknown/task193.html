@@ -1,0 +1,42 @@
+<!-- How to get image size (height and width) using JavaScript? -->
+
+
+When an image is displayed on an HTML webpage, sometimes it is important to know its dimensions to add further functionality to it. This task can be achieved by using basic JavaScript. Let's see how? There are certain properties for this. It helps to
+get to know the dimension of the target image. We can get the width and height of the image by using - .clientWidth and .clientHeight properties of JavaScript. This will help to get the width and height of not only an image but also any other element.
+This gives the dimensions including the padding of the element but not the margins. Syntax: image.clientWidth; image.clientHeight; Every browser supports these properties. It is an easy and efficient way of finding the width and height of any element.
+These can also be termed DOM properties as it shows the dimension of the current browser size of the DOM element. Also, note that this property gives the inner dimension of the element. Since the padding is an inner dimension and margin is an outer dimension,
+this will return the height and width accordingly. Let's have look at the following example. JavaScript code to get image size (height and width)
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Get Image Size (Height-Width) Using JavaScript </h2>
+    <p>Click the button to get the dimensions of the following image.</p>
+    <button onclick="myFunction()">Get Size</button><br><br>
+    <img id="myImg" src="https://media.istockphoto.com/photos/mountain-landscape-picture-id517188688?k=20&m=517188688&s=612x612&w=0&h=i38qBm2P-6V4vZVEaMy_TaTEaoCMkYhvLCysE7yJQ5Q=">
+    <h3 id="H"></h3>
+</body>
+
+<script type="text/javascript">
+    function myFunction() {
+        var img = document.getElementById('myImg');
+        var width = img.clientWidth;
+        var height = img.clientHeight;
+
+        var display = document.getElementById('H')
+        display.innerHTML += 'Height: ' + height + 'px -  Width: ' + width + 'px';
+    }
+</script>
+
+</html>

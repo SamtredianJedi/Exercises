@@ -1,0 +1,107 @@
+<!-- How do I refresh a page using JavaScript? -->
+
+
+
+There are different ways in JavaScript to refresh a webpage. But, let's get into some very simple and basic methods for doing this. Using reload() method Using history() function 1) Refresh a page using reload() method This is a JavaScript built-in method.
+As the name itself suggests, it reloads the current running webpage. This reload() is mostly paired up with windows.location or document.location. Syntax: window.location.reload(); This method takes 'true' or 'false' as its parameters. If not specified
+then its takes 'false' by default, which means that it can reload the page from the browser's cache. If we want to retrieve the data again from the host server, then pass 'true' for it. Example 1:
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Let's Learn How To Refresh A WebPage</h1>
+    <h3>There are many ways to do this.</h3>
+    <div>When the below given button is clicked then the pages gets refreshed or reloaded.</div>
+    <br>
+    <button type="button" onclick="myFunc">Click Here</button>
+
+    <!--JavaScript Code-->
+    <script type="text/javascript">
+        function myFunc() {
+            window.location.reload();
+        }
+    </script>
+</body>
+
+</html>
+
+
+
+
+
+Reloading a webpage can also be done automatically. We can set the timer after which the page gets reloaded on its own. For this, setTimeOut() method of JavaScript can be used. The time over here is given in milliseconds. Let's see an example of this,
+Example 2:
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Let's Learn How To Refresh A WebPage</h1>
+    <h3>There are many ways to do this.</h3>
+    <div>This is an example of automatic page reloading.</div>
+
+    <!--JavaScript Code-->
+    <script type="text/javascript">
+        setTimeout(() => {
+            document.location.reload();
+        }, 8000);
+    </script>
+
+</body>
+
+</html>
+
+
+
+2) Refresh a page using history() method The history() method helps to go back and forth in the web pages stored in the history of the browser. It helps to go to the page that has already been loaded and is now part of the session history. To implement
+this function, we use the .go() method to go back and forth to the other pages that have already been loaded. It takes either positive or negative value to navigate. If the value passed is negative, it navigates back and if the value is positive, it navigates
+forth. Syntax: history.go(2); Example 3:
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Let's Learn How To Refresh A WebPage</h1>
+    <h3>There are many ways to do this.</h3>
+    <div>When the below given button is clicked then the pages gets refreshed or reloaded.</div>
+    <br>
+    <button type="button" onclick="myFunc">Click Here</button>
+
+    <!--JavaScript Code-->
+    <script type="text/javascript">
+        function myFunc() {
+            history.go(0);
+        }
+    </script>
+
+</body>
+
+</html>

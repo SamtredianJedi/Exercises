@@ -1,0 +1,57 @@
+<!-- Remove all whitespace from a string in JavaScript -->
+
+
+
+
+<!-- In JavaScript, there is no direct method through which this can be achieved. We'll be using some basic methods logically.
+
+First of all, we need to break the given string where ever there are spaces. This will be achieved using the split() method in JavaScript. It helps to split the string with whatever character has been specified. It takes any character or string of characters as its parameter.
+
+Syntax:
+
+string.split('character');
+Since we need to break the string with spaces, hence, we'll be providing a single space in the inverted commas, i.e., ' '.
+
+Now, from here we'll get the string broken down, and hence, we'll need to append it together but without any spaces. There is a join() method in JavaScript that will help to do so. Similar to the split() method, this also takes a character or set of characters with which it will join the given set of strings.
+
+Syntax:
+
+text.join('character');
+The combination of the two methods discussed above will help to remove all the spaces in between the given string.
+
+Have a look at the following given example for the same.
+
+JavaScript example to remove all whitespace from a string -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Remove All White Spaces From A String</h2>
+    <p>CLick the given button to remove all the spaces from the following sentence. </p>
+    <span><b>Original String: </b></span>
+    <span id="mySpan1">Welcome To Include Help . . . ! ! ! </span><br><br>
+    <button id="button1" onclick="myFunction()">Click Here</button><br><br>
+    <span><b>New String: </b></span>
+    <span id="mySpan2"></span><br><br>
+</body>
+
+<script type="text/javascript">
+    function myFunction() {
+        var text = document.getElementById('mySpan1').textContent;
+        text = text.split(' ').join('');
+        document.getElementById('mySpan2').innerText = text;
+    }
+</script>
+
+</html>

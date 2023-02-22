@@ -1,0 +1,38 @@
+<!-- Commonly Accepted Best Practices Around Code Organization in JavaScript -->
+
+
+<!-- Writing code for a particular problem or making software work can be easy for any good programmer, but the programmer who keeps their code in a very organized format throughout is considered a professional programmer. The program code should be written
+in such a way that if another programmer views it for the first time, it is understandable to them. Over here, we'll be discussing a few ways in order to keep your code organized overall in JavaScript. The
+<script>
+    Tags
+    When we write the JavaScript
+    function / program, we declare them within the < script > tag in the HTML Document.
+
+    Make sure that the < script > tag is declared at the end of the HTML document.This ensures the smooth working of the JavaScript code.Sometimes, when we declare the < script > tag at the top of the page, it does work there too(irrespective of the position), but there can be chances that a few functions would not work as we wanted since a few things needed are declared afterward.Hence, it may cause an error or undesired output
+    for the same.
+    Also,
+    if the < script > tag contains a lot more functions and the JavaScript code is a bit lengthy
+    for the project, then a professional way to deal with this is to make a separate JavaScript(JS) file
+    for all the JavaScript Code.The JavaScript file hence created is saved using the.js extension.The link to this file, i.e., this JS file 's name is defined as the link in the HTML document using <script> tag to interconnect these two files for references.
+    Using Comments
+    Generally, whenever we are programming, we tend to write just the code and forget to mention what the
+    function or a particular part of the code does.Hence, it makes it difficult
+    for us to understand the code in the future.
+
+    Therefore, make sure to use comments all over the place wherever you feel that the running of the
+    function needs to be addressed.This will make the code clean, organized, and professional.Also making it easier in the future to understand that file.
+
+    Avoid Use Global Variables
+    Global variables are the variables that are defined at the start or outside a
+    function.Hence, it can be used throughout the program in any defined custom
+    function.It is useful as we do not have to declare the same variable again and again in every
+    function
+    needed, but sometimes it can be difficult to handle too.
+
+    If you mistakenly declared a local variable with the same name as a global variable then, the local variable will overwrite that, and hence, it may create undesired results
+    for the following functions.Instead,
+        if there is no need
+    for global variables, then avoid declaring them and go with the usage of local variables.
+
+    Similarly, various other ways should be kept in mind
+    while coding in JavaScript to achieve a professional coding style in your routine. -->
