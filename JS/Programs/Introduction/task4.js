@@ -2,6 +2,10 @@
 
 
 
+
+
+
+
 /**
  * 
  * In this example, you'll learn to write a program to calculate the area of a triangle in JavaScript.
