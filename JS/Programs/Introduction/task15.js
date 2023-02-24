@@ -1,6 +1,10 @@
 // Display the Multiplication Table
 
 
+
+
+
+
 /**
  * 
  * In this example, you will learn to generate the multiplication table of a number in JavaScript.
