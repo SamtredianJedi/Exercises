@@ -2,6 +2,10 @@
 
 
 
+
+
+
+
 /**
  * 
  * In this example, you will learn to write a JavaScript program that finds the ASCII value of a character.
