@@ -3,6 +3,9 @@
 
 
 
+
+
+
 /**
  * 
  * In this example, you will learn to write a JavaScript program that checks if the string is palindrome or not.
