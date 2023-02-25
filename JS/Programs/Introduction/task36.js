@@ -1,6 +1,9 @@
 // Create Objects in Different Ways
 
 
+
+
+
 /**
  * 
  * In this example, you will learn to create JavaScript objects in different ways.
