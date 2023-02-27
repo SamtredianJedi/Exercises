@@ -1,5 +1,8 @@
 // Encode a String to Base64
 
+
+
+
 /**
  * 
  * 
@@ -68,5 +71,5 @@ encode : function (input) {
 
             The encode() method encodes a string to Base64. The decode() method decodes the Base64 to a string.
 
-            
+
  */
