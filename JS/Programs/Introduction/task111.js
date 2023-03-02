@@ -1,5 +1,8 @@
 // JavaScript: Calculate number of days left until next Christmas
 
+
+
+
 /**
  * 
  * 
