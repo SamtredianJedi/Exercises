@@ -1,6 +1,9 @@
 // JavaScript: Create a variable using a user-defined name
 
 
+
+
+
 /**
  * 
  * 
