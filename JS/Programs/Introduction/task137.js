@@ -1,6 +1,8 @@
 // JavaScript: Find a value which is nearest to 100 from two different given integer values
 
 
+
+
 /**
  * 
  * 
