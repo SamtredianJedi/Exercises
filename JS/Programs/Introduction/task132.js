@@ -1,6 +1,8 @@
 // JavaScript: Check whether a string starts with 'Java' and false otherwise
 
 
+
+
 /**
  * 
  * 
