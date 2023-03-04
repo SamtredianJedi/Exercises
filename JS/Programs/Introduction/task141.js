@@ -1,5 +1,7 @@
 // JavaScript: Check whether the last digit of the three given positive integers is same
 
+
+
 /**
  * 
  * 
