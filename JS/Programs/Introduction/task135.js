@@ -1,5 +1,7 @@
 // JavaScript: Check whether a string "Script" presents at 5th (index 4) position in a given string
 
+
+
 /**
  * 
  * 
