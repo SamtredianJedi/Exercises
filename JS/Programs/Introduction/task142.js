@@ -1,5 +1,7 @@
 // JavaScript: Create new string with first 3 characters are in lower case
 
+
+
 /**
  * 
  * 
