@@ -1,5 +1,7 @@
 // JavaScript: Check two given integer values and return true if one of the number is 15 or if their sum or difference is 15
 
+
+
 /**
  * 
  * JavaScript Basic: Exercise-45 with Solution
