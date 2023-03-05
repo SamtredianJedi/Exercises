@@ -1,5 +1,7 @@
 // JavaScript: Check from three given numbers that two or all of them have the same rightmost digit
 
+
+
 /**
  * 
  * 
