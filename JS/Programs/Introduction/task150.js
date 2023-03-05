@@ -1,5 +1,7 @@
 // JavaScript: Check from three given integers that whether a number is greater than or equal to 20 and less than one of the others
 
+
+
 /**
  * 
  * 
