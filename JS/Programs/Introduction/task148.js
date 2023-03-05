@@ -1,5 +1,7 @@
 // JavaScript: Check whether three given numbers are increasing in strict mode or in soft mode
 
+
+
 /**
  * 
  * 
