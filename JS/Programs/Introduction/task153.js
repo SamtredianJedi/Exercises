@@ -1,5 +1,7 @@
 // JavaScript: Check whether a given number presents in the range 40..10000
 
+
+
 /**
  * 
  * 
