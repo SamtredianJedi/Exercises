@@ -1,5 +1,7 @@
 // JavaScript: Check from two given non-negative integers that whether one of the number is multiple of 7 or 11
 
+
+
 /**
  * 
  * 
