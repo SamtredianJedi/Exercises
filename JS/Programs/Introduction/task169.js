@@ -1,5 +1,7 @@
 // JavaScript: Create a string using the middle three characters of a given string of odd length
 
+
+
 /**
  * 
  * 
