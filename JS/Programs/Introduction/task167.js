@@ -1,5 +1,7 @@
 // JavaScript: Concatenate two strings except their first character
 
+
+
 /**
  * 
  * 
