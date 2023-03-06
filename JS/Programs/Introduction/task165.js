@@ -1,5 +1,7 @@
 // JavaScript: Extract the first half of a string of even length
 
+
+
 /**
  * 
  * 
