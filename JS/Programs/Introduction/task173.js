@@ -1,5 +1,7 @@
 // JavaScript: Create a new string from a given string, removing the first and last characters of the string if the first or last character are 'P'
 
+
+
 /**
  * 
  * 
