@@ -1,5 +1,7 @@
 // JavaScript: Create a new array taking the middle elements of the two arrays of integer and each length 3
 
+
+
 /**
  * 
  * 
