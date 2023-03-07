@@ -1,5 +1,7 @@
 // JavaScript: Display the city name if the string begins with "Los" or "New" otherwise return blank
 
+
+
 /**
  * 
  * 
