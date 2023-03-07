@@ -1,5 +1,8 @@
 // JavaScript: Check whether 1 appears in first or last position of a given array of integers
 
+
+
+
 /**
  * 
  * 
