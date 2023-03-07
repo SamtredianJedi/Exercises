@@ -1,5 +1,8 @@
 // JavaScript: Test whether a string end with "Script"
 
+
+
+
 /**
  * 
  * 
