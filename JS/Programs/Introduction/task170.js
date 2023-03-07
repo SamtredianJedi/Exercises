@@ -1,5 +1,7 @@
 // JavaScript: Concatenate two strings and return the result
 
+
+
 /**
  * 
 
