@@ -1,5 +1,7 @@
 // JavaScript: Compute the sum of three elements of a given array of integers of length 3
 
+
+
 /**
  * 
  * 
