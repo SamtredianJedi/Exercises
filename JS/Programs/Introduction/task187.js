@@ -9,6 +9,9 @@ Write a JavaScript program to add two digits of a given positive integer of leng
 
 
 
+
+
+
 Sample Solution:
 
 HTML Code:
