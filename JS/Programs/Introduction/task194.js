@@ -1,5 +1,7 @@
 // JavaScript: Check whether two given integers are similar or not
 
+
+
 /**
  * 
  * 
