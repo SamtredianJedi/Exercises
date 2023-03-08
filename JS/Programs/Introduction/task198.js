@@ -1,5 +1,7 @@
 // JavaScript: Find the maximum difference between any two adjacent elements of a given array of integers
 
+
+
 /**
  * 
  * 
