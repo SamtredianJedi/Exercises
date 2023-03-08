@@ -1,5 +1,7 @@
 // JavaScript: Find the maximum possible sum of some of its k consecutive numbers of a specified array of positive integers
 
+
+
 /**
  * 
  * 
