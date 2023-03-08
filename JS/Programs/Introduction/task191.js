@@ -1,5 +1,8 @@
 // JavaScript: Compute the sum of two parts and store into an array of size two
 
+
+
+
 /**
  * 
  * 
