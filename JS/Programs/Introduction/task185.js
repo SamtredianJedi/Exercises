@@ -1,5 +1,7 @@
 // JavaScript: Test whether a given array of integers contains 30 or 40 twice
 
+
+
 /**
  * 
  * 
