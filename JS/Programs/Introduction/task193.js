@@ -1,5 +1,7 @@
 // JavaScript: Check whether two arrays of integers of same length are similar or not
 
+
+
 /**
  * 
  * 
