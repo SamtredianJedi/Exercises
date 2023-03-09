@@ -1,6 +1,8 @@
 // JavaScript: Rearrange characters of a given string in such way that it will become equal to another given string
 
 
+
+
 /**
  * 
  * 
