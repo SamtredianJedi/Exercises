@@ -1,5 +1,7 @@
 // JavaScript: Check whether a given string contains only Latin letters and no two uppercase and no two lowercase letters are in adjacent positions
 
+
+
 /**
  * 
  * 
