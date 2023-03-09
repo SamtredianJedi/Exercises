@@ -1,5 +1,7 @@
 // JavaScript: Check whether there is at least one element which occurs in two given sorted arrays of integers
 
+
+
 /**
  * 
  * 
