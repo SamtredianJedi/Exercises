@@ -1,5 +1,7 @@
 // JavaScript: Switch case of the minimum possible number of letters to make a given string written in the upper case or in the lower case
 
+
+
 /**
  * 
  * 
