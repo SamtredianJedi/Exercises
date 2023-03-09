@@ -1,5 +1,7 @@
 // JavaScript: Create the dot products of two given 3D vectors
 
+
+
 /**
  * 
  * 
