@@ -1,6 +1,8 @@
 // JavaScript: Find the shortest possible string which can create a string to make it a palindrome by adding characters to the end of it
 
 
+
+
 /**
  * 
  * 
