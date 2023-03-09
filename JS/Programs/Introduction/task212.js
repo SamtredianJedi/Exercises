@@ -1,5 +1,7 @@
 // JavaScript: Divide an integer by another integer as long as the result is an integer and return the result
 
+
+
 /**
  * 
  * 
