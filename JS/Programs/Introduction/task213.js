@@ -1,6 +1,8 @@
 // JavaScript: Find the number of sorted pairs formed by its elements of a given array of integers such that one element in the pair is divisible by the other one
 
 
+
+
 /**
  * 
  * 
