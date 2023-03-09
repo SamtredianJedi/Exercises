@@ -1,5 +1,7 @@
 // JavaScript: Find two elements of the array such that their absolute difference is not greater than a given integer but is as close to the said integer
 
+
+
 /**
  * 
  * 
