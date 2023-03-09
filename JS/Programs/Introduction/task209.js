@@ -1,5 +1,7 @@
 // JavaScript: Find the maximum number from a given positive integer by deleting exactly one digit of the given number
 
+
+
 /**
  * 
  * 
