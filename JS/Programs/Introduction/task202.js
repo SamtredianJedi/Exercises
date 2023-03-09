@@ -1,5 +1,7 @@
 // JavaScript: Compute the sum of absolute differences of consecutive numbers of a given array of integers
 
+
+
 /**
  * 
  * 
