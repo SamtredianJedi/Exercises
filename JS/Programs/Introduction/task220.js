@@ -1,5 +1,7 @@
 // JavaScript: Calculate the sum of n + n/2 + n/4 + n/8 + ....
 
+
+
 /**
  * 
  * 
