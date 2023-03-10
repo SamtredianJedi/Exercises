@@ -1,5 +1,7 @@
 // JavaScript: Find the number of even values in sequence before the first occurrence of a given number
 
+
+
 /**
  * 
  * 
