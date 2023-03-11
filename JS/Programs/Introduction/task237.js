@@ -1,5 +1,7 @@
 // JavaScript: Find the smallest prime number strictly greater than a given number
 
+
+
 /**
  * 
  * 
