@@ -1,5 +1,7 @@
 // JavaScript: Create the value of NOR of two given booleans
 
+
+
 /**
  * 
  * 
