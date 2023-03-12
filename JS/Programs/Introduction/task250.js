@@ -1,5 +1,7 @@
 // JavaScript: Find the number of elements which presents in both of the given arrays
 
+
+
 /**
  * 
  * 
