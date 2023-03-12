@@ -1,6 +1,8 @@
 // JavaScript: Replace the first digit in a string (should contains at least digit) with $ character
 
 
+
+
 /**
  * 
 
