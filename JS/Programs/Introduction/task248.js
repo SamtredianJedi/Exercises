@@ -1,5 +1,7 @@
 // JavaScript: Find the position of a rightmost round number in an array of integers. Returns 0 if there are no round number
 
+
+
 /**
  * 
  * 
