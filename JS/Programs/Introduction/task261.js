@@ -1,6 +1,8 @@
 // JavaScript functions - Exercises, Practice, Solution
 
 
+
+
 // JavaScript Function: Exercise-1 with Solution
 
 
