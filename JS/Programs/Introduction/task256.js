@@ -1,5 +1,7 @@
 // JavaScript: Compute the sum of cubes of all integer from 1 to an given integer
 
+
+
 /**
  * 
  * 
