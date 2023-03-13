@@ -1,6 +1,8 @@
 // JavaScript: Compute the sum of all digits that occur in a given string
 
 
+
+
 /**
  * 
  * 
