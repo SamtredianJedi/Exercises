@@ -1,5 +1,8 @@
 // JavaScript: Check a number is prime or not
 
+
+
+
 /**
  * 
  * 
