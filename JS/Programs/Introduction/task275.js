@@ -1,6 +1,10 @@
 // JavaScript: Compute the factors of a positive integer
 
 
+
+
+
+
 /**
  * 
  * 
