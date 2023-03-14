@@ -1,5 +1,8 @@
 // JavaScript: Search JavaScript arrays with a binary search
 
+
+
+
 /**
  * 
  * 
@@ -101,5 +104,5 @@ function array_binarySearch(narray, delement) {
  console.log(array_binarySearch(myArray, 6));
 
 
- 
+
  */
