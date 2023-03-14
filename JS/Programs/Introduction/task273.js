@@ -1,5 +1,9 @@
 // JavaScript: Find the second lowest and second greatest numbers from an array
 
+
+
+
+
 /**
  * 
  * 
