@@ -1,5 +1,8 @@
 // JavaScript: Get the data type
 
+
+
+
 /**
  * 
  * 
