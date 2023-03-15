@@ -1,6 +1,8 @@
 // JavaScript: Generates a string id (specified length) of random characters
 
 
+
+
 /**
  * 
  * 
