@@ -1,5 +1,8 @@
 // JavaScript: Find the first not repeated character
 
+
+
+
 /**
  * 
  * 
