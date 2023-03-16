@@ -1,5 +1,8 @@
 // JavaScript: Pass a JavaScript function as parameter
 
+
+
+
 /**
  * 
  * 
