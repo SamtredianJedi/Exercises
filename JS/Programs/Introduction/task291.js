@@ -40,4 +40,22 @@ function refreshStudentList() {
 addStudent(1, refreshStudentList);
 
 
+
+Live Demo:
+
+
+
+
+function addStudent(id, refreshCallback)
+{
+    refreshCallback();  
+}
+
+function refreshStudentList() {
+    console.log('Hello');
+}
+
+addStudent(1, refreshStudentList);
+
+
  */
