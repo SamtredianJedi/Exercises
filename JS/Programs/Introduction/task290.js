@@ -12,4 +12,22 @@ In some applications it may be necessary to return all maximal palindromic subst
 
 
 
+
+Sample Solution: -
+
+HTML Code:
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Write a JavaScript function that returns the longest palindrome in a given string</title>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
  */
