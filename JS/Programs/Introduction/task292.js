@@ -24,6 +24,17 @@ HTML Code:
 </html>
 
 
+
+
+JavaScript Code:
+
+function abc() {
+    console.log( arguments.callee.name );
+}
+
+abc();
+
+
  * 
  * 
  */
