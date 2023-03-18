@@ -13,4 +13,22 @@ Expected Output : [3, 4, 5, 6, 7, 8]
 
 
 
+
+
+Sample Solution:-
+
+HTML Code:
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Gets the integers from x to y</title>
+</head>
+<body>
+
+</body>
+</html>
+
+
  */
