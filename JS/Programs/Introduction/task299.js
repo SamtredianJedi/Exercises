@@ -1,5 +1,7 @@
 // JavaScript: Get the first n Fibonacci numbers
 
+
+
 /**
  * 
  * 
@@ -98,5 +100,5 @@ var fibonacci_series = function (n)
  
 
 
- 
+
  */
