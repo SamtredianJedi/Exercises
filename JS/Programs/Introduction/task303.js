@@ -11,4 +11,21 @@ A palindrome is a word, number, phrase, or other sequence of symbols that reads 
 Write a JavaScript program to check whether a given string is Palindrome or not using recursion.
 
 
+
+Sample Solution:
+
+HTML Code:
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Check a string for palindromes using recursion</title>
+</head>
+<body>
+
+</body>
+</html>
+
+
  */
