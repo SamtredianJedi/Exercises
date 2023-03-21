@@ -12,4 +12,23 @@ Test Data:
 ([1, 2, 3, 5, 6, 7, 10, 11, 14, 15, 17, 19, 20, 22, 23], 16) -> -1
 
 
+
+
+
+Sample Solution:
+
+HTML Code:
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Binary Search Algorithm using recursion</title>
+</head>
+<body>
+
+</body>
+</html>
+
+
  */
