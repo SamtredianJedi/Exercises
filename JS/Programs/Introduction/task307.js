@@ -10,4 +10,21 @@ Write a JavaScript program that accept two integers and display the larger.
 
 
 
+
+Sample Solution:-
+
+HTML Code:
+
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Write a JavaScript program that accept two integers and display the larger</title>
+</head>
+<body>
+  
+</body>
+</html>
+
+
  */
