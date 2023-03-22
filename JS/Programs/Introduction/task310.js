@@ -16,4 +16,22 @@ Output : 0
 
 
 
+
+Sample Solution:-
+
+HTML Code:
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Write a JavaScript conditional statement to find the largest of five numbers</title>
+</head>
+<body>
+  
+</body>
+</html>
+
+
+
  */
