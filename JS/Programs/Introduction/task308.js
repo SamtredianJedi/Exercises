@@ -56,5 +56,57 @@ else if (x<0 && y<0 && z<0)
           console.log("The sign is -");
         }
 
+
+
+
+
+        Live Demo:
+
+
+        html:
+
+
+
+
+        <head>
+<meta charset=utf-8 />
+<title>JavaScript conditional statement to find the sign of product of three numbers</title>
+</head>
+<body>
+
+</body>
+
+
+
+js:
+
+
+
+
+
+var x=3;
+var y=-7;
+var z=2;
+if (x>0 && y>0 && z>0)
+{
+       alert("The sign is +");
+}
+else if (x<0 && y<0 && z<0)
+        {
+          console.log("The sign is -");
+        }
+        else if (x>0 && y<0 && z<0)
+        {
+          console.log("The sign is +");
+        }
+        else if (x<0 && y>0 && z<0)
+        {
+          console.log("The sign is +");
+        }
+        else
+        {
+          console.log("The sign is -");
+        }
+
         
  */
