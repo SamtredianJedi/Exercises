@@ -14,4 +14,22 @@ Sample Output:
 "2 is even"
 
 
+
+Sample Solution:-
+
+HTML Code:
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>For loop that will iterate from 0 to 15</title>
+</head>
+<body>
+  
+</body>
+</html>
+
+
+
  */
