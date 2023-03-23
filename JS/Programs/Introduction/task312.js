@@ -24,4 +24,22 @@ Range	Grade
 
 
 
+
+Sample Solution:-
+
+HTML Code:
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Compute the average marks and grade</title>
+</head>
+<body>
+  
+</body>
+</html>
+
+
+
  */
