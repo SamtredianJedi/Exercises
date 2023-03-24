@@ -1,5 +1,7 @@
 // JavaScript: Find and print the first 5 happy numbers
 
+
+
 /**
  * 
  * 
