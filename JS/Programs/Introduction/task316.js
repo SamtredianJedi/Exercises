@@ -1,5 +1,8 @@
 // JavaScript: Construct a pattern, using a nested for loop
 
+
+
+
 /**
  * 
  * 
