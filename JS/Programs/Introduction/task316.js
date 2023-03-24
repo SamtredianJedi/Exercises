@@ -15,4 +15,23 @@ Write a JavaScript program to construct the following pattern, using a nested fo
 
 
 
+
+
+Sample Solution:-
+
+HTML Code:
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>JS nested for loop example</title>
+</head>
+<body>
+  
+</body>
+</html>
+
+
+
  */
