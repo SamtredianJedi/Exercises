@@ -1,6 +1,9 @@
 // JavaScript: Generate a random integer
 
 
+
+
+
 /**
  * 
  * 
@@ -98,5 +101,5 @@ rand = function(min, max) {
  console.log(rand());
 
 
- 
+
  */
