@@ -17,4 +17,22 @@ console.log(dec_to_bho(120,'O'));
 
 
 
+
+Sample Solution:-
+
+HTML Code:
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Convert a decimal number to binary, hexadecimal or octal number</title>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
  */
