@@ -1,5 +1,7 @@
 // JavaScript: Convert a binary number to a decimal number
 
+
+
 /**
  * 
 
