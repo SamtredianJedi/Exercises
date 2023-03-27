@@ -14,4 +14,22 @@ console.log(max([-12,-34,0,-56,-1]));
 0
 
 
+
+
+HTML Code:
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Find the highest value in an array</title>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
+
  */
