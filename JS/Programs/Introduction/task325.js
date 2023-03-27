@@ -14,4 +14,20 @@ console.log(min([-12,-34,0,-56,-1]));
 -56
 
 
+
+HTML Code:
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+<title>Javascript random function</title>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
  */
