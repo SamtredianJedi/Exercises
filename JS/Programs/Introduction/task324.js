@@ -1,5 +1,8 @@
 // JavaScript: Find the highest value in an array
 
+
+
+
 /**
  * 
  * 
