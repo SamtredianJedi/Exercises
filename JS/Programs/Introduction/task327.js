@@ -15,4 +15,19 @@ Output :
 
 
 
+
+HTML Code:
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>GCD (greatest common divisor) of more than 2 integers</title>
+</head>
+<body>
+</body>
+</html>
+
+
+
  */
