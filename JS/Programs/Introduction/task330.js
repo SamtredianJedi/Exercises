@@ -1,5 +1,8 @@
 // JavaScript: Find out if a number is a natural number or not
 
+
+
+
 /**
  * 
  * 
