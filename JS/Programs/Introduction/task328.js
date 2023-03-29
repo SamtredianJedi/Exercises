@@ -1,5 +1,7 @@
 // JavaScript: Least common multiple (LCM) of two numbers
 
+
+
 /**
  * 
  * 
