@@ -18,4 +18,24 @@ Output :
 
 
 
+
+
+
+
+HTML Code:
+
+<!DOCTYPE html>
+  <html>
+  <head>
+  <meta charset="utf-8">
+  <title>LCM more than two numbers</title>
+  </head>
+  <body>
+</body>
+  </html>
+  
+
+
+
+  
  */
