@@ -18,4 +18,21 @@ Output :
 
 
 
+
+
+
+HTML Code:
+
+<!DOCTYPE html>
+  <html>
+  <head>
+  <meta charset="utf-8">
+  <title>Round a number to a given decimal places</title>
+  </head>
+  <body>
+</body>
+  </html>
+
+
+  
  */
