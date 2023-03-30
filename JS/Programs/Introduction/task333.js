@@ -22,4 +22,21 @@ true
 
 
 
+
+
+HTML Code:
+
+<!DOCTYPE html>
+  <html>
+  <head>
+  <meta charset="utf-8">
+  <title>Check whether a value is an integer or not</title>
+  </head>
+  <body>
+</body>
+  </html>
+
+
+  
+
  */
