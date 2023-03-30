@@ -1,5 +1,7 @@
 // JavaScript: Test if a number is a power of 2
 
+
+
 /**
  * 
  * 
