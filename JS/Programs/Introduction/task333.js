@@ -1,5 +1,7 @@
 // JavaScript: Check whether a value is an integer or not
 
+
+
 /**
  * 
  * 
