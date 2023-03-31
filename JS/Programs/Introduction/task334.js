@@ -1,5 +1,7 @@
 // JavaScript: Check whether a variable is numeric or not
 
+
+
 /**
  * 
  * 
