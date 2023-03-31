@@ -18,4 +18,22 @@ Output :
 
 
 
+HTML Code:
+
+<!DOCTYPE html>
+  <html>
+  <head>
+  <meta charset="utf-8">
+  <title>Sum of values in an array</title>
+  </head>
+  <body>
+</body>
+  </html>
+
+
+
+  
+
+
+
  */
