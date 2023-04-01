@@ -23,4 +23,19 @@ Output :
 
 
 
+HTML Code:
+
+<!DOCTYPE html>
+  <html>
+  <head>
+  <meta charset="utf-8">
+  <title>Binomial coefficient</title>
+  </head>
+  <body>
+</body>
+  </html>
+
+
+
+  
  */
