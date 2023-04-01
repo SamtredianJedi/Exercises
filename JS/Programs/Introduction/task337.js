@@ -1,5 +1,7 @@
 // JavaScript : Pythagorean function in JavaScript
 
+
+
 /**
  * 
  * 
