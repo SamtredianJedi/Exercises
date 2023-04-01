@@ -1,5 +1,8 @@
 // JavaScript: Evaluate binomial coefficients
 
+
+
+
 /**
  * 
 
@@ -69,6 +72,8 @@ html:
 </body>
 
 
+
+js:
 
 
 function binomial(n, k) {
