@@ -11,4 +11,23 @@ According to Wikipedia - A universally unique identifier (UUID) is an identifier
 
 
 
+
+
+
+
+HTML Code:
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Write a JavaScript function to create a UUID</title>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
  */
