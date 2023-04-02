@@ -16,4 +16,29 @@ console.log(result);
 5.0001
 
 
+
+
+
+
+HTML Code:
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript function to round a number to a specified number of digitsand strip extra zeros (if any).</title>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
+
+
+
  */
