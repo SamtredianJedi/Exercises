@@ -51,4 +51,44 @@ console.log(create_UUID());
 
 
 
+
+Live Demo:
+
+
+html:
+
+
+
+<head>
+  <meta charset="utf-8">
+  <title>Write a JavaScript function to create a UUID</title>
+</head>
+<body>
+
+</body>
+
+
+js:
+
+
+
+
+function create_UUID(){
+    var dt = new Date().getTime();
+    var uuid = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+        var r = (dt + Math.random()*16)%16 | 0;
+        dt = Math.floor(dt/16);
+        return (c=='x' ? r :(r&0x3|0x8)).toString(16);
+    });
+    return uuid;
+}
+
+console.log(create_UUID());
+
+
+
+
+
+
+
  */
