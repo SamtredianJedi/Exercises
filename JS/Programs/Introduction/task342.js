@@ -1,6 +1,9 @@
 // JavaScript: Round a number to a specified number of digits and strip extra zeros
 
 
+
+
+
 /**
  * 
  * 
@@ -92,6 +95,9 @@ var a = 1.1234000;
 
 var result = parseFloat(a.toFixed(4));
 console.log(result);
+
+
+
 
 
 
