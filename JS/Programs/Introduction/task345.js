@@ -15,4 +15,26 @@ console.log(pointDirection(1, 0, 1, 10));
 
 
 
+
+HTML Code:
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Write a JavaScript function to calculate degrees between 2 points with inverse Y axis</title>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
+
+
+
  */
