@@ -15,4 +15,20 @@ console.log(nthroot(64, -2));
 
 
 
+
+HTML Code:
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript function to calculate the nth root of a number</title>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
  */
