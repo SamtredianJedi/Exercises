@@ -13,4 +13,21 @@ console.log(highest_of_three(-5, 4, 2));
 
 
 
+
+
+HTML Code:
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript function to get the highest number from three different numbers</title>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
  */
