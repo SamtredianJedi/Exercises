@@ -1,5 +1,7 @@
 // JavaScript: Calculate the percentage of a number
 
+
+
 /**
  * 
  * 
