@@ -1,5 +1,8 @@
 // JavaScript: Get the highest number from three different numbers
 
+
+
+
 /**
  * 
  * 
