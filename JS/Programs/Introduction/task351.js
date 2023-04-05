@@ -15,4 +15,22 @@ Use Math.PI and the degree to radian formula to convert the angle from degrees t
 
 
 
+
+
+Sample Solution-1:
+
+JavaScript Code:
+
+function degrees_to_radians(degrees)
+{
+  var pi = Math.PI;
+  return degrees * (pi/180);
+}
+
+console.log(degrees_to_radians(45));
+
+
+
+
+
  */
