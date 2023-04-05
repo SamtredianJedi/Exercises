@@ -33,4 +33,16 @@ console.log(degrees_to_radians(45));
 
 
 
+
+Sample Solution-2:
+
+JavaScript Code:
+
+const degrees_to_radians = deg => (deg * Math.PI) / 180.0;
+console.log(degrees_to_radians(45));
+console.log(degrees_to_radians(90));
+
+
+
+
  */
