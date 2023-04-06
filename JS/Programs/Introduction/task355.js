@@ -17,4 +17,21 @@ console.log(value_limit(15, 0, 12));
 
 
 
+
+
+HTML Code :
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript function to limit a value inside a certain range.</title>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
  */
