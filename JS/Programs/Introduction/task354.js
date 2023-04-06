@@ -1,5 +1,7 @@
 // JavaScript: Return values that are powers of two
 
+
+
 /**
  * 
  * 
