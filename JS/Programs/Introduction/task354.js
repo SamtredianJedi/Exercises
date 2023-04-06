@@ -15,4 +15,20 @@ false
 
 
 
+
+HTML Code:
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript function which will return values that are powers of two</title>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
  */
