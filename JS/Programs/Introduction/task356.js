@@ -1,6 +1,8 @@
 // JavaScript: Check if a number is a whole number or has a decimal place
 
 
+
+
 /**
  * 
  * 
