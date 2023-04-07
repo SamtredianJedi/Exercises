@@ -16,4 +16,21 @@ console.log(thousands_separators(100000));
 
 
 
+
+HTML Code:
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript function to print an integer with commas as thousands separators</title>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
+
  */
