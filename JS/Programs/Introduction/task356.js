@@ -16,4 +16,21 @@ console.log(number_test(10));
 "It is a whole number."
 
 
+
+
+
+HTML Code:
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript function to check if a number is a whole number or has a decimal place</title>
+</head>
+<body>
+
+</body>
+</html>
+
+
  */
