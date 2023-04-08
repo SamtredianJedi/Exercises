@@ -1,5 +1,7 @@
 // JavaScript: Create random background color
 
+
+
 /**
  * 
  * 
