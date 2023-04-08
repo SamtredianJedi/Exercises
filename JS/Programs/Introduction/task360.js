@@ -17,4 +17,22 @@ console.log(combinations(5, 3));
 
 
 
+html:
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript function to calculate the combination of n and r. The formula is : n!/(r!*(n - r)!)</title>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
+
+
+
  */
