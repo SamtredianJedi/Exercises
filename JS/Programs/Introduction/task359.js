@@ -49,4 +49,46 @@ console.log(digits_count(457));
 
 
 
+
+Live Demo:
+
+
+html:
+
+
+
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript function to count the digits of an integer.</title>
+</head>
+<body>
+​
+</body>
+
+
+
+js:
+
+
+function digits_count(n) {
+  var count = 0;
+  if (n >= 1) ++count;
+
+  while (n / 10 >= 1) {
+    n /= 10;
+    ++count;
+  }
+
+  return count;
+}
+
+console.log(digits_count(12112));
+
+console.log(digits_count(457));
+
+
+
+
+
+
  */
