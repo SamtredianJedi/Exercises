@@ -57,4 +57,49 @@ console.log(Hamming(20));
 
 
 
+
+Live Demo:
+
+
+html:
+
+
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript function to show the Hamming numbers</title>
+</head>
+<body>
+
+</body>
+
+
+js:
+
+
+
+function Hamming(n) {
+        var succession = [1];
+        var length = succession.length;
+        var candidate = 2;
+        while (length < n) {
+            if (isHammingNumber(candidate)) {
+                succession[length] = candidate;
+                length++;
+            }
+            candidate++;
+        }
+        return succession;
+  }
+ function isHammingNumber(num) {
+        while (num % 5 === 0) num /= 5;
+        while (num % 3 === 0) num /= 3;
+        while (num % 2 === 0) num /= 2;
+
+        return num == 1;
+    }
+
+console.log(Hamming(20));
+
+
+
  */
