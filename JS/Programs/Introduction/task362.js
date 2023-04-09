@@ -1,5 +1,7 @@
 // JavaScript: Show the Hamming numbers
 
+
+
 /**
  * 
  * 
