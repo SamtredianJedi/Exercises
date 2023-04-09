@@ -1,5 +1,7 @@
 // JavaScript: Get all prime numbers from 0 to a specified number
 
+
+
 /**
  * 
  * 
