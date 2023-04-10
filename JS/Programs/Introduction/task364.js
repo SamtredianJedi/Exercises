@@ -1,5 +1,7 @@
 // JavaScript: Calculate the divisor and modulus of two integers
 
+
+
 /**
  * 
  * JavaScript Math: Exercise-46 with Solution
