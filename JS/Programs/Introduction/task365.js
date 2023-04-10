@@ -1,5 +1,7 @@
 // JavaScript: Calculate the extended Euclid Algorithm or extended GCD
 
+
+
 /**
  * 
  * 
