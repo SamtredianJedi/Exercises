@@ -11,4 +11,23 @@ In mathematics, the Euclidean algorithm[a], or Euclid's algorithm, is an efficie
 
 
 
+
+
+
+HTML Code:
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript function to calculate the extended Euclid Algorithm or extended GCD</title>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
+
  */
