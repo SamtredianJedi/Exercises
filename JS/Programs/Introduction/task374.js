@@ -12,4 +12,20 @@ In geometry, a cuboid is a hexahedron, a six-faced solid. Its faces are quadrila
 
 
 
+
+HTML Code:
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript function to Volume of a Cuboid</title>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
  */
