@@ -51,4 +51,45 @@ console.log("x=",x,"y=",y)
 
 
 
+
+Live Demo:
+
+
+html:
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript function to Swap two variables</title>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
+
+js:
+
+
+let x = 20;
+let y = 40;
+console.log("x=",x,"y=",y)
+let temp;
+temp = x;
+x = y;
+y = temp;
+console.log("After swapping:")
+console.log("x=",x,"y=",y)
+
+
+
+
+
+
+
+
+
  */
