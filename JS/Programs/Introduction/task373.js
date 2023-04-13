@@ -17,4 +17,22 @@ y := temp
 
 
 
+
+HTML Code:
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript function to Swap two variables</title>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
+
+
  */
