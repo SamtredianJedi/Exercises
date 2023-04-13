@@ -1,5 +1,7 @@
 // JavaScript: Check if a given number is a power of 10
 
+
+
 /**
  * 
  * 
