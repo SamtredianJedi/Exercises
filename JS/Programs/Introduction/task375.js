@@ -12,4 +12,19 @@ In geometry, a cube is a three-dimensional solid object bounded by six square fa
 
 
 
+
+HTML Code:
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript function to Volume of a Cube</title>
+</head>
+<body>
+
+</body>
+</html>
+
+
  */
