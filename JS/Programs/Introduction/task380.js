@@ -11,4 +11,21 @@ In geometry, the pentagonal prism is a prism with a pentagonal base. It is a typ
 
 
 
+
+
+HTML Code:
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript function to Volume of a Pentagonal Prism</title>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
  */
