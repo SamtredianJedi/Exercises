@@ -14,4 +14,21 @@ The first few Lucas numbers are:
 2, 1, 3, 4, 7, 11, 18, 29, 47, 76, 123, 199, 322, 521, 843, 1364, 2207, 3571, 5778, 9349 .... .
 
 
+
+
+
+HTML Code:
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript function to find Lucas number from index value</title>
+</head>
+<body>
+
+</body>
+</html>
+
+
  */
