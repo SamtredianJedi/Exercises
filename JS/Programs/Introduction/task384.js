@@ -16,4 +16,20 @@ Return value: Either the twin, or -1 if n or n + 2 is not prime number.
 
 
 
+
+
+HTML Code:
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript function to find the twin prime number</title>
+</head>
+<body>
+
+</body>
+</html>
+
+
  */
