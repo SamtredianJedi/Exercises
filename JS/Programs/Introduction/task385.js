@@ -14,4 +14,22 @@ is geometric, because each successive term can be obtained by multiplying the pr
 
 
 
+
+
+
+HTML Code:
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript function to sum of a geometric progression</title>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
  */
