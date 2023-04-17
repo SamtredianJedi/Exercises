@@ -1,5 +1,7 @@
 // JavaScript: Twin prime of a prime number
 
+
+
 /**
  * 
  * 
