@@ -52,4 +52,52 @@ console.log(sum_Of_Digits(2546))
 
 
 
+
+
+
+
+Live Demo:
+
+
+html:
+
+
+
+HTML Code:
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript function to sum of the digits of a number</title>
+</head>
+<body>
+
+</body>
+</html>
+
+
+js:
+
+
+function sum_Of_Digits(n) {
+  if (n < 0) n = -n
+  let result = 0
+
+  while (n > 0) 
+   {
+    result += n % 10
+    n = Math.floor(n / 10)
+  }
+
+  return result
+}
+console.log(sum_Of_Digits(6098))
+console.log(sum_Of_Digits(-501))
+console.log(sum_Of_Digits(2546))
+
+
+
+
+
  */
