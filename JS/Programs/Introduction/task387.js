@@ -11,4 +11,20 @@ In mathematics, the sieve of Eratosthenes is an ancient algorithm for finding al
 
 
 
+
+
+HTML Code:
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript function to find all prime numbers below a given number</title>
+</head>
+<body>
+
+</body>
+</html>
+
+
  */
