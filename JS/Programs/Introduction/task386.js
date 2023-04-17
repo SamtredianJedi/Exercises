@@ -11,4 +11,22 @@ In mathematics, the digit sum of a natural number in a given number base is the 
 
 
 
+
+Sample Solution-1:
+
+HTML Code:
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript function to sum of the digits of a number</title>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
  */
