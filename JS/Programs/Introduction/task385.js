@@ -1,5 +1,7 @@
 // JavaScript: Sum of a geometric progression
 
+
+
 /**
  * 
  * 
