@@ -13,4 +13,23 @@ The first few pronic numbers are:
 0, 2, 6, 12, 20, 30, 42, 56, 72, 90, 110, 132, 156, 182, 210, 240, 272, 306, 342, 380, 420, 462 ...
 
 
+
+
+
+
+HTML Code:
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript Pronic number</title>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
  */
