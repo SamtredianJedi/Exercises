@@ -53,4 +53,44 @@ console.log(sieve_Of_Eratosthenes(30))
 
 
 
+
+
+
+Live Demo:
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript function to find all prime numbers below a given number</title>
+</head>
+<body>
+​
+</body>
+</html>
+
+
+js:
+
+
+
+function sieve_Of_Eratosthenes(n) {
+  const sieve = []
+  const primes_set = []
+  for (let i = 2; i <= n; ++i) {
+    if (!sieve[i]) 
+     {  
+       primes_set.push(i)
+       for (let j = i << 1; j <= n; j += i) 
+        { 
+        sieve[j] = true
+      }
+    }
+  }
+  return primes_set
+}
+console.log(sieve_Of_Eratosthenes(5))
+console.log(sieve_Of_Eratosthenes(11))
+console.log(sieve_Of_Eratosthenes(30))
+
+
  */
