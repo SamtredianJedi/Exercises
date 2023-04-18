@@ -1,5 +1,7 @@
 // JavaScript: Find all prime numbers below a given number
 
+
+
 /**
  * 
  * 
