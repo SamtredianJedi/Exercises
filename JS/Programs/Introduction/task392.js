@@ -18,4 +18,22 @@ Test Data:
 
 
 
+
+
+
+HTML Code:
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript program to Hexadecimal number to binary equivalent</title>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
  */
