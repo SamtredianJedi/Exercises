@@ -1,5 +1,7 @@
 // JavaScript: Check sum of consecutive positive integers
 
+
+
 /**
  * 
  * 
@@ -97,6 +99,8 @@ function test(n){
 console.log(test(33));
 console.log(test(10));
 console.log(test(8));
+
+
 
 
 
