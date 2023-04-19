@@ -87,6 +87,23 @@ console.log(test(8));
 
 
 
+Sample Solution-2:
+
+JavaScript Code:
+
+function test(n){
+  return !Number.isInteger(Math.log2(n))
+}
+console.log(test(33));
+console.log(test(10));
+console.log(test(8));
+
+
+
+
+
+
+
 
 
  */
