@@ -14,4 +14,24 @@ but 8 cannot be represented in this way.
 
 
 
+
+
+
+Sample Solution-1:
+
+HTML Code:
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript program to check sum of consecutive positive integers</title>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
  */
