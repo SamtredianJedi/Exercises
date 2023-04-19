@@ -50,4 +50,43 @@ console.log(test(8));
 
 
 
+
+
+Live Demo:
+
+
+html:
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript program to check sum of consecutive positive integers</title>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
+js:
+
+function test(n)
+{
+  return (n & (n - 1)) != 0
+}
+console.log(test(33));
+console.log(test(10));
+console.log(test(8));
+
+
+
+
+
+
+
+
+
+
  */
