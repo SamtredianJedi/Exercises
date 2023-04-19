@@ -51,4 +51,43 @@ console.log(test("4B2A16"));
 
 
 
+
+
+
+Live Demo:
+
+
+html:
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript program to Hexadecimal number to binary equivalent</title>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
+
+js:
+
+function test(n){
+    return (parseInt(n, 16).toString(2)).padStart(8, '0');
+}
+console.log(test("7B316"));
+console.log(test("6F16"));
+console.log(test("4B2A16"));
+
+
+
+
+
+
+
+
  */
