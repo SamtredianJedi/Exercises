@@ -49,6 +49,44 @@ console.log(is_Pronic(200))
 
 
 
+Live Demo:
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript Pronic number</title>
+</head>
+<body>
+
+</body>
+</html>
+
+
+js:
+
+const is_Pronic = (n) => {
+  if (n === 0) {
+    return true
+  }
+  const sqrt = Math.sqrt(n)
+  return sqrt % 1 !== 0 && Math.ceil(sqrt) * Math.floor(sqrt) === n
+}
+
+console.log(is_Pronic(6))
+console.log(is_Pronic(110))
+console.log(is_Pronic(200))
+
+
+
+
+
+
+
+
+
+
 
 
  */
