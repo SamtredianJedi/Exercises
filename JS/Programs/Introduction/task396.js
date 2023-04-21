@@ -22,4 +22,22 @@ Test Data:
 (5) -> 35
 
 
+
+
+
+HTML Code:
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript program to Nth Tetrahedral Number</title>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
  */
