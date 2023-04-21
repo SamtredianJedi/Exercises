@@ -58,4 +58,55 @@ console.log("Number of dots based on the triangular number of the sequence = "+t
 
 
 
+
+
+Live Demo:
+
+
+html:
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript program to sequence number from the given Triangular Number</title>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
+js:
+
+function test(n) {
+ return n * (n + 1) / 2;
+}
+n = 1
+console.log("Triangular number = "+n)
+console.log("Number of dots based on the triangular number of the sequence = "+test(n));
+n = 2
+console.log("Triangular number = "+n)
+console.log("Number of dots based on the triangular number of the sequence = "+test(n));
+n = 3
+console.log("Triangular number = "+n)
+console.log("Number of dots based on the triangular number of the sequence = "+test(n));
+n = 7
+console.log("Triangular number = "+n)
+console.log("Number of dots based on the triangular number of the sequence = "+test(n));
+n = 11
+console.log("Triangular number = "+n)
+console.log("Number of dots based on the triangular number of the sequence = "+test(n));
+
+
+
+
+
+
+
+
+
+
+
  */
