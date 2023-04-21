@@ -11,4 +11,23 @@ In recreational mathematics, a repdigit or sometimes monodigit is a natural numb
 
 
 
+
+
+
+
+HTML Code:
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript program to check an integer is Repdigit number or not</title>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
  */
