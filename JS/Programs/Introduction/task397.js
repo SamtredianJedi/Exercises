@@ -14,4 +14,22 @@ A triangular number or triangle number counts objects arranged in an equilateral
 
 
 
+
+
+
+HTML Code:
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript program to sequence number from the given Triangular Number</title>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
  */
