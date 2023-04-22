@@ -14,4 +14,19 @@ In mathematics, the mean represents the simple average of two or more numbers. T
 
 
 
+
+HTML Code:
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript program to Mean of all digits of a number</title>
+</head>
+<body>
+
+</body>
+</html>
+
+
  */
