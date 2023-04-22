@@ -1,6 +1,8 @@
 // JavaScript: Mean of all digits of a number
 
 
+
+
 /**
  * 
  * 
