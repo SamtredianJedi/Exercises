@@ -1,6 +1,8 @@
 // JavaScript: Multiply every digit of a number three times
 
 
+
+
 /**
  * 
  * 
