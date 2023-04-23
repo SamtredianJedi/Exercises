@@ -1,5 +1,7 @@
 // JavaScript: Sum of the Two highest Numbers
 
+
+
 /**
  * 
  * 
