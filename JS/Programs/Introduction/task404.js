@@ -1,5 +1,7 @@
 // JavaScript: Middle character(s) of a string
 
+
+
 /**
  * 
  * 
