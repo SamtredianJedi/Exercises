@@ -13,4 +13,22 @@ Test Data:
 
 
 
+
+
+
+
+HTML Code:
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript program to Sum of the Two highest Numbers</title>
+</head>
+<body>
+
+</body>
+</html>
+
+
  */
