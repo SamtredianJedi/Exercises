@@ -12,4 +12,22 @@ In mathematics, a matrix (plural matrices) is a rectangular array or table of nu
 An m × n matrix: the m rows are horizontal and the n columns are vertical
 
 
+
+
+
+HTML Code:
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript program to Sum of the main diagonal elements of a square matrix</title>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
  */
