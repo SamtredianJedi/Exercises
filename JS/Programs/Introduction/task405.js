@@ -1,5 +1,7 @@
 // JavaScript: Check a number is Sastry number or not
 
+
+
 /**
  * 
  * 
