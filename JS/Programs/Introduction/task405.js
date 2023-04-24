@@ -15,4 +15,21 @@ Test Data:
 (28027683) -> true
 
 
+
+
+HTML Code:
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript program to Check a number is Sastry number or not</title>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
  */
