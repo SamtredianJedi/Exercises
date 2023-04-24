@@ -1,5 +1,7 @@
 // JavaScript: Sum of oddly divisible numbers from a range
 
+
+
 /**
  * 
  * 
@@ -90,6 +92,8 @@ n = 5
 console.log("Range: "+x+"-"+y)
 console.log("Divisible number: "+n)
 console.log("Sum of oddly divisible numbers from a the said range: "+test(x, y, n))
+
+
 
 
 
