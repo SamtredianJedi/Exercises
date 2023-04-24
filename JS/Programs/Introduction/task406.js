@@ -1,5 +1,7 @@
 // JavaScript: Check to given vectors are orthogonal or not
 
+
+
 /**
  * 
  * 
@@ -112,7 +114,7 @@ console.log("Check the said vectors are orthogonal or not: "+test(nums1, nums2))
 
 
 
-js:
+
 
 
 
