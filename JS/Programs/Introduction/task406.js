@@ -13,4 +13,22 @@ u⊥v or u•v=0
 
 
 
+
+
+HTML Code:
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript program to check two given vectors are orthogonal or not</title>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
+
  */
