@@ -1,5 +1,7 @@
 // JavaScript: Test if a number is a Harshad Number or not
 
+
+
 /**
  * 
  * 
