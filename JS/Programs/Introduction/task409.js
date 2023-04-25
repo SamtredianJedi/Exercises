@@ -9,4 +9,20 @@ Write a JavaScript program to calculate the sum of all odd elements in a square 
 
 
 
+
+
+HTML Code:
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript program to Sum of all odds in a matrix</title>
+</head>
+<body>
+
+</body>
+</html>
+
+
  */
