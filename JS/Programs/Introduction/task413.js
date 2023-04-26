@@ -1,5 +1,7 @@
 // JavaScript: Last and middle character from a string
 
+
+
 /** 
  * 
  * 
