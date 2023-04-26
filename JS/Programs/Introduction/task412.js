@@ -12,4 +12,21 @@ Test Data:
 
 
 
+
+
+
+HTML Code:
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript program to Even, odd numbers and their sum in an array</title>
+</head>
+<body>
+
+</body>
+</html>
+
+
  */
