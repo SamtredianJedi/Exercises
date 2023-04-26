@@ -1,5 +1,7 @@
 // JavaScript: Check downward trend, array of integers
 
+
+
 /**
  * 
  * 
