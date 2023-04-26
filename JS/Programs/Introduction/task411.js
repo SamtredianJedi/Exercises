@@ -13,4 +13,23 @@ Test Data:
 ([1, 0, -2, -3, -12]) -> true
 
 
+
+
+
+
+HTML Code:
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript program to Check downward trend, array of integers</title>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
  */
