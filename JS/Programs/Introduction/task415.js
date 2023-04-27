@@ -18,4 +18,23 @@ For example:
 ...
 
 
+
+
+
+Sample Solution-1:
+
+HTML Code:
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript program to Excel column title related with a column number</title>
+</head>
+<body>
+
+</body>
+</html>
+
+
  */
