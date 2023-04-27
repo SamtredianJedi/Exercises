@@ -18,4 +18,24 @@ AB -> 28
 ...
 
 
+
+
+
+Sample Solution-1:
+
+HTML Code:
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript program to Column number that relates to a column title</title>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
  */
