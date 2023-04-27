@@ -143,5 +143,35 @@ console.log("Excel column title related with the said column number: "+test(n));
 
 
 
+Live Demo:
+
+
+
+
+
+
+JavaScript Code:
+
+function test(n) {
+    result = '';
+    while(n > 0){
+        el = String.fromCharCode(65 + (n-1) % 26);
+        result = el + result;
+        n = ~~((n-1)/26);
+    }
+    return result;
+}
+n = 4
+console.log("n = " + n)
+console.log("Excel column title related with the said column number: "+test(n));
+n = 27
+console.log("n = " + n)
+console.log("Excel column title related with the said column number: "+test(n));
+n = 151
+console.log("n = " + n)
+console.log("Excel column title related with the said column number: "+test(n));
+
+
+
 
  */
