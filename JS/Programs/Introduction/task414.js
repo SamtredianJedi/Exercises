@@ -14,4 +14,23 @@ For example 4! = 4 x 3! = 4 x 3 x 2 x 1 =24
 The value of 0! is 1, according to the convention for an empty product.
 
 
+
+
+
+Sample Solution-1:
+
+HTML Code:
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript program to Number of trailing zeroes in a factorial</title>
+</head>
+<body>
+
+</body>
+</html>
+
+
  */
