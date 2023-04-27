@@ -64,4 +64,55 @@ console.log("n = " + n)
 console.log("Excel column title related with the said column number: "+test(n)); 
 
 
+
+
+
+
+Live Demo:
+
+
+html:
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript program to Excel column title related with a column number</title>
+</head>
+<body>
+
+</body>
+</html>
+
+
+js:
+
+function test(n) {
+  s = 1;
+  e = 26;
+  result = "";
+  while ((n -= s) >= 0) {
+        result = String.fromCharCode(parseInt((n % e) / s) + 65) + result;
+        s = e;
+        e *= 26;
+    }
+  return result;
+}
+n = 4
+console.log("n = " + n)
+console.log("Excel column title related with the said column number: "+test(n));
+n = 27
+console.log("n = " + n)
+console.log("Excel column title related with the said column number: "+test(n));
+n = 151
+console.log("n = " + n)
+console.log("Excel column title related with the said column number: "+test(n)); 
+
+
+
+
+
+
+
  */
