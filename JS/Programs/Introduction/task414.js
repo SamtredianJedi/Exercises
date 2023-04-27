@@ -120,6 +120,39 @@ console.log("Number of trailing zeroes in the said factorial: "+test(n));
 
 
 
+Sample Solution-2:
+
+JavaScript Code:
+
+function test(n) 
+   {
+    pow = Math.log(n) / Math.log(5);
+    result = 0;
+    for (i = 1; i <= pow; i++) {
+        result += Math.floor(n / Math.pow(5, i));
+    };
+    return result;
+}
+
+n = 4
+console.log("n = " + n)
+console.log("Number of trailing zeroes in the said factorial: "+test(n));
+n = 9
+console.log("n = " + n)
+console.log("Number of trailing zeroes in the said factorial: "+test(n));
+n = 10
+console.log("n = " + n)
+console.log("Number of trailing zeroes in the said factorial: "+test(n));
+n = 23
+console.log("n = " + n)
+console.log("Number of trailing zeroes in the said factorial: "+test(n));
+n = 35
+console.log("n = " + n)
+console.log("Number of trailing zeroes in the said factorial: "+test(n));
+
+
+
+
 
 
  */
