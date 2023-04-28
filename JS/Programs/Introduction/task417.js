@@ -13,4 +13,23 @@ Explanation: The formula is like: 3 + 9 = 12, 1 + 2 = 3.
 
 
 
+
+
+Sample Solution-1:
+
+HTML Code:
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript program to Add digits until there is only one digit</title>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
  */
