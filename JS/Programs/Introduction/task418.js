@@ -12,4 +12,25 @@ Ugly numbers are positive numbers whose only prime factors are 2, 3 or 5. The fi
 Note: 1 is typically treated as an ugly number.
 
 
+
+
+
+
+Sample Solution:
+
+HTML Code:
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript program to Check a given number is an ugly number or not</title>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
  */
