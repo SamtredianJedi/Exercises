@@ -127,6 +127,28 @@ console.log("Add digits of the said number until there is only one digit: "+test
 
 
 
+Live Demo:
+
+
+js:
+
+function test(n) {
+    if (isNaN(n) || n === 0) return 0;
+    if (n < 10) return n;
+    return n % 9 === 0 ? 9 : n % 9;
+};
+n = 49
+console.log("n = " +n)
+console.log("Add digits of the said number until there is only one digit: "+test(n));
+n = 9
+console.log("Original text: " +n)
+console.log("Add digits of the said number until there is only one digit: "+test(n)); 
+
+
+
+
+
+
 
 
  */
