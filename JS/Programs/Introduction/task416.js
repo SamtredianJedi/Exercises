@@ -65,4 +65,53 @@ console.log("Excel column title related with the said column number: "+test(text
 
 
 
+
+
+Live Demo:
+
+
+
+
+html:
+
+
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript function to Column number that relates to a column title</title>
+</head>
+<body>
+
+</body>
+</html>
+
+
+js:
+
+
+
+
+
+
+
+function test(text) {
+    col_num = 0;
+    for (el of text) {
+        col_num = col_num * 26 + el.toLowerCase().charCodeAt(0) - "a".charCodeAt(0) + 1;
+    }
+    return col_num;
+}
+text = "C"
+console.log("Original text: " +text)
+console.log("Excel column title related with the said column number: "+test(text));
+text = "AD"
+console.log("Original text: " +text)
+console.log("Excel column title related with the said column number: "+test(text));
+text = "ZX"
+console.log("Original text: " +text)
+console.log("Excel column title related with the said column number: "+test(text));
+
+
+
  */
