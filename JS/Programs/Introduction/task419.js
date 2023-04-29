@@ -1,5 +1,7 @@
 // JavaScript: Find the nth ugly number
 
+
+
 /**
  * 
  * 
@@ -121,6 +123,8 @@ console.log("nth Ugly number is "+test(n));
 n = 10
 console.log("n = " +n)
 console.log("nth Ugly number is "+test(n));
+
+
 
 
 
