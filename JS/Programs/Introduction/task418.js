@@ -1,5 +1,7 @@
 // JavaScript: Check a given number is an ugly number or not
 
+
+
 /**
  * 
  * 
@@ -99,6 +101,8 @@ console.log("Check the said number is an ugly number? "+test(n));
 n = 19
 console.log("Original text: " +n)
 console.log("Check the said number is an ugly number? "+test(n));
+
+
 
 
 
