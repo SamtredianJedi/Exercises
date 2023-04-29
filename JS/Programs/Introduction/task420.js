@@ -109,4 +109,35 @@ console.log("Total number of 1s from 1 to n: "+test(n));
 
 
 
+
+
+
+Solution-2
+
+JavaScript Code:
+
+function test(num) {
+    if (num<1)
+      return false;
+    var result = 0;
+    for (var x = 1; x <= num; x *= 10) {
+        var temp = parseInt(num / x), remin = num % x;
+        result += parseInt((temp + 8) / 10) * x;
+        if (temp % 10 == 1) 
+          result += remin + 1;
+    }
+    return result;
+}
+n = 11
+console.log("n = " +n)
+console.log("Total number of 1s from 1 to n: "+test(n));
+n = 305
+console.log("n = " +n)
+console.log("Total number of 1s from 1 to n: "+test(n));
+n = 0
+console.log("n = " +n)
+console.log("Total number of 1s from 1 to n: "+test(n));
+
+
+
  */
