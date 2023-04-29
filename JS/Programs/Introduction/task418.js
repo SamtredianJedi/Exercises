@@ -57,4 +57,49 @@ console.log("Original text: " +n)
 console.log("Check the said number is an ugly number? "+test(n));
 
 
+
+
+
+
+Live Demo:
+
+
+html:
+
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript function to Check a given number is an ugly number or not</title>
+</head>
+<body>
+
+</body>
+</html>
+
+
+js:
+
+
+
+
+function test(n) {
+  map = [5, 3, 2];
+  for (let i = 0; i < map.length && n > 1; i++) {
+    while (n % map[i] === 0) n /= map[i];
+  }
+  return n === 1;
+};  
+n = 12
+console.log("n = " +n)
+console.log("Check the said number is an ugly number? "+test(n));
+n = 18
+console.log("Original text: " +n)
+console.log("Check the said number is an ugly number? "+test(n));
+n = 19
+console.log("Original text: " +n)
+console.log("Check the said number is an ugly number? "+test(n));
+
+
+
  */
