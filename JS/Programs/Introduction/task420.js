@@ -15,4 +15,22 @@ Test Data:
 (0) -> false
 
 
+
+
+
+
+HTML Code:
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript program to Count total number of 1s from 1 to N</title>
+</head>
+<body>
+
+</body>
+</html>
+
+
  */
