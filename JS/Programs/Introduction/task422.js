@@ -111,4 +111,32 @@ console.log("Number of ways to climb the said number of stairs: "+test(n));
 
 
 
+
+
+Solution-2
+
+JavaScript Code:
+
+function test(n) {
+    nums=[];
+    nums[1]=1;
+    nums[2]=2;
+    for(i=3;i<=n;i++){
+        nums[i]=nums[i-1]+nums[i-2];
+     }
+    return nums[n];
+ }
+
+n = 2
+console.log("Number of stairs = " +n)
+console.log("Number of ways to climb the said number of stairs: "+test(n));
+n = 3
+console.log("Number of stairs = " +n)
+console.log("Number of ways to climb the said number of stairs: "+test(n));
+
+
+
+
+
+
  */
