@@ -1,5 +1,7 @@
 // JavaScript: Distinct ways to climb the staircase
 
+
+
 /**
  * 
  * 
@@ -133,6 +135,9 @@ console.log("Number of ways to climb the said number of stairs: "+test(n));
 n = 3
 console.log("Number of stairs = " +n)
 console.log("Number of ways to climb the said number of stairs: "+test(n));
+
+
+
 
 
 
