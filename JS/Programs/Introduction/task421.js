@@ -1,5 +1,7 @@
 // JavaScript: Product of two non-negative integers as strings
 
+
+
 /**
  * 
  * 
@@ -143,6 +145,9 @@ n1 = "0"
 n2 = "0"
 console.log("n1 = " +n1+", n2 = "+n2)
 console.log("Product of the said two integers as strings: "+test(n1, n2));
+
+
+
 
 
 
