@@ -14,4 +14,25 @@ Test Data:
 ("0", "0") -> "0"
 
 
+
+
+
+
+
+
+HTML Code:
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript program to Product of two non-negative integers as strings</title>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
  */
