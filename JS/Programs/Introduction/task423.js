@@ -2,6 +2,8 @@
 
 
 
+
+
 /**
  * 
  * JavaScript: Get the first element of an array
