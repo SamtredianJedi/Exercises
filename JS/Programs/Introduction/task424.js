@@ -103,4 +103,27 @@ console.log(y)
 
 
 
+
+
+
+
+
+
+Sample Solution-5:
+
+Array.prototype.map()
+
+Looking into one of the more unorthodox options, Array.prototype.map() can be used to map each element of an array to itself to create a new array.
+
+JavaScript Code:
+
+let x = [1, 2, 3, 4];
+console.log("Original array:")
+console.log(x)
+let y = x.map(i => i);
+console.log("Clone of the said array:")
+console.log(y)
+
+
+
  */
