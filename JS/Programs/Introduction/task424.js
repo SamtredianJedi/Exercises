@@ -81,4 +81,26 @@ console.log(y)
 
 
 
+
+
+
+
+
+Sample Solution-4:
+
+Array.prototype.slice()
+
+Similarly to the spread operator, Array.prototype.slice() can be used to create a shallow copy of an array.
+
+JavaScript Code:
+
+let x = [1, 2, 3, 4];
+console.log("Original array:")
+console.log(x)
+let y = x.slice();
+console.log("Clone of the said array:")
+console.log(y)
+
+
+
  */
