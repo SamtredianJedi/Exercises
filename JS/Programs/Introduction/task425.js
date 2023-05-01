@@ -16,4 +16,23 @@ console.log(array_Clone([1, 2, [4, 0]]));
 
 
 
+
+
+
+Sample Solution:
+
+HTML Code:
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Get the first element of an array</title>
+</head>
+<body>
+</body>
+</html>
+
+
+
  */
