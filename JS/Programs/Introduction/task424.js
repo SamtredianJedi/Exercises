@@ -59,4 +59,26 @@ console.log(y)
 
 
 
+
+
+
+
+Sample Solution-3:
+
+Array.from()
+
+Array.from() has a very powerful API that can be used for many different things, including creating a copy of an array.
+
+JavaScript Code:
+
+let x = [1, 2, 3, 4];
+console.log("Original array:")
+console.log(x)
+let y = Array.from(x);
+console.log("Clone of the said array:")
+console.log(y)
+
+
+
+
  */
