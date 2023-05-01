@@ -126,4 +126,26 @@ console.log(y)
 
 
 
+
+
+
+
+Sample Solution-6:
+
+Array.prototype.filter()
+
+Similarly, Array.prototype.filter() can be used to return true for each and every element, resulting in a new array with all of the original array's elements.
+
+JavaScript Code:
+
+let x = [1, 2, 3, 4];
+console.log("Original array:")
+console.log(x)
+let y = x.filter(() => true);
+console.log("Clone of the said array:")
+console.log(y)
+
+
+
+
  */
