@@ -31,4 +31,32 @@ console.log(array_Clone([1, 2, [4, 0]]));
 
 
 
+
+
+
+
+Sample Solution-2:
+
+JavaScript provides quite a few ways to clone an array, most of which are pretty similar in terms of performance and results. Here's a quick rundown of some of the available options.
+
+The spread operator:
+
+ES6 introduced the spread operator (...), which provides probably the easiest and most common way to create a shallow clone of an array.
+
+
+
+
+
+
+JavaScript Code:
+
+let x = [1, 2, 3, 4];
+console.log("Original array:")
+console.log(x)
+let y = [...x];
+console.log("Clone of the said array:")
+console.log(y)
+
+
+
  */
