@@ -14,4 +14,21 @@ console.log(last([7, 9, 0, -2],3));
 console.log(last([7, 9, 0, -2],6));
 
 
+
+
+
+
+HTML Code:
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Get last and last n elements of an array</title>
+</head>
+<body>
+</body>
+</html>
+
+
  */
