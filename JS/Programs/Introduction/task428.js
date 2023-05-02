@@ -10,4 +10,20 @@ Write a JavaScript program that accepts a number as input and inserts dashes (-)
 
 
 
+
+
+
+HTML Code:
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Insert dashes (-) between even numbers</title>
+</head>
+<body>
+</body>
+</html>
+
+
  */
