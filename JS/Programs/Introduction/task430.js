@@ -13,4 +13,22 @@ Sample Output: a ( 5 times )
 
 
 
+
+
+
+
+html:
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Write a JavaScript program to find the most frequent item of an array. - w3resource</title>
+</head>
+<body>
+</body>
+</html>
+
+
+
  */
