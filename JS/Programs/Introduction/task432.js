@@ -22,4 +22,21 @@ Sample Output :
 
 
 
+
+
+
+HTML Code:
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Print 2-D array</title>
+</head>
+<body>
+</body>
+</html>
+
+
+
  */
