@@ -1,5 +1,7 @@
 // JavaScript: Print the elements of an array
 
+
+
 /**
  * 
  * 
