@@ -9,4 +9,21 @@ Write a JavaScript program that accepts a string as input and swaps the case of 
 
 
 
+
+
+
+HTML Code:
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Swap the case of each character of a string</title>
+</head>
+<body>
+</body>
+</html>
+
+
+
  */
