@@ -1,5 +1,7 @@
 // JavaScript: Find the sum of squares of a numeric vector
 
+
+
 /**
  * 
  * 
