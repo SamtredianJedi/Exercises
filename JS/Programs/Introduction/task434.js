@@ -1,5 +1,7 @@
 // JavaScript: Compute the sum and product of an array of integers
 
+
+
 /**
  * 
  * 
@@ -82,6 +84,9 @@ for (i = 0; i < array.length; i += 1)
     p *= array[i];
     }
 console.log('Sum : '+s + ' Product :  ' +p); 
+
+
+
 
 
 
