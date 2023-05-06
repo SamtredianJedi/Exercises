@@ -1,6 +1,8 @@
 // JavaScript: Remove duplicate items from an array, ignore case sensitivity
 
 
+
+
 /**
  * 
  * 
@@ -80,6 +82,9 @@ var Mynum = [1, 2, 2, 4, 5, 4, 7, 8, 7, 3, 6];
 result = removeDuplicates(Mynum);
 console.log(Mynum);
 console.log(result);
+
+
+
 
 
 
