@@ -1,5 +1,7 @@
 // JavaScript: Add items in a blank array and display the items
 
+
+
 /**
  * 
  * 
