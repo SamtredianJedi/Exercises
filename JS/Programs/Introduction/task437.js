@@ -18,4 +18,23 @@ Output
 
 
 
+
+
+
+
+HTML Code :
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Display colors using ordinal numbers</title>
+</head>
+<body> 
+</body>
+</html>
+
+
+
+
  */
