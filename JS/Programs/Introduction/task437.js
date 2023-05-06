@@ -1,5 +1,7 @@
 // JavaScript: Display the colors entered in an array by a specific format
 
+
+
 /**
  * 
  * 
