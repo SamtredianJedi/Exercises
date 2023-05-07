@@ -9,4 +9,22 @@
 Write a JavaScript program to shuffle an array.
 
 
+
+
+
+
+HTML Code:
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Shuffle an array</title>
+</head>
+<body>
+</body>
+</html>
+
+
+
  */
