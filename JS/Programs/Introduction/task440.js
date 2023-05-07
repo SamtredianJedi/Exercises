@@ -17,4 +17,22 @@ console.log(binary_Search(items, 1)); //0
 console.log(binary_Search(items, 5)); //4
 
 
+
+
+
+
+HTML Code:
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Binary Search</title>
+</head>
+<body>
+</body>
+</html>
+
+
+
  */
