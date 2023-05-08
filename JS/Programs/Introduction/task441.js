@@ -15,4 +15,22 @@ Expected Output:
 [4, 5, 8, 10, 12, 13]
 
 
+
+
+
+
+HTML Code:
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>compute the sum of each individual index value from two arrays</title>
+</head>
+<body>
+</body>
+</html>
+
+
+
  */
