@@ -1,5 +1,7 @@
 // JavaScript: Compute the sum of each individual index value of two or more arrays
 
+
+
 /**
  * 
  * 
