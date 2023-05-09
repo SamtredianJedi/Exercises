@@ -15,4 +15,22 @@ console.log(flatten([1, [2], [3, [[4]]],[5,6]], true));
 
 
 
+
+
+
+
+HTML Code:
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Flatten a nested array</title>
+</head>
+<body>
+</body>
+</html>
+
+
+
  */
