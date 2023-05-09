@@ -17,4 +17,20 @@ console.log(difference([1, 2, 3], [100, 2, 1, 10]));
 ["3", "10", "100"]
 
 
+
+
+
+HTML Code:
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>JS, difference between two arrays</title>
+</head>
+<body>
+</body>
+</html>
+
+
  */
