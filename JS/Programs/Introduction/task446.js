@@ -56,4 +56,30 @@ function filter_array(test_array) {
 console.log(filter_array([NaN, 0, 15, false, -22, '',undefined, 47, null]));
 
 
+
+
+
+
+ES6 Version:
+
+function filter_array(test_array) {
+    let index = -1;
+    const arr_length = test_array ? test_array.length : 0;
+    let resIndex = -1;
+    const result = [];
+
+    while (++index < arr_length) {
+        const value = test_array[index];
+
+        if (value) {
+            result[++resIndex] = value;
+        }
+    }
+
+    return result;
+}
+console.log(filter_array([NaN, 0, 15, false, -22, '',undefined, 47, null]));
+
+
+
  */
