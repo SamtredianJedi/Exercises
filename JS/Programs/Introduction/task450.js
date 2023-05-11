@@ -15,4 +15,23 @@ Expected result : "go"
 
 
 
+
+
+
+
+HTML Code:
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Write a JavaScript function to find the longest common starting substring in a set of strings</title>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
  */
