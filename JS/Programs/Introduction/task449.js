@@ -1,5 +1,8 @@
 // JavaScript: Retrieve the value of a specified property from all elements in an array
 
+
+
+
 /**
  * 
  * 
