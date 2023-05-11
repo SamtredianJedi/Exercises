@@ -1,5 +1,7 @@
 // JavaScript: Find a pair of elements from an specified array whose sum equals a specific target number
 
+
+
 /**
  * 
  * 
