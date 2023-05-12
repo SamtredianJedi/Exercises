@@ -15,4 +15,22 @@ console.log(merge_array(array1, array2));
 
 
 
+
+
+
+
+HTML Code:
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript function to merge two arrays and removes all duplicates elements.</title>
+</head>
+<body>
+
+</body>
+</html>
+
+
  */
