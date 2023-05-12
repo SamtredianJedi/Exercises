@@ -15,4 +15,21 @@ console.log(num_string_range('a', "z", 2));
 
 
 
+
+
+
+HTML Code:
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Write a JavaScript function to fill an array with values (numeric, string with one character) on supplied bounds.</title>
+</head>
+<body>
+
+</body>
+</html>
+
+
  */
