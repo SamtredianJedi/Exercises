@@ -48,4 +48,23 @@ function remove_array_element(array, n)
 console.log(remove_array_element([2, 5, 9, 6], 5));
 
 
+
+
+
+
+
+ES6 Version:
+
+function remove_array_element(array, n)
+ {
+   const index = array.indexOf(n);
+   if (index > -1) {
+    array.splice(index, 1);
+}
+   return array;
+ }
+
+console.log(remove_array_element([2, 5, 9, 6], 5));
+
+
  */
