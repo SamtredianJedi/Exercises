@@ -17,4 +17,22 @@ console.log(contains(arr, 5));
 
 
 
+
+
+
+
+HTML Code:
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript function to find if an array contains a specific element</title>
+</head>
+<body>
+
+</body>
+</html>
+
+
  */
