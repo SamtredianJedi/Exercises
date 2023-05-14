@@ -1,5 +1,8 @@
 // JavaScript: Empty an array keeping the original
 
+
+
+
 /**
  * 
  * 
