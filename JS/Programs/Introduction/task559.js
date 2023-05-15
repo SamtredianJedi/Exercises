@@ -15,4 +15,24 @@ console.log(array_filled(4, 'password'));
 ["password", "password", "password", "password"]
 
 
+
+
+
+
+
+HTML Code:
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript function to create a specified number of elements and pre-filled string value array</title>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
  */
