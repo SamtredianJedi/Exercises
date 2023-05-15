@@ -1,5 +1,8 @@
 // JavaScript: Create a specified number of elements and pre-filled numeric value array
 
+
+
+
 /**
  * 
  * 
