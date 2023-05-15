@@ -15,4 +15,23 @@ console.log(array_filled(4, 11));
 
 
 
+
+
+
+
+HTML Code:
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript function to create a specified number of elements and numeric value filled array</title>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
  */
