@@ -1,5 +1,7 @@
 // JavaScript: Create a specified number of elements and pre-filled string value arrayJavaScript: Create a specified number of elements and pre-filled string value array
 
+
+
 /**
  * 
  * 
