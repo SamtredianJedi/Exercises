@@ -13,4 +13,22 @@ console.log(filter_array_values([58, '', 'abcd', true, null, false, 0]));
 
 
 
+
+
+
+
+HTML Code:
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript function to filter false, null, 0 and blank values from an array</title>
+</head>
+<body>
+
+</body>
+</html>
+
+
  */
