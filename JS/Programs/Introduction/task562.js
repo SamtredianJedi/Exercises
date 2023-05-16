@@ -55,4 +55,28 @@ console.log(array_range(-6, 4));
 
 
 
+
+
+
+
+
+ES6 Version:
+
+function array_range(start, len) 
+     {
+		const arr = new Array(len);
+		for (let i = 0; i < len; i++, start++) 
+        {
+			arr[i] = start;
+		}
+      		return arr;
+}
+
+
+console.log(array_range(1, 4));
+
+console.log(array_range(-6, 4));
+
+
+
  */
