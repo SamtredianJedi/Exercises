@@ -15,4 +15,20 @@ console.log(array_range(-6, 4));
 [-6, -5, -4, -3]
 
 
+
+HTML Code:
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript function to generate an array of given length, the content of the array is integer numbers, increase by one from starting</title>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
  */
