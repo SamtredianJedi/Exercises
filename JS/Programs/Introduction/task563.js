@@ -17,4 +17,23 @@ console.log(rangeBetwee(-4, 7));
 
 
 
+
+
+
+
+HTML Code:
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript function to generate an array between two integers of 1 step length</title>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
  */
