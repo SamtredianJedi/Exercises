@@ -1,6 +1,8 @@
 // JavaScript: Check every numbers are prime or not in an array
 
 
+
+
 /**
  * 
  * 
