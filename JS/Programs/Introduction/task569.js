@@ -52,4 +52,62 @@ console.log(compactObject(obj));
 
 
 
+
+
+
+
+
+Live Demo :
+
+
+html:
+
+
+
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript function to Remove all falsy values from an object or array</title>
+</head>
+<body>
+
+</body>
+</html>
+
+
+js:
+
+
+
+
+
+//Source:https://bit.ly/3hEZdCl
+ const compactObject = val => {
+  const data = Array.isArray(val) ? val.filter(Boolean) : val;
+  return Object.keys(data).reduce(
+    (acc, key) => {
+      const value = data[key];
+      if (Boolean(value))
+        acc[key] = typeof value === 'object' ? compactObject(value) : value;
+      return acc;
+    },
+    Array.isArray(val) ? [] : {}
+  );
+};
+const obj = {
+  a: null,
+  b: false,
+  c: true,
+  d: 0,
+  e: 1,
+  f: '',
+  g: 'a',
+  h: [null, false, '', true, 1, 'a'],
+  i: { j: 0, k: false, l: 'a' }
+};
+console.log(compactObject(obj));
+​
+
+
  */
