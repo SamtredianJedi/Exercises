@@ -1,6 +1,9 @@
 // JavaScript: Check if an array is a factor chain
 
 
+
+
+
 /**
  * 
  * 
