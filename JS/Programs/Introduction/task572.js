@@ -1,5 +1,8 @@
 // JavaScript: Sum all numbers of an array of mixed data types
 
+
+
+
 /**
  * 
  * 
