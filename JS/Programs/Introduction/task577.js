@@ -18,4 +18,23 @@ Output :
 
 
 
+
+
+
+
+
+HTML Code:
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Get the current date</title>
+</head>
+<body>
+</body>
+</html>
+
+
+
  */
