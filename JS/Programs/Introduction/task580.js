@@ -74,4 +74,22 @@ console.log(is_before_date(new Date(2018, 8, 21), new Date(2018, 8, 15)));
 
 
 
+
+
+
+
+Sample Solution-4:
+
+Checks if a date is after another date.
+
+Use the greater than operator (>) to check if the first date comes after the second one.
+JavaScript Code:
+
+const is_after_date = (date1, date2) => date1 > date2;
+console.log("Is 2018/8/15 after 2018/8/21?")
+console.log(is_after_date(new Date(2018, 8, 15), new Date(2018, 8, 21)));
+console.log("Is 2018/8/21 after 2018/8/15?")
+console.log(is_after_date(new Date(2018, 8, 21), new Date(2018, 8, 15)));
+
+
  */
