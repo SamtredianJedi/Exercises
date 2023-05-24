@@ -1,6 +1,8 @@
 // JavaScript: Comparison between two dates
 
 
+
+
 /**
  * 
 
@@ -90,6 +92,9 @@ console.log("Is 2018/8/15 after 2018/8/21?")
 console.log(is_after_date(new Date(2018, 8, 15), new Date(2018, 8, 21)));
 console.log("Is 2018/8/21 after 2018/8/15?")
 console.log(is_after_date(new Date(2018, 8, 21), new Date(2018, 8, 15)));
+
+
+
 
 
  */
