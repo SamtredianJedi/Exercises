@@ -38,4 +38,21 @@ console.log(compare_dates(new Date('11/14/2013 00:00'), new Date('11/14/2013 00:
 
 
 
+
+
+
+
+
+Sample Solution-2:
+
+Checks if a date is the same as another date.
+
+Use Date.prototype.toISOString() and strict equality checking (===) to check if the first date is the same as the second one.
+JavaScript Code:
+
+const is_same_date = (date1, date2) => date1.toISOString() === date2.toISOString();
+console.log(is_same_date(new Date(2015, 12, 15), new Date(2015, 12, 15)));
+console.log(is_same_date(new Date(2015, 12, 15), new Date(2015, 12, 16)));
+
+
  */
