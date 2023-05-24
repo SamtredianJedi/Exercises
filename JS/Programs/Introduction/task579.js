@@ -15,4 +15,20 @@ Output :
 "November"
 
 
+
+
+
+HTML Code:
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Get the month name from a particular date</title>
+</head>
+<body>
+</body>
+</html>
+
+
  */
