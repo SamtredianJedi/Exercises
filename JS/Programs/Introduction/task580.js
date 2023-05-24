@@ -55,4 +55,23 @@ console.log(is_same_date(new Date(2015, 12, 15), new Date(2015, 12, 15)));
 console.log(is_same_date(new Date(2015, 12, 15), new Date(2015, 12, 16)));
 
 
+
+
+
+
+Sample Solution-3:
+
+Checks if a date is before another date.
+
+Use the less than operator (<) to check if the first date comes before the second one.
+JavaScript Code:
+
+const is_before_date = (date1, date2) => date1 < date2;
+console.log("Is 2018/8/15 before 2018/8/21?")
+console.log(is_before_date(new Date(2018, 8, 15), new Date(2018, 8, 21)));
+console.log("Is 2018/8/21 before 2018/8/15?")
+console.log(is_before_date(new Date(2018, 8, 21), new Date(2018, 8, 15)));
+
+
+
  */
