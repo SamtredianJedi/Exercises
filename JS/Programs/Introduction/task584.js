@@ -19,4 +19,22 @@ Output :
 
 
 
+
+
+
+HTML Code:
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Find out the last day of a month</title>
+</head>
+<body>
+</body>
+</html>
+
+
+
+
  */
