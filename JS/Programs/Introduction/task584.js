@@ -51,4 +51,37 @@ console.log(lastday(2014,11));
 
 
 
+
+
+Live Demo:
+
+
+html:
+
+
+
+
+<head>
+<meta charset="utf-8">
+<title>Find out the last day of a month</title>
+</head>
+<body>
+</body>
+
+
+js:
+
+
+
+
+
+var lastday = function(y,m){
+return  new Date(y, m +1, 0).getDate();
+}
+console.log(lastday(2014,0));
+console.log(lastday(2014,1));
+console.log(lastday(2014,11));
+
+
+
  */
