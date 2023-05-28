@@ -17,4 +17,22 @@ Output :
 
 
 
+
+
+
+
+HTML Code:
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>JavaScript difference between two dates in days</title>
+</head>
+<body>
+</body>
+</html>
+
+
+
  */
