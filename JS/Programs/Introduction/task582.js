@@ -1,5 +1,8 @@
 // JavaScript: Check whether a date is a weekend date
 
+
+
+
 /**
  * 
  * 
