@@ -18,4 +18,21 @@ undefined
 
 
 
+
+
+
+HTML Code:
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>JavaScript Weekend test</title>
+</head>
+<body>
+</body>
+</html>
+
+
+
  */
