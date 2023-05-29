@@ -54,4 +54,42 @@ console.log(yesterday('Nov 17, 2016'));
 
 
 
+Live Demo:
+
+
+html:
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Find out which day was in yesterday</title>
+</head>
+<body>
+</body>
+</html>
+
+
+
+
+
+js:
+
+
+
+
+var yesterday =  function(date1){
+    var dt = new Date(date1);
+  return new Date((dt.setDate(dt.getDate()-1))).toString();
+}
+console.log(yesterday('Nov 15, 2014'));
+console.log(yesterday('Nov 16, 2015'));
+console.log(yesterday('Nov 17, 2016'));
+
+
+
+
+
+
+
  */
