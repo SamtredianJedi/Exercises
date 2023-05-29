@@ -20,4 +20,21 @@ Output :
 
 
 
+
+
+HTML Code:
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Find out which day was in yesterday</title>
+</head>
+<body>
+</body>
+</html>
+
+
+
+
  */
