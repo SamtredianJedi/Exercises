@@ -14,4 +14,22 @@ Output :
 
 
 
+
+
+
+HTML Code:
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Return the number of minutes in hours and minutes.</title>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
  */
