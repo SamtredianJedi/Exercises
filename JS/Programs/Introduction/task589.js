@@ -1,5 +1,8 @@
 // JavaScript: Get the amount of days of a year
 
+
+
+
 /**
  * 
  * 
